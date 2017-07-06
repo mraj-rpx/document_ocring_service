@@ -3,13 +3,12 @@ class DocsplitProcessor < Docsplit::TextExtractor
   SCANNED_PDF = 'scanned_pdf'
   PLAIN_PDF = 'plain_pdf'
 
-  def initialize(pdf, process_type = PLAIN_PDF)
+  def initialize(pdf)
     @pdf = Docsplit.ensure_pdfs(pdf)[0]
     @pages = 'all'
     @output = "/Users/mohanrajr/TESSERACT/#{SecureRandom.uuid}"
     @total_pages = Docsplit.extract_length(@pdf)
     @pdf_name = File.basename(@pdf, File.extname(@pdf))
-    @process_type = process_type
     @tempdir = "/Users/mohanrajr/TESSERACT/#{SecureRandom.uuid}"
     @pages_to_ocr = []
   end
@@ -19,13 +18,9 @@ class DocsplitProcessor < Docsplit::TextExtractor
     FileUtils.mkdir_p @tempdir unless File.exists?(@tempdir)
 
     extract_from_pdf(@pdf, 1..@total_pages)
+    process_scanned_pages if @pages_to_ocr.present?
 
-    if @process_type == PLAIN_PDF
-      return {ocr_text: nil, ocrable: true} if @pages_to_ocr.present?
-    else
-      process_scanned_pages if @pages_to_ocr.present?
-    end
-    {ocr_text: read_all_pages_content, ocrable: false, pdf_type: @process_type}
+    {ocr_text: read_all_pages_content, pdf_type: @pages_to_ocr.present? ? SCANNED_PDF : PLAIN_PDF}
   ensure
     FileUtils.remove_entry_secure(@output) if File.exists?(@output)
     FileUtils.remove_entry_secure(@tempdir) if File.exists?(@tempdir)
