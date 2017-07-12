@@ -6,10 +6,10 @@ class DocsplitProcessor < Docsplit::TextExtractor
   def initialize(pdf)
     @pdf = Docsplit.ensure_pdfs(pdf)[0]
     @pages = 'all'
-    @output = "/Users/mohanrajr/TESSERACT/#{SecureRandom.uuid}"
+    @output = Rails.root.join("tmp/TESSERACT/#{SecureRandom.uuid}")
     @total_pages = Docsplit.extract_length(@pdf)
     @pdf_name = File.basename(@pdf, File.extname(@pdf))
-    @tempdir = "/Users/mohanrajr/TESSERACT/#{SecureRandom.uuid}"
+    @tempdir = Rails.root.join("tmp/TESSERACT/#{SecureRandom.uuid}")
     @pages_to_ocr = []
   end
 
@@ -61,7 +61,7 @@ class DocsplitProcessor < Docsplit::TextExtractor
   end
 
   def handle_large_page_size(base_path)
-    pdf_images = "/Users/mohanrajr/TESSERACT/#{SecureRandom.uuid}"
+    pdf_images = Rails.root.join("tmp/TESSERACT/#{SecureRandom.uuid}")
     FileUtils.mkdir_p pdf_images unless File.exists?(pdf_images)
 
     run("pdfimages #{@pdf} #{pdf_images}/IMG")

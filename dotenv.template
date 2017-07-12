@@ -2,3 +2,5 @@ DB_HOST=<db-host>
 DB_NAME=<db-name>
 DB_USERNAME=<db-username>
 DB_PASSWORD=<db-password>
+TOTAL_CONCURRENT_JOBS_FOR_OCR=1
+SECRET_KEY_BASE=TEST-KEY
