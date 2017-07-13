@@ -1,3 +1,15 @@
-# Place all the behaviors and hooks related to the matching controller here.
-# All this logic will automatically be available in application.js.
-# You can use CoffeeScript in this file: http://coffeescript.org/
+jQuery ->
+  $('#documents').dataTable
+    sPaginationType: "full_numbers"
+    iDisplayLength: 5
+    bJQueryUI: true
+    bProcessing: true
+    bServerSide: true
+    sAjaxSource: $('#documents').data('source')
+    aaSorting: [ [0, 'desc'] ]
+    aoColumns: [
+      {"mData": "id", "bSortable": false},
+      { "mData": "file", "bSortable": true}
+      { "mData": "view_ocr_text", "bSortable": false}
+      { "mData": "view_patents", "bSortable": false}
+      ]

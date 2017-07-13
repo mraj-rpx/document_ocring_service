@@ -1,0 +1,19 @@
+%h3= "Document Name - #{@document[:file]}"
+%hr
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th ID
+      %th Patnum
+      %th Asset Source
+      %th Asset Source ID
+      %th Is Matched Using Country Code
+  %tbody
+    - @patents.each do |patent|
+      %tr
+        %td= patent.id
+        %td= patent.patnum
+        %td= patent.asset_source
+        %td= patent.asset_source_id
+        %td= patent.matched_with_country_code

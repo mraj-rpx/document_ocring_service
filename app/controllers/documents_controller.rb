@@ -1,5 +1,11 @@
 class DocumentsController < ApplicationController
+  before_action :set_document, only: [:ocr_text, :patents]
+
   def index
+    respond_to do |format|
+      format.html
+      format.json { render json: DocumentsDatatable.new(view_context) }
+    end
   end
 
   def create
@@ -8,5 +14,21 @@ class DocumentsController < ApplicationController
   end
 
   def destroy
+  end
+
+  def upload_documents
+  end
+
+  def ocr_text
+  end
+
+  def patents
+    @patents = @document.patents
+  end
+
+  private
+
+  def set_document
+    @document = Document.find(params[:id])
   end
 end

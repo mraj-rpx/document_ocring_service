@@ -4,7 +4,12 @@ Rails.application.routes.draw do
 
   resources :documents, only: [:index, :create, :destroy] do
     collection do
-      get :documents
+      get :upload_documents
+    end
+
+    member do
+      get :ocr_text
+      get :patents
     end
   end
 

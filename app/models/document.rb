@@ -1,7 +1,8 @@
 class Document < ApplicationRecord
   include Rails.application.routes.url_helpers
-
   mount_uploader :file, DocumentUploader
+
+  has_many :patents
 
   def to_jq_upload
     {

@@ -17,4 +17,5 @@
 //= require jquery-ui
 //= require twitter/bootstrap
 //= require jquery_file_uploader
+//= require dataTables/jquery.dataTables
 //= require_tree .
