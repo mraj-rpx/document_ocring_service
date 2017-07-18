@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   resources :documents, only: [:index, :create, :destroy] do
     collection do
       get :upload_documents
+      post :upload_new_documents
     end
 
     member do

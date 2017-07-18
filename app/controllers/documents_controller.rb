@@ -22,6 +22,11 @@ class DocumentsController < ApplicationController
   def ocr_text
   end
 
+  def upload_new_documents
+    @document = Document.create(file: params[:files][0], status: :todo_from_ui)
+    render json: { files: [@document.to_jq_upload] }, status: :created, location: @document
+  end
+
   def patents
     @patents = @document.patents
   end

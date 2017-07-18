@@ -20,11 +20,22 @@ class DocumentsDatatable
 
   def data
     documents.map do |document|
+      ocr_text_path, pats_path =
+      if document.ocr_text.present?
+        [
+          link_to('View', @view_context.ocr_text_document_path(document), {target: '_blank'}),
+          link_to('View', @view_context.patents_document_path(document), {target: '_blank'})
+        ]
+      else
+        ['OCR is not done', 'OCR is not done']
+      end
+
       {
         id: document.id,
         file: document[:file],
-        view_ocr_text: link_to('View', @view_context.ocr_text_document_path(document), {target: '_blank'}),
-        view_patents: link_to('View', @view_context.patents_document_path(document), {target: '_blank'})
+        view_ocr_text: ocr_text_path,
+        view_patents: pats_path,
+        status: document.status.upcase
       }
     end
   end
@@ -48,7 +59,7 @@ class DocumentsDatatable
   end
 
   def sort_column
-    columns = %w[file ocr_text]
+    columns = %w[id file]
     columns[params[:iSortCol_0].to_i]
   end
 
