@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20170718074744) do
   enable_extension "pgcrypto"
   enable_extension "pg_freespacemap"
   enable_extension "hstore"
+  enable_extension "pglogical"
 
   create_table "documents", force: :cascade do |t|
     t.text "ocr_text"
@@ -47,10 +48,6 @@ ActiveRecord::Schema.define(version: 20170718074744) do
     t.integer "document_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "v_doc_filed_date", id: false, force: :cascade do |t|
-    t.date "max"
   end
 
   add_foreign_key "patents", "documents"

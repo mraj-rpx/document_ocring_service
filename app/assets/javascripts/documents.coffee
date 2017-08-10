@@ -14,3 +14,9 @@ $(document).on 'turbolinks:load', ->
       { "mData": "view_patents", "bSortable": false}
       { "mData": "status", "bSortable": false}
       ]
+
+  $('#fileupload').fileupload
+    dataType: 'json'
+    done: (e, data) ->
+      $.each data.result.files, (index, file) ->
+        $('<li/>').addClass('list-group-item').text(file.name).appendTo($('#uploaded-files'))

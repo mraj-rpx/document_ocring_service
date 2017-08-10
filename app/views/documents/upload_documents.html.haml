@@ -1,0 +1,6 @@
+%h1 Upload Your Files
+.col-lg-12
+  %input#fileupload.pull-right{type: 'file', name: 'files[]', data: {url: '/documents/upload_new_documents'}, multiple: true}
+.col-lg-12
+  %h5 Uploaded Files
+  %ul.list-group#uploaded-files

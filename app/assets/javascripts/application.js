@@ -14,8 +14,8 @@
 //= require jquery_ujs
 //= require rails-ujs
 //= require turbolinks
-//= require jquery-ui
 //= require twitter/bootstrap
-//= require jquery_file_uploader
 //= require dataTables/jquery.dataTables
+//= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
+//= require jquery-fileupload/basic
 //= require_tree .
