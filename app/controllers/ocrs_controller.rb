@@ -1,5 +1,6 @@
 class OcrsController < ApplicationController
   protect_from_forgery with: :null_session
+  skip_before_action :require_signin
 
   def patents
     documents = params.values.select{ |param| param.is_a?(ActionDispatch::Http::UploadedFile) }

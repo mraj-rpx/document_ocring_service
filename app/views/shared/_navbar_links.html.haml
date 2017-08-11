@@ -1,0 +1,9 @@
+%ul.nav.navbar-nav.navbar-right
+  - if current_user
+    %li
+      = link_to current_user['name'], ''
+    %li
+      = link_to 'Logout', logout_sessions_path, method: :post
+  - else
+    %li
+      = link_to 'Login', new_session_path

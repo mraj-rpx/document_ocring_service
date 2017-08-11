@@ -4,3 +4,10 @@ DB_USERNAME=<db-username>
 DB_PASSWORD=<db-password>
 TOTAL_CONCURRENT_JOBS_FOR_OCR=1
 SECRET_KEY_BASE=TEST-KEY
+
+LDAP_BASE=OU=Imaginea,OU=SysDev,OU=Service Accounts,OU=RPX Corporation,DC=rpxcorp,DC=local|OU=People,OU=RPX Corporation,DC=rpxcorp,DC=local
+LDAP_ATTRIBUTES=userprincipalname,name,memberof
+LDAP_USER_GROUP=CN=LitigationDataETL-Test,OU=LitigationDataETL,OU=Applications,OU=Security Groups,OU=RPX Corporation,DC=rpxcorp,DC=local
+LDAP_ADMIN_GROUP=CN=LitigationDataETL,OU=LitigationDataETL,OU=Applications,OU=Security Groups,OU=RPX Corporation,DC=rpxcorp,DC=local
+LDAP_HOST=ad-ldaps.rpxcorp.local
+LDAP_PORT=636

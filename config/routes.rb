@@ -19,4 +19,11 @@ Rails.application.routes.draw do
       post :patents
     end
   end
+
+  resources :sessions, only: [:new] do
+    collection do
+      post :login
+      post :logout
+    end
+  end
 end

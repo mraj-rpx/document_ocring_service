@@ -1,0 +1,25 @@
+.page-header
+  %h3 Sign in using RPX SSO Credentials
+
+.col-lg-6.sign-in-well
+  = form_for(:user, url: login_sessions_path, as: :post, html: { :class => "navbar-collapse well well-lg" }) do |f|
+    %fieldset
+      .row.add-margin
+        .col-md-6
+          = f.text_field :user_name, :autofocus => true, :required => "required", :"data-errormessage-value-missing" => "SSO UserId should not be left blank.", :class => "form-control"
+        .col-md-6
+          SSO UserId
+      .row.add-margin
+        .col-md-6
+          = f.password_field :password, :required => "required", :"data-errormessage-value-missing" => "Password should not be left blank.", :class => "form-control"
+        .col-md-6
+          Password
+      .row.add-margin
+        .col-md-6
+          = f.submit "Sign in", :class => "btn btn-success"
+      .row.add-margin
+        .col-md-12
+          You landed on this signin page Because you requested a restricted application page. Once you're authenticated and authorized, you will be redirected to requested page.
+      .row.add-margin
+        .col-md-12
+          Please signin using your RPX SSO credentials.

@@ -1,4 +1,6 @@
 @import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/variables.less";
+@import "twitter/bootstrap/mixins.less";
 
 @icon-font-path: "/assets/";
 
@@ -21,3 +23,9 @@
 //
 // Example:
 // @link-color: #ff0000;
+@navbar-height: 80px;
+@navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 3);
+
+body {
+  padding-top: @navbar-height;
+}
