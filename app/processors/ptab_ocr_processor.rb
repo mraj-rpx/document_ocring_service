@@ -11,7 +11,7 @@ class PtabOcrProcessor
         path = S3Downloader.new({s3_key: s3_key, bucket: ENV['PTAB_BUCKET']}).download
         ocr_content = DocsplitProcessor.new(path).process
 
-        document.update_attributes(ocr_text: ocr_content[:ocr_text], exception: nil, needs_ocr: false)
+        document.update_attributes(ocr_text: ocr_content[:ocr_text], needs_ocr: false)
       rescue => exception
         # document.update_attributes(exception: exception)
         Rails.logger.error(exception)

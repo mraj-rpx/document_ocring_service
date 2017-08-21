@@ -8,7 +8,7 @@ class DocumentOcrProcessor
     documents.each do |document|
       begin
         document.inprogress!
-        ocr_content = DocsplitProcessor.new(doc.file.path).process
+        ocr_content = DocsplitProcessor.new(document.file.path).process
         document.update_attributes(ocr_text: ocr_content[:ocr_text], status: :completed, exception: nil)
       rescue => exception
         document.update_attributes(exception: exception, status: :failed)
