@@ -27,7 +27,6 @@ ActiveRecord::Schema.define(version: 20170718074744) do
   enable_extension "pgcrypto"
   enable_extension "pg_freespacemap"
   enable_extension "hstore"
-  enable_extension "pglogical"
 
   create_table "documents", force: :cascade do |t|
     t.text "ocr_text"

@@ -11,3 +11,9 @@ LDAP_USER_GROUP=CN=LitigationDataETL-Test,OU=LitigationDataETL,OU=Applications,O
 LDAP_ADMIN_GROUP=CN=LitigationDataETL,OU=LitigationDataETL,OU=Applications,OU=Security Groups,OU=RPX Corporation,DC=rpxcorp,DC=local
 LDAP_HOST=ad-ldaps.rpxcorp.local
 LDAP_PORT=636
+
+AWS_ACCESS_KEY_ID=AKIAI2RVRKNXA4VIUWFA
+AWS_SECRET_ACCESS_KEY=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
+AWS_REGION=us-east-1
+BUCKET=dev-rpx-docs
+PTAB_BUCKET=rpx-ptab

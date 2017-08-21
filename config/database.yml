@@ -24,6 +24,7 @@ default: &default
   username: <%= ENV.fetch('DB_USERNAME') %>
   password: <%= ENV.fetch('DB_PASSWORD') %>
   database: <%= ENV.fetch('DB_NAME') %>
+  schema_search_path: document_ocr_service,core,docdb,docdb_families,acquiflow,ptab,public
 
 development:
   <<: *default

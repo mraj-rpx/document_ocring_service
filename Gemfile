@@ -41,6 +41,7 @@ group :development, :test do
   gem 'pry-byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'pry-rails'
   gem 'rb-fsevent', '0.10.2'
+  gem 'rspec-rails'
 end
 
 group :development do
@@ -66,3 +67,4 @@ gem 'will_paginate'
 gem 'rufus-scheduler'
 gem 'jquery-fileupload-rails'
 gem 'net-ldap'
+gem 'aws-sdk'

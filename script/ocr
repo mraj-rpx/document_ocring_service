@@ -2,23 +2,13 @@
 require File.expand_path('../../config/environment',  __FILE__)
 require File.expand_path('../../config/boot',  __FILE__)
 
-scheduler = Rufus::Scheduler.new
-logger = Logger.new('log/rufus.log')
-
-scheduler.every('1m') do
-  documents = Document.todo_from_ui.limit(5)
-
-  documents.each do |document|
-    begin
-      document.inprogress!
-      patent_detail_extractor = PatentDetailExtractor.new([document])
-      patent_detail_extractor.extract!
-      document.completed!
-    rescue => exception
-      document.update_attributes(status: :failed, exception: exception)
-      logger.error(exception)
-    end
-  end
+scheduler = nil
+begin
+  scheduler = OCRProcessor.new.schedule_ocr!
+  scheduler.join
+rescue Rufus::Scheduler::NotRunningError => rufus_exception
+  Rails.logger.error(rufus_exception.message + "\n" + rufus_exception.backtrace.join("\n"))
+rescue => e
+  scheduler.shutdown
+  Rails.logger.error("Time to shutdown the jobs due to the exception: #{e}")
 end
-
-scheduler.join
