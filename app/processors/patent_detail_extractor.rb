@@ -33,9 +33,13 @@ class PatentDetailExtractor
     patents = []
 
     documents.each do |document|
-      ocr_content = DocsplitProcessor.new(document.file.path).process
-      document.update_attributes(ocr_text: ocr_content[:ocr_text])
-      patnums = ocr_content[:ocr_text].scan(PATENT_REGEX)
+      ocr_text = document.ocr_text
+      if ocr_text.blank?
+        ocr_content = DocsplitProcessor.new(document.file.path).process
+        ocr_text = ocr_content[:ocr_text]
+      end
+      document.update_attributes(ocr_text: ocr_text)
+      patnums = ocr_text.scan(PATENT_REGEX)
       partitioned_patnums = {us_patnums: [], non_us_patnums: [], patnums_without_cc: []}
       patnums.inject(partitioned_patnums) do |partitioned_collection, patnum|
         country_code = patnum[0]
