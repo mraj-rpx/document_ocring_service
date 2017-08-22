@@ -62,7 +62,7 @@ class PatentDetailExtractor
         pat_slice = patent_slice.map{ |slice| slice.merge(document_id: document.id) }
         Patent.import(pat_slice)
       end
-      document.completed! if document.todo_from_api?
+      document.completed!
       patents << {
         document_name: document.file.filename,
         patents: consolidated_patents
