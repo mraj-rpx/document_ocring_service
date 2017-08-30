@@ -42,6 +42,7 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rb-fsevent', '0.10.2'
   gem 'rspec-rails'
+  gem 'factory_girl_rails'
 end
 
 group :development do

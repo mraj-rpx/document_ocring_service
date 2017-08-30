@@ -1,5 +1,4 @@
-class DocumentOcrProcessor
-  LIMIT = 5
+class DocumentOcrProcessor < OcrProcessorBase
   FREQUENCY = '1m'
 
   def process!

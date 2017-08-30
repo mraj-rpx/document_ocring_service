@@ -2,28 +2,24 @@ class PatentDetailExtractor
   attr_accessor :documents
 
   US_COUNTRY_CODE = 'US'
-  CORE_ASSERT_SOURCE = 'C'
-  DOCDB_ASSERT_SOURCE = 'D'
+  CORE_ASSET_SOURCE = 'C'
+  DOCDB_ASSET_SOURCE = 'D'
   MANUAL_ASSET_SOURCE = 'M'
   PATENT_REGEX = /([A-Z]{2,})?([0-9\-]{4,})/
   IMPORT_RECORDS_LIMIT = 250
 
-  MANUAL_SEARCHING_LEVELS = [
-    {klass: ManualAsset, country_code: US_COUNTRY_CODE, column_name: :patent_number, asset_source: MANUAL_ASSET_SOURCE},
-    {klass: ManualAsset, country_code: US_COUNTRY_CODE, column_name: :publication_number, asset_source: MANUAL_ASSET_SOURCE},
-    {klass: ManualAsset, country_code: US_COUNTRY_CODE, column_name: :application_number, asset_source: MANUAL_ASSET_SOURCE}
-  ]
+  MANUAL_SEARCHING_LEVELS = [:patent_number, :publication_number, :application_number].map do |column_name|
+    {klass: ManualAsset, country_code: US_COUNTRY_CODE, column_name: column_name, asset_source: MANUAL_ASSET_SOURCE}
+  end
 
-  CORE_SEARCHING_LEVELS = [
-    {klass: CorePat, country_code: US_COUNTRY_CODE, column_name: :stripped_patnum, asset_source: CORE_ASSERT_SOURCE},
-    {klass: CorePat, country_code: US_COUNTRY_CODE, column_name: :app_num_country, asset_source: CORE_ASSERT_SOURCE}
-  ] + MANUAL_SEARCHING_LEVELS
+  CORE_SEARCHING_LEVELS = [:stripped_patnum, :app_num_country].map do |column_name|
+    {klass: CorePat, country_code: US_COUNTRY_CODE, column_name: column_name, asset_source: CORE_ASSET_SOURCE}
+  end + MANUAL_SEARCHING_LEVELS
 
-  DOCDB_SEARCHING_LEVELS = [
-    {klass: DocdbPat, column_name: :stripped_patnum, asset_source: DOCDB_ASSERT_SOURCE},
-    {klass: DocdbPat, column_name: :app_num_intl, asset_source: DOCDB_ASSERT_SOURCE}
-  ] + MANUAL_SEARCHING_LEVELS.map{ |searching_level| searching_level.except(:country_code) }
 
+  DOCDB_SEARCHING_LEVELS = [:stripped_patnum, :app_num_intl].map do |column_name|
+    {klass: DocdbPat, column_name: column_name, asset_source: DOCDB_ASSET_SOURCE}
+  end + MANUAL_SEARCHING_LEVELS.map{ |searching_level| searching_level.except(:country_code) }
 
   def initialize(documents = [])
     @documents = documents
@@ -37,8 +33,8 @@ class PatentDetailExtractor
       if ocr_text.blank?
         ocr_content = DocsplitProcessor.new(document.file.path).process
         ocr_text = ocr_content[:ocr_text]
+        document.update_attributes(ocr_text: ocr_text)
       end
-      document.update_attributes(ocr_text: ocr_text)
       patnums = ocr_text.scan(PATENT_REGEX)
       partitioned_patnums = {us_patnums: [], non_us_patnums: [], patnums_without_cc: []}
       patnums.inject(partitioned_patnums) do |partitioned_collection, patnum|
