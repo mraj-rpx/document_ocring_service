@@ -30,7 +30,12 @@
     .container
       .row
         .col-lg-12
-          = bootstrap_flash
+          - flash.each do |type, message|
+            .alert.fade.in{class: bootstrap_class_for(type)}
+              %button.close{'data-dismiss' => 'alert'}
+                %i.glyphicon.glyphicon-remove-circle
+              %i.glyphicon{class: "glyphicon-#{bootstrap_icon_for(type)}"}
+              = message
           = yield
       %footer
         %p &copy; Company 2017

@@ -1,0 +1,12 @@
+@import "bootstrap-sprockets";
+@import "bootstrap_and_overrides";
+@import "bootstrap";
+@import "dataTables/bootstrap/3/jquery.dataTables.bootstrap";
+@import "jquery.fileupload";
+@import "jquery.fileupload-ui";
+@import "documents";
+@import "ocrs";
+
+body {
+  padding-top: $navbar-height;
+}
