@@ -12,8 +12,8 @@ LDAP_ADMIN_GROUP=CN=LitigationDataETL,OU=LitigationDataETL,OU=Applications,OU=Se
 LDAP_HOST=ad-ldaps.rpxcorp.local
 LDAP_PORT=636
 
-AWS_ACCESS_KEY_ID=AKIAI2RVRKNXA4VIUWFA
-AWS_SECRET_ACCESS_KEY=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
-AWS_REGION=us-east-1
-BUCKET=dev-rpx-docs
-PTAB_BUCKET=rpx-ptab
+AWS_ACCESS_KEY_ID=<aws-access-key-id>
+AWS_SECRET_ACCESS_KEY=<aws-secret-access-key-id>
+AWS_REGION=<region>
+BUCKET=<bucket>
+PTAB_BUCKET=<ptab-bucket>
