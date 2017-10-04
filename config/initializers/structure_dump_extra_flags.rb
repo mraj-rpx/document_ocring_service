@@ -1,6 +1,14 @@
 core_tables = [
   '--table=core.pats_id_seq',
-  '--table=core.pats'
+  '--table=core.lit_document_statuses_id_seq',
+  '--table=core.file_types_id_seq',
+  '--table=core.lit_document_types_id_seq',
+  '--table=core.lit_documents_id_seq',
+  '--table=core.pats',
+  '--table=core.lit_document_statuses',
+  '--table=core.file_types',
+  '--table=core.lit_document_types',
+  '--table=core.lit_documents',
 ]
 ptab_tables = [
   '--table=ptab.ptab_case_details_id_seq',
@@ -24,4 +32,8 @@ docdb_tables = [
 ocr_tables = [
   '--table=document_ocr_service.*'
 ]
-ActiveRecord::Tasks::DatabaseTasks.structure_dump_flags = core_tables + ptab_tables + acq_tables + docdb_tables + ocr_tables
+
+public_tables = [
+  '--table=public.*'
+]
+ActiveRecord::Tasks::DatabaseTasks.structure_dump_flags = core_tables + ptab_tables + acq_tables + docdb_tables + ocr_tables + public_tables

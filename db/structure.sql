@@ -7,12 +7,6 @@ SET check_function_bodies = false;
 SET client_min_messages = warning;
 SET row_security = off;
 
-CREATE SCHEMA acquiflow;
-CREATE SCHEMA core;
-CREATE SCHEMA docdb;
-CREATE SCHEMA ptab;
-CREATE SCHEMA document_ocr_service;
-
 SET search_path = acquiflow, pg_catalog;
 
 SET default_tablespace = '';
@@ -143,7 +137,7 @@ CREATE TABLE pats (
     orig_app_num_country character varying(32) DEFAULT 'undefined'::character varying NOT NULL,
     is_dcl_corrected boolean,
     formal_number character varying(32),
-    is_digital boolean DEFAULT true
+    is_digital_record boolean DEFAULT true
 );
 
 
@@ -547,6 +541,223 @@ COMMENT ON COLUMN ptab_cases.notice_date IS 'Date of Notice of Accorded Filing D
 COMMENT ON COLUMN ptab_cases.reason_for_notice_filing_date IS 'Source of Notice Date or reason why it is not available';
 
 
+SET search_path = core, pg_catalog;
+
+--
+-- Name: lit_documents_id_seq; Type: SEQUENCE; Schema: core; Owner: -
+--
+
+CREATE SEQUENCE lit_documents_id_seq
+    START WITH 9556206
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+SET default_tablespace = rpx_user_default;
+
+--
+-- Name: lit_documents; Type: TABLE; Schema: core; Owner: -; Tablespace: rpx_user_default
+--
+
+CREATE TABLE lit_documents (
+    id integer DEFAULT nextval('lit_documents_id_seq'::regclass) NOT NULL,
+    docketx_id character varying(36),
+    doc_num integer,
+    de_seq_num integer,
+    dm_id integer,
+    url character varying(255) NOT NULL,
+    lit_document_type_id integer DEFAULT 0,
+    file_type_id integer DEFAULT 0,
+    rpx_file_name character varying(255),
+    rpx_file_location character varying(255),
+    document_status_id integer DEFAULT 1 NOT NULL,
+    document_status_message text,
+    case_key character varying(30),
+    updated_at timestamp(6) without time zone NOT NULL,
+    created_at timestamp(6) without time zone NOT NULL,
+    old_id integer,
+    no_of_pages integer,
+    ocr_text text,
+    pdf_type character varying,
+    billable_pages integer,
+    cost double precision
+);
+
+
+--
+-- Name: TABLE lit_documents; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON TABLE lit_documents IS 'Electronically filed documents (from PACER)';
+
+
+--
+-- Name: COLUMN lit_documents.id; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.id IS 'Lit Document ID (key connects to docket_entry_documents_map)';
+
+
+--
+-- Name: COLUMN lit_documents.docketx_id; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.docketx_id IS 'DocketX document ID (docketx: document.id)';
+
+
+--
+-- Name: COLUMN lit_documents.doc_num; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.doc_num IS 'Parameter for document URL';
+
+
+--
+-- Name: COLUMN lit_documents.de_seq_num; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.de_seq_num IS 'Parameter for document URL';
+
+
+--
+-- Name: COLUMN lit_documents.dm_id; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.dm_id IS 'Parameter for document URL';
+
+
+--
+-- Name: COLUMN lit_documents.url; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.url IS 'Document URL (docketx: document.documenturl)';
+
+
+--
+-- Name: COLUMN lit_documents.updated_at; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.updated_at IS 'Date and time the record was last updated. Controlled automatically by the database.';
+
+
+--
+-- Name: COLUMN lit_documents.created_at; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.created_at IS 'Date and time the record was created. Controlled automatically by the database.';
+
+
+--
+-- Name: COLUMN lit_documents.pdf_type; Type: COMMENT; Schema: core; Owner: -
+--
+
+COMMENT ON COLUMN lit_documents.pdf_type IS 'plain pdf or scanned pdf, when the pdf contains scanned images.';
+
+
+SET default_tablespace = '';
+
+--
+-- Name: file_types; Type: TABLE; Schema: core; Owner: -
+--
+
+CREATE TABLE file_types (
+    id integer NOT NULL,
+    description character varying(50),
+    is_default boolean,
+    updated_at timestamp without time zone,
+    created_at timestamp without time zone
+);
+
+
+--
+-- Name: file_types_id_seq; Type: SEQUENCE; Schema: core; Owner: -
+--
+
+CREATE SEQUENCE file_types_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: file_types_id_seq; Type: SEQUENCE OWNED BY; Schema: core; Owner: -
+--
+
+ALTER SEQUENCE file_types_id_seq OWNED BY file_types.id;
+
+
+--
+-- Name: lit_document_statuses; Type: TABLE; Schema: core; Owner: -
+--
+
+CREATE TABLE lit_document_statuses (
+    id integer NOT NULL,
+    description character varying(50),
+    note text,
+    is_default boolean,
+    updated_at timestamp without time zone,
+    created_at timestamp without time zone
+);
+
+
+--
+-- Name: lit_document_statuses_id_seq; Type: SEQUENCE; Schema: core; Owner: -
+--
+
+CREATE SEQUENCE lit_document_statuses_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: lit_document_statuses_id_seq; Type: SEQUENCE OWNED BY; Schema: core; Owner: -
+--
+
+ALTER SEQUENCE lit_document_statuses_id_seq OWNED BY lit_document_statuses.id;
+
+
+--
+-- Name: lit_document_types; Type: TABLE; Schema: core; Owner: -
+--
+
+CREATE TABLE lit_document_types (
+    id integer NOT NULL,
+    description character varying(50),
+    is_default boolean DEFAULT false,
+    updated_at timestamp without time zone,
+    created_at timestamp without time zone,
+    is_archived boolean
+);
+
+
+--
+-- Name: lit_document_types_id_seq; Type: SEQUENCE; Schema: core; Owner: -
+--
+
+CREATE SEQUENCE lit_document_types_id_seq
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+--
+-- Name: lit_document_types_id_seq; Type: SEQUENCE OWNED BY; Schema: core; Owner: -
+--
+
+ALTER SEQUENCE lit_document_types_id_seq OWNED BY lit_document_types.id;
+
+
+SET search_path = ptab, pg_catalog;
+
 --
 -- Name: ptab_case_details; Type: TABLE; Schema: ptab; Owner: -
 --
@@ -593,6 +804,18 @@ COMMENT ON COLUMN ptab_case_details.missing_from_source_date IS 'Date when we fi
 
 
 SET search_path = document_ocr_service, pg_catalog;
+
+--
+-- Name: ar_internal_metadata; Type: TABLE; Schema: document_ocr_service; Owner: -
+--
+
+CREATE TABLE ar_internal_metadata (
+    key character varying NOT NULL,
+    value character varying,
+    created_at timestamp without time zone NOT NULL,
+    updated_at timestamp without time zone NOT NULL
+);
+
 
 --
 -- Name: documents; Type: TABLE; Schema: document_ocr_service; Owner: -
@@ -746,6 +969,168 @@ CREATE SEQUENCE ptab_cases_id_seq
 ALTER SEQUENCE ptab_cases_id_seq OWNED BY ptab_cases.id;
 
 
+SET search_path = public, pg_catalog;
+
+--
+-- Name: dual; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW dual AS
+ SELECT 'X'::character varying AS dummy;
+
+
+--
+-- Name: passwd; Type: FOREIGN TABLE; Schema: public; Owner: -
+--
+
+CREATE FOREIGN TABLE passwd (
+    username text,
+    pass text,
+    uid integer,
+    gid integer,
+    gecos text,
+    home text,
+    shell text
+)
+SERVER file_server
+OPTIONS (
+    delimiter ':',
+    filename '/etc/passwd',
+    format 'text',
+    "null" ''
+);
+
+
+--
+-- Name: pg_stat_activity; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW pg_stat_activity AS
+ SELECT pg_stat_activity.pid AS procpid,
+    pg_stat_activity.usesysid,
+    pg_stat_activity.usename,
+    pg_stat_activity.application_name,
+    pg_stat_activity.client_addr,
+    pg_stat_activity.client_hostname,
+    pg_stat_activity.client_port,
+    pg_stat_activity.backend_start,
+    pg_stat_activity.xact_start,
+    pg_stat_activity.query_start,
+    pg_stat_activity.state_change,
+    pg_stat_activity.waiting,
+    pg_stat_activity.state,
+    pg_stat_activity.query
+   FROM pg_catalog.pg_stat_activity;
+
+
+--
+-- Name: ps_activity_log; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW ps_activity_log AS
+ SELECT postgres_log.log_time,
+    postgres_log.user_name,
+    postgres_log.process_id,
+    postgres_log.connection_from,
+    postgres_log.command_tag,
+    postgres_log.session_start_time,
+    postgres_log.error_severity,
+        CASE
+            WHEN (postgres_log.message ~* '^duration: '::text) THEN regexp_replace(postgres_log.message, '^duration: [0-9]*.[0-9]* ms  '::text, ''::text)
+            ELSE postgres_log.message
+        END AS query_text,
+        CASE
+            WHEN (postgres_log.message ~* '^duration: '::text) THEN (regexp_replace(regexp_replace(postgres_log.message, '^duration\:\ '::text, ''::text), '.[0-9]+ ms(.)*'::text, ''::text))::integer
+            ELSE NULL::integer
+        END AS "duration(ms)",
+    postgres_log.detail,
+    postgres_log.query
+   FROM rpx_dba.postgres_log
+  ORDER BY postgres_log.log_time DESC;
+
+
+--
+-- Name: ps_etl_app_conn_snapshot; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW ps_etl_app_conn_snapshot AS
+ SELECT user_connections.user_name,
+    user_connections.ip_address,
+    user_connections.connected_time,
+    user_connections.query_time,
+    user_connections.query_ddl,
+    user_connections.recorded_at
+   FROM rpx_dba.user_connections
+  WHERE (((user_connections.user_name)::text = 'ps_etl_app'::text) AND (user_connections.recorded_at = '2013-05-07 14:15:06.199924'::timestamp without time zone));
+
+
+--
+-- Name: schema_migrations; Type: TABLE; Schema: public; Owner: -
+--
+
+CREATE TABLE schema_migrations (
+    version character varying(255) NOT NULL
+);
+
+
+--
+-- Name: v_rpx_app_roles; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW v_rpx_app_roles AS
+ SELECT DISTINCT pg_roles.rolname AS groupname,
+    pg_user.usename AS username
+   FROM ((pg_user
+     JOIN pg_auth_members ON ((pg_user.usesysid = pg_auth_members.member)))
+     JOIN pg_roles ON ((pg_roles.oid = pg_auth_members.roleid)))
+  WHERE ((pg_roles.rolname)::text = ANY (ARRAY['ro_group'::text, 'rpx'::text, 'rpx_api'::text, 'rpx_service'::text, 'dblink_role'::text, 'localcore'::text, 'coreapp'::text, 'application_role'::text]));
+
+
+--
+-- Name: v_rpx_consultants; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW v_rpx_consultants AS
+ SELECT ldap_imaginea.full_name,
+    ldap_imaginea.department,
+    ldap_imaginea.username,
+    ldap_imaginea.email,
+    ldap_imaginea.telephone,
+    ldap_imaginea.mobile
+   FROM ldap_etl_app.ldap_imaginea
+  WHERE (((ldap_imaginea.full_name)::text !~* 'test'::text) AND ((ldap_imaginea.full_name)::text !~* 'investor re'::text) AND (((ldap_imaginea.full_name)::text ~ '^[A-Z][a-z](.)* [A-Z][a-z](.)*$'::text) OR ((ldap_imaginea.full_name)::text ~ '^[A-Z].(.)* [A-Z][a-z](.)*$'::text)));
+
+
+--
+-- Name: v_rpx_employees; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW v_rpx_employees AS
+ SELECT ldap_people.full_name,
+    ldap_people.department,
+    ldap_people.username,
+    ldap_people.email,
+    ldap_people.telephone,
+    ldap_people.mobile
+   FROM ldap_etl_app.ldap_people
+  WHERE (((ldap_people.full_name)::text !~* 'test'::text) AND ((ldap_people.full_name)::text !~* 'investor re'::text) AND (((ldap_people.full_name)::text ~ '^[A-Z][a-z](.)* [A-Z][a-z](.)*$'::text) OR ((ldap_people.full_name)::text ~ '^[A-Z].(.)* [A-Z][a-z](.)*$'::text)));
+
+
+--
+-- Name: v_rpx_sysdev; Type: VIEW; Schema: public; Owner: -
+--
+
+CREATE VIEW v_rpx_sysdev AS
+ SELECT ldap_sysdev.full_name,
+    ldap_sysdev.department,
+    ldap_sysdev.username,
+    ldap_sysdev.email,
+    ldap_sysdev.telephone,
+    ldap_sysdev.mobile
+   FROM ldap_etl_app.ldap_sysdev
+  WHERE (((ldap_sysdev.full_name)::text !~* 'test'::text) AND ((ldap_sysdev.full_name)::text !~* 'investor re'::text) AND (((ldap_sysdev.full_name)::text ~ '^[A-Z][a-z](.)* [A-Z][a-z](.)*$'::text) OR ((ldap_sysdev.full_name)::text ~ '^[A-Z].(.)* [A-Z][a-z](.)*$'::text)));
+
+
 SET search_path = acquiflow, pg_catalog;
 
 --
@@ -753,6 +1138,29 @@ SET search_path = acquiflow, pg_catalog;
 --
 
 ALTER TABLE ONLY manual_assets ALTER COLUMN id SET DEFAULT nextval('manual_assets_id_seq'::regclass);
+
+
+SET search_path = core, pg_catalog;
+
+--
+-- Name: file_types id; Type: DEFAULT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY file_types ALTER COLUMN id SET DEFAULT nextval('file_types_id_seq'::regclass);
+
+
+--
+-- Name: lit_document_statuses id; Type: DEFAULT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_document_statuses ALTER COLUMN id SET DEFAULT nextval('lit_document_statuses_id_seq'::regclass);
+
+
+--
+-- Name: lit_document_types id; Type: DEFAULT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_document_types ALTER COLUMN id SET DEFAULT nextval('lit_document_types_id_seq'::regclass);
 
 
 SET search_path = document_ocr_service, pg_catalog;
@@ -807,6 +1215,66 @@ ALTER TABLE ONLY manual_assets
 SET search_path = core, pg_catalog;
 
 --
+-- Name: file_types file_types_description_key; Type: CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY file_types
+    ADD CONSTRAINT file_types_description_key UNIQUE (description);
+
+
+--
+-- Name: lit_document_statuses lit_document_statuses_description_key; Type: CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_document_statuses
+    ADD CONSTRAINT lit_document_statuses_description_key UNIQUE (description);
+
+
+--
+-- Name: lit_document_statuses lit_document_statuses_pk; Type: CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_document_statuses
+    ADD CONSTRAINT lit_document_statuses_pk PRIMARY KEY (id);
+
+
+--
+-- Name: lit_document_types lit_document_types_description_key; Type: CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_document_types
+    ADD CONSTRAINT lit_document_types_description_key UNIQUE (description);
+
+
+--
+-- Name: lit_document_types lit_document_types_pk; Type: CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_document_types
+    ADD CONSTRAINT lit_document_types_pk PRIMARY KEY (id);
+
+
+SET default_tablespace = rpx_user_default;
+
+--
+-- Name: lit_documents lit_documents_pkey; Type: CONSTRAINT; Schema: core; Owner: -; Tablespace: rpx_user_default
+--
+
+ALTER TABLE ONLY lit_documents
+    ADD CONSTRAINT lit_documents_pkey PRIMARY KEY (id);
+
+
+SET default_tablespace = '';
+
+--
+-- Name: file_types lit_file_types_pk; Type: CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY file_types
+    ADD CONSTRAINT lit_file_types_pk PRIMARY KEY (id);
+
+
+--
 -- Name: pats pats_pk; Type: CONSTRAINT; Schema: core; Owner: -
 --
 
@@ -829,6 +1297,14 @@ ALTER TABLE ONLY docdb_pats
 SET search_path = document_ocr_service, pg_catalog;
 
 SET default_tablespace = '';
+
+--
+-- Name: ar_internal_metadata ar_internal_metadata_pkey; Type: CONSTRAINT; Schema: document_ocr_service; Owner: -
+--
+
+ALTER TABLE ONLY ar_internal_metadata
+    ADD CONSTRAINT ar_internal_metadata_pkey PRIMARY KEY (key);
+
 
 --
 -- Name: documents documents_pkey; Type: CONSTRAINT; Schema: document_ocr_service; Owner: -
@@ -899,6 +1375,17 @@ CREATE INDEX manual_assets_patnum_country_idx ON manual_assets USING btree (pate
 
 SET search_path = core, pg_catalog;
 
+SET default_tablespace = rpx_user_default;
+
+--
+-- Name: idx_lit_documents_normalized_file_name; Type: INDEX; Schema: core; Owner: -; Tablespace: rpx_user_default
+--
+
+CREATE INDEX idx_lit_documents_normalized_file_name ON lit_documents USING btree (regexp_replace((rpx_file_name)::text, '.*\/.*\/.*\/'::text, ''::text));
+
+
+SET default_tablespace = '';
+
 --
 -- Name: idx_pats_intl_class; Type: INDEX; Schema: core; Owner: -
 --
@@ -934,6 +1421,34 @@ SET default_tablespace = '';
 --
 -- Name: idx_pats_title_gin; Type: INDEX; Schema: core; Owner: -
 --
+
+CREATE INDEX idx_pats_title_gin ON pats USING gin (title public.gin_trgm_ops);
+
+
+SET default_tablespace = rpx_user_default;
+
+--
+-- Name: lit_documents__url_uniq_idx; Type: INDEX; Schema: core; Owner: -; Tablespace: rpx_user_default
+--
+
+CREATE UNIQUE INDEX lit_documents__url_uniq_idx ON lit_documents USING btree (url);
+
+
+SET default_tablespace = '';
+
+--
+-- Name: lit_documents_created_at_idx; Type: INDEX; Schema: core; Owner: -
+--
+
+CREATE INDEX lit_documents_created_at_idx ON lit_documents USING btree (created_at);
+
+
+--
+-- Name: lit_documents_updated_at_idx; Type: INDEX; Schema: core; Owner: -
+--
+
+CREATE INDEX lit_documents_updated_at_idx ON lit_documents USING btree (updated_at);
+
 
 --
 -- Name: pats__app_num_country_idx; Type: INDEX; Schema: core; Owner: -
@@ -1003,6 +1518,9 @@ CREATE INDEX pats_stripped_patnum_country_code_idx ON pats USING btree (stripped
 -- Name: pats_stripped_patnum_idx; Type: INDEX; Schema: core; Owner: -
 --
 
+CREATE INDEX pats_stripped_patnum_idx ON pats USING gin (stripped_patnum public.gin_trgm_ops);
+
+
 SET search_path = docdb, pg_catalog;
 
 SET default_tablespace = rpx_user_default;
@@ -1027,6 +1545,17 @@ CREATE INDEX docdb_pats__updated_at_idx ON docdb_pats USING btree (updated_at);
 
 CREATE INDEX docdb_pats_app_num_country_idx ON docdb_pats USING btree (app_num_intl, app_num_country);
 
+
+SET default_tablespace = '';
+
+--
+-- Name: docdb_pats_app_num_country_idx1; Type: INDEX; Schema: docdb; Owner: -
+--
+
+CREATE INDEX docdb_pats_app_num_country_idx1 ON docdb_pats USING btree (app_num_country);
+
+
+SET default_tablespace = rpx_user_default;
 
 --
 -- Name: docdb_pats_lower_idx; Type: INDEX; Schema: docdb; Owner: -; Tablespace: rpx_user_default
@@ -1054,6 +1583,8 @@ SET default_tablespace = '';
 --
 -- Name: docdb_pats_patnum_idx1; Type: INDEX; Schema: docdb; Owner: -
 --
+
+CREATE INDEX docdb_pats_patnum_idx1 ON docdb_pats USING gin (patnum public.gin_trgm_ops);
 
 
 SET default_tablespace = rpx_user_default;
@@ -1117,27 +1648,90 @@ CREATE INDEX ptab_cases__created_at_idx ON ptab_cases USING btree (created_at);
 CREATE INDEX ptab_cases__updated_at_idx ON ptab_cases USING btree (updated_at);
 
 
+SET search_path = public, pg_catalog;
+
+SET default_tablespace = '';
+
+--
+-- Name: unique_schema_migrations; Type: INDEX; Schema: public; Owner: -
+--
+
+CREATE UNIQUE INDEX unique_schema_migrations ON schema_migrations USING btree (version);
+
+
 SET search_path = acquiflow, pg_catalog;
 
 --
 -- Name: manual_assets manual_assets_audit; Type: TRIGGER; Schema: acquiflow; Owner: -
 --
 
+CREATE TRIGGER manual_assets_audit BEFORE INSERT OR DELETE OR UPDATE ON manual_assets FOR EACH ROW EXECUTE PROCEDURE acquiflow_audit.manual_assets_aud_tr_func();
+
 
 SET search_path = core, pg_catalog;
 
 --
+-- Name: file_types file_types_audit; Type: TRIGGER; Schema: core; Owner: -
+--
+
+CREATE TRIGGER file_types_audit BEFORE INSERT OR DELETE OR UPDATE ON file_types FOR EACH ROW EXECUTE PROCEDURE core_audit.file_types_aud_tr_func();
+
+
+--
+-- Name: lit_document_statuses lit_document_statuses_audit; Type: TRIGGER; Schema: core; Owner: -
+--
+
+CREATE TRIGGER lit_document_statuses_audit BEFORE INSERT OR DELETE OR UPDATE ON lit_document_statuses FOR EACH ROW EXECUTE PROCEDURE core_audit.lit_document_statuses_aud_tr_func();
+
+
+--
+-- Name: lit_document_types lit_document_types_audit; Type: TRIGGER; Schema: core; Owner: -
+--
+
+CREATE TRIGGER lit_document_types_audit BEFORE INSERT OR DELETE OR UPDATE ON lit_document_types FOR EACH ROW EXECUTE PROCEDURE core_audit.lit_document_types_aud_tr_func();
+
+
+--
+-- Name: lit_documents lit_documents_audit; Type: TRIGGER; Schema: core; Owner: -
+--
+
+CREATE TRIGGER lit_documents_audit BEFORE INSERT OR DELETE OR UPDATE ON lit_documents FOR EACH ROW EXECUTE PROCEDURE core_audit.lit_documents_aud_tr_func();
+
+
+--
+-- Name: lit_documents lit_documents_insert_timestamps; Type: TRIGGER; Schema: core; Owner: -
+--
+
+CREATE TRIGGER lit_documents_insert_timestamps BEFORE INSERT ON lit_documents FOR EACH ROW EXECUTE PROCEDURE insert_timestamps();
+
+
+--
+-- Name: lit_documents lit_documents_update_timestamp; Type: TRIGGER; Schema: core; Owner: -
+--
+
+CREATE TRIGGER lit_documents_update_timestamp BEFORE UPDATE ON lit_documents FOR EACH ROW EXECUTE PROCEDURE update_timestamp();
+
+
+--
 -- Name: pats pats_audit; Type: TRIGGER; Schema: core; Owner: -
 --
+
+CREATE TRIGGER pats_audit BEFORE INSERT OR DELETE OR UPDATE ON pats FOR EACH ROW EXECUTE PROCEDURE core_audit.pats_aud_tr_func();
 
 
 --
 -- Name: pats pats_insert_timestamps; Type: TRIGGER; Schema: core; Owner: -
 --
 
+CREATE TRIGGER pats_insert_timestamps BEFORE INSERT ON pats FOR EACH ROW EXECUTE PROCEDURE insert_timestamps();
+
+
 --
 -- Name: pats pats_update_timestamp; Type: TRIGGER; Schema: core; Owner: -
 --
+
+CREATE TRIGGER pats_update_timestamp BEFORE UPDATE ON pats FOR EACH ROW EXECUTE PROCEDURE update_timestamp();
+
 
 SET search_path = docdb, pg_catalog;
 
@@ -1145,6 +1739,7 @@ SET search_path = docdb, pg_catalog;
 -- Name: docdb_pats docdb_pats_audit; Type: TRIGGER; Schema: docdb; Owner: -
 --
 
+CREATE TRIGGER docdb_pats_audit BEFORE INSERT OR DELETE OR UPDATE ON docdb_pats FOR EACH ROW EXECUTE PROCEDURE docdb_audit.docdb_pats_aud_tr_func();
 
 
 SET search_path = ptab, pg_catalog;
@@ -1153,45 +1748,82 @@ SET search_path = ptab, pg_catalog;
 -- Name: ptab_case_detail_party_types ptab_case_detail_party_types_audit; Type: TRIGGER; Schema: ptab; Owner: -
 --
 
+CREATE TRIGGER ptab_case_detail_party_types_audit BEFORE INSERT OR DELETE OR UPDATE ON ptab_case_detail_party_types FOR EACH ROW EXECUTE PROCEDURE ptab_audit.ptab_case_detail_party_types_aud_tr_func();
 
 
 --
 -- Name: ptab_case_detail_party_types ptab_case_detail_pary_types_update_timestamp; Type: TRIGGER; Schema: ptab; Owner: -
 --
 
+CREATE TRIGGER ptab_case_detail_pary_types_update_timestamp BEFORE UPDATE ON ptab_case_detail_party_types FOR EACH ROW EXECUTE PROCEDURE update_timestamp();
+
 
 --
 -- Name: ptab_case_details ptab_case_details_audit; Type: TRIGGER; Schema: ptab; Owner: -
 --
+
+CREATE TRIGGER ptab_case_details_audit BEFORE INSERT OR DELETE OR UPDATE ON ptab_case_details FOR EACH ROW EXECUTE PROCEDURE ptab_audit.ptab_case_details_aud_tr_func();
 
 
 --
 -- Name: ptab_case_details ptab_case_details_update_timestamp; Type: TRIGGER; Schema: ptab; Owner: -
 --
 
+CREATE TRIGGER ptab_case_details_update_timestamp BEFORE UPDATE ON ptab_case_details FOR EACH ROW EXECUTE PROCEDURE update_timestamp();
 
 
 --
 -- Name: ptab_cases ptab_case_status_change; Type: TRIGGER; Schema: ptab; Owner: -
 --
 
+CREATE TRIGGER ptab_case_status_change BEFORE INSERT OR UPDATE ON ptab_cases FOR EACH ROW EXECUTE PROCEDURE case_status_change_tr_function();
 
 
 --
 -- Name: ptab_cases ptab_cases_audit; Type: TRIGGER; Schema: ptab; Owner: -
 --
 
+CREATE TRIGGER ptab_cases_audit BEFORE INSERT OR DELETE OR UPDATE ON ptab_cases FOR EACH ROW EXECUTE PROCEDURE ptab_audit.ptab_cases_aud_tr_func();
 
 
 --
 -- Name: ptab_cases ptab_cases_update_campaign; Type: TRIGGER; Schema: ptab; Owner: -
 --
 
+CREATE TRIGGER ptab_cases_update_campaign AFTER INSERT OR UPDATE ON ptab_cases FOR EACH ROW EXECUTE PROCEDURE update_campaign_tr_function();
 
 
 --
 -- Name: ptab_cases ptab_cases_update_timestamp; Type: TRIGGER; Schema: ptab; Owner: -
 --
+
+CREATE TRIGGER ptab_cases_update_timestamp BEFORE UPDATE ON ptab_cases FOR EACH ROW EXECUTE PROCEDURE update_timestamp();
+
+
+SET search_path = core, pg_catalog;
+
+--
+-- Name: lit_documents lit_documents_document_status_id_fkey; Type: FK CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_documents
+    ADD CONSTRAINT lit_documents_document_status_id_fkey FOREIGN KEY (document_status_id) REFERENCES lit_document_statuses(id);
+
+
+--
+-- Name: lit_documents lit_documents_file_type_id_fkey; Type: FK CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_documents
+    ADD CONSTRAINT lit_documents_file_type_id_fkey FOREIGN KEY (file_type_id) REFERENCES file_types(id);
+
+
+--
+-- Name: lit_documents lit_documents_lit_document_type_id_fkey; Type: FK CONSTRAINT; Schema: core; Owner: -
+--
+
+ALTER TABLE ONLY lit_documents
+    ADD CONSTRAINT lit_documents_lit_document_type_id_fkey FOREIGN KEY (lit_document_type_id) REFERENCES lit_document_types(id);
 
 
 SET search_path = document_ocr_service, pg_catalog;
@@ -1226,9 +1858,17 @@ ALTER TABLE ONLY ptab_case_details
 -- Name: ptab_cases ptab_cases_case_types_fk; Type: FK CONSTRAINT; Schema: ptab; Owner: -
 --
 
+ALTER TABLE ONLY ptab_cases
+    ADD CONSTRAINT ptab_cases_case_types_fk FOREIGN KEY (ptab_case_type_id) REFERENCES ptab_case_types(id);
+
+
 --
 -- Name: ptab_cases technology_centers_cases_fk; Type: FK CONSTRAINT; Schema: ptab; Owner: -
 --
+
+ALTER TABLE ONLY ptab_cases
+    ADD CONSTRAINT technology_centers_cases_fk FOREIGN KEY (tech_center) REFERENCES technology_centers(tech_center_number);
+
 
 --
 -- PostgreSQL database dump complete
@@ -1389,6 +2029,7 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20170710104900'),
 ('20170711122357'),
 ('20170711144947'),
-('20170718074744');
+('20170718074744'),
+('20170907085116');
 
 

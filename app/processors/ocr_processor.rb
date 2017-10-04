@@ -1,5 +1,5 @@
 class OCRProcessor
-  PROCESSOR_LIST = [DocumentOcrProcessor, PtabOcrProcessor]
+  PROCESSOR_LIST = [DocumentOcrProcessor, PtabOcrProcessor, LitDocumentOcrProcessor]
 
   def initialize
     @scheduler = Rufus::Scheduler.new
