@@ -18,4 +18,5 @@
 //= require dataTables/jquery.dataTables
 //= require dataTables/bootstrap/3/jquery.dataTables.bootstrap
 //= require jquery-fileupload/basic
+//= require select2-full
 //= require_tree .

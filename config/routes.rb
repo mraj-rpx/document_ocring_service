@@ -6,6 +6,10 @@ Rails.application.routes.draw do
     collection do
       get :upload_documents
       post :upload_new_documents
+      get :push_documents_to_queue
+      post :push_documents
+      get :core_lit_documents
+      get :ptab_documents
     end
 
     member do

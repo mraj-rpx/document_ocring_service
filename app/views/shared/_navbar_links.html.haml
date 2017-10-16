@@ -1,5 +1,14 @@
 %ul.nav.navbar-nav.navbar-right
   - if current_user
+    %li.dropdown
+      %a.dropdown-toggle#dropdown-menu1{href: '#', 'data-toggle' => 'dropdown'}
+        Actions
+        %b.caret
+      %ul.dropdown-menu{'aria-labelledby' => 'dropdown-menu1'}
+        %li
+          %a{href: upload_documents_documents_path} Upload New Documents
+        %li
+          %a{href: push_documents_to_queue_documents_path} Queue Litigation Documents
     %li
       = link_to current_user['name'], ''
     %li

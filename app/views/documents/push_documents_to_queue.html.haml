@@ -1,0 +1,21 @@
+.page-header
+  %h3 Queue Litigation Documents
+
+= form_tag(push_documents_documents_path, method: :post, class: 'queue-litigation-documents') do
+  .col-lg-8.queue-litigation-row
+    .col-lg-3
+      %label Lit Document ID:
+    .col-lg-9
+      %select.select2-autocomplete{'data-ajax--url' => core_lit_documents_documents_path, 'data-ajax--cache' => true,
+                                   name: 'core_lit_document_ids[]'}
+  .col-lg-8.queue-litigation-row
+    .col-lg-3
+      %label PTAB Case Detail ID:
+    .col-lg-9
+      %select.select2-autocomplete{'data-ajax--url' => ptab_documents_documents_path, 'data-ajax--cache' => true,
+                                   name: 'ptab_document_ids[]'}
+  .col-lg-8.queue-litigation-row-controls
+    .col-lg-1.col-lg-offset-9
+      = link_to 'Cancel', push_documents_to_queue_documents_path
+    .col-lg-2
+      = submit_tag 'Submit', class: 'submit-queue form-control'

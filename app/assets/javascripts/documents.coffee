@@ -20,3 +20,13 @@ $(document).on 'turbolinks:load', ->
     done: (e, data) ->
       $.each data.result.files, (index, file) ->
         $('<li/>').addClass('list-group-item').text(file.name).appendTo($('#uploaded-files'))
+    fail: (e, data) ->
+      alert('Could not upload the file and the error is: ' + data.response().errorThrown)
+
+  $('.select2-autocomplete').select2
+    theme: 'bootstrap'
+    maximumSelectionLength: -1
+    multiple: true
+    minimumInputLength: 2
+    maximumInputLength: 20
+    width: 'style'

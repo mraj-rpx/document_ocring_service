@@ -1,9 +1,10 @@
 module ApplicationHelper
   BOOTSTRAP_FLASH_MSG = {
     success: 'alert-success',
-    error: 'alert-error',
-    alert: 'alert-block',
-    notice: 'alert-info'
+    error: 'alert-danger',
+    alert: 'alert-info',
+    notice: 'alert-info',
+    warning: 'alert-warning'
   }
 
   def bootstrap_icon_for(flash_type)
@@ -11,6 +12,6 @@ module ApplicationHelper
   end
 
   def bootstrap_class_for(flash_type)
-    BOOTSTRAP_FLASH_MSG.fetch(flash_type, flash_type.to_s)
+    BOOTSTRAP_FLASH_MSG.fetch(flash_type.to_sym, flash_type.to_s)
   end
 end
