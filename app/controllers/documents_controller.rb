@@ -35,10 +35,19 @@ class DocumentsController < ApplicationController
   end
 
   def push_documents
-    LitDocument.where(id: params[:core_lit_document_ids]).update_all(needs_ocr: true) if params[:core_lit_document_ids].present?
-    PtabCaseDetail.where(id: params[:ptab_document_ids]).update_all(needs_ocr: true) if params[:ptab_document_ids].present?
+    if params[:core_lit_document_ids].present?
+      lit_documents = LitDocument.where(id: params[:core_lit_document_ids], document_status_id: LitDocument::EXISTING_DOCUMENT_STATUS)
+      docs_without_status_3 = params[:core_lit_document_ids].map(&:to_i) - lit_documents.map(&:id)
+      lit_documents.update_all(needs_ocr: true)
+    end
 
-    redirect_back(fallback_location: push_documents_to_queue_documents_path, flash: {alert: "Successfully push the core and PTAB litigation to OCR queue."})
+    PtabCaseDetail.where(id: params[:ptab_document_ids]).update_all(needs_ocr: true) if params[:ptab_document_ids].present?
+    notice_message =<<-EOF
+Successfully push the core and PTAB litigation documents to OCR queue, and below documents are not acquired \
+by litigation document service #{docs_without_status_3} and hence they have not pushed to OCR QUEUE. \
+Please take an appropriate action on this documents if needed.
+    EOF
+    redirect_back(fallback_location: push_documents_to_queue_documents_path, flash: {alert: notice_message})
   end
 
   def core_lit_documents

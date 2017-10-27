@@ -30,4 +30,9 @@
   .queue-litigation-row-controls {
     padding-top: 10px;
   }
+
+  .lit-documents-ocr-indicator:before {
+    content: "*";
+    color: red;
+  }
 }
