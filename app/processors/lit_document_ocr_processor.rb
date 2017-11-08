@@ -8,7 +8,7 @@ class LitDocumentOcrProcessor < OcrProcessorBase
       begin
         path = S3Downloader.new({s3_key: document.rpx_file_name, bucket: ENV['LIT_DOC_BUCKET']}).download
         ocr_content = DocsplitProcessor.new(path).process
-        ocr_text_s3_key = "#{SecureRandom.hex(16)}-lit-documents/#{document.id}-ocr-text.txt"
+        ocr_text_s3_key = "lit-documents/#{SecureRandom.hex(3)}/#{document.id}.txt"
         S3Uploader.new(ocr_content[:ocr_text]).save_to_s3(ocr_text_s3_key)
 
         document.update_attributes(ocr_text: ocr_content[:ocr_text], ocr_exception: nil,
