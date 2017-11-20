@@ -7,7 +7,7 @@ class OCRProcessor
 
   def schedule_ocr!
     PROCESSOR_LIST.each do |processor_klass|
-      @scheduler.every(processor_klass::FREQUENCY, {tag: processor_klass.to_s}) do
+      @scheduler.every(processor_klass::FREQUENCY, {tag: processor_klass.to_s, overlap: false}) do
         begin
           processor_klass.new.process!
           ActiveRecord::Base.connection_pool.release_connection

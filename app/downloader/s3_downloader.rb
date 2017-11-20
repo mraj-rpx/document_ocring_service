@@ -1,7 +1,7 @@
 class S3Downloader
   DEFAULT_THREAD_COUNT = 20
   DEFAULT_CHUNK_SIZE = 4096
-  MODE = 'get_range'
+  MODE = 'auto'
 
   def initialize(options = {})
     @s3_key = options[:s3_key]
