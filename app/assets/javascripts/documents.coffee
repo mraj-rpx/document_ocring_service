@@ -16,7 +16,12 @@ $(document).on 'turbolinks:load', ->
       ]
 
   $('#fileupload').fileupload
+    dropZone: $('#dropzone')
     dataType: 'json'
+    start: (e, data) ->
+      $("#dropzone").html("Upload stated...")
+    stop: (e, data) ->
+      $("#dropzone").html("Drop files here...")
     done: (e, data) ->
       $.each data.result.files, (index, file) ->
         $('<li/>').addClass('list-group-item').text(file.name).appendTo($('#uploaded-files'))
@@ -30,3 +35,26 @@ $(document).on 'turbolinks:load', ->
     minimumInputLength: 2
     maximumInputLength: 20
     width: 'style'
+
+  $('#dropzone').bind 'dragover', (e) ->
+    dropZone = $('#dropzone')
+    timeout = window.dropZoneTimeout
+    if timeout
+      clearTimeout timeout
+    else
+      dropZone.addClass 'in'
+    hoveredDropZone = $(e.target).closest(dropZone)
+    dropZone.toggleClass 'hover', hoveredDropZone.length
+    window.dropZoneTimeout = setTimeout((->
+      window.dropZoneTimeout = null
+      dropZone.removeClass 'in hover'
+    ), 100)
+
+  $('.switch-to-bulk-upload').on 'click', (e) ->
+    $parent = $(this).parents('.queue-litigation-row')
+    $parent.find('.select2-container').toggleClass('hidden')
+    $parent.find('.bulk-upload').toggleClass('hidden')
+
+    $linkText = if $(this).text() == 'Switch to Bulk Upload' then 'Switch to Autocomplete' else 'Switch to Bulk Upload'
+    $(this).text($linkText)
+    e.preventDefault()

@@ -17,3 +17,5 @@ AWS_SECRET_ACCESS_KEY=<aws-secret-access-key-id>
 AWS_REGION=<region>
 BUCKET=<bucket>
 PTAB_BUCKET=<ptab-bucket>
+LIT_DOC_OCR_PRIORITIES=1,2,3,4
+PTAB_DOC_OCR_PRIORITIES=1,2,3,4

@@ -2,24 +2,38 @@
   %h3 Queue Litigation Documents
 
 = form_tag(push_documents_documents_path, method: :post, class: 'queue-litigation-documents') do
-  .col-lg-8.queue-litigation-row
-    .col-lg-3
+  .col-lg-12.queue-litigation-row.litdocument-row
+    .col-lg-2
       %label Lit Document ID:
-    .col-lg-9
+    .col-lg-5
       %select.select2-autocomplete{'data-ajax--url' => core_lit_documents_documents_path, 'data-ajax--cache' => true,
                                    name: 'core_lit_document_ids[]'}
-  .col-lg-8.queue-litigation-row
-    .col-lg-3
+      %textarea.bulk-upload.hidden.form-control{name: 'lit_documents'}
+    .col-lg-2
+      = link_to 'Switch to Bulk Upload', '#', {class: 'switch-to-bulk-upload'}
+    .col-lg-1
+      %label Priority:
+    .col-lg-2
+      = select_tag 'lit_document_priority', options_for_select(lit_doc_ocr_priorities, 4), class: 'form-control'
+  .col-lg-12.queue-litigation-row.ptab-row
+    .col-lg-2
       %label PTAB Case Detail ID:
-    .col-lg-9
+    .col-lg-5
       %select.select2-autocomplete{'data-ajax--url' => ptab_documents_documents_path, 'data-ajax--cache' => true,
                                    name: 'ptab_document_ids[]'}
-  .col-lg-8.queue-litigation-row-controls
+      %textarea.bulk-upload.hidden.form-control{name: 'ptab_documents'}
+    .col-lg-2
+      = link_to 'Switch to Bulk Upload', '#', {class: 'switch-to-bulk-upload'}
+    .col-lg-1
+      %label Priority:
+    .col-lg-2
+      = select_tag 'ptab_document_priority', options_for_select(ptab_doc_ocr_priorities, 4), class: 'form-control'
+  .col-lg-12.queue-litigation-row-controls
     .col-lg-1.col-lg-offset-9
       = link_to 'Cancel', push_documents_to_queue_documents_path
     .col-lg-2
       = submit_tag 'Submit', class: 'submit-queue form-control'
-  .col-lg-8.queue-litigation-row-controls
+  .col-lg-12.queue-litigation-row-controls
     %h5
       %span.pull-right.lit-documents-ocr-indicator
         Lit documents will not be OCR'ed unless already downloaded from PACER.

@@ -1,7 +1,13 @@
 .page-header
   %h3 Upload Your Files
-.col-lg-12
+.col-lg-12.upload-files
   %input#fileupload.pull-right{type: 'file', name: 'files[]', data: {url: '/documents/upload_new_documents'}, multiple: true}
 .col-lg-12
-  %h5 Uploaded Files
+  %h3.upload-divider (OR Drag & Drop the files to below area.)
+.col-lg-12#dropzone.fade.well
+  Drop files here...
+
+.col-lg-12.uploaded-files
+  .page-header
+    %h4 Uploaded Files
   %ul.list-group#uploaded-files
