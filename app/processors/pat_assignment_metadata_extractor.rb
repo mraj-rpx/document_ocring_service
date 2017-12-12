@@ -1,15 +1,15 @@
 class PatAssignmentMetadataExtractor
   METADATA_REGEXP = {
-    correspondent_phone: /phone:/i,
-    correspondent_email: /email:/i,
-    correspondent_name: /correspondent name:/i,
-    correspondent_address_line_1: /address line 1:/i,
-    correspondent_address_line_2: /address line 2:/i,
-    correspondent_address_line_3: /address line 3:/i,
-    correspondent_address_line_4: /address line 4:/i,
-    submitter_name: /name of submitter:/i,
-    submitter_signature: /signature:/i,
-    submitter_date_signed: /date signed:/i
+    correspondent_phone: /phone:?/i,
+    correspondent_email: /email:?/i,
+    correspondent_name: /correspondent name:?/i,
+    correspondent_address_line_1: /address line 1:?/i,
+    correspondent_address_line_2: /address line 2:?/i,
+    correspondent_address_line_3: /address line 3:?/i,
+    correspondent_address_line_4: /address line 4:?/i,
+    submitter_name: /name of submitter:?/i,
+    submitter_signature: /signature:?/i,
+    submitter_date_signed: /date signed:?/i
   }
 
   def initialize(ocr_text)
@@ -37,21 +37,38 @@ class PatAssignmentMetadataExtractor
       field_value << value
     end
     field_value = field_value.join('\n')
+    format_meta_value(field_value, name)
+  end
 
-    if name == :submitter_date_signed
+  def format_meta_value(field_value, name)
+    formatted_value =
+    case name
+    when :submitter_date_signed
       matcher = field_value.match(/(\d{1,2})\/(\d{1,2})\/([0-9\s]{4,})/)
-      field_value = Date.parse("#{matcher[2]}/#{matcher[1]}/#{matcher[3].gsub(/\s/, '')}")
+      Date.parse("#{matcher[2]}/#{matcher[1]}/#{matcher[3].gsub(/\s/, '')}")
+    when :submitter_signature
+      matcher = field_value.match(/\/\w.+\//)
+      matcher[0]
+    when :correspondent_email
+      field_value.gsub(/\s/, '')
+    when :correspondent_phone
+      field_value.gsub(/[^0-9]/, '')
+    else
+      field_value
     end
-
-    field_value.gsub!(/\s/, '') if name == :correspondent_email
-    field_value.gsub!(/[^0-9]/, '') if name == :correspondent_phone
-    field_value
+    formatted_value
   end
 
   def collect_metadata_section_fields(ocr_text)
     metadata_start = ocr_text =~ /correspondence data/i
     metadata_end = ocr_text =~ /total attachments:/i
     meta_section = ocr_text[metadata_start...metadata_end].lines.map(&:strip).reject{ |line| line.blank? }
+
+    METADATA_REGEXP.each do |name, regex|
+      match_data = meta_section.find{ |data| data.match(regex) }
+      next if match_data.blank?
+      match_data << ':' if match_data[-1] != ':'
+    end
 
     correspon_name = meta_section.find{ |data| data.match(METADATA_REGEXP[:correspondent_name]) }
     index = meta_section.index(correspon_name)
