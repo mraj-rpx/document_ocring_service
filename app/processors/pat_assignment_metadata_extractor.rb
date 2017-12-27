@@ -47,8 +47,8 @@ class PatAssignmentMetadataExtractor
       matcher = field_value.match(/(\d{1,2})\/(\d{1,2})\/([0-9\s]{4,})/)
       Date.parse("#{matcher[2]}/#{matcher[1]}/#{matcher[3].gsub(/\s/, '')}")
     when :submitter_signature
-      matcher = field_value.match(/\/\w.+\//)
-      matcher[0]
+      matcher = field_value.match(/\/[\w\s].+\//)
+      matcher.present? ? matcher[0] : field_value
     when :correspondent_email
       field_value.gsub(/\s/, '')
     when :correspondent_phone
