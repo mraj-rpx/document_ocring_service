@@ -12,14 +12,22 @@ RSpec.describe PtabOcrProcessor do
   end
 
   describe 'process!' do
+    before(:each) do
+      allow(DocsplitProcessor).to receive(:new).and_return(DocsplitStruct.new)
+      allow_any_instance_of(S3Uploader).to receive(:save_to_s3)
+    end
     let!(:ptab_doc_1) { FactoryGirl.create(:ptab_case_detail, needs_ocr: true) }
 
     it 'should ocr the ptab documents which are marked as needs_ocr TRUE' do
-      allow_any_instance_of(S3Downloader).to receive(:download).and_return(File.join(Rails.root, 'spec/support/documents/test.pdf'))
+      pdf_file = File.open(File.join(Rails.root, 'spec/fixtures/documents/test.pdf'))
+      allow_any_instance_of(S3Downloader).to receive(:download).and_return(pdf_file)
+
       expect{
         PtabOcrProcessor.new.process!
         ptab_doc_1.reload
         expect(ptab_doc_1.needs_ocr).to be(false)
+        expect(ptab_doc_1.ocr_text_s3_path).to be_present
+        expect(ptab_doc_1.ocr_text).to eq('Text struct')
       }.to change{ ptab_doc_1.reload.ocr_text }
     end
 

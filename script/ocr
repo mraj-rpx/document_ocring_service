@@ -7,8 +7,8 @@ begin
   scheduler = OCRProcessor.new.schedule_ocr!
   scheduler.join
 rescue Rufus::Scheduler::NotRunningError => rufus_exception
-  Rails.logger.error(rufus_exception.message + "\n" + rufus_exception.backtrace.join("\n"))
+  Honeybadger.notify(rufus_exception)
 rescue => e
   scheduler.shutdown
-  Rails.logger.error("Time to shutdown the jobs due to the exception: #{e}")
+  Honeybadger.notify(e, context: {notice: 'Time to shutdown the jobs due to some issues.'})
 end

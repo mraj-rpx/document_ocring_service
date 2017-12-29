@@ -7,6 +7,12 @@ SET check_function_bodies = false;
 SET client_min_messages = warning;
 SET row_security = off;
 
+create schema if not exists acquiflow;
+create schema if not exists document_ocr_service;
+create schema if not exists core;
+create schema if not exists docdb;
+create schema if not exists ptab;
+
 SET search_path = acquiflow, pg_catalog;
 
 SET default_tablespace = '';

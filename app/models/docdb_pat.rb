@@ -1,3 +1,3 @@
 class DocdbPat < ApplicationRecord
-  self.table_name = 'docdb.docdb_pats'
+  self.table_name = 'docdb_pats'
 end

@@ -15,7 +15,7 @@ class OCRProcessor
           processor_klass.new.process!
           ActiveRecord::Base.connection_pool.release_connection
         rescue => exception
-          Rails.logger.error(exception)
+          Honeybadger.notify(exception, context: {processor: processor_klasss})
         end
       end
     end

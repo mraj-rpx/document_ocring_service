@@ -13,32 +13,37 @@ RSpec.describe LitDocumentOcrProcessor do
 
   describe 'process!' do
     before(:each) do
-      @document_statuses = FactoryGirl.create_list(:document_status, 6)
+      allow(DocsplitProcessor).to receive(:new).and_return(DocsplitStruct.new)
+      allow_any_instance_of(S3Uploader).to receive(:save_to_s3)
     end
 
-    let!(:lit_doc_1) { FactoryGirl.create(:ptab_case_detail, needs_ocr: true, document_status_id: 3) }
+    let!(:lit_doc_1) { FactoryGirl.create(:lit_document, needs_ocr: true, document_status_id: 3) }
 
     it 'should ocr the lit documents which are marked as needs_ocr TRUE' do
-      allow_any_instance_of(S3Downloader).to receive(:download).and_return(File.join(Rails.root, 'spec/support/documents/test.pdf'))
+      pdf_file = File.open(File.join(Rails.root, 'spec/fixtures/documents/test.pdf'))
+      allow_any_instance_of(S3Downloader).to receive(:download).and_return(pdf_file)
+
       expect{
         LitDocumentOcrProcessor.new.process!
         lit_doc_1.reload
         expect(lit_doc_1.needs_ocr).to be(false)
+        expect(lit_doc_1.ocr_text).to eq('Text struct')
+        expect(lit_doc_1.ocr_text_s3_path).to be_present
       }.to change{ lit_doc_1.reload.ocr_text }
     end
 
     it 'should not ocr the ptab documents which are marked as needs_ocr to FALSE' do
-      ptab_doc_1.update_attributes(needs_ocr: false)
+      lit_doc_1.update_attributes(needs_ocr: false)
       expect{
-        PtabOcrProcessor.new.process!
-      }.not_to change{ ptab_doc_1.reload.ocr_text }
+        LitDocumentOcrProcessor.new.process!
+      }.not_to change{ lit_doc_1.reload.ocr_text }
     end
 
     it 'should record the ocr exception when OCR process got failed' do
       allow_any_instance_of(S3Downloader).to receive(:download).and_raise('Could not download the file')
       expect{
-        PtabOcrProcessor.new.process!
-      }.to change{ ptab_doc_1.reload.ocr_exception }.to('Could not download the file').from(nil)
+        LitDocumentOcrProcessor.new.process!
+      }.to change{ lit_doc_1.reload.ocr_exception }.to('Could not download the file').from(nil)
     end
   end
 end

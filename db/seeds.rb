@@ -5,3 +5,12 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+doc_statuses = [
+  {description: 'Read state'},
+  {description: 'In progress'},
+  {description: 'Acquired'},
+  {description: 'Failed'},
+  {description: 'Not available'},
+  {description: 'Sealed'}
+]
+DocumentStatus.create(doc_statuses)

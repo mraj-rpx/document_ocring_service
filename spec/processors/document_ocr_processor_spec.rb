@@ -1,6 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe DocumentOcrProcessor do
+  before(:each) do
+    allow(DocsplitProcessor).to receive(:new).and_return(DocsplitStruct.new)
+  end
+
   describe 'constants' do
     it 'should have a constant FREQUENCY' do
       expect(DocumentOcrProcessor::FREQUENCY).to eq('1m')
@@ -30,7 +34,7 @@ RSpec.describe DocumentOcrProcessor do
     end
 
     it 'should record the error message when OCR is failed' do
-      allow_any_instance_of(DocsplitProcessor).to receive(:process).and_raise('Could not ocr the file')
+      allow_any_instance_of(DocsplitStruct).to receive(:process).and_raise('Could not ocr the file')
       expect{
         DocumentOcrProcessor.new.process!
         document_1.reload
@@ -45,8 +49,8 @@ RSpec.describe DocumentOcrProcessor do
       expect {
         DocumentOcrProcessor.new.process!
         document_3.reload
-        expect(document_3.status).to eq('failed')
-        expect(document_3.ocr_text).to be(nil)
+        expect(document_3.status).to eq('completed')
+        expect(document_3.ocr_text).to be_present
         expect(document_1.reload.status).to eq('completed')
       }.to change{ document_1.reload.ocr_text }
     end

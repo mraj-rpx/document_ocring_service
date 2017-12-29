@@ -10,7 +10,8 @@ class S3Downloader
 
   def download
     downloader = Aws::S3::FileDownloader.new({client: Aws::S3::Client.new})
-    path = Rails.root.join("tmp/#{SecureRandom.uuid}.pdf")
+    tempfile = Tempfile.new([SecureRandom.hex(2), '.pdf'])
+
     download_options = {
       thread_count: DEFAULT_THREAD_COUNT,
       chunk_size: DEFAULT_CHUNK_SIZE,
@@ -18,7 +19,7 @@ class S3Downloader
       key: @s3_key,
       mode: MODE
     }
-    downloader.download(path, download_options)
-    path
+    downloader.download(tempfile.path, download_options)
+    tempfile
   end
 end

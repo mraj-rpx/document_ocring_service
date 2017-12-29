@@ -1,22 +1,14 @@
 module Factories
-  class DocumentStatus < ApplicationRecord
-    self.table_name = 'core.lit_document_statuses'
-  end
-
   class FileType < ApplicationRecord
-    self.table_name = 'core.file_types'
+    self.table_name = 'file_types'
   end
 
   class LitDocumentType < ApplicationRecord
-    self.table_name = 'core.lit_document_types'
+    self.table_name = 'lit_document_types'
   end
 end
 
 FactoryGirl.define do
-  factory :document_status, class: Factories::DocumentStatus do
-    sequence(:id)
-  end
-
   factory :file_type, class: Factories::FileType do
     sequence(:id)
   end
@@ -28,7 +20,7 @@ FactoryGirl.define do
   factory :lit_document do
     url 'http://doc-url'
     rpx_file_name 'lits/1/a.pdf'
-    rpx_file_locatopn 'docs'
+    rpx_file_location 'docs'
 
     before(:create) do |lit_doc|
       file_type = FactoryGirl.create(:file_type)

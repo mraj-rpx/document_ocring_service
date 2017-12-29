@@ -13,6 +13,7 @@ class DocumentOcrProcessor < OcrProcessorBase
         # NOTE: Additional step here to extract patent details from the OCRed text
         PatentDetailExtractor.new([document]).extract!
       rescue => exception
+        Honeybadger.notify(exception, context: {document_id: document.id, document_type: Document})
         document.update_attributes(exception: exception, status: :failed)
       end
     end

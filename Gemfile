@@ -71,3 +71,4 @@ gem 'jquery-fileupload-rails'
 gem 'net-ldap'
 gem 'aws-sdk'
 gem "select2-rails"
+gem 'honeybadger'

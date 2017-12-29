@@ -1,10 +1,14 @@
 module Factories
   class PtabCaseDetailPartyType < ApplicationRecord
-    self.table_name = 'ptab.ptab_case_detail_party_types'
+    self.table_name = 'ptab_case_detail_party_types'
+  end
+
+  class TechnologyCenter < ApplicationRecord
+    self.table_name = 'technology_centers'
   end
 
   class PtabCase < ApplicationRecord
-    self.table_name = 'ptab.ptab_cases'
+    self.table_name = 'ptab_cases'
   end
 end
 
@@ -16,6 +20,12 @@ FactoryGirl.define do
     updated_by 'test_user'
   end
 
+  factory :tech_center, class: Factories::TechnologyCenter do
+    sequence(:id)
+    sequence(:tech_center_number)
+    description 'test description'
+  end
+
   factory :ptab_case, class: Factories::PtabCase do
     sequence(:id)
     case_num '12345'
@@ -25,6 +35,11 @@ FactoryGirl.define do
     tech_center 'test'
     created_by 'test_user'
     updated_by 'test_user'
+
+    before(:create) do |ptab_case|
+      tech_center = FactoryGirl.create(:tech_center)
+      ptab_case.tech_center = tech_center.tech_center_number
+    end
   end
 
   factory :ptab_case_detail do

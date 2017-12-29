@@ -1,3 +1,3 @@
 class CorePat < ApplicationRecord
-  self.table_name = 'core.pats'
+  self.table_name = 'pats'
 end
