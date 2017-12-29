@@ -41,6 +41,7 @@ group :development, :test do
   gem 'rb-fsevent', '0.10.2'
   gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'simplecov-rcov', require: false
 end
 
 group :development do
