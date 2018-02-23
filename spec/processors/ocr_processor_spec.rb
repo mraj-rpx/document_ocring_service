@@ -5,7 +5,8 @@ RSpec.describe OCRProcessor do
     it 'should have a constant PROCESSOR_LIST' do
       expect(OCRProcessor::PROCESSOR_LIST).to eq([DocumentOcrProcessor, PtabOcrProcessor,
                                                   LitDocumentOcrProcessor, PatAssignmentOcrProcessor,
-                                                  PatAssignmentMetadataProcessor])
+                                                  PatAssignmentMetadataProcessor, LitDocumentOngoingOcrProcessor,
+                                                  LitDocumentBackfillOcrProcessor])
     end
   end
 

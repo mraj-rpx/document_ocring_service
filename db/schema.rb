@@ -1,3 +1,4 @@
+# coding: utf-8
 # This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
@@ -5254,6 +5255,7 @@ ActiveRecord::Schema.define(version: 20171205073322) do
     t.string "case_key", limit: 30
     t.datetime "updated_at", precision: 6, null: false, comment: "Date and time the record was last updated. Controlled automatically by the database."
     t.datetime "created_at", precision: 6, null: false, comment: "Date and time the record was created. Controlled automatically by the database."
+    t.datetime "ocred_at", precision: 6, null: true, comment: "Date and time the document ocred. Controlled by user."
     t.integer "old_id"
     t.integer "no_of_pages"
     t.text "ocr_text"
@@ -8790,7 +8792,7 @@ ActiveRecord::Schema.define(version: 20171205073322) do
   end
 
   create_table "sf_to_core_column_mapping", id: false, force: :cascade do |t|
-    t.integer "map_id", default: :serial 
+    t.integer "map_id", default: :serial
     t.string "core_table_name", limit: 255
     t.string "core_column_name", limit: 255
     t.string "sf_column_name", limit: 255
