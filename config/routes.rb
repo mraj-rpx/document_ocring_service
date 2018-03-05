@@ -30,4 +30,9 @@ Rails.application.routes.draw do
       post :logout
     end
   end
+  resources :documents_ocr_statuses, only: [] do
+    collection do
+      get :lit_documents
+    end
+  end
 end

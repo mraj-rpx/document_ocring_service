@@ -6,7 +6,7 @@ class PatAssignmentMetadataProcessor < OcrProcessorBase
 
     assignments.each do |assignment|
       begin
-        s3_downloader = S3Downloader.new({s3_key: s3_ocr_url, bucket: ENV['AWS_OCR_BUCKET']})
+        s3_downloader = S3Downloader.new({s3_key: assignment.s3_ocr_url, bucket: ENV['AWS_OCR_BUCKET']})
         tempfile = s3_downloader.download
 
         pats_metadata = PatAssignmentMetadataExtractor.new(File.read(tempfile.path)).extract!

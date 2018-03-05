@@ -14,6 +14,18 @@ $(document).on 'turbolinks:load', ->
       { "mData": "view_patents", "bSortable": false}
       { "mData": "status", "bSortable": false}
       ]
+  $('#lit-documents').dataTable
+    sPaginationType: 'full_numbers'
+    iDisplayLength: 50
+    bJQueryUI: true
+    bProcessing: true
+    bServerSide: true
+    sAjaxSource: $('#lit-documents').data('source')
+    aoColumns: [
+      {"mData": "case_key"},
+      {"mData": "filed_date"},
+      {"mData": "total_docs"}
+    ]
 
   $('#fileupload').fileupload
     dropZone: $('#dropzone')

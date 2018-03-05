@@ -1,0 +1,25 @@
+.page-header
+  %h3 Litigation documents OCR status
+
+.ocr-docs-count-details.col-lg-5
+  %ul.list-group
+    %li.list-group-item.text-primary
+      No. of cases OCR'ed
+      %span.badge
+        = @presenter.lit_docs_ocred_count
+    %li.list-group-item.text-danger
+      No. of cases yet to be OCR'ed
+      %span.badge
+        = @presenter.lit_docs_ocrable_count
+
+.ocred-cass-list.col-lg-12
+  .page-header
+    %h3 OCRed Cases List
+
+  %table.table.table-striped.table-bordered#lit-documents{data: {source: "#{lit_documents_documents_ocr_statuses_url}"}}
+    %thead
+      %tr
+        %th Case key
+        %th Filed date
+        %th #of documents
+    %tbody
