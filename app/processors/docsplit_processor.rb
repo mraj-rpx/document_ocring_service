@@ -3,7 +3,7 @@ class DocsplitProcessor < Docsplit::TextExtractor
   SCANNED_PDF = 'scanned_pdf'
   PLAIN_PDF = 'plain_pdf'
 
-  def initialize(pdf)
+  def initialize(pdf, ocr_options = {})
     @pdf = Docsplit.ensure_pdfs(pdf)[0]
     @pages = 'all'
     @output = Rails.root.join("tmp/TESSERACT/#{SecureRandom.uuid}")
@@ -11,6 +11,7 @@ class DocsplitProcessor < Docsplit::TextExtractor
     @pdf_name = File.basename(@pdf, File.extname(@pdf))
     @tempdir = Rails.root.join("tmp/TESSERACT/#{SecureRandom.uuid}")
     @pages_to_ocr = []
+    @ocr_options = ocr_options
   end
 
   def process
@@ -54,7 +55,7 @@ class DocsplitProcessor < Docsplit::TextExtractor
   end
 
   def extract_text_from_tiff_images(tiff_file_base_path, text_file_base_path)
-    options = '-l eng -psm 11'
+    options = "-l eng -psm #{@ocr_options[:psm] || 11}"
 
     run("parallel -j#{ENV['TOTAL_CONCURRENT_JOBS_FOR_OCR'].to_i} tesseract #{tiff_file_base_path}_{}.tif #{text_file_base_path}_{} #{options} 2>&1 ::: #{@pages_to_ocr.join(' ')}")
     # @pages_to_ocr.each { |page| clean_text("#{text_file_base_path}_#{page}.txt") }
