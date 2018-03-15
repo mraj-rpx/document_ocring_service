@@ -3,6 +3,6 @@ class LitDocumentOcrProcessor < OcrProcessorBase
 
   def process!
     documents = LitDocument.ocrable_docs.limit(LIMIT)
-    documents.each {|document| lit_doc_ocr(document)}
+    documents.each {|document| lit_doc_ocr(document, {save_ocr_text_to_db: true})}
   end
 end
