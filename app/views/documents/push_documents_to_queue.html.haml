@@ -5,6 +5,7 @@
   .col-lg-12.queue-litigation-row.litdocument-row
     .col-lg-2
       %label Lit Document ID:
+      %span.lit-documents-ocr-indicator
     .col-lg-5
       %select.select2-autocomplete{'data-ajax--url' => core_lit_documents_documents_path, 'data-ajax--cache' => true,
                                    name: 'core_lit_document_ids[]'}
@@ -34,6 +35,10 @@
     .col-lg-2
       = submit_tag 'Submit', class: 'submit-queue form-control'
   .col-lg-12.queue-litigation-row-controls
-    %h5
-      %span.pull-right.lit-documents-ocr-indicator
+    .col-lg-6.col-lg-offset-6
+      %h5
         Lit documents will not be OCR'ed unless already downloaded from PACER.
+    .col-lg-6.col-lg-offset-6
+      %h5
+        %b
+          For Bulk Upload, use comma-separated lists.
