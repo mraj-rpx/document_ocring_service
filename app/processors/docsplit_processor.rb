@@ -47,7 +47,7 @@ class DocsplitProcessor < Docsplit::TextExtractor
   end
 
   def convert_pages_to_tiff_image(base_path)
-    options = "-despeckle +adjoin -limit memory 256Mib -limit map 512Mib -density 150 -colorspace GRAY"
+    options = "-despeckle +adjoin -limit memory 256Mib -limit map 512Mib -density 300 -colorspace GRAY"
     run("parallel -j#{ENV['TOTAL_CONCURRENT_JOBS_FOR_OCR'].to_i} gm convert #{options} '#{Docsplit::ESCAPE[@pdf]}\\[$(({} - 1))\\]' -quality 100 '#{base_path}_{}.tif' 2>&1 ::: #{@pages_to_ocr.join(' ')}")
   rescue => exception
     raise exception unless exception.message =~ /pagesize/i
