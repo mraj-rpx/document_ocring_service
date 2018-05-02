@@ -10,8 +10,8 @@ class LitDocument < ApplicationRecord
 
   scope :ocrable_documents, -> {
     joins(docket_entry_documents_maps: [docket_entry: [:lit]])
-      .where('document_status_id = ? AND lit_document_type_id IN (?) AND ocr_text_s3_path IS NULL AND ocr_text IS NULL',
-             EXISTING_DOCUMENT_STATUS, DOCUMENT_STATUS)
+      .where('document_status_id = ? AND lit_document_type_id IN (?) AND ocr_text_s3_path IS NULL AND (ocr_text IS NULL OR ocr_text = ?)',
+             EXISTING_DOCUMENT_STATUS, DOCUMENT_STATUS, '-- NOT OCR-ED --')
       .order('core.lits.filed_date DESC, core.lits.id')
   }
   scope :ocrable_docs_ongoing, -> { self.ocrable_documents.where('core.lits.filed_date >= ?', FROM_DATE) }

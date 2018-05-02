@@ -2,7 +2,7 @@
 require File.expand_path('../../config/environment',  __FILE__)
 require File.expand_path('../../config/boot',  __FILE__)
 
-documents = LitDocument.where('document_status_id = ? AND ocr_text is NOT NULL AND ocr_text_s3_path IS NULL', 3)
+documents = LitDocument.where('document_status_id = ? AND ocr_text != ? AND ocr_text_s3_path IS NULL', 3, '-- NOT OCR-ED --')
 documents.find_each(batch_size: 200) do | document|
   begin
     ocr_text_s3_key = "lit-documents/#{SecureRandom.hex(3)}/#{document.id}.txt"
