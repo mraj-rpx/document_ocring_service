@@ -7,7 +7,7 @@ class OcrProcessorBase
       tempfile = s3_downloader.download
 
       ocr_content = DocsplitProcessor.new(tempfile.path).process
-      ocr_text_s3_key = "lit-documents/#{SecureRandom.hex(3)}/#{document.id}.txt"
+      ocr_text_s3_key = document.ocr_text_s3_path || "lit-documents/#{SecureRandom.hex(3)}/#{document.id}.txt"
       S3Uploader.new(ocr_content[:ocr_text]).save_to_s3(ocr_text_s3_key)
 
       attrs = {ocr_text_s3_path: ocr_text_s3_key, ocr_exception: nil, ocred_at: Time.now, needs_ocr: false}
