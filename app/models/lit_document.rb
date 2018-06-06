@@ -14,6 +14,6 @@ class LitDocument < ApplicationRecord
              EXISTING_DOCUMENT_STATUS, DOCUMENT_STATUS, '-- NOT OCR-ED --')
       .order('core.lits.filed_date DESC, core.lits.id')
   }
-  scope :ocrable_docs_ongoing, -> { self.ocrable_documents.where('core.lits.filed_date >= ?', FROM_DATE) }
+  scope :ocrable_docs_ongoing, -> { self.ocrable_documents }
   scope :ocrable_docs_backfilling, -> { self.ocrable_documents.where('core.lits.filed_date < ?', FROM_DATE) }
 end

@@ -1,5 +1,6 @@
 class DocumentsOcrStatusPresenter < Struct.new(:options)
   attr_accessor :ocred_count, :ocrable_count, :ocred_cases
+  DOCUMENT_TYPE_IDS = [1,34,4,5,7,21,11,10,33,13,75,16,17,18]
 
   def initialize(options = {})
     self.options = options
@@ -9,11 +10,11 @@ class DocumentsOcrStatusPresenter < Struct.new(:options)
   end
 
   def lit_docs_ocred_count
-    @lit_docs_ocred_count ||= fetch_record(:count, true)
+    @ocred_count ||= LitDocument.where('lit_document_type_id in (?) AND document_status_id = ? AND ocr_text_s3_path IS NOT NULL', DOCUMENT_TYPE_IDS, 3).count
   end
 
   def lit_docs_ocrable_count
-    @lit_docs_ocrable_count ||= fetch_record(:count, false)
+    @ocrable_count ||= LitDocument.where('lit_document_type_id in (?) AND document_status_id <> ?', DOCUMENT_TYPE_IDS, 3).count
   end
 
   def lit_docs_ocred_cases
