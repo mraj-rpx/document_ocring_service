@@ -1,0 +1,13 @@
+#!/usr/bin/env ruby
+require File.expand_path('../../config/environment',  __FILE__)
+require File.expand_path('../../config/boot',  __FILE__)
+
+begin
+  while true
+    OCRProcessor::PROCESSOR_LIST.each do |processor_klass|
+      processor_klass.new.process!
+    end
+  end
+rescue => exception
+  Honeybadger.notify(exception, context: {notice: 'Stopped the OCR process.'})
+end
