@@ -1,0 +1,13 @@
+.page-header
+  %h3 PTAB documents OCR status
+
+.ocr-docs-count-details.col-lg-5
+  %ul.list-group
+    %li.list-group-item.text-primary
+      No. of documents OCR'ed
+      %span.badge
+        = @ptab_ocred_count
+    %li.list-group-item.text-danger
+      No. of documents yet to be OCR'ed
+      %span.badge
+        = @ptab_ocrable_count

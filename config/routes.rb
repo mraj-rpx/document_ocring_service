@@ -33,6 +33,7 @@ Rails.application.routes.draw do
   resources :documents_ocr_statuses, only: [] do
     collection do
       get :lit_documents
+      get :ptab_documents
     end
   end
 end

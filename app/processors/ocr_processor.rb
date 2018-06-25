@@ -2,7 +2,8 @@ class OCRProcessor
   PROCESSOR_LIST = [
     DocumentOcrProcessor, PtabOcrProcessor, LitDocumentOcrProcessor,
     PatAssignmentOcrProcessor, PatAssignmentMetadataProcessor,
-    LitDocumentOngoingOcrProcessor, LitDocumentBackfillOcrProcessor
+    LitDocumentOngoingOcrProcessor, LitDocumentBackfillOcrProcessor,
+    PtabBackfillOcrProcessor
   ]
 
   def initialize
