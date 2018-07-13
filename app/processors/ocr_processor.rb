@@ -3,7 +3,7 @@ class OCRProcessor
     DocumentOcrProcessor, PtabOcrProcessor, LitDocumentOcrProcessor,
     PatAssignmentOcrProcessor, PatAssignmentMetadataProcessor,
     LitDocumentOngoingOcrProcessor, LitDocumentBackfillOcrProcessor,
-    PtabBackfillOcrProcessor
+    PtabBackfillOcrProcessor, AppDataOcrProcessor
   ]
 
   def initialize
