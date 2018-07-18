@@ -62,6 +62,7 @@ class PatAssignmentMetadataExtractor
   def collect_metadata_section_fields(ocr_text)
     metadata_start = ocr_text =~ /correspondence data/i
     metadata_end = ocr_text =~ /total attachments:/i
+    return [] if metadata_start.blank? || metadata_end.blank?
     meta_section = ocr_text[metadata_start...metadata_end].lines.map(&:strip).reject{ |line| line.blank? }
 
     METADATA_REGEXP.each do |name, regex|
