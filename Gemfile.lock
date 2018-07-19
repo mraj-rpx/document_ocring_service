@@ -302,6 +302,7 @@ DEPENDENCIES
   capistrano-rvm
   carrierwave
   coffee-rails (~> 4.2)
+  concurrent-ruby
   docsplit
   dotenv-rails
   factory_girl_rails

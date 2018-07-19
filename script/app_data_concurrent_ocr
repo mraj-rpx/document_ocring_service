@@ -1,0 +1,88 @@
+#!/usr/bin/env ruby
+require File.expand_path('../../config/environment',  __FILE__)
+require File.expand_path('../../config/boot',  __FILE__)
+
+NUMBER_OF_THREADS = 20
+THREAD_POOL = Concurrent::FixedThreadPool.new(NUMBER_OF_THREADS)
+
+class AppDataConcurrentOcr
+  attr_reader :pair_ocr
+
+  def initialize(pair_ocr)
+    @pair_ocr = pair_ocr
+  end
+
+  def ocr!
+    app_s3_path = @pair_ocr.app_s3_path.split('/')[-1]
+    zip_name = app_s3_path.gsub('.zip', '')
+    ocr_s3_path = "#{zip_name}-ocr.zip"
+
+    pdf_zip = S3Downloader.new({s3_key: @pair_ocr.app_s3_path.split('/')[-1], bucket: ENV['PAIR_BUCKET']}).download
+    ocr_zip = S3Downloader.new({s3_key: @pair_ocr.ocr_s3_path.split('/')[-1], bucket: ENV['PAIR_BUCKET']}).download if @pair_ocr.ocr_s3_path.present?
+    zip_utility = ZipUtility.new(pdf_zip.path, ocr_zip.try(:path), zip_name)
+
+    # OCR the new pdfs
+    ftrs = []
+
+    zip_utility.ocrable_pdfs.each do |pdf_file|
+      ftrs << Concurrent::Future.execute(executor: THREAD_POOL) do |th|
+        process_ocr(pdf_file, zip_utility)
+      end
+    end
+    succ_statuses = ftrs.map(&:value).compact
+    fail_statuses = ftrs.map(&:value).compact
+
+    ocred_zip_dir = zip_utility.generate_ocr_zip
+
+    # Update OCR ZIP to S3
+    s3_uploader = S3Uploader.new({}).save_file_to_s3(ocr_s3_path, ocred_zip_dir, {bucket_name: ENV['PAIR_BUCKET']})
+    @pair_ocr.update_attributes(ocr_s3_path: "#{ENV['PAIR_BUCKET']}/#{ocr_s3_path}", needs_ocr: false, ocred_at: Time.now)
+    puts "Completed OCR for APP DATA ID: '#{@pair_ocr.id}' and the OCR S3 PATH is '#{ENV['PAIR_BUCKET']}/#{ocr_s3_path}'"
+  rescue => exception
+    @pair_ocr.update_attributes(needs_ocr: true)
+    Honeybadger.notify(exception, context: {pair_ocr_id: @pair_ocr.id, document_type: PairOcr})
+  ensure
+    zip_utility.clear_tmp_files if zip_utility.present?
+    FileUtils.rm(pdf_zip.path) if pdf_zip.present?
+    FileUtils.rm(ocr_zip.path) if ocr_zip.present?
+  end
+
+  def process_ocr(pdf_file, zip_utility)
+    pdf_file_name = pdf_file.split('/')[-1]
+    ocr_file_name = pdf_file_name.gsub('.pdf', '.txt')
+
+    # Save the OCRed PDF text to .txt file
+    ocr_content = DocsplitProcessor.new(pdf_file, {psm: 3}).process
+    zip_utility.add_ocred_file(ocr_file_name, ocr_content[:ocr_text])
+  end
+end
+
+begin
+  while true
+    pair_ocrs = PairOcr.ocrable_documents
+    futures = []
+
+    pair_ocrs.each do |pair_ocr|
+      futures << Concurrent::Future.execute(executor: THREAD_POOL) do |f|
+        concurrent_ocr = AppDataConcurrentOcr.new(pair_ocr)
+        concurrent_ocr.ocr!
+        concurrent_ocr
+      end
+    end
+
+    success = futures.map(&:value).compact
+    errors = futures.map(&:reason).compact
+
+    success_pair_ids = success.map(&:pair_ocr).map(&:id)
+    error_pair_ids = success.map(&:pair_ocr).map(&:id)
+
+    puts "Error PAIR OCR IDS: #{error_pair_ids}" if error_pair_ids.present?
+    puts "Success PAIR OCR IDS: #{success_pair_ids}, and proceeding next iteration"
+  end
+rescue => exception
+  Honeybadger.notify(exception, context: {notice: 'Stopped the OCR process.'})
+end
+
+puts "Shutting the CONCURRENT RUBY connection pool..."
+THREAD_POOL.shutdown
+THREAD_POOL.wait_for_termination

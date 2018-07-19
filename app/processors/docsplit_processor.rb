@@ -57,7 +57,7 @@ class DocsplitProcessor < Docsplit::TextExtractor
   def extract_text_from_tiff_images(tiff_file_base_path, text_file_base_path)
     options = "-l eng -psm #{@ocr_options[:psm] || 11}"
 
-    run("parallel -j#{ENV['TOTAL_CONCURRENT_JOBS_FOR_OCR'].to_i} tesseract #{tiff_file_base_path}_{}.tif #{text_file_base_path}_{} #{options} 2>&1 ::: #{@pages_to_ocr.join(' ')}")
+    run("parallel -j#{ENV['TOTAL_CONCURRENT_JOBS_FOR_OCR'].to_i} tesseract '#{tiff_file_base_path}_{}.tif' '#{text_file_base_path}_{}' #{options} 2>&1 ::: #{@pages_to_ocr.join(' ')}")
     # @pages_to_ocr.each { |page| clean_text("#{text_file_base_path}_#{page}.txt") }
   end
 

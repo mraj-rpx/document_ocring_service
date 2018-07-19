@@ -73,3 +73,4 @@ gem 'net-ldap'
 gem 'aws-sdk'
 gem "select2-rails"
 gem 'honeybadger'
+gem 'concurrent-ruby'
