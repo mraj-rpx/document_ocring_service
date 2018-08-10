@@ -1,0 +1,2 @@
+class PtabOcrProcessor:
+    def initialize():
