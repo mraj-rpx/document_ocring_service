@@ -141,21 +141,36 @@ class OcrProcess:
         return list(pdf_files.difference(ocr_files))
 
     def start_ocr_a_pdf(self, pdf):
-        return OcrAPdf(self.zip_dir, self.pdf_unzip_dir, self.ocr_unzip_dir, pdf).process()
+        ocr_status = {"status": "SUCCESS"}
+
+        try:
+            txt_file = OcrAPdf(self.zip_dir, self.pdf_unzip_dir, self.ocr_unzip_dir, pdf).process()
+            ocr_status["txt_file"] = txt_file
+        except:
+            ocr_status["status"] = "FAILED"
+        return ocr_status
 
     def ocr(self):
         try:
             new_files = self.ocrable_pdfs()
             pdf_txt_dict = {}
+            ocred_all_the_files = True
+
             with concurrent.futures.ThreadPoolExecutor(max_workers=PDF_MAX_POOL) as pdf_pool:
-                for pdf_file, txt_file in zip(new_files, pdf_pool.map(self.start_ocr_a_pdf, new_files)):
-                    pdf_txt_dict[pdf_file] = txt_file
+                for pdf_file, ocr_status in zip(new_files, pdf_pool.map(self.start_ocr_a_pdf, new_files)):
+                    if ocr_status["status"] == "SUCCESS":
+                        pdf_txt_dict[pdf_file] = ocr_status["txt_file"]
+                    else:
+                        ocred_all_the_files = False
+
             if os.path.exists(self.ocr_zip_file):
                 os.remove(self.ocr_zip_file)
             self.execute_cmd("cd {0}; zip -r {1} {2}".format(self.zip_dir, self.ocr_zip_name, self.ocr_zip_name.replace(".zip", "")))
             self.execute_cmd("aws s3 cp --profile default {0} s3://rpx-public-pair/{1}/".format(self.ocr_zip_file, self.actual_dir_name))
             shutil.rmtree(self.zip_dir)
-            return {'ocred_files': list(map(lambda x: "{0}.pdf".format(x), new_files)), 'ocr_s3_path': "rpx-public-pair/{0}/{1}".format(self.actual_dir_name, self.ocr_zip_name)}
+            ocred_files = list(map(lambda x: "{0}.pdf".format(x), pdf_txt_dict.keys()))
+            ocr_s3_path = "rpx-public-pair/{0}/{1}".format(self.actual_dir_name, self.ocr_zip_name)
+            return {'ocred_files': ocred_files, 'ocr_s3_path': ocr_s3_path, "ocred_all_the_files": ocred_all_the_files}
         except ImageFileWrapperDirNotExistException as img_wrap_dir_not_exist:
             shutil.rmtree(self.zip_dir)
             return IMG_WRAPPER_DIR_NOT_EXIST_STATUS
@@ -188,8 +203,9 @@ if __name__ == '__main__':
                         print(ocr_status)
                         ocr_s3_path = ocr_status['ocr_s3_path']
                         ocred_files = tuple(ocr_status['ocred_files'])
+                        ocred_all_the_files = ocr_status["ocred_all_the_files"]
 
-                        cur.execute(sql_update, (ocr_s3_path, False, pair_id))
+                        cur.execute(sql_update, (ocr_s3_path, ocred_all_the_files, pair_id))
                         cur.execute(img_sql_update, (True, app_data_id, ocred_files))
                         conn.commit()
                 else:
