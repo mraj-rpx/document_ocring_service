@@ -26,6 +26,7 @@ DB_USER = 'db-user'
 DB_PASS = 'db-pass'
 
 IMG_WRAPPER_DIR_NOT_EXIST_STATUS = 1
+NO_NEW_FILES_STATUS = 2
 
 class ImageFileWrapperDirNotExistException(Exception):
     def __init__(self, message):
@@ -153,6 +154,11 @@ class OcrProcess:
     def ocr(self):
         try:
             new_files = self.ocrable_pdfs()
+
+            if not new_files:
+                shutil.rmtree(self.zip_dir)
+                return NO_NEW_FILES_STATUS
+
             pdf_txt_dict = {}
             needs_ocr = False
 
@@ -188,6 +194,8 @@ if __name__ == '__main__':
         """
         sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
         img_sql_update = "UPDATE pair.image_file_wrapper SET is_ocred = %s, updated_at = CURRENT_TIMESTAMP WHERE app_data_id = %s AND file_name IN %s"
+        needs_ocr_update_sql = "UPDATE pair.pair_ocr SET needs_ocr = %s WHERE id = %s"
+
         cur.execute(sql_select, (True, RECORD_LIMIT, RECORD_OFFSET))
         tuple_vals = cur.fetchall()
         print("Fetched tuples: {0}".format(tuple_vals))
@@ -198,16 +206,19 @@ if __name__ == '__main__':
                 if ocr_status:
                     if ocr_status == IMG_WRAPPER_DIR_NOT_EXIST_STATUS:
                         print("IMG FILE wrapper dir does not exist for PAIR ID: '{0}'".format(pair_id))
+                    elif ocr_status == NO_NEW_FILES_STATUS:
+                        print("No new files available for OCR, for PAIR ID: '{0}'").format(pair_id)
+                        cur.execute(needs_ocr_update_sql, (False, pair_id))
+                        conn.commit()
                     else:
                         print("Completed OCR for the PAIR ID: '{0}'".format(pair_id))
                         print(ocr_status)
                         ocr_s3_path = ocr_status['ocr_s3_path']
                         ocred_files = tuple(ocr_status['ocred_files'])
                         needs_ocr = ocr_status["needs_ocr"]
-                        cur.execute(sql_update, (ocr_s3_path, needs_ocr, pair_id))
 
-                        if ocred_files:
-                            cur.execute(img_sql_update, (True, app_data_id, ocred_files))
+                        cur.execute(sql_update, (ocr_s3_path, needs_ocr, pair_id))
+                        cur.execute(img_sql_update, (True, app_data_id, ocred_files))
                         conn.commit()
                 else:
                     print("Could not OCR the PAIR: '{0}'".format(tup))
