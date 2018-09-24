@@ -5,10 +5,10 @@ from IPython import embed
 def join_matched_list(matched_list):
     return ''.join(matched_list[0])
 
-def join_words(matched_list):
-    return ' '.join(matched_list)
-
 def strip_ref_name(matched_list):
+    return matched_list[0].strip()
+
+def format_doc_num(matched_list):
     return matched_list[0].strip()
 
 _start_1 = pp.CaselessLiteral("claims")
@@ -45,46 +45,15 @@ _rejection_reason = pp.Or([
     pp.CaselessLiteral('unpatentable')
 ])
 
-_ref_prefix_str = pp.Or([
-    pp.CaselessLiteral('by'),
-    pp.CaselessLiteral('over')
-])
-_ref_name = pp.Word(pp.alphas + '.').setParseAction(join_words)
-
-
-_in_view_ref_prefix_str = pp.Or([
-    pp.CaselessLiteral('in view of')
-])
-
 _in_further_view_ref_prefix_str_1 =  pp.And([
     pp.CaselessLiteral('as applied to claim'),
     pp.Word(pp.nums),
     pp.CaselessLiteral('above, and further in view of')
 ])
 
-
-_in_further_view_ref_prefix_str = pp.Or([
-    _in_further_view_ref_prefix_str_1
-])
-
-_ref_doc_num_1 = pp.Word(pp.nums + ',')
-_ref_doc_num_2 = pp.And([
-    pp.Word(pp.alphas),
-    pp.Word(pp.nums),
-    pp.Literal('/'),
-    pp.Word(pp.nums),
-    pp.Word(pp.alphas),
-    pp.Word(pp.nums)
-])
-_ref_doc_num_3 = pp.And([
-    pp.CaselessLiteral('patent no').suppress(),
-    _ref_doc_num_1
-])
-
-_ref_doc_num = pp.Or([
-    _ref_doc_num_1,
-    pp.Group(_ref_doc_num_2).setParseAction(join_matched_list),
-    _ref_doc_num_3
+_ref_doc_num = pp.And([
+    pp.Optional(pp.CaselessLiteral('patent no')).suppress(),
+    pp.Word(pp.alphanums + ' /,')
 ])
 
 start = pp.Or([_start_1, _start_2, _start_3]).suppress()
@@ -103,57 +72,53 @@ rejection_reason = pp.And([
     _rejection_reason.setResultsName('rejection_reason')
 ])
 
-ref_name = pp.And([
-    _ref_prefix_str.suppress(),
-    _ref_name.setResultsName('ref_name')
-])
-
 ref_doc_num = pp.And([
     pp.Literal('(').suppress(),
-    _ref_doc_num.setResultsName('ref_doc_num'),
+    _ref_doc_num.setResultsName('ref_doc_num').setParseAction(format_doc_num),
     pp.Literal(')').suppress(),
-])
-
-in_view_ref_name = pp.And([
-    _in_view_ref_prefix_str.suppress(),
-    _ref_name.setResultsName('in_view_ref_name')
 ])
 
 in_view_ref_doc_num = pp.And([
     pp.Literal('(').suppress(),
-    _ref_doc_num.setResultsName('in_view_ref_doc_num'),
+    _ref_doc_num.setResultsName('in_view_ref_doc_num').setParseAction(format_doc_num),
     pp.Literal(')').suppress(),
-])
-
-in_further_view_ref_name = pp.And([
-    _in_further_view_ref_prefix_str.suppress(),
-    _ref_name.setResultsName('in_further_view_ref_name')
 ])
 
 in_further_view_ref_doc_num = pp.And([
     pp.Literal('(').suppress(),
-    _ref_doc_num.setResultsName('in_further_view_ref_doc_num'),
+    _ref_doc_num.setResultsName('in_further_view_ref_doc_num').setParseAction(format_doc_num),
     pp.Literal(')').suppress(),
 ])
 
+ref_prefix_str = pp.Or([
+    pp.CaselessLiteral('by'),
+    pp.CaselessLiteral('over')
+])
+
+in_view_ref_prefix_str = pp.Or([
+    pp.CaselessLiteral('in view of')
+])
+
+in_further_view_ref_prefix_str = pp.Or([
+    _in_further_view_ref_prefix_str_1
+])
 
 in_view_skip_to = pp.And([
     pp.Optional(ref_doc_num),
-    _in_view_ref_prefix_str
+    in_view_ref_prefix_str.suppress()
 ])
 
 in_view_ref_name_skip_to = pp.And([
     pp.Optional(in_view_ref_doc_num),
-    _in_further_view_ref_prefix_str
+    in_further_view_ref_prefix_str.suppress()
 ])
-
 
 grammer_1 = pp.And([
     start,
     claim_nums,
     rejection_ground,
     rejection_reason,
-    _ref_prefix_str,
+    ref_prefix_str.suppress(),
     pp.SkipTo(ref_doc_num).setResultsName('ref_name').setParseAction(strip_ref_name),
     ref_doc_num
 ])
@@ -163,33 +128,19 @@ grammer_2 = pp.And([
     claim_nums,
     rejection_ground,
     rejection_reason,
-    _ref_prefix_str,
+    ref_prefix_str.suppress(),
     pp.SkipTo(in_view_skip_to).setResultsName('ref_name').setParseAction(strip_ref_name),
     in_view_skip_to,
     pp.SkipTo(in_view_ref_doc_num).setResultsName('in_view_ref_name').setParseAction(strip_ref_name),
     in_view_ref_doc_num
 ])
 
-""" ORIGINAL
 grammer_3 = pp.And([
     start,
     claim_nums,
     rejection_ground,
     rejection_reason,
-    ref_name,
-    pp.Optional(ref_doc_num),
-    in_view_ref_name,
-    pp.Optional(in_view_ref_doc_num),
-    in_further_view_ref_name,
-    in_further_view_ref_doc_num
-])
-"""
-grammer_3 = pp.And([
-    start,
-    claim_nums,
-    rejection_ground,
-    rejection_reason,
-    _ref_prefix_str,
+    ref_prefix_str.suppress(),
     pp.SkipTo(in_view_skip_to).setResultsName('ref_name').setParseAction(strip_ref_name),
     in_view_skip_to,
     pp.SkipTo(in_view_ref_name_skip_to).setResultsName('in_view_ref_name').setParseAction(strip_ref_name),

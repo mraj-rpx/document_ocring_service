@@ -69,7 +69,7 @@ class FrpTest(unittest.TestCase):
             'ref_name': 'Huang',
             'in_view_ref_name': 'Amro',
             'in_further_view_ref_name': 'Newell',
-            'in_further_view_ref_doc_num': 'US2001/0142759A1'
+            'in_further_view_ref_doc_num': 'US 2001/0142759 A1'
         }]
         self.assertEqual(data, result)
 
@@ -119,7 +119,7 @@ class FrpTest(unittest.TestCase):
             'ref_name': 'Huang',
             'in_view_ref_name': 'Witkowski',
             'in_further_view_ref_name': 'Newell',
-            'in_further_view_ref_doc_num': 'US2002/0142759A1'
+            'in_further_view_ref_doc_num': 'US 2002/0142759 A1'
         }]
         self.assertEqual(data, result)
 
@@ -134,7 +134,7 @@ class FrpTest(unittest.TestCase):
             'rejection_ground': '102(e)',
             'rejection_reason': 'anticipated',
             'ref_name': 'Chen',
-            'ref_doc_num': 'US2005/0240672A1'
+            'ref_doc_num': 'US 2005/0240672 A1'
         }]
         self.assertEqual(data, result)
 
