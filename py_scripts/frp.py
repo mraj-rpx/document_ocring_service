@@ -25,17 +25,24 @@ _claim_nums_by_range_group = pp.Group(_claim_nums_by_range)
 _claim_nums_by_num_or_range = pp.Or([_claim_nums_by_comma, _claim_nums_by_range_group])
 _claim_nums = pp.ZeroOrMore(_claim_nums_by_num_or_range)
 
+_is_literal = pp.CaselessLiteral('is')
+_are_literal = pp.CaselessLiteral('are')
+
+_rejected_str = pp.And([
+    pp.Or([pp.And([_is_literal, pp.Literal('/'), _are_literal]), _is_literal, _are_literal]).suppress(),
+    pp.CaselessLiteral('rejected')
+])
 
 _rejection_ground_prefix_str = pp.And([
-    pp.Or([pp.CaselessLiteral('is'), pp.CaselessLiteral('are')]).suppress(),
-    pp.CaselessLiteral('rejected under'),
+    _rejected_str,
+    pp.CaselessLiteral('under'),
     pp.Word(pp.nums),
     pp.CaselessLiteral('U.S.C.')
 ])
 
 _rejection_ground_prefix_str_100 = pp.And([
-    pp.Or([pp.CaselessLiteral('is'), pp.CaselessLiteral('are')]).suppress(),
-    pp.CaselessLiteral('rejected on the ground of'),
+    _rejected_str,
+    pp.CaselessLiteral('on the ground of'),
 ])
 
 _rejection_ground_type = pp.Or([
@@ -50,7 +57,11 @@ _rejection_code = pp.And([
     pp.Literal(')')
 ])
 
-_rejection_reason_prefix_str = pp.CaselessLiteral('as being')
+_rejection_reason_prefix_str = pp.And([
+    pp.Optional(pp.CaselessLiteral('as')),
+    pp.CaselessLiteral('being')
+])
+
 _rejection_reason = pp.Or([
     pp.CaselessLiteral('anticipated'),
     pp.CaselessLiteral('unpatentable')
@@ -262,7 +273,14 @@ grammer_5 = pp.And([
     ref_doc_num_100
 ])
 
+grammer_6 = pp.And([
+    start,
+    claim_nums,
+    _rejected_str
+])
+
 grammers = [
+    grammer_6,
     grammer_4,
     grammer_1,
     grammer_2,
@@ -298,9 +316,27 @@ def parse(rej_str):
             rr['claim_nums'] = c_nums
             data[st] = rr
         # print("FINISHING A GRAMMER===========")
+        # embed()
     # embed()
     return list(data.values())
 
+_rejection_date = pp.And([
+    pp.Word(pp.nums, exact=4),
+    _hyphen,
+    pp.Word(pp.nums, exact=2),
+    _hyphen,
+    pp.Word(pp.nums, exact=2),
+])
+
+filename_parser = pp.And([
+    pp.Word(pp.nums).setResultsName('app_num'),
+    _hyphen,
+    pp.Combine(_rejection_date).setResultsName('rejection_date')
+])
+
+def parse_rej_date(filename):
+    result = filename_parser.parseString(filename)
+    return result.asDict()
 """
 Claims 50-51 are rejected under 35 U.S.C. 102(e) as being anticipated by Huang (6,362,748)
 """

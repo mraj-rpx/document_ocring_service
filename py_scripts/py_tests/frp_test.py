@@ -161,10 +161,7 @@ class FrpTest(unittest.TestCase):
             text = ff.read()
         data = frp.parse(text)
         result = [{
-            'claim_nums': [149, 150, 151],
-            'rejection_ground': '103(a)',
-            'rejection_reason': 'unpatentable',
-            'ref_name': 'Ogawa et al'
+            'claim_nums': [148, 149, 150, 151]
         },
         {
             'claim_nums': [148],
@@ -172,6 +169,12 @@ class FrpTest(unittest.TestCase):
             'rejection_reason': 'anticipated',
             'ref_name': 'Ogawa et al',
             'ref_doc_num': '5,437,894'
+        },
+        {
+            'claim_nums': [149, 150, 151],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Ogawa et al'
         }]
         self.assertEqual(data, result)
 
@@ -183,10 +186,7 @@ class FrpTest(unittest.TestCase):
             text = ff.read()
         data = frp.parse(text)
         result = [{
-            'claim_nums': [139, 140, 141, 149, 150, 151],
-            'rejection_ground': '103(a)',
-            'rejection_reason': 'unpatentable',
-            'ref_name': 'Ogawa et al'
+            'claim_nums': [138, 139, 140, 141, 151]
         },
         {
             'claim_nums': [138, 148],
@@ -194,6 +194,13 @@ class FrpTest(unittest.TestCase):
             'rejection_reason': 'anticipated',
             'ref_name': 'Ogawa et al',
             'ref_doc_num': '5,437,894'
+        },
+        {
+            'claim_nums': [139, 140, 141, 149, 150, 151],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Ogawa et al'
+
         }]
         self.assertEqual(data, result)
 
@@ -205,6 +212,9 @@ class FrpTest(unittest.TestCase):
             text = ff.read()
         data = frp.parse(text)
         result = [{
+            'claim_nums': [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 44, 45]
+        },
+        {
             'claim_nums': [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 44, 45],
             'rejection_ground': '102(e)',
             'rejection_reason': 'anticipated',
@@ -225,6 +235,54 @@ class FrpTest(unittest.TestCase):
             'rejection_ground': 'nonstatutory double patenting',
             'rejection_reason': 'unpatentable',
             'ref_doc_num': '8,332,203'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTNF with format of ON THE GROUND OF NONSATURATORY
+    """
+    def test_fr_for_ctnf_format_TEST_FROM_XLS_1(self):
+        text = 'Claim(s) 1,5,6,10,14,16,21,28,31-37 and 43-45 is/are rejected.'
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [1, 5, 6, 10, 14, 16, 21, 28, 31, 32, 33, 34, 35, 36, 37, 43, 44, 45]
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTNF with format of ON THE GROUND OF NONSATURATORY
+    """
+    def test_fr_for_ctnf_format_TEST_FROM_XLS_2(self):
+        text = 'Claims 1,5,6,7,17,20,26,28,31-37 and 43-45 are rejected under 35 U.S.C. 102(b) as being anticipated by Barenwald et al (Patent No 5,782,371).'
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [1, 5, 6, 7, 17, 20, 26, 28, 31, 32, 33, 34, 35, 36, 37, 43, 44, 45],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Barenwald et al',
+            'ref_doc_num': '5,782,371'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTFR
+    """
+    def test_fr_for_ctnf_format_5(self):
+        with open('ctfr_files/10913441-2006-10-17-00002-CTFR.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [148, 149, 150, 151]
+        },
+        {
+            'claim_nums': [148],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Ogawa et al',
+            'ref_doc_num': '5,437,894'
+        },
+        {
+            'claim_nums': [149, 150, 151]
         }]
         self.assertEqual(data, result)
 

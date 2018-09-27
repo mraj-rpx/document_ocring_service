@@ -1,0 +1,296 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+ 
+
+UNITED STATES DEPARTNIEN T OF COMNIERCE
+United States Patent and Trademark Office
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313- 1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO. |
+12/317,727 12/29/2008 Leigh M. Rothschild Rothschild—6 CON 2942
+1218 7590 09/16/2010 | l
+EXAMINER
+HESPOS & PORCO LLP
+110 West 40th Street WOO, ISAAC M
+Suite 2501 ART UNIT PAPER NUMBER
+NEW YORK, NY 10018 | l l
+2166
+| MAIL DATE | DELIVERY MODE |
+09/16/2010 PAPER
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+
+The time period for reply, if any, is set in the attached communication.
+
+PTOL—90A (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+
+12/317,727 ROTHSCHILD, LEIGH M.
+Office Action Summary Examiner Art Unit
+
+ISAAC M. WOO 2166
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event however may a reply be timely filed
+
+after SIX (6) MONTHS from the mailing date of this communication.
+- If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+1)|Z| Responsive to communication(s) filed on 07 Sthember 2010.
+2a)|:| This action is FINAL. 2b)|Z| This action is non-final.
+3)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 O.G. 213.
+
+Disposition of Claims
+
+4)|Z| Claim(s) 10-21 44 and 45 is/are pending in the application.
+4a) Of the above claim(s) _ is/are withdrawn from consideration.
+5)|:| Claim(s) _ is/are allowed.
+6)|Z| Claim(s) 10-21 44 and 45 is/are rejected.
+7)|:| Claim(s) _ is/are objected to.
+8)|:| Claim(s) _ are subject to restriction and/or election requirement.
+
+ 
+
+ 
+
+Application Papers
+
+9)|:| The specification is objected to by the Examiner.
+10)|:| The drawing(s) filed on is/are: a)|:| accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+
+ 
+
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)|:| The oath or declaration is objected to by the Examiner. Note the attached Office Action or form PTO-152.
+
+Priority under 35 U.S.C. § 119
+
+12)|:| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:| AII b)|:| Some * c)|:| None of:
+1.|:| Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No.
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) |Z| Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) D Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mai| Date. _
+
+3) IZI Information Disclosure Statement(s) (PTO/SB/08) 5) D Notice of Informal Patent Application
+Paper No(s)/Mai| Date M. 6) D Other: _
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL-326 (Rev. 08-06) Office Action Summary Part of Paper No./Mai| Date 20100914
+
+Application/Control Number: 12/317,727 Page 2
+Art Unit: 2166
+
+DETAILED ACTION
+
+1. This action is response to the application filed on September 07, 2010. Claims
+
+10-21 and 44-45 are presented for examination.
+
+2. Claims 1-9 and 22-43 are canceled. Claims 10-21 and 44-45 are pending.
+
+Claim Rejections - 35 USC § 102
+
+3. The following is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that
+
+form the basis for the rejections under this section made in this Office action:
+
+A person shall be entitled to a patent unless —
+
+(e) the invention was described in (1) an application for patent, published under section 122(b), by
+another filed in the United States before the invention by the applicant for patent or (2) a patent
+granted on an application for patent by another filed in the United States before the invention by the
+applicant for patent, except that an international application filed under the treaty defined in section
+351 (a) shall have the effects for purposes of this subsection of an application filed in the United States
+only if the international application designated the United States and was published under Article 21 (2)
+of such treaty in the English language.
+
+4. Claims 10-21 and 44-45 are rejected under 35 U.S.C. 102(e) as being
+
+anticipated by Steensma et al (US Pub. No. 2004/0135902).
+
+With respect to claims 10, Steensma teaches receiving at least one digital image
+
+file at an imaging web server coupled to the network along with information associated
+
+Application/Control Number: 12/317,727 Page 3
+Art Unit: 2166
+
+to the at least one digital image (sections 0033, 0041 -0042, 0055-0060); parsing the
+associated information and encoding the associated information as an identifier for the
+at least one image (sections 0032-0033, 0036-0038, 0046-0048); and storing the at
+least one image and the identifier in a database coupled to theimaging web server
+
+(sections 0033, 0041-0042, 0055-0060).
+
+With respect to claims 11, Steensma teaches at least one of a location of the
+imaging web server, a customer identification number, a date image was taken and a
+
+picture sequence number (sections 0033, 0041 -0042, 0055-0060).
+
+With respect to claims 12, Steensma teaches printing the at least one digital
+
+image with the identifier (sections 0004, 0033, 0041-0042, 0055-0060).
+
+With respect to claims 13, Steensma teaches receiving the identifier of at least
+one digital image and at least one request; querying the database to retrieve a record
+for the at least one digital image based on the identifier; and processing the at least one
+request with the information in the record associated to the at least one digital image
+
+(sections 0033, 0041-0042, 0055-0060).
+
+Application/Control Number: 12/317,727 Page 4
+Art Unit: 2166
+
+With respect to claims 14, Steensma teaches displaying of the at least one digital
+image in a particular sequence, printing of the at least one digital image, e-maiIing of the
+at least one digital image or storing the at least one digital image on a second server
+
+coupled to the Internet (sections 0033, 0041-0042, 0055-0060, 0004).
+
+With respect to claims 15, Steensma teaches name of the image, a time the
+image was taken, location the image was taken at, author/publisher of the image,
+subject matter of the image and keyword for the image (sections 0033, 0041-0042,
+
+0055-0060).
+
+With respect to claims 16, Steensma teaches name of the imaging web server
+
+(sections 0033, 0041-0042, 0055-0060).
+
+With respect to claims 17, Steensma teaches receiving a search request;
+querying the database with the search request; retrieving at least one image matching
+the search request; and presenting the at least one image to a user (sections 0061-
+
+0062)
+
+Application/Control Number: 12/317,727 Page 5
+Art Unit: 2166
+
+With respect to claims 18, Steensma teaches positioning a hot spot on the at
+least one image; and selecting the hot spot, wherein upon selection the associated
+
+information is presented to the user (sections 0061-0062).
+
+With respect to claims 19, Steensma teaches positioning a hot spot on the at
+least one image; and selecting the hot spot, wherein upon selection the user is linked to
+
+at least a second server storing the at least one image (sections 0061-0062).
+
+With respect to claim 20, Steensma teaches receiving a user request of the at
+least one image; and processing the user request with the associated information of the
+
+at least one image (sections 0061 -0062).
+
+With respect to claim 21, Steensma teaches he user request is e-mailing of
+the at least one image, purchasing of the at least one image; resizing of the at least one
+image, playing of associated audio or video of the at least one image, printing of the at
+least one image, or simultaneously sharing of the at least one image with at least a
+
+second user (sections 0061 -0062).
+
+Application/Control Number: 12/317,727 Page 6
+Art Unit: 2166
+
+With respect to claim 44, Steensma teaches identifier is an alphanumeric
+
+string (sections 0036-0039).
+
+With respect to claim 45, Steensma teaches identifier is a barcode (sections
+
+0032-000036).
+
+Application/Control Number: 12/317,727 Page 7
+Art Unit: 2166
+
+Conclusion
+
+5. Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to ISAAC M. WOO whose telephone number is (571 )272-
+4043. The examiner can normally be reached on 9:00-5:30.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Hosain T. AIam can be reached on (571) 272-3978. The fax phone number
+for the organization where this application or proceeding is assigned is 571 -273-8300.
+
+Information regarding the status of an application may be obtained from the
+Patent Application Information Retrieval (PAIR) system. Status information for
+published applications may be obtained from either Private PAIR or Public PAIR.
+Status information for unpublished applications is available through Private PAIR only.
+For more information about the PAIR system, see http://pair-direct.uspto.gov. Should
+you have questions on access to the Private PAIR system, contact the Electronic
+Business Center (EBC) at 866-217-9197 (toII-free). If you would like assistance from a
+USPTO Customer Service Representative or access to the automated information
+
+system, call 800-786-9199 (IN USA OR CANADA) or 571-272-1000.
+
+/Isaac M. Woo/
+Primary Examiner, Art Unit 2166
+
+Application/Control Number: 12/317,727 Page 8
+Art Unit: 2166
+

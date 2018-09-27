@@ -134,5 +134,45 @@ class FinalRejectionParserTest(unittest.TestCase):
             'in_further_view_doc_num': 'US 2001/0048749 A1'
         }
         self.assertEqual(data[0], record_1)
+
+    def test_fr_with_simple_anticipated(self):
+        text = "Claim 1 is rejected under 35 U.S.C. 102(e) as being anticipated by Chen (US 2005/0240672 A1)"
+        tree = self.frp.parse(text)
+        data = tree.children
+        record_1 = {
+            'claim_nums': [1],
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Chen',
+            'ref_doc_num': 'US 2005/0240672 A1'
+        }
+        self.assertEqual(data[0], record_1)
+
+    def test_fr_with_ref_name_mutliple_words(self):
+        text = "Claims 1,5,6,7,17,20,26,28,31-37 and 43-45 are rejected under 35 U.S.C. 102(b) as being anticipated by Barenwald et al (Patent No 5,782,371)"
+        tree = self.frp.parse(text)
+        data = tree.children
+        record_1 = {
+            'claim_nums': [1,5,6,7,17,20,26,28,31,32,33,34,35,36,37,43,44,45],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Barenwald et al',
+            'ref_doc_num': '5,782,371'
+        }
+        self.assertEqual(data[0], record_1)
+
+    def test_fr_with_claim_num_range(self):
+        text = "Anti pattern Claims 1,2,5-7 and 9 are rejected under 35 U.S.C. 102(b) as being anticipated by Orikassa(US 2021102119414 A1)"
+        tree = self.frp.parse(text)
+        data = tree.children
+        record_1 = {
+            'claim_nums': [1, 2, 5, 6, 7, 9],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Orikassa',
+            'ref_doc_num': 'US 2021102119414 A1'
+        }
+        self.assertEqual(data[0], record_1)
+
 if __name__ == '__main__':
     unittest.main()
