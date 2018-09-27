@@ -153,5 +153,80 @@ class FrpTest(unittest.TestCase):
         }]
         self.assertEqual(data, result)
 
+    """
+    Should parse the CTNF with format of "With ref_doc_num and without ref_doc_num"
+    """
+    def test_fr_for_ctnf_format_1(self):
+        with open('ctnf_files/10913441-2006-03-09-00006-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [149, 150, 151],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Ogawa et al'
+        },
+        {
+            'claim_nums': [148],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Ogawa et al',
+            'ref_doc_num': '5,437,894'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTNF with format of specified data in this TEST
+    """
+    def test_fr_for_ctnf_format_2(self):
+        with open('ctnf_files/10913441-2007-09-27-00003-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [139, 140, 141, 149, 150, 151],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Ogawa et al'
+        },
+        {
+            'claim_nums': [138, 148],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Ogawa et al',
+            'ref_doc_num': '5,437,894'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTNF with format of ''
+    """
+    def test_fr_for_ctnf_format_3(self):
+        with open('ctnf_files/12317727-2010-09-16-00007-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 44, 45],
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Steensma et al',
+            'ref_doc_num': 'US Pub. No. 2004/0135902'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTNF with format of ON THE GROUND OF NONSATURATORY
+    """
+    def test_fr_for_ctnf_format_4(self):
+        with open('ctnf_files/13673692-2013-11-06-00006-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': list(range(1, 44)),
+            'rejection_ground': 'nonstatutory double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '8,332,203'
+        }]
+        self.assertEqual(data, result)
+
 if __name__ == '__main__':
     unittest.main()
