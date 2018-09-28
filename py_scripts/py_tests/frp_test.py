@@ -282,9 +282,129 @@ class FrpTest(unittest.TestCase):
             'ref_doc_num': '5,437,894'
         },
         {
-            'claim_nums': [149, 150, 151]
+            'claim_nums': [149, 150, 151],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Ogawa et  al as applied to claim 148 above, and ﬁlrther in View of the follOwing comments'
         }]
         self.assertEqual(data, result)
 
+    """
+    Should parse the CTFR
+    """
+    def test_fr_for_ctnf_format_6(self):
+        text = "Claim 1, 5, 6, 10, 20, 32-34, 36, 37, 43 and 45 are rejected under 35 U.S.C. 102(b) as being anticipated by Baerenwald et al (Patent no. 5,782,371)."
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [1,5,6,10,20,32,33,34,36,37,43,45],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Baerenwald et al',
+            'ref_doc_num': '5,782,371'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTFR
+    """
+    def test_fr_for_ctnf_format_7(self):
+        text = "Claims 1, 2, 5-7 and 9 are rejected under 35 U.S.C. 102(b) as being anticipated by Orikasa (US 20020119414 A1)."
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [1,2,5,6,7,9],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Orikasa',
+            'ref_doc_num': 'US 20020119414 A1'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTFR
+    """
+    def test_fr_for_ctnf_format_without_doc_kind_code(self):
+        text = "Claims 1, 2, 5-13 and 16-19 are rejected under 35 U.S.C. 102(b) as being anticipated by Christoff et al (US 6071119)."
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 17, 18, 19],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Christoff et al',
+            'ref_doc_num': 'US 6071119'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTFR
+    """
+    def test_fr_for_ctnf_format_without_doc_kind_code_with_in_view_ref(self):
+        text = "Claims 52-59 and 62 are rejected under 35 U.S.C. 102(b) as being unpatentable over Inoue et al. (US 5,553,347) in view of Bell et al. (US 6,018,886)."
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [52, 53, 54, 55, 56, 57, 58, 59, 62],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Inoue et al.',
+            'ref_doc_num': '5,553,347',
+            'in_view_ref_name': 'Bell et al.',
+            'in_view_ref_doc_num': '6,018,886'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the 103 IN VIEW
+    """
+    def test_fr_for_103_in_view_1(self):
+        with open('ctnf_files/13052759-2012-01-10-00008-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': list(range(1, 720))
+        },
+        {
+            'claim_nums': [1, 3, 4, 5, 9, 10, 11, 12, 13, 14, 15],
+            'rejection_ground': 'nonstatutory obviousness- type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '7909603'
+        },
+        {
+            'claim_nums': [19],
+            'rejection_ground': '112'
+        },
+        {
+            'claim_nums': [1, 2, 5, 6, 7, 9],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Orikasa',
+            'ref_doc_num': 'US 20020119414 A1'
+        },
+        {
+            'claim_nums': [1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 17, 18, 19],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Christoff et al',
+            'ref_doc_num': 'US 6071119'
+
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Christof',
+            'claim_nums': [3, 4, 14, 15]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Orikasa',
+            'claim_nums': [3, 4, 6, 7]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Orikasa',
+            'in_view_ref_name': 'Christof',
+            'claim_nums': [6, 7, 8]
+        }]
+        self.assertEqual(data, result)
 if __name__ == '__main__':
     unittest.main()

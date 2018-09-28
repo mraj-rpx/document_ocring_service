@@ -45,16 +45,28 @@ _rejection_ground_prefix_str_100 = pp.And([
     pp.CaselessLiteral('on the ground of'),
 ])
 
+_rejection_ground_type_1 = pp.originalTextFor(pp.And([
+    pp.CaselessLiteral('nonstatutory'),
+    pp.Optional(pp.And([
+        pp.CaselessLiteral('obviousness'),
+        _hyphen,
+        pp.CaselessLiteral('type'),
+    ])),
+    pp.CaselessLiteral('double'),
+    pp.CaselessLiteral('patenting')
+]))
+
 _rejection_ground_type = pp.Or([
-    pp.CaselessLiteral('nonstatutory obviousness-type double patenting'),
-    pp.CaselessLiteral('nonstatutory double patenting')
+    _rejection_ground_type_1
 ])
 
 _rejection_code = pp.And([
-    pp.Word(pp.nums),
-    pp.Literal('('),
-    pp.Word(pp.alphas, exact=1),
-    pp.Literal(')')
+    pp.Word(pp.nums, exact=3),
+    pp.Optional(pp.And([
+        pp.Literal('('),
+        pp.Word(pp.alphas, exact=1),
+        pp.Literal(')')
+    ]))
 ])
 
 _rejection_reason_prefix_str = pp.And([
@@ -76,14 +88,21 @@ _in_further_view_ref_prefix_str_1 =  pp.And([
 ])
 
 _ref_doc_num_prepend_options = pp.Or([
-    pp.CaselessLiteral('patent no'),
+    pp.And([
+        pp.CaselessLiteral('patent'),
+        pp.Or([
+            pp.CaselessLiteral('no'),
+            pp.CaselessLiteral('no.')
+        ])
+    ]),
     pp.And([
         pp.CaselessLiteral('u'),
         pp.Optional(pp.CaselessLiteral('.')),
         pp.CaselessLiteral('s.'),
         pp.CaselessLiteral('patent'),
         pp.Optional(pp.CaselessLiteral('no.'))
-    ])
+    ]),
+    pp.CaselessLiteral('us')
 ])
 
 _ref_doc_num_1 = pp.Combine(pp.And([
@@ -95,7 +114,7 @@ _ref_doc_num_1 = pp.Combine(pp.And([
 ]))
 
 _ref_doc_num_2 = pp.originalTextFor(pp.Combine(pp.And([
-    pp.Word(pp.alphas),
+    pp.CaselessLiteral('us'),
     pp.Word(pp.nums),
     pp.Literal('/'),
     pp.Word(pp.nums),
@@ -117,18 +136,43 @@ _ref_doc_num_4 = pp.originalTextFor(pp.Combine(pp.And([
     pp.Word(pp.nums)
 ]), adjacent=False))
 
+
+_ref_doc_num_5 = pp.originalTextFor(pp.Combine(pp.And([
+    pp.CaselessLiteral('us'),
+    pp.Word(pp.nums),
+    pp.Word(pp.alphas, exact=1),
+    pp.Word(pp.nums)
+]), adjacent=False))
+
+_ref_doc_num_6 = pp.originalTextFor(pp.Combine(pp.And([
+    pp.CaselessLiteral('us'),
+    pp.Word(pp.nums)
+]), adjacent=False))
+
+_ref_doc_num_7 = pp.And([
+    _ref_doc_num_prepend_options.suppress(),
+    pp.Word(pp.nums)
+])
+
 _ref_doc_num = pp.Or([
     _ref_doc_num_1,
     _ref_doc_num_2,
     _ref_doc_num_3,
-    _ref_doc_num_4
+    _ref_doc_num_4,
+    _ref_doc_num_5,
+    _ref_doc_num_6,
+    _ref_doc_num_7
 ])
 
 _ref_doc_num_100_prefix_100 = pp.And([
     pp.CaselessLiteral('over claim'),
     pp.Optional(pp.CaselessLiteral('s')),
     _claim_nums,
-    pp.CaselessLiteral('of'),
+    pp.Optional(pp.And([
+        pp.CaselessLiteral('and'),
+        _claim_nums
+    ])),
+    pp.CaselessLiteral('of')
 ])
 
 _following_comments = pp.Or([
@@ -209,15 +253,14 @@ further_following = pp.And([
     _following_comments
 ])
 
-_ref_name = pp.Word(pp.alphas + '.')
+skip_to_next_first_dot = pp.Literal('.')
 
-ref_name = pp.And([
-    _ref_name,
-    pp.Optional(_ref_name),
-    pp.Optional(_ref_name),
-    pp.Optional(_ref_name),
-    pp.Optional(_ref_name)
+_in_view_of_prefix_str_for_103_1 = pp.CaselessLiteral('and in view of')
+
+in_view_of_prefix_str_for_103 = pp.Or([
+    _in_view_of_prefix_str_for_103_1
 ])
+
 
 grammer_1 = pp.And([
     start,
@@ -279,8 +322,43 @@ grammer_6 = pp.And([
     _rejected_str
 ])
 
+# grammer_7 should be executed before grammer_1, so that if doc num exist then it will get overrided
+grammer_7 = pp.And([
+    start,
+    claim_nums,
+    rejection_ground,
+    rejection_reason,
+    ref_prefix_str.suppress(),
+    pp.SkipTo(skip_to_next_first_dot, failOn=in_view_of_prefix_str_for_103).setResultsName('ref_name').setParseAction(strip_ref_name),
+    skip_to_next_first_dot
+])
+
+
+# grammer_8 should be executed after grammer_7
+grammer_8 = pp.And([
+    start,
+    claim_nums,
+    rejection_ground,
+    rejection_reason,
+    ref_prefix_str.suppress(),
+    pp.SkipTo(in_view_of_prefix_str_for_103, failOn=grammer_6).setResultsName('ref_name').setParseAction(strip_ref_name),
+    in_view_of_prefix_str_for_103,
+    pp.SkipTo(skip_to_next_first_dot).setResultsName('in_view_ref_name').setParseAction(strip_ref_name),
+    skip_to_next_first_dot
+])
+
+# Grammer_9 should be immediate after grammer 6 to capture rejection ground
+grammer_9 = pp.And([
+    start,
+    claim_nums,
+    rejection_ground
+])
+
 grammers = [
     grammer_6,
+    grammer_9,
+    grammer_7,
+    grammer_8,
     grammer_4,
     grammer_1,
     grammer_2,
