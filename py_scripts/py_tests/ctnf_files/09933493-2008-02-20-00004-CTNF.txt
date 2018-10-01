@@ -1,0 +1,735 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE ﬂ
+
+UNITED STATES DEPARTMENT OF COMMEﬂCE
+United States Patent and Trademark Ofﬁce
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria. Virginia 22313-1450
+
+www.uspto.gov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. | FILING DATE FIRST NAMED INVENTOR l ATTORNEY DOCKET N0. 1 CONFIRMATION NO. I
+09/933,493 08/20/2001 ' Stefan M. van den Oord MOBJ-OI 000USO 6164
+23910 7590 02/20/2008
+EXAMINER
+FLIESLER MEYER LLP | l
+650 CALIFORNIA STREET BURGESS, BARBARA N
+14TH FLOOR ART T PAPER NUMBER
+SAN FRANCISCO, CA 94108 | ”N' | 7
+2157
+| MAIL DATE I DELIVERY MODE |
+02/20/2008 PAPER
+
+Please ﬁnd below and/or attached an Ofﬁce communication concerning this application or proceeding.
+
+The time period for reply, if any, is set in the attached communication.
+
+PTOL-90A (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+V Application No.~ Applicant(s)
+09/933,493 , VAN DEN OORD ET AL.
+Ofﬁce Action Summary Examiner Art Unit -
+BARBARA N. BURGESS 2157
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event however may a reply be timely ﬁled
+
+after SIX (6) MONTHS from the mailing date of this communication
+- If N0 period for reply IS specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication:
+- Failure to reply within the set or extended period for reply will by statute, cause the application to become ABANDONED (35 U. S. C § 133)
+
+Any reply received by the Ofﬁce later than three months after the mailing date of this communication, even if timely ﬁled. may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+1)|ZI Responsive to communication(s) filed on 31 October 2007.'
+2a)[:] This action is FINAL. 2b)® This action is non-final.
+3)[:] Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 O.G. 213.
+
+Disposition of Claims
+
+MIX Claim(s) 1-15 1724-27 and 29-60 is/are pending in the application.
+4a) Of the above claim(s) _ is/are withdrawn from consideration.
+5)l:] Claim(s) _ is/are allowed.
+6)IZ] Claim(s) 1-15 17 24-27 and 29-60 is/are rejected.
+)
+)
+
+ 
+
+7 IX] Claim(s) 5_2 is/are objected to.
+8 [I Claim(s) are subject to restriction and/or electionlrequirement.
+
+Application Papers
+
+9)|:] The specification is objected to by the Examiner.
+10)|:| The drawing(s) filed on is/are: a)I:] accepted or b)D objected to by the Examiner.
+' Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFRA1.85(a).
+
+ 
+
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)E] The oath or declaration is objected to by the Examiner. Note the attached Office'Action or form PTO-152. > ,
+
+Priority under 35 U.S.C. § 119
+
+2)D Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)—(d) or (f).
+a)[] All b)[] Some * c)[:] None of:
+1.l:| Certified copies of the priority documents have been received.
+2.5 Certified'copies of the priority documents have been received in Application No. _
+S.EI Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Ofﬁce action for a list of the certiﬁed copies not received.
+
+Attachment(s) .
+
+1) ® Notice of References Cited (PTO-892) 4) E] Interview Summary (PTO-413)
+
+2) D Notice of Draﬂsperson's Patent Drawing Review (PTO-948) Paper No(s)/Mai| Date .
+
+3) D Information Disclosure Statement(s) (PTO/SB/OS) 5) [1 Notice Of Informal Paten_t Application
+Paper No(s)/Mai| Date . , 6) D Other—
+
+ 
+
+ 
+
+ 
+
+Uis. Patent and Trademark Ofﬁce .
+PTOL-326 (Rev. 08-08) Ofﬁce Action Summary Part of Paper No./Mail Date 20080219
+
+U.-
+
+Application/Control Number: 09/933,493 Page 2
+Art Unit: 2157
+
+DETAILED'ACTION
+This Ofﬁce Action is in response to Request for Continuation Examination (RCE) filed
+May 4, 2007. Claims 1-15, 17, 24-27, 29-37 are presented fer further examination.
+
+Claims 38-60 are newly added and presented for initial examination.
+
+Claim Objections
+1. Claim 52 is objected to because of the following informalities: Examiner
+understands the word “begin" in the last limitation of the claim should be “being”.
+
+Appropriate correction is required.
+
+Claim Rejections - 35 USC § 102
+1. The following is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that
+
+form the basis for the rejections under this section made in this Office action:
+
+A person shall be entitled to a patent unless —
+
+(e) the invention was described in (1) an application for patent, published under section 122(b), by
+another filed in the United States before the invention by the applicant for patent or (2) a patent
+granted on an application for patent by another ﬁled in the United States before the invention by the
+applicant for patent. except that an international application ﬁled under the treaty deﬁned in section
+351(a) shall have the effects for purposes of this subsection of an application ﬁled in the United States
+only if the international application designated the United States and was published under Article 21(2)
+of such treaty in the English language.
+
+2. Claims 52-53 are rejected under 35 U.S.C. 102(e) as being anticipated by Yano
+
+et al, (hereinafter “Yano”, US Patent Publication 2006/0184546 A1).
+
+As per claims 52-53, Yano discloses a system and method for suggesting data as a
+
+response to client requests, comprising:
+
+Application/Control Number: 09/933,493 ' ~ Page‘3
+Art Unit: 2157
+
+a server configured to receive requests from a plurality of clients for content
+
+(paragraphs [0035, 0045, 0061]);
+
+an interface to a plurality of databases or data sources of content information coupled to
+
+said server (paragraphs [0037, 0042, 0045, 00581);
+
+a communication protocol that provides a sessicn connection between a client and the .
+server, and allows the client to send, as part of the same session, a plurality'cf queries
+to query the server for content, wherein each of the plurality of queries are consecutive
+' and form an increasingly focused query string for retrieving content from the server, and '
+
+{wherein each subsequent one of the plurality of queries extends the query string by one
+
+or more additional characters (paragraphs [0032-0033, 0039, 00421); and
+
+wherein said server simultaneously applies the increasingly focused query string
+against the plurality of databases "or data sources as it is begin eXtended, and suggests
+a set of increasingly apprcpriate content or search criteria from the plurality vof
+databases, to the client, for further use by the client within the same session
+
+' (paragraphs [0035, 0045, 00611).
+
+Claim Rejections - 35 USC § 103
+1. The following is a quotation of 35 U.S.C. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Ofﬁce action:
+
+(a) A patent may not be obtained though the invention is not identic’ally disclosed or described as set
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.
+
+Application/Control Number: 09/933,493 . Page 4,
+Art Unit: 2157
+
+2. Claims 1- 15, 17, 24-27, 29-51, 54—60 are. rejected under 35 U.S.C. 103(a) as
+A- being unpatentable over Yano et al. (hereinafter “Yano”, US Patent Publication
+2006/0184546 A1) in view of Gershman et al. (hereinafter “Gersh”, US Patent6,356,905
+
+B1).
+
+As per claims 1, 24, 29, 32-33, Yano discloses a system, user interface
+mechanism, and method of providing session-based retrieval and at a client system of ,
+string-based content from a server cemprising:
+
+. ' - A communication protocol that enables connection over a network between a
+client system and a server system, and allows the client system to send via the
+network, and within a'single session between the client system and the server
+system, a lengthening string corhposed of a plurality of consecutively input
+characters, to querythe‘server system for stringebased content (paragraphs [0032-
+0033,0039,0042D;
+
+. - A client object, in communication with a client software at the client system and
+with the communication pretocoL wherein the client object receives additional
+characters from the client software, and as consecutive characters are being
+received, transmits via the network to a server object at the server system a plurality
+of consecutive queries, within the same session, to retrieve content from the server
+
+system, wherein each consecutive lengthens the query string by additional
+
+Application/Control Number: 09/933,493 . ‘ Page 5
+Art Unit: 2157
+
+characters, to form a lengthening string for retrieving matching conteht from the
+server system (paragraphs [0053, 0077, 0093, 01171);
+
+5 A server object, in Communication with the server system, and with the Client
+object via the communication protocol, wherein the server object in response ta
+receiving the consecutive queries that form the lengthening string, automatically
+uses the lengthening string to query and retrieve content information from the server .
+system that matches the lengthening string, and wherein the server object returns,
+while the additional characters are being input and the string is being lengthened
+
+during the session, increasingly matching content infOrmation to the client object for
+
+immediate use by the alient system (paragraphs [0035, 0045, 00611).
+
+Yano does not explicitly disclose:
+
+A communication protocol that enables an asynchronous session based connection
+between a client system anda server system;
+
+Asy’hch'ronously returns increasingly relevant content information to the client object
+for immediate use by the client system;
+
+receiving an asynchronous response from the server as the characters are being
+
+input
+
+However, like-Yano, Gersh teaches users transmitting queries to a Web'server to find
+
+information from various Web suppliers. Asynchronous messaging is provided between
+
+the client (user) and server (Web server) (column 48, lines 14-17, 40-53).
+
+Therefore, one or ordinary skill in the art at the time the invention was made
+
+would have found itobvious to incorporate or implement Gersh’s asynchronous session
+
+Application/Control Number: 09/933,493 Page 6
+Art Unit: 2157 '
+
+and asynchronously returning relevant content in Yano’s system providing updates to
+
+the client such as content and- database rep|ication.
+
+As per claim 2, Yano discloses the system of claim 1 wherein said client object operates
+on or at a first computer and said server object operates on or at a second computer
+and wherein both of said first and said second computers are connected via a network
+
+protocol (paragraphs [0033-0035]).
+
+As per claim 3, Yano discloses the system of claim 1 wherein said server object and
+
+said client object runs on the same computer (paragraph [0037]).
+
+As per claim 4, Yano discloses the system of claim 1 wherein said server Object runs
+‘ on a plurality of separate computers, and wherein said client queries received during the»
+
+session are distributed over said separate computers (paragraph [0070]).
+
+As per claim 5, Yano discloses the system of claim 1 wherein said sewer object
+store's previously received strings and returns said stored strings to the client in
+response to new client queries received during the session, without accessing said
+
+content (paragraph [0042, 0058]).
+
+As per'claim 6, Yanofurther discloses the system of claim 1 wherein said client
+
+software is embedded into a software applicationthat provides a visual interface to an
+
+Application/Controi Number: 09/933;493, ' A Page 7
+Art Unit: 2157 '
+
+operator that the server object is currently using the lengthening query string against the
+content of the server system to query and retrieve content information from the sewer
+system-and allows the operator to add additional characters to lengthen the query
+string, while simultaneously receiving increasingly matching results from the server
+
+(paragraph [0053, 0065, 00771).
+
+As per claim 7, Yano discloses the system of claim 1 wherein said client software is
+
+used as a content engine for another software system (paragraph [0057]).'
+
+As per claim 8, Yano discloses the system of claim 1 wherein said client software
+accumulates a plurality of said single character queries as they are entered into the
+, client, before sending them together as a single query string to said server (paragraph
+
+[0057]).'
+
+As per claim 9, Yano discloses the system of claim 1 wherein said client software
+stores previously received responses from the server in a cache at the client and uses
+the previously received responses as the response to a new query by the user, without
+
+reassessing the server (paragraph [0065]).
+
+As per claim 10, Yano discloses the system of claim 1 wherein said client
+
+software stores a pre-defined string and automatically transmits it to the server as the
+
+Application/Control Number: 09/933,493‘ , ' Page 8
+Art Unit: 2157
+
+client software is first accessed, and wherein additional entry of query characters is not
+
+required before server responses are sent to the client (paragraph [0075, 0093]).
+
+As per claim 11, Yano discloses the system of claim 1 wherein said server stores the
+state of (query and response of the client software, and restores the state of the client
+
+software after any interruption in said communication protocol (paragraph [0084]).
+
+As per claim 12, Yano discloses the system of claim 1 where said client software
+adds a qualifier to the query that is passed to the server, whereby the server can use
+said qualifier to execute the query and return appropriate results based on both the
+
+, query string and its qualifier (paragraph [0069]). _
+
+As per claim 13, Yano discloses the system of claim 1 where said client Software
+identifies a user of the system to the server whereby the server can store statistics and
+provides a history of queries and corresponding responses appropriate to said user
+
+(paragraph [0125, O141]).
+
+As per claim 14, Yano disc|oses the system of claim 1 where said server system
+comprises a server tier and a syndication tier, and wherein said client software
+communicates to the server tier on a single computer, and wherein each query is
+
+forwarded by the server tier and the syndication tier to an appropriate syndicate of
+
+Application/Control Number: 09/933,493 ' Page 9
+Art Unit: 2157 ' -
+
+content channels connected to the server tier on a different computer (paragraph
+
+[0137D-
+
+As per Claim 15, Yano discloses the system of claim 1 where said server applies a
+content dependent pattern and ﬁlter to characters received from the client before
+
+queries are matched against the content (paragraph [0050,_ 0065]).
+
+As per claim 17, Yano further discloses the system of claim 1 where server
+responses comprise lists of strings, wherein each string is accompanied by
+corresponding metadata, whereby the metadata contains logical links to other data
+
+sources of Uniform Resource Identifiers (paragraph [0088]).
+
+As per claim 25, Yano discloses the mechanism of claim 24, wherein said user -
+
+interface element is an application input field (paragraph [0073]).
+
+As per claim 26, Yano discloses the mechanism of claim 24, wherein said session
+indicator displays a triangular display element to indicate the presence of said session,
+and does not display said triangular display element to indicate the absence of said
+
+session (paragraph [0077]).
+
+As per claim 27, Yano discloses the mechanism of claim 24, wherein said status
+
+indicator displays one, or a plurality of arrow display elements to indicate the transfer of
+
+Application/Control Number: 09/933,493 Page 10
+Art Unit: 2157 '
+
+data from said client application to said server during said Session, and the presence of
+
+available session-specific content at said server (paragraph [0095]).
+
+As per claim 30, Yano discloses the method of claiin 29 wherein the server
+object matches each query received form the client against an in-memory cache, and
+returns'cached content to the client without accessing said eentent engine, unless the '
+ceched content has expired since it was Ilast received from said content engine
+
+(paragraph [O105]).
+
+As per claim 31, Yano discloses the method of claim 29, wherein the server
+analyzes the time- between said consecutive queries received from each client system, '
+and skips selected ones of said consecutive queries to reduce network communications
+
+and the load on said content engine (paragraph [0075]).
+
+As per claim 34,- Yano discloses the system of claim 1, whereby the client
+object indicates the selection of the contentsources to be queried to the server
+when said session is initiated and when content source selection changes are
+needed thereafter, without needing to embed said content source selection with
+
+each of said consecutive string-based queries (paragraph [0095]).
+
+As per claim 35, Yano discloses the system of claim 1 whereby said session
+
+is shared by multipIe-client objects that exchange messages with the same server
+
+Applicatien/Control Number: 09/933,493 Page 11
+Art Unit: 2157
+
+system, whereby each client object identifies a different content source selection to
+which said consecutive queries from the individual client object will be mapped by
+
+its Correspondingserver object (paragraph [0135]).
+
+As per siaims 36737, Yano discloses a system and_method for providing session-
+based searching of string-based content from aserver, comptising:
+
+‘oi a uservinterface at a plurality of clients that allows a Iuser at each of the plurality of
+
+‘ clients to entera string of consecutively input queries to qLiery the server -for
+string-based content, wherein each consecutive query lengthens the query
+string by' one or more additional sharacters (paragraphs [0053, 0077, 0093, 01171);
+
+0 a communication protocol that transmits over a network, via a client object at each
+said client, to a server object at the server, the plurality of consecutive queries, to
+retrieve cohtent from the server, wherein each additional character is immediateiy
+transmitted to the server object as the user“ is entering the {additional
+characters in thevuser interface, to form an lengthening query string for retrieving
+content from the server (paragraphs [0032-0033, 0039, 0042]);
+
+. aserver' object which in responsesto receiving each query as it is being
+lengthened or‘shortened by the one or more additional characters, automatically
+matches the lengthening query string against the content of the server, and, as
+the user of a particular client is entering' queries, modifies the user interface by,
+
+' returning increasingly relevant server content information to the client objectsfor
+
+immediate display to the user (paragraphs [0035, 0045, 00611).
+
+Application/Control Number: 09/933,493 Page 12
+Art Unit: 2157 ‘ ’ -
+
+Yano does not explicitly disclose:
+o A communication protocol that enables an async'hronpus sessioh based connection 4
+
+' between a client system and a server system;
+0 Asynchronously returns increasingly relevant content information to the client object
+
+,for immediate use by the client system.
+HoweVer, like Yano, Gersh teaches users transmitting queries to ”a Web server to find ‘
+in-fo-rmation' from various Web suppliers. Asynchronous messaging is provided between
+the client (user) and server (Web server) (columnu48, lines 14-17, 40-53).
+Therefore, one or ordinary skill. in the art at the time the intention was made
+
+would have found it obvio‘us to incorporate or implement Gersh’s asynchronous session
+“and asynchronously returning relevant content in Yano’s system providing updates to
+
+I the client such as content and database replication.
+
+_ As per claim 38, Yano discloses the system of claim 1 wherein the client software is
+used to one of display suggestions, perform auto-completion, or provide type-ahead
+functionality, based on matching string-baeed data queried in a database by the server
+
+object on the server system (paragtaph [0058].
+
+As per claim 39, Yano discloses the'system of claim 1 wherein the client software one
+'of validates or checks the input string based on resp'onses received from the server
+
+object on the server system (paragraph [0065-006961).
+
+Application/Control Number: 09/933,493 ' Page 13
+Art Unit: 2157
+
+As 'per claim 40, Yano discloses the system of claim 1 wherein the lengthening query
+string is one of a part of a name, email address, URL, phonenumber, or other typed
+string that can be normalized as a simple term, definitional term, relational term, quote,
+
+, simple number, compdund number, date, URL, e-mail‘ addrees, phone number, or XML '
+
+formatted data corresponding to a DTD or schema (paragraph [0076, 00951).
+
+As pef claim 41, Yano discloees the system of claim 1 wherein the matching content
+returned by the server object contains one of a term from a thesaurus system, result
+
+‘ reeeived from a search and retrieval system, text from a reference work, match from‘an
+address book, appropriate instructions or actions to'be taken received from a centrol
+system, entry from a dictionary, thesaurus, or encyclopedia, match from acommercial _ -
+' preducts database, quote from a literary quotes library, reaI-time stock quote, content
+from a real-time news service, Internet advertisement, result of a complex function,
+
+- translation received from a language translation engine, entry from a classification
+scheme, match from a lookup list such as cities or countries in an order form, match
+from a auto-complete history or a language code, creationhdate, modification date,
+pronunciation, meaning, possib|e'use, synonym, reference, scope note, notation, -
+source, UDC coding, description, product code, category, price, currency, stock symbol,
+
+company name, stock quote, machine instruction or a city or a country ([0069, 0125]).
+
+Application/Control Number: 09/933,493 - Page 14
+Art Unit: 2157
+
+As per claim 42, Yano discloses the system of claim 1 wherein the sewer object
+retrieves the matching string-based data from an in-memory cache of responses to
+
+previous queries (paragraph [0068, 00761).
+
+As per claim 43, Yano discloses the system of claim 1 wherein the server object, in
+communication with a content access module object, retrieves matching content from
+multiple content engines, and wherein the server object embeds the query string into a
+
+native Query for each type of Content engine (paragraph [0069, 0081]).
+
+As per claim 44, Yano discloses the system of claim 43 wherein the content engine is a
+
+_ SQL database or a search engine (paragraph [0057, 0090]).
+
+As per” claim 45, Yano discloses the system of claim 1 wherein the client software
+- displays arrow symbols to indicate the availability or lack of matching results (paragraph
+
+[0076]).
+
+' As per claim 46, Yano discloses the system of claim 1 wherein the client software
+displays a checkmark symbol if only one match was found for the query string
+
+(paragraph [0118]).
+
+As per claim 47, Yano discloses the system of claim 1 wherein a plurality of client
+
+objeets are logically linked to multiple content sources on the server system, so that .
+
+Application/Control Number: 09/933,493 -. Page 15
+Art Unit: 2157 - -
+
+results received and returned by each corresponding server object are the result of a
+match to both the lengthening query_string and values contained by one or more of the
+
+other client objects (paragraph [0077, 0093]).
+
+As per claim 48, Yano discloses the system of claim 1 wherein the client software
+displays images and/or movies corresponding to individual matches received from the
+
+server system (paragraph [0069]).
+
+As per claim 49, Yano discloses the system of claim 1 wherein only a specific requested
+or expected range of matches are returned to the client object any one time (paragraph
+
+[O136]).
+
+As per claim 50, Yano discloses the system of claim 1 wherein the client software runs
+
+in a web browser (paragraph [0057]).
+As per claim 51, Yano discloses the system'of claim 1 wherein the client software ‘ ,
+
+displays a symbol inside of an input field to indicate the presence and éveilability of said
+
+system to text entered into said input field (paragraph [0065]).
+
+As per claim 54, Yano discIoses a system comprising:
+
+Application/Control Number: 09/933,493 Page 16
+Art Unit: 2157 '
+
+a client object on a client computer ahd a server object on a server computer, whereby
+the client computer and the server computer are linked by a network so that they can
+
+exchange information (0033-00361);
+
+wherein the client object is linked to an input element in a user interface that allows a
+user to enter textual information comprising characters and strings to create incremental
+
+user input comprising a mutating string of characters (paragraphs [0042, 0065]);
+
+wherein said user input is transmitted. by the client object to the server object while said
+user input is being formed by a specific user during a user session (paragraph [0045,
+
+0048D;
+
+wherein the server object uses said user input received from the client object to query
+data from one or more content sourees, and to return result strings matching said user
+input from said server_computer while the input is being forn1eti on the client computer;
+' and wherein the client object displays satd results in a displey element in the user
+
+interface on the client computer (paragraphs [0035, 0045, 00611).
+
+Yano does not explicitly disclose:
+
+. A communication protocol that enables an asynchronous session based connection
+between a client system and a server system; '
+
+. Asynchronously returns increasingly relevant content information to the client object
+
+for immediate use by the client system.
+
+. Application/Control Number: 09/933,493 , Page 17
+Art Unit: 2157 ' '
+
+However, like Yeno, Gersh teaches users transmitting queries to a Web server to find
+information from various Web suppliers. Asynchronous messaging is provided between
+the client (user) and server (Web server) (column 48, Iines~14-17, 40-53).
+Therefore, one or ordinary skill in the art at the tirrie the invention was made
+would have found it obvious to incorporate or irhplement Gersh’s asynehronous session
+and asynchronously returning relevant content in Yano’s system providing updates to
+
+the client such as content and database replication.
+
+As per claim 55, Yano discloses the system of claim 54 whereby said client object is
+embedded in an object that is part of a web page and appears in a web browser on the
+
+client computer (paragraph [0041, 0050]).
+
+As per claim 56, Yano discloses the system of .claim 54 whereby each of said matching
+result strings is accompanied by a key that identifies each result as it was retrieved from
+the one or more content sources! whereby the keyvof selected results can be used for
+sorting and merging and sorting in the server computer and are transmitted back to the
+
+client object for use on'the client system (paragraph [0060, 00651).
+
+As per claim 57, Yano discloses the system of claim 54 whereby the client object
+
+accumulates the user input for an amount of time before sending the resulting string of
+
+Application/Control Number: 09/933,493 ' Page 18
+Art Unit: 2157 ‘
+
+characters to the server object as a single consolidated query string, to decrease _
+
+network traffic and decrease the load on the servericomputer (paragraph [0042, 00481).
+
+Ae per claim 58, Yano discloses the system of claim 57 whereby the input element on
+the client computer contains a visual object displayed within the display element that
+indicates to the user that user input was sent to the server object whereby the visual
+object keeps changing while matching results are being awaited from the server system,
+
+. and whereby said visual object first changes when the user enters textual information,
+and before the user input is sent to the sen/er, indicating to the user that the user input
+is being accumulated by the client object before sending it to the server object
+
+(paragraph [01 521).
+
+As per claim 59, Yano discloses the system of claim 54 whereby the server object.
+provides one or more content channels for retrieving configurable sets of data available
+on the server computer, whereby each content channel defines a logical data set to be "
+
+retrieved from the one or more data sources (paragraph [0090, 01311).
+
+As per claim 60, Yano discloses the system of claim 54 whereby the server object
+
+caches the result data received from said content sources and uses said cached result
+
+Application/Control Number: 09/933,493 Page 19
+Art Unit: 2157
+
+data as a response to later client requests originating from the same client object or
+
+from a different client object (paragraph [0102, 0127]).
+
+Response to Arguments
+(d) - Applicant's argument has been considered but is moot in view of the new
+
+'9round(s) of rejection.
+
+Conclusion
+Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to Barbara N Burgess whose telephone nUmbervis (703)
+305-3366. The examiner can normally be reached on M-F (8:00am-4:00pm). A
+If attempts to reach-the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Ario Etiennecan be reached on (703) 308-7562. The fax phone number for
+the organization where this application or proceeding is asstgned is 703-872-9306. 1
+Information regarding the status of an application may be obtained from the Patent
+Application Information Retrieval (PAIR) system. Status information for published
+applications may be obtained from either Private PAIR or Public PAIR. Status
+information fdr unpublished applications is available through Private PAIR only. For
+more information about the PAIR system, see http:7/pair-direct.uspto.gov. Should you
+have questions on access to the Private PAIR system, contact the Electronic Business
+
+Center (EBC) at 866-217-9197 (toll-free).
+
+Application/Control Number: 09/933,493
+Art Unit: 2157 '
+
+Barbara N Burgess Examiner
+Art Unit 2157
+
+' February 19, 2008
+
+i”) E?
+
+    
+
+r:
+
+Nuu u-nu-wu-un v?‘ A
+Prewﬂggﬁvm‘ﬂ'iém E‘ﬁﬁkﬂ
+
+£4
+
+mwcmm 21m
+
+Page 20
+

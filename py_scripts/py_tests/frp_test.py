@@ -285,7 +285,8 @@ class FrpTest(unittest.TestCase):
             'claim_nums': [149, 150, 151],
             'rejection_ground': '103(a)',
             'rejection_reason': 'unpatentable',
-            'ref_name': 'Ogawa et  al as applied to claim 148 above, and ﬁlrther in View of the follOwing comments'
+            'ref_name': 'Ogawa et  al as applied to claim 148 above, and ﬁlrther',
+            'in_view_ref_name': 'the follOwing comments'
         }]
         self.assertEqual(data, result)
 
@@ -406,5 +407,357 @@ class FrpTest(unittest.TestCase):
             'claim_nums': [6, 7, 8]
         }]
         self.assertEqual(data, result)
+
+    """
+    Should parse the CLEARLY ANTICIPATED
+    """
+    def test_fr_for_ctnf_format_with_clearly_anticipated(self):
+        text = "Claims 14 is rejected under 35 U.S.C. 102(b) as being clearly anticipated by Song, et al. (Research progress of ZnO single crystals) Song, et al teaches a flux method for growing bulk zinc-oxide (ZnO) utilizing the Bridgman method."
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [14],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Song, et al'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTNF
+    """
+    def test_fr_for_ctnf_format_with_diff_doc_num(self):
+        with open('ctnf_files/13566986-2012-11-01-00007-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [
+        {
+            'rejection_ground': 'nonstatutory obviousness-type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '8,009,646',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory obviousness-type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '8,111,678',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory obviousness-type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '7,348,930',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory obviousness- type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '13/118,386',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory obviousness- type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '13/118,406',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory obviousness- type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '13/348,523',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory obviousness- type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '13/218,185',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory obviousness- type double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '13/192,181',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Lastinger et al',
+            'ref_doc_num': '7,349,701',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        },
+        {
+            'rejection_ground': '102(a)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Kitchener et al',
+            'ref_doc_num': '6,870,515',
+            'claim_nums': [1, 2, 3, 6, 7, 8, 9, 12, 13, 14]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Kitchener et al',
+            'ref_doc_num': '6,870,515',
+            'in_view_ref_name': 'Hou et al',
+            'in_view_ref_doc_num': '7,415,288',
+            'claim_nums': [4, 5, 10, 11, 15, 16]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Kitchener et al',
+            'ref_doc_num': '6,870,515',
+            'claim_nums': [4, 5, 10, 11, 15, 16]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Hou et al',
+            'ref_doc_num': '7,415,288',
+            'in_view_ref_name': 'Kitchener et al',
+            'in_view_ref_doc_num': '6,870,515',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should failon next docnum
+    """
+    def test_fr_for_ctnf_should_failon_next_doc_num(self):
+        text = "Claims 3,6,7 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang (6,662,081). Claims 3,6,7,10 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Amro (6,662,082). Claims 3,6,7,10,15 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Amro as applied to claim 2 above, and further in view of Knockeart (6,662,083)"
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [3, 6, 7],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Huang',
+            'ref_doc_num': '6,662,081'
+        },
+        {
+
+            'claim_nums': [3, 6, 7, 10],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Huang',
+            'in_view_ref_name': 'Amro',
+            'in_view_ref_doc_num': '6,662,082'
+        },
+        {
+            'claim_nums': [3, 6, 7, 10, 15],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Huang',
+            'in_view_ref_name': 'Amro',
+            'in_further_view_ref_name': 'Knockeart',
+            'in_further_view_ref_doc_num': '6,662,083'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the doc num with hereinafter prepend text
+    """
+    def test_fr_for_ctnf_format_with_hereinafter_prepend_to_doc_num(self):
+        with open('ctnf_files/09933493-2004-10-21-00006-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': list(range(1, 28)),
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Purcell',
+            'ref_doc_num': 'US 2001/0013038 A1',
+            'in_view_ref_name': 'Hughes et al.',
+            'in_view_ref_doc_num': 'US 2003/0195876 A1'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the doc num with hereinafter prepend text
+    """
+    def test_fr_for_ctnf_format_with_hereinafter_prepend_to_doc_num_with_US_PATENT(self):
+        with open('ctnf_files/09933493-2006-03-09-00004-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [
+        {
+            'claim_nums': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,20,21,24,25,26,27,29,30,31,32, 33]
+        },
+        {
+            'claim_nums': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,20,21,24,25,26,27,29,30,31,32, 33],
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Zimowski et ai.',
+            'ref_doc_num': '5,632,015'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the doc num with hereinafter prepend text with IN_VIEW_REF
+    """
+    def test_fr_for_ctnf_format_with_hereinafter_prepend_to_doc_num_with_IN_VIEW_REF(self):
+        with open('ctnf_files/09933493-2006-12-04-00004-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37],
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Zimowski et al.',
+            'ref_doc_num': '5,632,015',
+            'in_view_ref_name': 'Spaey et al.',
+            'in_view_ref_doc_num': '2002/0055981 A1'
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the doc num with NEXT PAGE SPERATOR
+    """
+    def test_fr_for_ctnf_format_with_hereinafter_prepend_to_doc_num_with_NEXT_PAGE_SEPARATOR(self):
+        with open('ctnf_files/09933493-2008-11-13-00004-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [
+        {
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1, 7, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 63, 64]
+        },
+        {
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Yano  et al.',
+            'ref_doc_num': '2006/0184546 A1',
+            'claim_nums': [52, 53]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Yano et al.',
+            'ref_doc_num': '2006/0184546   A1',
+            'in_view_ref_name': 'Hailpern et al.',
+            'in_view_ref_doc_num': '7,383,299',
+            'in_further_view_ref_name': 'Chua et al.',
+            'in_further_view_ref_doc_num': '2002/0049756 A1',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 54, 55, 56, 57, 58, 59, 60]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Yano et al.',
+            'ref_doc_num': '2006/0184546 A1',
+            'in_view_ref_name': 'Hailpern et al.',
+            'in_view_ref_doc_num': '7,383,299',
+            'in_further_view_ref_name': 'Chua et al.',
+            'in_further_view_ref_doc_num': '2002/0049756 A1',
+            'claim_nums': [24, 25, 26, 27, 63, 64]
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the doc num with hereinafter prepend text
+    """
+    def test_fr_for_ctnf_format_with_multiple_rejected_claims(self):
+        with open('ctnf_files/09271617-2003-09-03-00005-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'rejection_ground': '102(b)',
+            'rejection_reason': 'anticipated',
+            'ref_name': '“InfoSIeuth: Agent-Based Semantic Integration of Information in Open and Dynamic Environments” by BAYARDO et al',
+            'claim_nums': [1, 3, 5, 6, 15, 16, 17, 39, 40]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': '“InfoSIeuth: Agent-Based Semantic Integration of Information in Open and Dynamic Environments" by BAYARDO et at  As to claims 7-10, BAYARDO teaches the agents are objects and a user agent communicates with data objects through a resource agent',
+            'claim_nums': [7, 8, 9, 10, 18, 19, 20, 21, 25, 26, 27, 28]
+        }]
+        self.assertEqual(data, result)
+
+
+    """
+    Should parse the doc num with hereinafter prepend text
+    """
+    def test_fr_for_ctnf_format_with_diff_doc_num_1(self):
+        with open('ctfr_files/12317727-2011-02-10-00005-CTFR.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Sun et al',
+            'ref_doc_num': 'U.S. Pub. No. 2004/0145602',
+            'claim_nums': [10,11,12,13,14,15,16,44,45,46,47,48,49,50,51,52,53,54,55,56]
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the doc num with hereinafter prepend text
+    """
+    def test_fr_for_ctnf_format_with_herinafter(self):
+        with open('ctnf_files/09933493-2008-02-20-00004-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [{
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+        },
+        {
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Yano  et al,',
+            'ref_doc_num': '2006/0184546 A1',
+            'claim_nums': [52, 53]
+        }]
+        self.assertEqual(data, result)
+
+
+    """
+    Should parse the doc num with hereinafter prepend text
+    """
+    def test_fr_for_ctnf_format_with_diff_doc_num_2(self):
+        with open('ctnf_files/11403548-2009-09-30-00007-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [
+        {
+            'rejection_ground': '112',
+            'claim_nums': [14, 15, 16, 17, 18]
+        },
+        {
+            'rejection_ground': '101',
+            'claim_nums': [9, 10, 11, 12, 13]
+        },
+        {
+            'claim_nums': [10, 11, 12, 13]
+        },
+        {
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Alt',
+            'ref_doc_num': '2007/0036143',
+            'claim_nums': [14, 15, 16]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'AIt',
+            'in_view_ref_name': 'Strathmeyer',
+            'in_view_ref_doc_num': '2005/0122964',
+            'claim_nums': [17, 18]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'AIt',
+            'in_view_ref_name': 'Aasman',
+            'in_view_ref_doc_num': '2003/0065737',
+            'claim_nums': [1, 2, 3, 4, 5, 9, 10, 11, 12, 13]
+        },
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'AIt',
+            'in_view_ref_name': 'Aasman and Strathmeyer',
+            'claim_nums': [6, 7, 8]
+        }]
+        self.assertEqual(data, result)
+
 if __name__ == '__main__':
     unittest.main()

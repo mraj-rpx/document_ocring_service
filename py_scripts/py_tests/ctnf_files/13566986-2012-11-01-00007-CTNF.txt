@@ -1,0 +1,695 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+UNITED STATES DEPARTNIEN T OF COMNIERCE
+United States Patent and Trademark Office
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313- 1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO.
+13/566,986 08/03/2012 Roc Lastinger 0302017017 1032
+66501 7590 11/01/2012 |
+. EXAMINER
+Letham Law Flrm LLC
+914 N. Tucana Lane LY, NGHI H
+
+ 
+
+Gilbert, AZ 85234
+
+ 
+
+ 
+
+ 
+
+| ART UNIT | PAPER NUMBER
+2642
+| MAIL DATE | DELIVERY MODE
+11/01/2012 PAPER
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+
+The time period for reply, if any, is set in the attached communication.
+
+PTOL—9OA (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+
+13/566,986 LASTINGER ET AL.
+Office Action Summary Examiner Art Unit
+
+NGHI H. LY 2642
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event however may a reply be timely filed
+
+after SIX(6 ) MONTHS from the mailing date of this communication.
+— If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+— Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABAN DONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+1)IZ| Responsive to communication(s) filed on 23 August 2012.
+2a)|:| This action is FINAL. 2b)|Z| This action is non—final.
+3)|:| An election was made by the applicant in response to a restriction requirement set forth during the interview on
+_; the restriction requirement and election have been incorporated into this action.
+4)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Exparte Quayle, 1935 CD. 11, 453 O.G. 213.
+
+Disposition of Claims
+
+5)|Z| Claim(s) 1—16is/are pending in the application.
+
+5a) Of the above claim(s) _ is/are withdrawn from consideration.
+6)|:| Claim(s)_ is/are allowed.
+7)|Z| Claim(s) 1- _16 is/are rejected.
+8)|:| Claim(s)_ is/are objected to.
+9)|:| Claim(s)_ are subject to restriction and/or election requirement.
+
+Application Papers
+
+10)|:| The specification is objected to by the Examiner.
+11)|Z| The drawing(s) filed on 08/03/2012 is/are: a)|Z accepted or b)I:I objected to by the Examiner.
+
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121 (d).
+12)|:| The oath or declaration is objected to by the Examiner. Note the attached Office Action or form PTO-152.
+
+Priority under 35 U.S.C. § 119
+
+13)|:| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)I:I AII b)|:| Some * c)|:| None of:
+1.|:| Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No. _
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) IZI Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) D Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mai| Date. _
+
+3) IZI Information Disclosure Statement(s) (PTO/SB/OS) 5) D Notice of Informal Patent Application
+Paper No(s)/Mai| Date _. 6) D Other: _
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL-326 (Rev. 03-11) Office Action Summary Part of Paper No./Mai| Date 20121029
+
+Application/Control Number: 13/566,986 Page 2
+Art Unit: 2642
+
+DETAILED ACTION
+Double Patenting
+
+1. The nonstatutory double patenting rejection is based on a judicially created
+doctrine grounded in public policy (a policy reflected in the statute) so as to prevent the
+unjustified or improper timewise extension of the “right to exclude” granted by a patent
+and to prevent possible harassment by multiple assignees. A nonstatutory
+obviousness-type double patenting rejection is appropriate where the conflicting claims
+are not identical, but at least one examined application claim is not patentably distinct
+from the reference claim(s) because the examined application claim is either anticipated
+by, or would have been obvious over, the reference claim(s). See, e.g., In re Berg, 140
+F.3d 1428, 46 USPQ2d 1226 (Fed. Cir. 1998); In re Goodman, 11 F.3d 1046, 29
+USPQ2d 2010 (Fed. Cir. 1993); In re Longi, 759 F.2d 887, 225 USPQ 645 (Fed. Cir.
+1985); In re Van Ornum, 686 F.2d 937, 214 USPQ 761 (CCPA 1982); In re Vogel, 422
+F.2d 438, 164 USPQ 619 (CCPA 1970); and In re Thorington, 418 F.2d 528, 163 USPQ
+644 (CCPA 1969).
+
+A timely filed terminal disclaimer in compliance with 37 CFR 1.321 (c) or 1.321(d)
+may be used to overcome an actual or provisional rejection based on a nonstatutory
+double patenting ground provided the conflicting application or patent either is shown to
+be commonly owned with this application, or claims an invention made as a result of
+
+activities undertaken within the scope of a joint research agreement.
+
+Application/Control Number: 13/566,986 Page 3
+Art Unit: 2642
+
+Effective January 1, 1994, a registered attorney or agent of record may sign a
+terminal disclaimer. A terminal disclaimer signed by the assignee must fully comply with
+
+37 CFR 3.73(b).
+
+2. Claims 1-16 are rejected on the ground of nonstatutory obviousness-type double
+patenting as being unpatentable over claims 1-19 of U.S. Patent No. 8,009,646.
+Although the conflicting claims are not identical, they are not patentably distinct from
+each other because they both teach similar methods and apparatus for overlapping
+mimo antenna physical sectors. Further, the claims of the instant application are
+
+generic to all that is recited in the claims of the copending application.
+
+3. Claims 1-16 are rejected on the ground of nonstatutory obviousness-type double
+patenting as being unpatentable over claims 1-19 of U.S. Patent No. 8,111,678.
+Although the conflicting claims are not identical, they are not patentably distinct from
+each other because they both teach similar methods and apparatus for overlapping
+mimo antenna physical sectors. Further, the claims of the instant application are
+
+generic to all that is recited in the claims of the copending application.
+
+4. Claims 1-16 are rejected on the ground of nonstatutory obviousness-type double
+patenting as being unpatentable over claims 1-18 of U.S. Patent No. 7,348,930.
+Although the conflicting claims are not identical, they are not patentably distinct from
+
+each other because they both teach similar methods and apparatus for overlapping
+
+Application/Control Number: 13/566,986 Page 4
+Art Unit: 2642
+
+mimo antenna physical sectors. Further, the claims of the instant application are
+
+generic to all that is recited in the claims of the copending application.
+
+5. Claims 1-16 provisionally rejected on the ground of nonstatutory obviousness-
+type double patenting as being unpatentable over claims 1-18 of copending Application
+No. 13/118,386. Although the conflicting claims are not identical, they are not
+patentably distinct from each other because they both teach similar methods and
+apparatus for overlapping mimo antenna physical sectors. Further, the claims of the
+instant application are generic to all that is recited in the claims of the copending
+application.
+
+This is a grovisional obviousness-type double patenting rejection because the
+
+conflicting claims have not in fact been patented.
+
+6. Claims 1-16 provisionally rejected on the ground of nonstatutory obviousness-
+type double patenting as being unpatentable over claims 1-8 of copending Application
+No. 13/118,406. Although the conflicting claims are not identical, they are not
+patentably distinct from each other because they both teach similar methods and
+apparatus for overlapping mimo antenna physical sectors. Further, the claims of the
+instant application are generic to all that is recited in the claims of the copending
+application.
+
+This is a grovisional obviousness-type double patenting rejection because the
+
+conflicting claims have not in fact been patented.
+
+Application/Control Number: 13/566,986 Page 5
+Art Unit: 2642
+
+7. Claims 1-16 provisionally rejected on the ground of nonstatutory obviousness-
+type double patenting as being unpatentable over claims 1-12 of copending Application
+No. 13/348,523. Although the conflicting claims are not identical, they are not
+patentably distinct from each other because they both teach similar methods and
+apparatus for overlapping mimo antenna physical sectors. Further, the claims of the
+instant application are generic to all that is recited in the claims of the copending
+application.
+
+This is a grovisional obviousness-type double patenting rejection because the
+
+conflicting claims have not in fact been patented.
+
+8. Claims 1-16 provisionally rejected on the ground of nonstatutory obviousness-
+type double patenting as being unpatentable over claims 1-15 of copending Application
+No. 13/218,185. Although the conflicting claims are not identical, they are not
+patentably distinct from each other because they both teach similar methods and
+apparatus for overlapping mimo antenna physical sectors. Further, the claims of the
+instant application are generic to all that is recited in the claims of the copending
+application.
+
+This is a grovisional obviousness-type double patenting rejection because the
+
+conflicting claims have not in fact been patented.
+
+Application/Control Number: 13/566,986 Page 6
+Art Unit: 2642
+
+9. Claims 1-16 provisionally rejected on the ground of nonstatutory obviousness-
+type double patenting as being unpatentable over claims 18-37 of copending
+Application No. 13/192,181. Although the conflicting claims are not identical, they are
+not patentably distinct from each other because they both teach similar methods and
+apparatus for overlapping mimo antenna physical sectors. Further, the claims of the
+instant application are generic to all that is recited in the claims of the copending
+application.
+
+This is a grovisional obviousness-type double patenting rejection because the
+
+conflicting claims have not in fact been patented.
+
+Claim Rejections - 35 USC § 102
+10. Claims 1-16 are rejected under 35 U.S.C. 102(e) as being anticipated by
+Lastinger et al (US 7,349,701).
+
+The applied reference has a common assignee with the instant application.
+Based upon the earlier effective U.S. filing date of the reference, it constitutes prior art
+under 35 U.S.C. 102(e). This rejection under 35 U.S.C. 102(e) might be overcome
+either by a showing under 37 CFR 1.132 that any invention disclosed but not claimed in
+the reference was derived from the inventor of this application and is thus not the
+invention “by another,” or by an appropriate showing under 37 CFR 1.131.
+
+Regarding claims 1, 6 and 12, Lastinger teaches a system for wirelesst
+communicating with provided wireless devices via a plurality of multipIe-input-multiple-
+
+output ("MIMO") antennas (see Abstract, column 5, lines 34-39, column 8, lines 12-16
+
+Application/Control Number: 13/566,986 Page 7
+Art Unit: 2642
+
+and column 10, lines 50-54, also see column 6, lines 33-35, column 7, lines 35-37,
+column 10, Iines17-21 and column 10, lines 41-49), the system comprising: a first radio
+group comprising a first MIMO physical sector for communicating using a first channel
+(see fig.1-6 and fig.23-26, column 1, lines 38-57, column 3, lines 23-28 and column 6,
+line 9 to column 8, line 59), and a second radio group comprising a second MIMO
+physical sector for communicating using a second channel (see fig.1-6 and fig.23-26,
+column1,|ines 38-57, column 3, lines 23-28 and column 6, line 9 to column 8, line 59),
+wherein: the first MIMO physical sector overlaps at least 30 percent of an area of the
+second MIMO physical sector thereby forming an area of overlap (see fig.1-6 and fig.23-
+26, column 1, lines 38-57, column 3, lines 23-28 and column 6, line 9 to column 8, line
+59), a frequency of the first channel is different from a frequency of the second channel
+(see column 6, lines 33-48, column 7,Iines12-31 and column 8, line 60 to column 9,
+line 5), each radio group respectively further comprises: a phased array, and at least
+two radios coupled to the phased array, the radios cooperate with the phase array to
+form a plurality of physical sectors (see fig.1-6 and fig.23-26, column 1, lines 38-57,
+column 3, lines 23-28 and column 6, line 9 to column 8, line 59), each physical sector
+having an angle of coverage less than 360 degrees (see column 3, lines 11-28), each
+physical sector of the plurality at least partially overlaps the other physical sectors of the
+plurality to form the MIMO physical sector of the radio group (see fig.1-6 and fig.23-26,
+column1,|ines 38-57, column 3, lines 23-28 and column 6, line 9 to column 8, line 59),
+the physical sectors of the phased array operate as a MIMO antenna (see fig.1-6 and
+
+fig.23-26, column 1, lines 38-57, column 3, lines 23-28 and column 6, line 9 to column 8,
+
+Application/Control Number: 13/566,986 Page 8
+Art Unit: 2642
+
+line 59, also see column 5, lines 34-39, column 8, Iines12-16 and column 10, lines 50-
+54, also see column 6, lines 33-35, column 7, lines 35-37, column 10, Iines17-21 and
+oolumn10,|ines 41-49).
+
+Regarding claims 2 and 7, Lastinger teaches the first MIMO physical seotor
+substantially overlaps the second MIMO physical seotor thereby forming the area of
+overlap (see fig.1-6 and fig.23-26, column 1, lines 38-57, column 3, lines 23-28 and
+column 6, line 9 to column 8, line 59).
+
+Regarding claims 3 and 8, Lastinger teaches the first radio group communicates
+with a first provided wireless device via the first MIMO physical sector in the area of
+overlap using the first channel, and the second radio group communicates with a
+second provided wireless device via the second MIMO physical sector in the area of
+overlap using the second channel (see fig.1-6 and fig.23-26, column 1, lines 38-57,
+column 3, lines 23-28 and column 6, line 9 to column 8, line 59).
+
+Regarding claims 4 and 10, Lastinger teaches the radios of the first radio group
+communicate using a first protocol, the radios of the second radio group communicate
+using a second protocol, and the first protocol is different from the second protocol (see
+column 5, lines 47-51).
+
+Regarding claims 5, 11 and 16, Lastinger teaches the first protocol includes the
+IEEE 802.1 in protocol, and the second protocol includes at least one of the Worldwide
+Interoperability for Microwave Access ("WiMax") and the Long Term Evolution ("LTE")
+protocol (see column 5, lines 47-51).
+
+Regarding claim 9, Lastinger teaches the first radio group communicates with a
+
+Application/Control Number: 13/566,986 Page 9
+Art Unit: 2642
+
+first provided wireless device and the second radio group communicates with a second
+provided wireless device in a same area of overlap (see fig.1-6 and fig.23-26, column 1,
+lines 38-57, column 3, lines 23-28 and column 6, line 9 to column 8, line 59).
+
+Regarding claim 13, Lastinger teaches the first communication protocol uses a
+first channel, the second communication protocol uses a second channel, and the first
+channel is different from the second channel (see column 6, lines 33-48, column 7, lines
+12-31 and column 8, line 60 to column 9, line 5).
+
+Regarding claim 14, Lastinger teaches the first channel uses a first frequency,
+the second channel uses a second frequency, the first frequency is different from the
+second frequency (see column 6, lines 33-48, column 7, Iines12-31 and column 8, line
+60 to column 9, line 5).
+
+Regarding claim 15, Lastinger teaches the first communication protocol
+communicates with a mobile computer, and the second communication protocol
+
+communicates with a mobile phone (see column 5, lines 47-51).
+
+Claim Rejections - 35 USC § 102
+11. The following is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that
+
+form the basis for the rejections under this section made in this Office action:
+
+A person shall be entitled to a patent unless —
+
+(a) the invention was known or used by others in this country, or patented or described in a printed
+publication in this or a foreign country, before the invention thereof by the applicant for a patent.
+
+12. Claims 1-3, 6-9 and 12-14 are rejected under 35 U.S.C. 102(a) as being
+
+anticipated by Kitchener et al (US 6,870,515).
+
+Application/Control Number: 13/566,986 Page 10
+Art Unit: 2642
+
+Regarding claims 1, 6 and 12, Kitchener teaches a system for wirelesst
+communicating with provided wireless devices via a plurality of multipIe-input-multiple-
+output ("MIMO") antennas (see fig.17, fig.19, fig.20 column 3, lines 31 -36, column 11,
+lines 24-32 and column 12, lines 49-50, also see Abstract, column 2, lines 59-65,
+column 8, Iines10-42 and column 10, lines 28-36), the system comprising: a first radio
+group comprising a first MIMO physical sector for communicating using a first channel
+(see column 6, line 30 to column 8, line 17), and a second radio group comprising a
+second MIMO physical sector for communicating using a second channel (see column
+11, lines 19-53), wherein: the first MIMO physical sector overlaps at least 30 percent of
+an area of the second MIMO physical sector thereby forming an area of overlap (see
+fig.2, fig.15B and column 11, lines 19-53), a frequency of the first channel is different
+from a frequency of the second channel (see column 6, line 30 to column 8, line 17),
+each radio group respectively further comprises: a phased array (see column 10, lines
+14-27 and column 11, lines 24-27), and at least two radios coupled to the phased array
+(see column 10, lines 14-27 and column 11, lines 24-27), the radios cooperate with the
+phase array to form a plurality of physical sectors (see column 10, lines 14-27 and
+column 11, lines 19-53), each physical sector having an angle of coverage less than
+360 degrees (see fig.2, fig.15B and column 11, lines 19-53), each physical sector of the
+plurality at least partially overlaps the other physical sectors of the plurality to form the
+MIMO physical sector of the radio group , the physical sectors of the phased array
+operate as a MIMO antenna (see column 11, lines 19-53, also see Abstract, column 2,
+
+lines 59-65, column 8, lines 10-42 and column 10, lines 28-36).
+
+Application/Control Number: 13/566,986 Page 11
+Art Unit: 2642
+
+Regarding claims 2 and 7, Kitchener teaches the first MIMO physical sector
+substantially overlaps the second MIMO physical sector thereby forming the area of
+overlap (see column 11, lines 19-53).
+
+Regarding claims 3 and 8, Kitchener teaches the first radio group communicates
+with a first provided wireless device via the first MIMO physical sector in the area of
+overlap using the first channel (see column 11, lines 19-53), and the second radio group
+communicates with a second provided wireless device via the second MIMO physical
+sector in the area of overlap using the second channel (see column 11, lines 19-53 and
+column 6, line 30 to column 8, line 17).
+
+Regarding claim 9, Kitchener teaches the first radio group communicates with a
+first provided wireless device and the second radio group communicates with a second
+provided wireless device in a same area of overlap (see column 11, lines 19-53).
+
+Regarding claim 13, Kitchener teaches the first communication protocol uses a
+first channel, the second communication protocol uses a second channel, and the first
+channel is different from the second channel (see column 6, line 30 to column 8, line
+17).
+
+Regarding claim 14, Kitchener teaches the first channel uses a first frequency,
+the second channel uses a second frequency, the first frequency is different from the
+
+second frequency (see column 6, line 30 to column 8, line 17).
+
+Application/Control Number: 13/566,986 Page 12
+Art Unit: 2642
+
+Claim Rejections - 35 USC § 103
+13. The following is a quotation of 35 U.S.C. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.
+
+14. This application currently names joint inventors. In considering patentability of
+the claims under 35 U.S.C. 103(a), the examiner presumes that the subject matter of
+the various claims was commonly owned at the time any inventions covered therein
+were made absent any evidence to the contrary. Applicant is advised of the obligation
+under 37 CFR 1.56 to point out the inventor and invention dates of each claim that was
+not commonly owned at the time a later invention was made in order for the examiner to
+consider the applicability of 35 U.S.C. 103(c) and potential 35 U.S.C. 102(e), (f) or (9)
+prior art under 35 U.S.C. 103(a).
+15. Claims 4, 5, 10, 11, 15 and 16 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over Kitchener et al (US 6,870,515) in view of Hou et al (US 7,415,288).
+
+Regarding claims 4 and 10, Kitchener teaches claims 1, 6 and 12. Kitchener
+does not specifically disclose the radios of the first radio group communicate using a
+first protocol, the radios of the second radio group communicate using a second
+protocol, and the first protocol is different from the second protocol.
+
+Hou teaches the radios of the first radio group communicate using a first
+
+protocol, the radios of the second radio group communicate using a second protocol,
+
+Application/Control Number: 13/566,986 Page 13
+Art Unit: 2642
+
+and the first protocol is different from the second protocol (see column 1, line 42 to
+column 2, line 13, “IEEE”. In addition, see Official notice below).
+
+Therefore, it would have been obvious to one of ordinary skill in the art at the
+time the invention was made to provide the teaching of Hou into the system of Kitchener
+in order to provide transmission diversity with intentional partial beam pattern overlays
+to improve oeII seotorization or frequency re-use factor, at the same time, reduce intra-
+oeII and inter-oeII interference (see Hou, Abstract).
+
+Regarding claims 5, 11 and 16, the combination of Kitchener and Hou further
+teaches the first protocol includes the IEEE 802.1 in protocol, and the second protocol
+includes at least one of the Worldwide Interoperability for Microwave Access ("WiMax")
+and the Long Term Evolution ("LTE") protocol (see Hou, Abstract and column 1, line 42
+to column 2, line 13, “IEEE”. In addition, see Official notice below).
+
+Regarding claim 15, the combination of Kitchener and Hou further teaches the
+first communication protocol communicates with a mobile computer, and the second
+communication protocol communicates with a mobile phone (see Hou, Abstract and
+
+column 1, line 42 to column 2, line 13, “IEEE”. In addition, see Official notice below).
+
+16. Claims 4, 5, 10, 11, 15 and 16 are rejected under 35 U.S.C. 103(a) as being
+
+unpatentable over Kitchener et al (US 6,870,515) in view of Official notice.
+Regarding claims 4 and 10, Kitchener teaches claims 1, 6 and 12. Kitchener
+
+does not specifically disclose the radios of the first radio group communicate using a
+
+first protocol, the radios of the second radio group communicate using a second
+
+Application/Control Number: 13/566,986 Page 14
+Art Unit: 2642
+
+protocol, and the first protocol is different from the second protocol. However, the
+examiner takes Official notice that such feature as recited is very well known in the art
+for reducing interferences. Therefore, it would have been obvious to one of ordinary
+skill in the art at the time of the invention was made to modify the above teaching of
+Kitchener for providing a method as claimed, for the radios of the first radio group
+communicate using a first protocol, the radios of the second radio group communicate
+using a second protocol, and the first protocol is different from the second protocol.
+
+Regarding claims 5, 11 and 16, Kitchener teaches claims 1, 6 and 12. Kitchener
+does not specifically disclose the first protocol includes the IEEE 802.1 in protocol, and
+the second protocol includes at least one of the Worldwide Interoperability for
+Microwave Access ("WiMax") and the Long Term Evolution ("LTE") protocol. However,
+the examiner takes Official notice that such feature as recited is very well known in the
+art for reducing interferences. Therefore, it would have been obvious to one of ordinary
+skill in the art at the time of the invention was made to modify the above teaching of
+Kitchener for providing a method as claimed, for the first protocol includes the IEEE
+802.1 in protocol, and the second protocol includes at least one of the Worldwide
+Interoperability for Microwave Access ("WiMax") and the Long Term Evolution ("LTE")
+protocol.
+
+Regarding claim 15, Kitchener teaches claims 1, 6 and 12. Kitchener does not
+specifically disclose the first communication protocol communicates with a mobile
+computer, and the second communication protocol communicates with a mobile phone.
+
+However, the examiner takes Official notice that such feature as recited is very well
+
+Application/Control Number: 13/566,986 Page 15
+Art Unit: 2642
+
+known in the art for reducing interferences. Therefore, it would have been obvious to
+one of ordinary skill in the art at the time of the invention was made to modify the above
+teaching of Kitchener for providing a method as claimed, for the first communication
+protocol communicates with a mobile computer, and the second communication
+
+protocol communicates with a mobile phone.
+
+17. Claims 1-16 are rejected under 35 U.S.C. 103(a) as being unpatentable over
+Hou et al (US 7,415,288) in view of Kitchener et al (US 6,870,515).
+
+Regarding claims 1, 6 and 12, Hou teaches a system for wirelesst
+communicating with provided wireless devices via a plurality of multipIe-input-multiple-
+output ("MIMO") antennas (see fig.1 b to fig.3 and fig.6 to fig.8, also see fig.5, column 3,
+Iines15-52,a|so see column 1, lines 20-41, column 3, line 53 to column 4, line 6 and
+column, 5, line 54 to column 6, line 11), the system comprising: a first radio group
+comprising a first MIMO physical sector for communicating using a first channel, and a
+second radio group comprising a second MIMO physical sector for communicating
+using a second channel (see fig.1 b to fig.3, fig.6 to fig.8, and see fig.4 and see column
+3, lines 8 to column 4, line 6, column 5, line 26 to column 6, line 48, column 7, Iines14-
+36 and column 7, line 58 to column 8, line 9), wherein: the first MIMO physical sector
+overlaps at least 30 percent of an area of the second MIMO physical sector thereby
+forming an area of overlap (see fig.1 b to fig.3, fig.6 to fig.8, and see fig.4 and see
+column 3, lines 8 to column 4, line 6, column 5, line 26 to column 6, line 48, column 7,
+
+lines 14-36 and column 7, line 58 to column 8, line 9), a frequency of the first channel is
+
+Application/Control Number: 13/566,986 Page 16
+Art Unit: 2642
+
+different from a frequency of the second channel (see column 1, line 21 to column 2,
+line 13), each radio group respectively further comprises: at least two radios, the radios
+cooperate to form a plurality of physical sectors (see fig.4 and see column 3, lines 8 to
+column 4, line 6, column 5, line 26 to column 6, line 48, column 7, Iines14-36 and
+column 7, line 58 to column 8, line 9, also see fig.1 b to fig.3, fig.6 to fig.8), each physical
+sector having an angle of coverage less than 360 degrees (see fig.4 and fig.6), each
+physical sector of the plurality at least partially overlaps the other physical sectors of the
+plurality to form the MIMO physical sector of the radio group (see fig.4 and see column
+3, lines 8 to column 4, line 6, column 5, line 26 to column 6, line 48, column 7,Iines14-
+36 and column 7, line 58 to column 8, line 9, also see fig.1 b to fig.3, fig.6 to fig.8), the
+physical sectors operate as a MIMO antenna (see fig.5, column 3, lines 15-52, also see
+oolumn1,|ines 20-41, column 3, line 53 to column 4, line 6 and column, 5, line 54 to
+column 6, Iine11).
+
+Hou does not specifically disclose a phased array, and at least two radios
+coupled to the phased array, the radios cooperate with the phase array to form a
+plurality of physical sectors, the physical sectors of the phased array operate as a
+MIMO antenna.
+
+Kitchener teaches a phased array (see column 10, lines 14-27 and column 11,
+lines 24-27), and at least two radios coupled to the phased array (see column 10, lines
+14-27 and column 11, lines 24-27), the radios cooperate with the phase array to form a
+plurality of physical sectors (see column 10, lines 14-27 and column 11, lines 19-53),
+
+the physical sectors of the phased array operate as a MIMO antenna (see column 11,
+
+Application/Control Number: 13/566,986 Page 17
+Art Unit: 2642
+
+lines 19-53, also see Abstract, column 2, lines 59-65, column 8, lines10-42 and column
+10, lines 28-36).
+
+Therefore, it would have been obvious to one of ordinary skill in the art at the
+time the invention was made to provide the teaching of Kitchener into the system of Hou
+in order to provide a compact antenna unit, while still allowing a MIMO system to be
+exploited, the present invention recognizes that polarization diversity only can be used
+in a MIMO system without the need for spatially diverse antenna elements (see
+Kitchener, Abstract).
+
+Regarding claims 2 and 7, the combination of Hou and Kitchener further teaches
+the first MIMO physical seotor substantially overlaps the second MIMO physical seotor
+thereby forming the area of overlap (see Hou, fig.4 and see column 3, lines 8 to column
+4, line 6, column 5, line 26 to column 6, line 48, column 7, Iines14-36 and column 7,
+line 58 to column 8, line 9, also see fig.1 b to fig.3, fig.6 to fig.8, also see fig.5, column 3,
+lines 15-52, also see column 1, lines 20-41, column 3, line 53 to column 4, line 6 and
+column, 5, line 54 to column 6, line11,and/or see Kitchener, column 11, lines19-53).
+
+Regarding claims 3 and 8, the combination of Hou and Kitchener further teaches
+the first radio group communicates with a first provided wireless device via the first
+MIMO physical sector in the area of overlap using the first channel, and the second
+radio group communicates with a second provided wireless device via the second
+MIMO physical sector in the area of overlap using the second channel (see Hou, fig.4
+and see column 3, lines 8 to column 4, line 6, column 5, line 26 to column 6, line 48,
+
+column 7, lines14-36 and column 7, line 58 to column 8, line 9, also see fig.1b to fig.3,
+
+Application/Control Number: 13/566,986 Page 18
+Art Unit: 2642
+
+fig.6 to fig.8, also see fig.5, column 3, Iines15-52, also see column 1, lines 20-41,
+column 3, line 53 to column 4, line 6 and column, 5, line 54 to column 6, line 11 , and/or
+see Kitchener, column 11, lines 19-53).
+
+Regarding claims 4 and 10, Hou teaches the radios of the first radio group
+communicate using a first protocol, the radios of the second radio group communicate
+using a second protocol, and the first protocol is different from the second protocol (see
+Abstract and column 1, line 42 to column 2, line 13, “IEEE”).
+
+Regarding claims 5, 11 and 16, Hou teaches the first protocol includes the IEEE
+802.1 in protocol, and the second protocol includes at least one of the Worldwide
+Interoperability for Microwave Access ("WiMax") and the Long Term Evolution ("LTE")
+protocol (see Abstract and column 1, line 42 to column 2, line 13, “IEEE”).
+
+Regarding claim 9, the combination of Hou and Kitchener further teaches the first
+radio group communicates with a first provided wireless device and the second radio
+group communicates with a second provided wireless device in a same area of overlap
+(see Hou, fig.1 b to fig.3, fig.6 to fig.8, and see fig.4 and see column 3, lines 8 to column
+4, line 6, column 5, line 26 to column 6, line 48, column 7, Iines14-36 and column 7,
+line 58 to column 8, line 9, and/or see Kitchener, column 11, Iines19-53).
+
+Regarding claim 13, the combination of Hou and Kitchener further teaches the
+first communication protocol uses a first channel, the second communication protocol
+uses a second channel (see Hou, Abstract and column 1, line 42 to column 2, line 13,
+“IEEE”), and the first channel is different from the second channel (see Hou, Abstract
+
+and column 1, line 42 to column 2, line 13, “IEEE”, and/or see Kitchener, column 6, line
+
+Application/Control Number: 13/566,986 Page 19
+Art Unit: 2642
+
+30 to column 8, line 17).
+
+Regarding claim 14, the combination of Hou and Kitchener further teaches the
+first channel uses a first frequency, the second channel uses a second frequency, the
+first frequency is different from the second frequency (see Hou, column 1, line 21 to
+column 2, line 13, and/or see Kitchener, column 6, line 30 to column 8, Iine17).
+
+Regarding claim15, Hou teaches the first communication protocol communicates
+with a mobile computer, and the second communication protocol communicates with a
+
+mobile phone (see Abstract and column 1, line 42 to column 2, line 13, “IEEE”).
+
+Conclusion
+18. Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to NGHI H. LY whose telephone number is (571)272-7911.
+The examiner can normally be reached on 9:30am-8:00pm Monday-Thursday.
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Rafael Perez-Gutierrez can be reached on (571) 272-7915. The fax phone
+number for the organization where this application or proceeding is assigned is 571 -
+
+273-8300.
+
+Application/Control Number: 13/566,986 Page 20
+Art Unit: 2642
+
+Information regarding the status of an application may be obtained from the
+Patent Application Information Retrieval (PAIR) system. Status information for
+published applications may be obtained from either Private PAIR or Public PAIR.
+Status information for unpublished applications is available through Private PAIR only.
+For more information about the PAIR system, see http://pair-direot.uspto.gov. Should
+you have questions on access to the Private PAIR system, contact the Electronic
+Business Center (EBC) at 866-217-9197 (toII-free). If you would like assistance from a
+USPTO Customer Service Representative or access to the automated information
+system, call 800-786-9199 (IN USA OR CANADA) or 571 -272-1000.
+
+Nghi H. Iy
+
+/NGHI H LY/
+Primary Examiner, Art Unit 2642
+

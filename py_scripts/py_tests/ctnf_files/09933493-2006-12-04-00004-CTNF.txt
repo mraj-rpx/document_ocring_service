@@ -1,0 +1,458 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+ 
+
+77
+4/
+
+UNITED STATES DEPARTMENT OF COMMERCE
+United States Patent and Trademark Ofﬁce
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box I450
+
+Alexandn'a, Virginia 223134450
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+www.nspto.gov
+
+APPLICATION NO. | FILING DATE I FIRST NAMED [NVENTOR I ATTORNEY DOCKET N01 I CONFIRMATION NO. I
+09/933,493 08/20/2001 Stefan M. van den Oord MOBJ-OIOOOUSO 6164
+23910 7590 12/04/2006 I EXAMINER . I
+FLIESLER MEYER LLP BURGESS, BARBARAN
+650 CALIFORNIA STREET
+14TH FLOOR I ART UNIT I PAPER NUMBER I
+SAN FRANCISCO, CA 94108 2157
+
+PTO-90C (Rev. 10/03)
+
+DATE MAILEDl: 12/04/2006
+
+Please ﬁnd below and/or attached an Ofﬁce communication concerning this application or proceeding.
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+4 09/933,493 VAN DEN OORD ET AL.
+Ofﬁce ACtion Summary Examiner , Art Unit
+Barbara N. Burgess 2157
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). in no event, however, may a reply be timelyi f led
+
+after SIX (6) MONTHS from the mailing date of this communication.
+- If NO period for reply is speciﬁed above. the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will. by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Ofﬁce later than three months after the mailing date of this communication, even if timely ﬁled. may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status .
+1)IZI Responsive to communication(s) ﬁled on 11 Segtember 2006.
+2a)[:| This action is FINAL. 2b). This action is non-final. .
+3)E] Since this application is in condition for allowance except for fbrmal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 0.6. 213.
+
+‘Disposition of Claims
+
+4). Claim(s) 1-15,17,24-27 and 29-37 is/are pending in the application.
+
+ 
+
+4a) Of the above Claim(s) is/are withdrawn from consideration.
+5)l:] Claim(s) __ is/are allowed.
+6)® Claim(s) 1-15,17,24—27 and 29-37 is/are rejected.
+7)|:| Claim(s) __ is/are objected to.
+8)D Claim(s) _ are subject to restriction and/or election requirement.
+
+Application Papers
+
+9)|:| The specification is objected to by the Examiner.
+10)[] The drawing(s) filed on is/are: a)D accepted or b)|:l objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)|:] The oath or declaration is objected to by the Examiner. Note the attached Office Action or form PTO-152.
+
+ 
+
+Priority under 35 u.s.c. 5 119
+
+12)|:] Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)EI All b)|:] Some * c)D None of:
+LEI Certified copies of the priority documents have been received.
+2K] Certified copies of the priority documents have been received in Application No. __
+3.|:] Copies of the certiﬁed copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Ofﬁce action for a list of the certiﬁed copies not received.
+
+ 
+
+ 
+
+Attachment(s)
+
+1) IX] Notice of References Cited (PTO-892) 4) Interview Summary (PTO-413)
+
+2) E] Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mail Date. 20061127-
+
+3) D Information Disclosure Statement(s) (PTOISB/OB) 5) El Notice of Informal Patent Application
+Paper No(s)/Mai| Date . 6) D Other:
+
+ 
+
+ 
+
+ 
+
+ 
+
+US, Patent and Trademark Ofﬁce
+PTOL-326 (Rev. 0806) Ofﬁce Action Summary Part of Paper No./Mai| Date 20061127
+
+Application/Control Number: 09/933,493 - Page 2
+Art Unit: 2157
+
+DETAILED ACTION
+This Ofﬁce'Action is in response to Amendment filed September 11, 2005. Claims 20-
+21 are cancelled as requested by Applicants. Claims 1-15, 17, 24-27, 29 are presented
+for further examination. Claims 34-37 are newly added and are presented for initial
+
+examination.
+
+Claim Rejections - 35 USC § 103
+1. The following is a quotation of 35 U.S.C. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such‘ that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.’
+
+2. Claims 1- 15, 17, 24-27, 29-37 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over Zimowski et al. (hereinafter “Zim”, US Pateht 5,632,015) in view of
+
+Spaey et al. (hereinafter “Spaey", US Patent Publication 2002/0055981 A1).
+
+As per claims 1, 24, 29, 32-33, Zim discloses a system, user interface
+mechanism, and method of providing session-based retrieval and at a client system of
+string-based» content from a server comprising:
+
+0 - A communication protocol that enables session based connection between a
+
+client system and a server system, and allows the client system to send, within-a
+
+single session between the client system and the server system, a plurality of
+
+Application/Control Number: 09/933,4931 Page 3
+Art Unit: 2157
+
+consecutively input query strings, to query the server system for string-based
+content (column 2, Iines18-23, 27-30, 55-58, column 3, lines 40-45);
+
+. - A client object, in communication with a client software at the client system and
+with the communication piotocol, wherein'the client object receives additional
+characters from the client software, and as each character is being received,
+transmits to a seryer object at the server system a plurality of consecutive queries,
+within the same session, to retrieve content from the server system, wherein each
+consecutive query one of lengthens or shortens the query string by additional
+characters, and forms an increasingly focused query string for retrieving matching
+content from the server system (column 2, lines 40-45, column 3, lines 48-67,
+column 8, lines 18-29, 45-63);
+
+0 - A server object, in communication with the server system, and with the client
+object via the communication protocol, wherein the server object in response to
+receiving each consecutive query as it lengthens or shortens the query string by the
+
+‘ additional characters, automatically matches the increasingly focused query string
+against the content of the server system (column 2, lines 47-58, column 3, lines 1-
+10, column 4, lines 3-14, 44-61).
+
+Zim does not explicitly disclose:
+
+. A communication protocol that enables an asynchronous session based connection
+
+. between a client system and a server system;
+0 Asynchronousiy returns increasingly relevant content information to the client object
+
+for immediate'use by the client system.
+
+Application/Control Number: 09/933,493 Page 4
+Art Unit: 2157
+
+However, it is well-known to one of ordinary skill in the art the advantages of using a
+communication protocol that enables an asynchronous session and asynchronously
+returning relevant content as evidenced by Spaey (paragraphs [0004, 0157, 0167]).
+Therefore, ene or ordinary skill in the art at the time the invention was made
+would have found it obvious to incorporate or implement Spaey's asynchronous session
+and asynchronously returning relevant content in Zim's system allowihg search to take
+
+place for each character.
+
+As per claim 2, Zim discloses the system of claim 1 wherein said client object operates
+on or at a first computer and said server object operates on or at a secOnd computer
+and wherein both of said first and said second computers are connected via a network
+
+protocol (column 3, lines 40-60, column 4, lines 3-15).
+
+As per claim 3, Zim discloses the system of claim 1 wherein said server object and
+said client object runs on the same computer (column 4, lines 66-67, column 5, lines 1-
+
+3)..
+
+As per claim 4, Zim discloses the system of claim 1 wherein said server object runs
+on a plurality of separate computers, and wherein said client queries received during the
+
+session are distributed over said separate computers (column 4, lines 3-15).
+
+Application/Control Number:109/933,493 Page 5
+Art Unit: 2157 ~ '
+
+As per claim 5, Zim discloses the system of claim 1 wherein said server object stores
+previously received strings and returns said stored strings to the client in response to
+new client queries received during the session, without accessing said content (column
+
+4, lines 30-55).
+
+As per claim 6, Zim further discloses the system of claim 1 wherein said client
+software is embedded into a software application that provides a visual interface to an
+
+operator (column 3, lines 48-67).
+
+As per claim 7, Zim discloses the system of claim 1 wherein said client software is
+
+used as a content engine for another software system (column 3, lines 50-58).
+
+As per claim 8, Zim discloSes the system of claim 1 wherein said client software
+accumulates. a plurality of said single character queries as they are entered into the
+client, before sending them together to said server as a single query string (column 4,
+
+lines 15-25).
+
+As per claim 9, Zim discloses the system of claim 1 wherein said client software
+stores previously received responses from the server and uses these as the response
+
+to a new query by the user, without reassessing the server (column 8, lines 9-20).
+
+Application/Control Number: 09/933,493 ' Page 6
+Art Unit: 2157
+
+' As per claim 10, Zim discloses the system of claim 1 wherein said client software
+stores a pre-defined string and automatically transmits it to the server as the client
+software is first accessed, and wherein additional entry of query characters is not
+
+required before server responses are sent to the client (column 8, lines 30-45).
+
+As per claim 11, Zim discloses the system of claim 1 wherein said server stores the
+state of query and response of the client software, and restores the state of the client
+
+softWare after any interruption in said communication protocol (column 9, lines 20-43).
+
+As per claim 12, Zim discloses the system of claim 1 where said client software adds
+a qualifier to the query that is-passed to the server, whereby the server can use said
+qualifier'to execute the query and return appropriate results based on both the query
+
+A string and its qualifier (column 7, lines 43-55).
+
+As per claim 13, Zim discloses the system of claim 1 where said client software
+identifies a user of the system to the server whereby the server can store statistics and
+provides a history of queries and corresponding responses appropriate to said user
+
+(column 8, lines 45-60).
+
+As per claim 14, Zim discloses the system of claim 1 where said server system
+comprises a_ server tier and a syndication tier, and wherein said client software
+
+communicates to the server tier on a single computer, and wherein each query is
+
+Application/Control Number: 09/933,493 Page 7
+Art Unit: 2157
+
+forwarded by the server tier and the syndication tier to an appropriate syndicate of
+
+content channels connected to the server tier on a different computer (column 9, lines
+
+. 40-57).
+
+As per claim 15, Zim discloses the system of claim 1 where said server applies a
+content dependent pattern and filter to characters received from the client before
+
+queries are matched against the content (column 6, lines 45-64).
+
+As per claim 17, Zim further discloses the system of claim 1 where server responses
+comprise lists of strings, wherein each string is‘ accompanied by corresponding
+metadata, whereby the metadata"contains logical links to other data sources of Uniform
+
+Resource Identifiers (column 7, lines 20-40).
+
+As per claim 25, Zim discloses themechanism of claim 24, wherein said user
+
+interface element is an application input ﬁeld (column 5, lines 56-60).
+
+As per claim 26, Zim discloses the mechanism of claim 24, wherein said session
+indicator displays a triangular display element to indicate the presence of said session,
+and does not display said triangular display element to indicate the absenee of said
+
+session (column 6, lines 1-13).
+
+Application/Control Number: 09/933,493 ' Page 8
+Art Unit: 2157 '
+
+As per claim 27, Zim discloses the mechanism of claim 24, wherein said status
+indicator displays one, or a plurality of arrow display elements to indicate the transfer of
+data from said client application to said server during said session, and the presence of
+
+available session-specific content at said server (column 6, lines 23-41).
+
+As per claim 30, Zim discloses the system of claim 21 wherein the server object
+matches each query received form the client against an in-memory cache, and returns
+cached content to the client without accessing said content engine, unlees the cached
+
+_content has expired since it was last received from said content engine (column 9, lines
+
+1-25).
+
+As per claim 31, Zim discloses the system of claim 21, wherein the server
+analyzes the time between said consecutive queries received from each client system,
+and skips selected ones of said consecutive queries to reduce network communications
+
+and the load on said content engine (column 9, lines 45-67).
+
+As per claim 34, Zim discloses the system of claim 1, whereby“ the client object
+indicates the selection of the contentsources to be queried to the server when
+said session is initiated and when centent source selection changes are needed
+thereafter, without needing to embed said content source selection witheach of
+
+said consecutive string-based queries (column 12, lines 30-55).
+
+Application/Control Number: 09/933,493 ' ' Page 9
+Art Unit: 2157
+
+As perclaim 35, Zim discloses the system of claim 1 .whereby said session is
+
+shared by multiple client objects that exchange messages with the same server
+
+system, whereby each client object identifies a different content source selection to
+
+which said consecutive queries from the individual client object will be mapped by
+
+its corresponding server object (column 11, lines 40-65).
+
+As.per claims 36-37, Zim discloses a system and method for providing session-
+
+based searching of string-based content from a server, comprising:
+
+a user interface that allows a user at a client to enter a string of consecutively
+
+input queries to query the server for string-based content, wherein each
+consecutive query lengthens the query string by one or more additional characters
+(column 2, lines 18-23, 27-30, 55-58, column 3, lines 40-45);
+
+a communication protocol that transmits, via a client object at said client, to a
+
+server object at the server, the plurality of consecutive queries, to retrieve content
+from the sewer, wherein each additional character is immediately transmitted to
+
+the server object as the user is entering the additional characters in the user
+
+interface, to form an increasingly focused query string for retrieving content from
+
+the server (column 2, Iinesﬁ40-45, column 3, lines 48-67, Column 8, lines 18-29, 45-
+63);
+
+aserver object which in response to receiving each query as it is being
+
+lengthened or shortened by the one or more additional characters, automatically
+
+matches the increasingly focused query string against the content of the server,
+
+Application/Control Number: 09/933,493 . Page 10
+Art Unit: 2157
+
+and, as the user is entering queries (column 2, lines 47-58, column 3, lines 1-10,
+column 4, lines 3-14, 44-61.
+.Zim does not explicitly disclose:
+
+. A communication protocol that enabtes an asynchronous session based connection
+between a client system and a server system; .
+
+. Asynchronously returns increasingly‘relevant content’information to the client object
+for immediate use by the client system.
+
+However,fit is well-known to one of ordinary skill in the art the advantages of using a
+
+communication protocol that enables an asynchronous session and asynchronously
+
+returning relevant content as evidenced by Spaey (paragraphs [0004, 0157, O167]).
+
+Therefore, one or ordinary skill in the art at the time the invention was made
+would have found it obvious to incorporate or implement Spaey’s asynchronous session
+and asynchronously returning relevant content in Zim’s system allowing search to take
+
+place for each character.
+
+Response to Arguments
+(d) Applicant's argument has been considered but is moot in view of the new
+
+ground(s) of rejection.
+
+Application/Control Number: 09/933,493 Page 11
+Art Unit: 2157
+
+Conclusion
+Any inquiry concerhing this commtinication or earlier communications from the
+examiner should be directed to Barbara N Burgess whose telephone number is (703)
+305-3366. The examiner can normally be reached on M-F (8:00am-4:00pm).
+if attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Ario Etienne can be reached On (703) 308-7562. The fax phone number for
+the organization where this application or proceeding is assigned is 703-872-9306.
+Information regarding the status of ah application may be obtained from the Patent
+Application Information Retrieval (PAIR) system. Status information for published
+applications may be obtained from either Private PAIR or Public PAIR. Status
+infbrmation for unpublished applications is available through Private PAIR only. For
+more information about the PAIR system, see httpzl/pair-direct.uspto.gov. Should you
+have questions on access to the Private PAIR system, contact the Electronic Business
+
+Center (EBC) at 866-217-9197 (toII-free).
+
+Barbara N Burgess Examiner
+
+Art Unit 2157.
+
+ 
+
+November 27, 2006
+
+A 'v 0 EH ‘
+S&PEB‘iflSORY PATENT EXAMINER
+
+' “Was 91 an
+

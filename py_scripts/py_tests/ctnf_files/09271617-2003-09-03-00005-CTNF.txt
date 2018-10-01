@@ -1,0 +1,384 @@
+0 4. 0
+
+UNITED STATES PATENT AND TRADEMARK OFFICE .
+UNITED STATES DEPARTMENT OF COMMERCE
+United States Patent and Trademark Ofﬁce
+Address: ggthIlsdsngNER FOR PATENTS
+A , 0X
+
+Alexandria. Wxgmla" 22313-1450
+wwwAuzptmgov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+r APPLICATION NO. I FILING DATE 1 FIRST NAMED INVENTOR I ATTORNEY DOCKET NO. I CONFIRMATION N0. ]
+
+09/27l,6l7 03/17/1999 ADAM J. CHEYER SRIIPOZI 4388
+
+7590 09/03/2003
+BRIAN R. COLEMAN | EXAMINER J
+PATENT ATTORNEY
+PERKINS COIE LLP BULLOCK JR, LEWIS ALEXANDER
+P.O. BOX 2168
+MENLO, CA 95026-2168 I A” ”N” | PAPER ”UMBER |
+2126 /
+DATE MAILED: 09/03/2003 a
+
+Please ﬁnd below and/or attached an Ofﬁce communication concerning this application or proceeding.
+
+PTO-90C (Rem 07-01)
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+' ' Application Mom Applicant(s)
+09/271 ,617 CHEYER ET AL.
+Office Action Summary Examine, Art Unit
+Lewis A. Bullock, Jr. 2126
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE Q MONTH(S) FROM
+THE MAILING DATE OF THIS COMMUNICATION.
+
+- Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event, however, may a reply be timely ﬁled
+
+after SIX (6) MONTHS from the mailing date of this communication.
+
+If the period for reply speciﬁed above is less than thirty (30) days. a reply within the statutory minimum of thirty (30) days will be considered timely.
+
+If NO period for reply is speciﬁed above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+Failure to reply within the set or extended period tor reply will. by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Ofﬁce later than three months after the mailing date of this communication, even if timely ﬁled, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+”XI Responsive to communication(s) filed on 16 June 2003 .
+2a)[] This action is FINAL. 2b)IZ This action is non-final.
+
+3)D . Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 O.G. 213.
+
+Disposition of Claims
+4)IZ Claim(s) 1-3,5-10,14-21,25-28 and 39-41 is/are pending in the application.
+
+ 
+
+ 
+
+4a) Of the above claim(s) is/are withdrawn from consideration.
+5)I:] Claim(s) __ is/are allowed.
+6)|Zl Ciaim(s) 1-3,5-10,14-21,25-28 and 39-41 is/are rejected.
+7)I:| Claim(s) _ is/are objected to.
+8)l:| Claim(s) _ are subject to restriction and/or election requirement.
+
+Application Papers
+9)|:| The specification is objected to by the Examiner.
+10)X| The drawing(s) filed on 16 June 2003 is/are: a)[] accepted or b)|X| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+11)[I The proposed drawing correction filed on is: a)D approved b)[:] disapproved by the Examiner.
+If approved, corrected drawings are required in reply to this Ofﬁce action.
+12)[] The oath or declaration is objected to by the Examiner.
+Priority under 35 U.S.C. §§ 119 and 120
+13)E| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:] AII b)D Some * c)l:l None of:
+113 Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No. __
+
+3.[:] Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Office action for a list of the certified copies not received.
+
+14)E] Acknowledgment is made of a claim for domestic priority under 35 U.S.C. § 119(e) (to a provisional application).
+
+a) Cl The translation of the foreign language provisional application has been received.
+15)IZ] Acknowledgment is made of a claim for domestic priority under 35 U.S.C. §§ 120 and/or 121.
+
+Attachment(s)
+
+ 
+
+1) E Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413) Paper No(s). .
+2) 8 Notice of Draﬂsperson’s Patent Drawing Review (PTO-948) 5) D Notice of Informal Patent Application (PTO—152)
+3) D Information Disclosure Statement(s) (PTO-1449) Paper No(s) . 6) C] Other:
+
+ 
+
+ 
+
+ 
+
+US. Patent and Trademark Ofﬁce
+PTOL—326 (Rev. 04-01) Ofﬁce Action Summary Part of Paper No. 14
+
+Application/Control Number: 09/271 ,617 1 Page 2
+Art Unit: 2126
+DETAILED ACTION
+Drawings
+1. New corrected drawings are required in this application because of Draftperson’s
+
+Review. Applicant is advised to employ the services of a competent patent draftsperson
+outside the Office, as the US. Patent and Trademark Office no longer prepares new
+drawings. The corrected drawings are reqbired in reply to the Office action to avoid
+abandonment of the application. The requirement for corrected drawings will not be held
+
+in abeyance.
+
+Claim Rejections - 35 USC § 702
+2. The folIowing is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that
+
+form the basis for the rejections under this section made in this Office action:
+
+A person shall be entitled to a patent unless —
+
+(b) the invention was patented or described in a printed publication in this or a foreign country or in public
+use or on sale in this country, more than one year prior to the date of application for patent in the United
+States.
+
+3. Claims 1, 3, 5, 6, 15-17, 39, and 40 are rejected under 35 U.S.C. 102(b) as being
+anticipated by “InfoSIeuth: Agent-Based Semantic Integration of Information in Open
+and Dynamic Environments” by BAYARDO et al.
+
+As to claim 1, BAYARDO teaches a computer-implemented method for
+communication and cooperative task completion between a community of distributed
+electronic agents communicating using a dynamically expandable interagent-
+communication language, ICL, (KQML) (pg. 197, Agent Communication Language) and
+
+at least on other distributed component system (Resource Agent system), the other
+
+Application/Control Number: 09/271 ,617 Page 3
+Art Unit: 2126
+
+distributed component system communicating using a protocol incompatible with the
+ICL (pg. 199, Resource Agent, “The Resource Agent has to translate queries expressed
+in a common query language (such as KQML/ KIF) into a language understood by the
+underlying systerri.”), the method comprising the acts of: receiving by a bridge agent
+(Resource Agent) a description of functional capabilities of components (information
+source) of the other distributed component system from a component registry
+(registered resources and their capabilities) of the other distributed component system
+(pg. 197, “Resource Agent:...|t also advertises the resources capabilities.”); translating
+the functional capabilities of components received from the protocol of the other
+distributed component system into the ICL (KQML), to create a translated description
+(pg. 197, Agent Interactions, “When a Resource Agent initializes, it sets up its
+connection to its resources and advertises the components of ontology (ies) that it
+understands to the Broker Agent”; pg. 199, Resource Agent, “The components of an
+example Resource Agent...The language processor trans|ates a query expressed in
+terms of global ontology into a query expressed in terms of the Oracle database
+schema"); adding to a facilitator registry (registered agents and their capabilities) of the
+community of distributed agents the translated description (pg. 199, “As agents come
+online, they advertise their services to the broker via KQML...MinimaIIy, an agent must
+advertise to the Broker its location, name, and the language it speak.”; pg. 197, “When a
+Resource Agent initializes, it sets up its connection to its resource and advertises the
+components of ontology (ies) that it understands to the Broker Agent”), wherein the
+
+facilitator registry (registered agents and their capabilities with the Broker Agent) is
+
+Application/Control Number: 09/271 ,617 Page 4
+Art Unit: 2126
+
+distinct from the component registry (registered resources and their capabilities with the
+Resource Agent); responsive to a request (query) for service to the community of
+distributed agents delegating an ICL sub-goal request (decomposed query) to the
+bridge agent (Resource Agent) (pg. 197, “The Execution Agent takes the set of
+appropriate Resource Agents, decomposes the query, and routes it appropriately.”) ;
+translating at the bridge agent (Resource Agent) the delegated ICL sub-goal request
+(decomposed query) into the incompatible protocol of the other distributed system to
+create a translated request (pg. 197, “Each Resource Agent translates the query from
+the query domain’s global ontology into the resource-specific schema..."); and invoking
+one or more components of the other distributed component system using the
+translated request (pg. 197, “...fetches the results and returns them to the Execution
+Agent"; pg. 199, “The Resource Agent also needs to ariswer queries...the resource
+agent sends them to the information source for execution, and translates the answers
+
+back into the format understood by the requesting agent”).
+
+As to claim 3, BAYARDO teaches the request for service is received from an
+agent capable of communicating in the ICL (KQML) (pg. 197, UserAgent, “Currently,
+
+the agents query the task execution agents using KQML with SQL content”).
+
+As to claim 5, BAYARDO teaches the acts of: receiving functional capabilities of
+a distributed electronic agent (resource agents); adding the functional capabilities to the
+
+facilitator registry (registered agents and their capabilities with the Broker Agent) (pg.
+
+ 
+
+Application/Control Number: 09/271 ,617 i Page 5
+Art Unit: 2126
+
+197, “When a Resource Agent initializes, it sets up its connection to its resource and
+advertises the components of ontology (ies) that it understands to the Broker Agent”);
+determining a second ICL sub-goal (decomposed query) necessary to accomplish the
+request for service (query); selecting from the facilitator registry (registered agents and
+their capabilities with the Broker Agent) an agent capable of completing the second ICL
+sub-goal (via querying the Broker agent); and delegating the second ICL sub-goal
+(decomposed query) to the selected agent (Resource Agent) (pg. 197, Agent
+Interactions, “On receive a request...The Execution Agent reassembles the results and
+returns them to the User Agent, which then returns the results to the user’s Viewer
+
+applet for display.”).
+
+As to claim 6, BAYARDO teaches the components are data objects and the
+agents are written in Java (pg. 199-200, Implemention, Resource Agent,
+
+Implementation). Therefore it is inherent that components are software-based objects.
+
+As to claims 39, 15-17, reference is made to a computer readable medium that
+corresponds to the method of claims 1, 3, 5, and 6 and is therefore met by the rejection
+
+of claims 1, 3, 5 and 6 above.
+
+As to claim 40, reference is made to a software computer architecture that
+corresponds to the method of claim 1 and is therefore met by the rejection of claim 1
+
+above.
+
+.‘ ‘
+
+-Application/Contro| Number: 09/271 ,617 Page 6
+Art Unit: 2126
+
+Claim Rejections - 35 USC § 103
+4. The following is a quotation of 35 U.S.C. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Ofﬁce action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.
+
+5. Claims 2. 14, and 41 are rejected under 35 U.S.C. 103(a) as being unpatentable
+over “InfoSIeuth: Agent-Based Semantic Integration of Information in Open and
+Dynamic Environments” by BAYARDO et al. in view of “Information Brokering in an
+Agent Architecture” by MARTIN et al.
+
+As to claim 2, BAYARDO substantially discloses the invention above. However,
+BAYARDO does not teach the request for service is generated by one of the
+components.
+
+MARTIN teaches the request for service is generated by one of the components
+of the other distributed component system (information source), and comprising the acts
+of: transmitting the request for service to the bridge agent (Broker); and translating the
+request for service into the lCL (broker schema) (pg. 12, “The Broker also provides the
+capability of answering queries that are expressed in the schema of the information
+source, rather than the broker schema”; pg. 13, “But in addition, this legacy source may
+also act as an information requestor, submitting queries that are formulated in terms of
+its source schema. (A syntactic translation may be needed to place the query in lCL
+
+syntax, but in most cases, this is relatively straightforward to implement"). Therefore, it
+
+.\ .
+
+Application/Control Number: 09/271 ,617 Page 7
+Art Unit: 2126
+
+would be obvious to combine the teachings of BAYARDO with the teachings of MARTIN
+in order to facilitate transparent access in either a source or broker schema to a variety
+
+of information sources (abstract).
+
+As to claim 14, reference is made to a computer readable medium that
+corresponds to the method of claim 2 and is therefore met by the rejection of claim 2
+
+above.
+
+As to claim 41, BAYARDO substantially discloses the invention above. However,
+BAYARDO does not teach the bridge agent is integral with the facilitator.
+
+MARTIN teaches the bridge agent is integral with the facilitator (pg. 7, figure 1).
+Therefore, it would be obvious to combine the teachings of BAYARDO with the
+teachings of MARTIN in order to work in close cooperation with another agent in an
+
+agent architecture (pg. 6-7).
+
+6. Claims 7-10, 18-21, and 25-28 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over “InfoSIeuth: Agent-Based Semantic Integration of Information in
+Open and Dynamic Environments" by BAYARDO et at
+
+As to claims 7-10, BAYARDO teaches the agents are objects and a user agent
+communicates with data objects through a resource agent. However, BAYARDO does
+not teach that the other distributed component system utilizes a distributed object
+
+service or that service is Jini, Corba, or Java service. “Official Notice” is taken that JINI,
+
+. .
+
+Application/Control Number: 09/271 ,617 Page 8
+Art Unit: 2126
+
+CORBA, and Java are well-known object oriented software services for communication
+between objects. Therefore, it would be obvious to one of ordinary skill in the art at the
+time of the invention to combine the teachings of BAYARDO with the well known
+distributed object services in order to communicate with between a variety of objects
+
+that implement different object services.
+
+As to claims 18-21, reference is made to a computer readable medium that
+corresponds to the method of claims 7-10 and is therefore met by the rejection of claims
+
+7-10 above.
+
+As to claims 25-28, reference is made to a software computer architecture that
+corresponds to the method of claims 7-10 and is therefore met by the rejection of claims
+
+7-10 above.
+
+Response to Arguments
+7. Applicant's arguments with respect to claims 1-3, 5-10, 14-21, 25-28, and 39-41
+
+have been considered but are moot in view of the new ground(s) of rejection.
+
+Conclusion
+Any inquiry concerning this communication or earlier communications from the
+
+examiner should be directed to Lewis A. Bullock, Jr. whose telephone number is (703)
+
+Application/Control Number: 09/271 ,617 Page 9
+Art Unit: 2126
+
+305-0439. The examiner can normally be reached on Monday-Friday, 8:30 am - 5:00
+pm.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, John A Follansbee can be reached on (703) 305-8498. The fax phone
+number for the organization where this application or proceeding is assigned is (703)
+872-9306.
+
+Any inquiry of a general nature or relating to the status of this application or
+proceeding should be directed to the receptionist whose telephone number is (703) 305-
+
+0286.
+
+feﬁW/Q
+
+lab
+
