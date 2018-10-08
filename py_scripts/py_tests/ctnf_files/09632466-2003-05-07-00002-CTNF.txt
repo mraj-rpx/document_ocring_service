@@ -1,0 +1,290 @@
+ 
+
+UNITED STATES DEPARTMENT OF COMMERCE
+United States Patent and Trademark Ofﬁce
+Addrul: COMMISSIONER OF PATENTS AND TRADEMARKS
+
+PO. Box “50
+Alexandria, Vitamin 22313-1450
+www.nrptmgov
+
+ 
+
+ 
+
+r APPLICATION NO. ] FILING DATE 1 FIRST NAMED INVENTOR ATTORNEY DOCKET NO. CONFIRMATION N0. J
+09/632,466 08/04/2000 Henry Milan 1-14402 1939
+7590 05/07/2003
+D Edward Dolgorukov EXAMINER
+Marshall &.Melhom
+Four SeaGate 8th Floor "U H H’ KIM T
+Toledo, OH 43604
+. ART UNIT PAPER NUMBER
+2189 .
+
+ 
+
+ 
+
+ 
+
+ 
+
+DATE MAILED: 05/07/2003
+
+Please ﬁnd below and/or attached an Ofﬁce communication concerning this application or proceeding.
+
+PTO-90C (Rev. 07-01)
+
+7,
+
+ 
+
+ 
+
+(g ‘ Application No. iApplicanﬂs)
+09/632.466 MILAN ET AL.
+Office Action Summary Examiner Art Unit
+Kim T. Huynh 2189
+
+ 
+
+ 
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) FROM
+THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). in no event. however, may a reply be timely ﬁled
+after SIX (6) MONTHS from the mailing date of this communication.
+- If the period for reply speciﬁed above is less than thirty (30) days. a reply within the statutory minimum of thirty (30) days will be considered timely.
+- if N0 period for reply is speciﬁed above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will, by statute. cause the application to become ABANDONED (35 U.S.C. 5 133).
+- Any reply received by the Ofﬁce later than three months after the mailing date of this communication, even if timely ﬁled, may reduce any
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+1)IZ] Responsive to communication(s) filed on 25 Februagy 2003 .
+2a)D This action is FINAL. 2b)IZ This action is non-final.
+
+3)[:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 O.G. 213. ’
+
+Disposition of Claims
+MEI Ciaim(s) 1-11 is/are pending in the application.
+
+ 
+
+ 
+
+4a) Of the above claim(s) is/are withdrawn from consideration.
+5)[:] Claim(s) is/are allowed.
+6)XI Claim(s) jﬂ is/are re'ected. _
+?)EI Claim(s) __ is/are objected to.
+
+8)l___] Claim(s) are subject to restriction and/or election requirement.
+Application Papers
+
+9M] The specification is objected to by the Examiner.
+10)D The drawing(s) filed on is/are: a)El accepted or b)[] objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+11)|:I The proposed drawing correction ﬁled on _ is: a)[] approved b)|:] disapproved by the Examiner.
+If approved. corrected drawings are required in reply to this Ofﬁce action.
+12)D The oath or declaration is objected to by the Examiner.
+Priority under 35 U.S.C. §§ 119 and 120
+13)l:] Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)—(d) or (f).
+a)|] All b)|:] Some * c)|:] None of:
+1D Certiﬁed copies of the priority documents have been received.
+2D Certiﬁed copies of the priority documents have been received in Application No. _
+
+31] Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Ofﬁce action for a list of the certified copies not received.
+
+14)L__] Acknowledgment is made of a claim for domestic priority under 35 U.S.C. § 119(e) (to a provisional application).
+
+a) l] The translation of the foreign language provisional application has been received.
+15)l___| Acknowledgment is made of a claim for domestic priority under 35 U.S.C. §§ 120 and/or 121.
+
+ 
+
+Attachment(s)
+
+1) Notice of References Cited (PTO—892) 4) E] Interview Summary (PTO-413) Paper No(s). .
+2) D Notice of Draﬂsperson's Patent Drawing Review (PTO-948) 5) D Notice of Informal PatentApplication (PTO—152)
+
+3) D Information Disclosure Statement(s) (PTO-1449) Paper No(s) . 6) D Other:
+
+ 
+
+ 
+
+ 
+
+US Patent and Trademark Ofﬁce
+PTO-326 (Rev. 04-01) Ofﬁce Action Summary Part of Paper No. 5
+
+Application/Control Nun‘Qr: 09/632,466 . Page 2
+Art Unit: 2189
+
+DETAILED ACTION
+Claim Rejections - 35 USC § 102
+1. The following is a quotation of the appropriate paragraphs of 35
+U.S.C. 102 that form the basis for the rejections under this section made in this
+
+Office action:
+
+A person shall be entitled to a patent unless —
+
+(e) the invention was described in (1) an application for patent, published under section
+122(b), by another ﬁled in the United States before the invention by the applicant for patent or
+(2) a patent granted on an application for patent by another ﬁled in the United States before
+the invention by the applicant for patent, except that an international application ﬁled under
+the treaty deﬁned in section 351(a) shall have the effects for purposes of this subsection of an
+application ﬁled in the United States only if the international application designated the United
+States and was published under Article 21(2) of such treaty in the English language.
+
+2. Claims 1 and ‘10 are rejected under 35 U.S.C. 102(e) as being anticipated
+by Mizutan et al. (Pub No. :US 2003/0043771 A1)
+a. As per claims 1 and 10, Mizutan discloses wireless USB hub
+comprising:
+= a data reception circuit for receiving data in a wireless
+manner from the one or more remote wireless peripheral
+devices; (see abstract and [0014], wherein wireless hub
+perform communication with computer and devices, converts
+to a USB package routed to device and vice versa,
+transceiver transmit and receive data from devices)
+- an upstream port connected to the computer; ([0116],
+wherein upstream to computer and downstream to device)
+- a hub controller for passing information from the data
+
+reception circuit to the upstream port for transmission to the
+
+(j )
+Application/Control Nun‘: 09/632,466 . Page 3
+Art Unit: 2189
+
+computer. ([0116], wherein upstream to computer and
+downstream to device)
+Claim Rejections - 35 USC § 103
+3. The following is a quotation of 35 U.S.C. 103(a) which forms the basis for
+
+all obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described
+as set forth in section 102 of this title, if the differences between the subject matter sought to
+be patented and the prior art are such that the subject matter as a whole would have been
+obvious at the time the invention was made to a person having ordinary skill in the art to which
+said subject matter pertains. Patentability shall not be negatived by the manner in which the
+invention was made.
+
+Claims 2-9, 11 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over Mizutani et al. (Pub. No.: US 2003/0043771 A1)
+
+a. As per claim 2, Mizutani discloses data reception circuit further includes
+
+receiver (fig.1, 21) for receiving wireless information from at least one of
+
+the one or more remote peripheral devices. [0047]
+
+Although Mizutani fails to disclose RF receiver for receiving
+wireless information. Mizutani does teach transceiver(ﬁg.1,21)
+
+Examiner take Ofﬁcial Notice that RF receiver and transceiver are
+well known in' the art for providing a means of receiving wireless
+information.
+
+It would have been obvious one having ordinary skills in the art at
+the time the invention was made to have RF receiver or transceiver with
+the same purpose of receiving wireless information.
+
+b. As per claim 3 , Mizutani discloses data reception circuit further
+
+includes a signal discriminator for receiving information from said receiver
+
+Application/CejrolNum r:09/632,466 . A Page4
+Art Unit: 2189
+
+and presenting the peripheral device data information to hub controller.
+([0047], [0020],[OO14], wherein a hub and port each have a device
+identiﬁer uniquely assigned)
+
+0. As per claim 5, Mizutani discloses further including three separate data
+reception circuits each corresponding to a separate remote peripheral
+device, wherein each of data reception circuits include a separate
+receiver. ([0015], (fig.1,23 transceiver, wherein a hub is controlling each
+port has a device identifier assigned to them which implies separation of
+data reception)
+
+Although Mizutani discloses limitations as above showing each
+
+corresponding to a separate remote peripheral. However Mizutani fails to
+discloses three separate data reception circuits It would have been
+obvious to one having ordinary skill in the art at the time the invention was
+made to have the additions of 2"‘j and 3rd circuits since it has been held
+that mere duplication of the essential working parts of a device involves
+only routine skill in the art.
+d. Claims 6 and 11, Mizutani discloses all the limitations as above except
+RF receiver is a DSSS BPSK modulation receiver as claimed in claims 6
+and 11. However, Applicant Admitted Prior Art RF receiver is conventional
+DSSS BPSK modulation receiver which is well known in the art. (page 10,
+lines 9-10)
+
+It would have been obvious one having ordinary skills in the art at
+
+the time the invention was made to have DSSS BPSK modulation receiver
+
+Application/Control Numge209/632,466 . Page 5
+Art Unit: 2189
+
+with the same purposeof modulating signals to correlated signal for
+communicating between devices.
+
+0. As per claim 3 , Mizutani discloses data reception circuit further
+includes a signal discriminator for receiving information from said receiver
+and presenting the peripheral device data information to hub controller.
+([0047], [0020],[0014], wherein a hub and port each have a device
+identifier uniquely assigned)
+
+e. As per claims 4, 8 and 9, Mizutani discloses hub controller further
+includes a serial interface engine (ﬁg.1, 15) for converting the remote
+
+peripheral information into USB format. [0015]
+
+Response to Arguments
+4. Applicant's arguments with respect to claims 1-11 have been considered
+but are moot ih view of the new ground(s) of rejection.
+
+Conclusion
+
+5. Any inquiry concerning this communication or eaﬂier communications from the examiner
+should be directed to Kim Huynh whose telephone number is (703)305-5384 or via e-mail
+addressed to [kim.huynh3@uspto.gov]. The examiner can normally be reached on M-F 8:30AM-
+6:30PM.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Mark Rinehan‘ can be reached on (703) 305-4815 or via e-mail addressed to
+[markrinehart@uspto.gov]. The fax phone numbers for the organization where this application or
+proceeding is assigned are (703) 746-7249 for regular communications and (703) 746-7238 for
+
+After Final communications.
+
+Application/Control Num r: 09/632,466 . Page 6
+Art Unit: 2189
+
+Any inquiry of a general nature or relating to the status of this application or proceeding
+
+should be directed to the receptionist whose telephone number is (703)306—5631.
+
+Mia M
+Kim Huynh ,
+
+April 24, 2003 SUMATI LEFKOWITZ
+PRIMARY EXAMINER
+
