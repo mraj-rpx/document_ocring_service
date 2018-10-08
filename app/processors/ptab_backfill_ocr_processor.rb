@@ -1,5 +1,6 @@
 class PtabBackfillOcrProcessor < OcrProcessorBase
   BACKFILL_LIMIT = 25
+  FREQUENCY = '2m'
 
   def process!
     documents = PtabCaseDetail.ocrable_docs_for_backfill.limit(BACKFILL_LIMIT)

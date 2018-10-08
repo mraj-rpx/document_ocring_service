@@ -1,4 +1,6 @@
 class AppDataOcrProcessor < OcrProcessorBase
+  FREQUENCY = '3m'
+
   def process!
     pair_ocrs = PairOcr.ocrable_documents
 
