@@ -3,10 +3,10 @@ require 'rails_helper'
 RSpec.describe OCRProcessor do
   describe 'constants' do
     it 'should have a constant PROCESSOR_LIST' do
-      expect(OCRProcessor::PROCESSOR_LIST).to eq([DocumentOcrProcessor, PtabOcrProcessor,
-                                                  LitDocumentOcrProcessor, PatAssignmentOcrProcessor,
-                                                  PatAssignmentMetadataProcessor, LitDocumentOngoingOcrProcessor,
-                                                  LitDocumentBackfillOcrProcessor])
+      expect(OCRProcessor::PROCESSOR_LIST).to eq([DocumentOcrProcessor, PtabOcrProcessor, LitDocumentOcrProcessor,
+                                                  PatAssignmentOcrProcessor, PatAssignmentMetadataProcessor,
+                                                  LitDocumentOngoingOcrProcessor, LitDocumentBackfillOcrProcessor,
+                                                  PtabBackfillOcrProcessor, AppDataOcrProcessor])
     end
   end
 
