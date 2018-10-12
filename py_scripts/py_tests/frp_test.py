@@ -564,9 +564,7 @@ class FrpTest(unittest.TestCase):
             'rejection_ground': '103(a)',
             'rejection_reason': 'unpatentable',
             'ref_name': 'Purcell',
-            'ref_doc_num': 'US 2001/0013038 A1',
-            'in_view_ref_name': 'Hughes et al.',
-            'in_view_ref_doc_num': 'US 2003/0195876 A1'
+            'ref_doc_num': 'US 2001/0013038 A1'
         }]
         self.assertEqual(data, result)
 
@@ -919,6 +917,86 @@ class FrpTest(unittest.TestCase):
             'rejection_reason': 'unpatentable',
             'ref_doc_num': '8,648,717',
             'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTNF with doc num format,
+    Claims 1—21 are rejected under 35 U.S.C. 102(e) as being anticipated by Simon et aL, US.
+Patent No. 7,039,222.
+    """
+    def test_fr_for_ctnf_format_with_ref_name_and_then_doc_num(self):
+        with open('ctnf_files/15369698-2017-02-08-00011-CTNF.txt') as ff:
+            text = ff.read()
+        data = frp.parse(text)
+        result = [
+        {
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Simon et aL,',
+            'ref_doc_num': '7,039,222',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21]
+        },
+        {
+            'rejection_ground': '102(e)',
+            'rejection_reason': 'anticipated',
+            'ref_name': 'Lin,',
+            'ref_doc_num': '2003/0235333A1',
+            'claim_nums': [1, 2, 8, 9, 15, 16]
+        },
+        {
+            'rejection_ground': 'nonstatutory double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '9,516,217',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        },
+        {
+            'rejection_ground': 'nonstatutory double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '8,908,932',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        },
+        {
+            'rejection_ground': 'nonstatutory double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '8,369,586',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        },
+        {
+            'rejection_ground': 'nonstatutory double patenting',
+            'rejection_reason': 'unpatentable',
+            'ref_doc_num': '8,121,430',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+        }]
+        self.assertEqual(data, result)
+
+    """
+    Should parse the CTFR with doc num format,
+
+Claim 1-18 are rejected under 35 U.S.C. 103(a) as being unpatentable over
+Watkins et al., (hereinafter “Watkins”, US. Patent Number 6457017) in view of Lewak et
+al., (hereinafter “Lewak”, US. Patent Number 5544360) and further in view of Stickler
+(US. Patent Application Publication Number 2003/0088593).
+    """
+    def test_fr_for_ctnf_format_with_ref_name_for_CTFR_with_diff_doc_num(self):
+        text = """
+        Claim 1-18 are rejected under 35 U.S.C. 103(a) as being unpatentable over
+        Watkins et al., (hereinafter “Watkins”, US. Patent Number 6457017) in view of Lewak et
+        al., (hereinafter “Lewak”, US. Patent Number 5544360) and further in view of Stickler
+        (US. Patent Application Publication Number 2003/0088593).
+        """
+        data = frp.parse(text)
+        result = [
+        {
+            'rejection_ground': '103(a)',
+            'rejection_reason': 'unpatentable',
+            'ref_name': 'Watkins et al.,',
+            'ref_doc_num': '6457017',
+            'in_view_ref_name': 'Lewak et         al.,',
+            'in_view_ref_doc_num': '5544360',
+            'in_further_view_ref_name': 'Stickler',
+            'in_further_view_ref_doc_num': '2003/0088593',
+            'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
         }]
         self.assertEqual(data, result)
 

@@ -131,14 +131,17 @@ _ref_doc_num_prepend_options = pp.Or([
         pp.Or([
             pp.CaselessLiteral('no'),
             pp.CaselessLiteral('no.')
-        ])
+        ]),
+        pp.Optional(pp.CaselessLiteral('number'))
     ]),
     pp.Each([
         pp.CaselessLiteral('u'),
         pp.Optional(pp.CaselessLiteral('.')),
         pp.CaselessLiteral('s.'),
         pp.CaselessLiteral('patent'),
+        pp.Optional(pp.CaselessLiteral('publication')),
         pp.Optional(pp.CaselessLiteral('no.')),
+        pp.Optional(pp.CaselessLiteral('number'))
     ]),
     pp.Each([
         pp.CaselessLiteral('u'),
@@ -146,7 +149,8 @@ _ref_doc_num_prepend_options = pp.Or([
         pp.CaselessLiteral('s.'),
         pp.CaselessLiteral('patent'),
         pp.CaselessLiteral('application'),
-        pp.CaselessLiteral('publication')
+        pp.CaselessLiteral('publication'),
+        pp.Optional(pp.CaselessLiteral('number'))
     ]),
     pp.Each([
         pp.CaselessLiteral('us'),
@@ -154,7 +158,8 @@ _ref_doc_num_prepend_options = pp.Or([
         pp.Optional(pp.CaselessLiteral('#')),
         pp.Optional(pp.CaselessLiteral('patent')),
         pp.Optional(pp.CaselessLiteral('.')),
-        pp.Optional(pp.CaselessLiteral('#'))
+        pp.Optional(pp.CaselessLiteral('#')),
+        pp.Optional(pp.CaselessLiteral('number'))
     ]),
     pp.Each([
         pp.CaselessLiteral('us'),
@@ -165,26 +170,28 @@ _ref_doc_num_prepend_options = pp.Or([
         pp.Optional(pp.CaselessLiteral('.')),
         pp.CaselessLiteral('no'),
         pp.Optional(pp.CaselessLiteral('.')),
-        pp.CaselessLiteral(':')
+        pp.CaselessLiteral(':'),
+        pp.Optional(pp.CaselessLiteral('number'))
     ]),
     pp.Each([
         pp.CaselessLiteral('copending'),
         pp.CaselessLiteral('application'),
-        pp.CaselessLiteral('no.')
+        pp.CaselessLiteral('no.'),
+        pp.Optional(pp.CaselessLiteral('number'))
     ]),
-    pp.And([
+    pp.Each([
         pp.CaselessLiteral('hereinafter'),
         _ref_name_with_quoted,
         pp.CaselessLiteral(','),
-        pp.Optional(pp.And([
-            pp.CaselessLiteral('us'),
-            pp.Or([
-                pp.CaselessLiteral('patent'),
-                pp.CaselessLiteral('pateht')
-            ]),
-            pp.Optional(pp.CaselessLiteral('number'))
-        ])),
-        pp.Optional(pp.CaselessLiteral('publication'))
+        pp.Optional(pp.CaselessLiteral('u')),
+        pp.Optional(pp.CaselessLiteral('.')),
+        pp.Optional(pp.CaselessLiteral('s')),
+        pp.Optional(pp.CaselessLiteral('.')),
+        pp.Optional(pp.CaselessLiteral('patent')),
+        pp.Optional(pp.CaselessLiteral('pateht')),
+        pp.Optional(pp.CaselessLiteral('number')),
+        pp.Optional(pp.CaselessLiteral('publication')),
+        pp.Optional(pp.CaselessLiteral('application'))
     ]),
     pp.Each([
         pp.CaselessLiteral('pub'),
@@ -192,7 +199,8 @@ _ref_doc_num_prepend_options = pp.Or([
         pp.CaselessLiteral('no'),
         pp.Optional(pp.CaselessLiteral('.')),
         pp.CaselessLiteral(':'),
-        pp.CaselessLiteral('us')
+        pp.CaselessLiteral('us'),
+        pp.Optional(pp.CaselessLiteral('number'))
     ])
 ])
 
@@ -584,7 +592,77 @@ grammer_12 = pp.And([
     pp.SkipTo(_close_bracket, failOn=failon_for_g_12).setResultsName('in_further_view_ref_name').setParseAction(strip_ref_name),
     _close_bracket
 ])
+"""
+"""
+_common_ref_doc_num =  pp.And([
+    pp.CaselessLiteral('('),
+    _ref_doc_num,
+    pp.CaselessLiteral(')')
+])
 
+failon_for_g_13 = pp.Or([
+    _common_ref_doc_num
+])
+
+grammer_13 = pp.And([
+    start,
+    claim_nums,
+    rejection_ground,
+    rejection_reason,
+    ref_prefix_str.suppress(),
+    pp.SkipTo(_ref_doc_num, failOn=failon_for_g_13).setResultsName('ref_name').setParseAction(strip_ref_name),
+    _ref_doc_num.setResultsName('ref_doc_num').setParseAction(format_doc_num)
+])
+
+failon_for_g_14 = pp.Or([
+    grammer_13,
+    _common_ref_doc_num,
+    _rejection_ground_prefix_str,
+    _rejected_str,
+    _rejected_under_usc,
+    _rejected_under
+])
+
+grammer_14 = pp.And([
+    start,
+    claim_nums,
+    rejection_ground,
+    rejection_reason,
+    ref_prefix_str.suppress(),
+    pp.SkipTo(_ref_doc_num, failOn=failon_for_g_14).setResultsName('ref_name').setParseAction(strip_ref_name),
+    _ref_doc_num.setResultsName('ref_doc_num').setParseAction(format_doc_num),
+    in_view_ref_prefix_str.suppress(),
+    pp.SkipTo(_ref_doc_num, failOn=failon_for_g_14).setResultsName('in_view_ref_name').setParseAction(strip_ref_name),
+    _ref_doc_num.setResultsName('in_view_ref_doc_num').setParseAction(format_doc_num)
+])
+
+failon_for_g_15 = pp.Or([
+    grammer_14,
+    _common_ref_doc_num,
+    _rejection_ground_prefix_str,
+    _rejected_str,
+    _rejected_under_usc,
+    _rejected_under
+])
+
+grammer_15 = pp.And([
+    start,
+    claim_nums,
+    rejection_ground,
+    rejection_reason,
+    ref_prefix_str.suppress(),
+    pp.SkipTo(_ref_doc_num, failOn=failon_for_g_15).setResultsName('ref_name').setParseAction(strip_ref_name),
+    _ref_doc_num.setResultsName('ref_doc_num').setParseAction(format_doc_num),
+    in_view_ref_prefix_str.suppress(),
+    pp.SkipTo(_ref_doc_num, failOn=failon_for_g_15).setResultsName('in_view_ref_name').setParseAction(strip_ref_name),
+    _ref_doc_num.setResultsName('in_view_ref_doc_num').setParseAction(format_doc_num),
+    in_further_view_ref_prefix_str.suppress(),
+    pp.SkipTo(_ref_doc_num, failOn=failon_for_g_15).setResultsName('in_further_view_ref_name').setParseAction(strip_ref_name),
+    _ref_doc_num.setResultsName('in_further_view_ref_doc_num').setParseAction(format_doc_num)
+])
+
+"""
+"""
 grammers = [
     grammer_6,
     grammer_9,
@@ -595,6 +673,9 @@ grammers = [
     grammer_2,
     grammer_3,
     grammer_5,
+    grammer_13,
+    grammer_14,
+    grammer_15,
     grammer_10,
     grammer_11,
     grammer_12
