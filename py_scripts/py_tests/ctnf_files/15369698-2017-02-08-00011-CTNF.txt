@@ -1,0 +1,638 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+UNITED STATES DEPARTNIEN T OF CONHVIERCE
+United States Patent and Trademark Office
+Address: CONHVHSSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313-1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO. |
+15/369,698 12/05/2016 Peter CORCORAN IOOO2—0102—US—21 1094
+72104 7590 02/08/2017
+. . . . . EXAMINER
+D1g1talOptlcs/H1ckman Palermo Becker Blngham l l
+1 Almaden Boulevard SETH, MANAV
+Floor 12
+San J ose, CA 95113 | ART UNIT | PAPER NUMBER |
+2666
+| NOTIFICATION DATE | DELIVERY MODE |
+02/08/2017 ELECTRONIC
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+The time period for reply, if any, is set in the attached communication.
+Notice of the Office communication was sent electronically on above—indicated "Notification Date" to the
+
+following e—mail address(es):
+
+usdocket@h35g.com
+patentlegal@tessera.com
+
+PTOL—9OA (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+15/369,698 CORCORAN ET AL.
+
+Office Action Summary Examiner Art Unit AIA (First Inventor to File)
+MANAV SETH 2666 ﬁg“
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE Q MONTHS FROM THE MAILING DATE OF
+THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR1.136(a). In no event, however, may a reply be timely filed
+
+after SIX (6) MONTHS from the mailing date of this communication.
+— If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+— Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1 .704(b).
+
+Status
+1)|Z| Responsive to communication(s) filed on M.
+El A declaration(s)/affidavit(s) under 37 CFR 1.130(b) was/were filed on _.
+2a)|:| This action is FINAL. 2b)|Z| This action is non—final.
+
+3)|:| An election was made by the applicant in response to a restriction requirement set forth during the interview on
+_; the restriction requirement and election have been incorporated into this action.
+
+4)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Exparte Quayle, 1935 CD. 11, 453 O.G. 213.
+
+Disposition of Claims*
+5)|Z| Claim(s) 1-20 is/are pending in the application.
+
+ 
+
+5a) Of the above claim(s) is/are withdrawn from consideration.
+6)|:| Claim(s) is/are allowed.
+7)|Z| Claim(s) ﬂ) is/are rejected.
+8)|:| Claim(s) is/are objected to.
+9)|:| Claim(s) are subject to restriction and/or election requirement.
+
+ 
+
+* If any claims have been determined allowable, you may be eligible to benefit from the Patent Prosecution Highway program at a
+participating intellectual property office for the corresponding application. For more information, please see
+http:/'/wv\fw.usotoeov/batente/init events/nnh/indexist) or send an inquiry to PPi-tfeedbackfzébusgto.Gov.
+
+Application Papers
+10)|:| The specification is objected to by the Examiner.
+11)|Z| The drawing(s) filed on 12/05/2016 is/are: a)IZI accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121 (d).
+
+Priority under 35 U.S.C. § 119
+12)|:| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+Certified copies:
+a)|:| AII b)|:| Some“ c)|:| None of the:
+1.|:| Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No.
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+** See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) IZI Notice of References Cited (PTO-892) 3) D Interview Summary (PTO-413)
+
+. . Paper No(s)/Mai| Date. .
+2) D Information Disclosure Statement(s) (PTO/SB/08a and/or PTO/SB/08b)
+
+Paper No(s)/Mai| Date . 4) D Other: .
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL—326 (Rev. 11—13) Office Action Summary Part of Paper No./Mai| Date 20170204
+
+Application/Control Number: 15/369,698 Page 2
+Art Unit: 2666
+
+The present application is being examined under the pre—AIA ﬁrst to invent provisions.
+
+DETAILED ACTION
+
+Claim Rejections — 35 USCSY 102
+1. The following is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that form the
+
+basis for the rejections under this section made in this Ofﬁce action:
+
+A person shaﬂ be entitled to a patent unless —
+
+(e) the invention was described in (1) an apphcation for patent, puinshed under section 122(b), by another ﬁled in
+the United States before the invention by the apphcant for patent or (2) a patent granted on an application for patent
+by another ﬁled in the United States before the invention by the apphcant for patent, except that an international
+apphcation ﬁled under the treaty deﬁned in section 351 (a) shaﬂ have the effects for purposes of this subsection of an
+apphcation ﬁled in the United States only if the international apphcation designated the United States and was
+puinshed under Article 21 (2) of such treaty in the EngJish language.
+
+2. Claims 1—21 are rejected under 35 U.S.C. 102(e) as being anticipated by Simon et aL, US.
+Patent No. 7,039,222.
+
+Regarding claim 1, Simon discloses a method of processing a digital image using face
+detection to achieve one or more desired image processing parameters (col. 3, lines 9—28),
+comprising:
+
+identifying a group of pixels that correspond to a face image Within the digital image (col. 3,
+lines 9—15 — detecting a face by the system requires identifying the pixels that corresponds to a face
+in the image);
+
+detecting a skin tone for the face image by determining one or more default color or tonal
+values, or combinations thereof, for the group of pixels (col. 3, lines 18—22 — based on the facially
+relevant characteristics of the different regions, selecting one or more enhancement ﬁlters each
+customized especially for a particular region; col. 25, lines 1 through col. 26, line 21 — the
+
+characteristic being skin tone); and
+
+Application/Control Number: 15/369,698 Page 3
+Art Unit: 2666
+
+adjusting values of one or more parameters for the group of pixels that correspond to the
+face image based on the detected skin tone (col. 3, lines 22—24; col. 24, lines 59—62; col. 25, lines 1—
+
+65).
+
+Regarding claim 2, Simon discloses Wherein the adjusting comprises applying ﬁll—ﬂash to the
+
+face image in an amount based on the skin tone (col. 25, lines 40—65 — adding light to the face).
+
+Regarding claim 3, Simon discloses the method of claim 1, further comprising repeating the
+identifying, detecting and adjusting for a second face image having a different skin tone than the ﬁrst
+face image, and the adjusting comprises applying ﬁJl—ﬂash to the two face images in different relative
+amounts depending on the different skin tones (col. 8, lines 62—65 — for more than one face in the
+image, the system iterates the enhancement steps used for the ﬁrst face; Where the enhancement is
+performed adaptively depending on the skin tone (col. 25, lines 1—65) and apparently every face has a
+
+different skin tone).
+
+Regarding claim 4, Simon discloses the method of claim 1, Wherein the adjusting comprises
+
+adjusting a luminance of the face image depending on the skin tone (col. 24, lines 59—62; col. 25,
+
+lines 1—65).
+
+Regarding claim 5, claim 5 has been similarly analyzed and rejected as per the claims 3 and 4.
+
+Regarding claim 6, Simon discloses Wherein the color or tonal values for the group of pixels
+
+comprise one or more average color or tonal values (col. 25,1ines 15—57).
+
+Application/Control Number: 15/369,698 Page 4
+Art Unit: 2666
+
+Regarding claim 7, Simon discloses the method of claim 6, Wherein the color or tonal values
+
+comprise multiple colors or tones, or combinations thereof, determined for each of multiple regions
+
+of the face image (col. 25, line 48 — variance of the color distribution of a region).
+
+Claims 8 and 15 have been similarly analyzed and rejected as per claim 1.
+
+Claims 9 and 16 have been similarly analyzed and rejected as per claim 2.
+
+Claims 10 and 17 have been similarly analyzed and rejected as per claim 3.
+
+Claims 11 and 18 have been similarly analyzed and rejected as per claim 4.
+
+Claims 12 and 19 have been similarly analyzed and rejected as per claim 5.
+
+Claims 13 and 20 have been similarly analyzed and rejected as per claim 6.
+
+Claim 14 has been similarly analyzed and rejected as per claim 7.
+
+3. Claims 1—2, 8—9 and 15—16 are rejected under 35 U.S.C. 102(e) as being anticipated by Lin,
+
+U.S. Patent Publication No. 2003/0235333A1.
+
+Application/Control Number: 15/369,698 Page 5
+Art Unit: 2666
+
+Regarding claims 1, 8 and 15, Lin discloses a method of processing a digital image using face
+detection to achieve one or more desired image processing parameters (para 0006), comprising:
+
+identifying a group of pixels that correspond to a face image Within the digital image (para
+0006 — detecting a face by the system requires identifying the pixels that corresponds to a face in the
+image);
+
+detecting a skin tone for the face image by determining one or more default color or tonal
+values, or combinations thereof, for the group of pixels (para 0006 — skin tone is extracted for the
+detected face — Where skin tone values are the value of the color variance); and
+
+adjusting values of one or more parameters for the group of pixels that correspond to the
+face image based on the detected skin tone (para 0006 — a balance parameter is generated based on
+
+the extracted skin tone; in this case the balance parameter being the White balance — para 0026; para
+
+0034).
+
+Regarding claims 2, 9 and 16, Simon discloses Wherein the adjusting comprises applying ﬁll—
+ﬂash to the face image in an amount based on the skin tone (para 0026 — adding light to the
+
+face/White balance).
+
+Application/Control Number: 15/369,698 Page 6
+Art Unit: 2666
+
+Double Pa tenting
+
+4. The nonstatutory double patenting rejection is based on a judicially created doctrine
+grounded in public policy (a policy reﬂected in the statute) so as to prevent the unjustiﬁed or
+improper timewise extension of the “right to exclude” granted by a patent and to prevent possible
+harassment by multiple assignees. A nonstatutory double patenting rejection is appropriate Where
+the conﬂicting claims are not identical, but at least one examined application claim is not patentably
+distinct from the reference claim(s) because the examined application claim is either anticipated by,
+or would have been obvious over, the reference claim(s). See, e.g., In re Berg, 140 F.3d 1428, 46
+USPQ2d 1226 (Fed. Cir. 1998); In re Good/nnn, 11 F.3d 1046, 29 USPQ2d 2010 (Fed. Cir. 1993); In re
+Longz, 759 F.2d 887, 225 USPQ 645 (Fed. Cir. 1985); In re Vnn 07mm, 686 F.2d 937, 214 USPQ 761
+(CCPA 1982); In re Vogel, 422 F.2d 438, 164 USPQ 619 (CCPA 1970); In re T/aon'ngz‘on, 418 F.2d 528,
+163 USPQ 644 (CCPA 1969).
+
+A timely ﬁled terminal disclaimer in compliance With 37 CFR 1.321(c) or 1.321(d) may be
+used to overcome an actual or provisional rejection based on nonstatutory double patenting
+provided the reference application or patent either is shown to be commonly owned With the
+examined application, or claims an invention made as a result of activities undertaken Within the
+scope of a joint research agreement. See MPEP S 717.02 for applications subject to examination
+under the ﬁrst inventor to file provisions of the AIA as explained in MPEP § 2159. See MPEP §§
+706.02(1) (1) — 706.02(1)(3) for applications not subject to examination under the ﬁrst inventor to file
+provisions of the AIA. A terminal disclaimer must be signed in compliance With 37 CFR 1.321 (b).
+
+The USPTO Internet website contains terminal disclaimer forms Which may be used. Please
+Visit WWW.uspto.gov/patent/patents—forms. The filing date of the application in Which the form is
+
+ﬁled determines What form (e.g., PTO/SB/25, PTO/SB/26, PTO/AIA/25, or PTO/AIA/26)
+
+Application/Control Number: 15/369,698 Page 7
+Art Unit: 2666
+
+should be used. A web—based eTerminal Disclaimer may be ﬁlled out completely online using web—
+screens. An eTerminal Disclaimer that meets all requirements is auto—processed and approved
+immediately upon submission. For more information about eTerminal Disclaimers, refer to
+xmmvaasp to,stov /};:-atents /process /tﬂe /efs /Quid a nee / eTD~info~Li 5p.
+5. Claims 1—20 are rejected on the ground of nonstatutory double patenting as being
+unpatentable over claims 1, 4, 7, 10, 13 and 16 of US. Patent No. 9,516,217 (herein referred to as
+Corcoran). Although the claims at issue are not identical, they are not patentably distinct from each
+other because:
+
+Regarding claim 1, Corcoran discloses a method of processing a digital image using face
+detection to achieve one or more desired image processing parameters, comprising:
+
+identifying a group of pixels that correspond to a face image Within the digital image (claim
+1, col. 37, lines 27—32);
+
+detecting a skin tone for the face image by determining one or more default color or tonal
+values, or combinations thereof, for the group of pixels (claim 1, col. 37, lines 33—36); and
+
+adjusting values of one or more parameters for the group of pixels that correspond to the
+
+face image based on the detected skin tone (claim 1, col. 37, lines 43—48).
+
+Regarding claim 2, Corcoran discloses Wherein the adjusting comprises applying ﬁll—ﬂash to
+
+the face image in an amount based on the skin tone (claim 1, col. 37, lines 43—48).
+
+Regarding claim 3, Corcoran discloses the method of claim 1, further comprising repeating
+
+the identifying, detecting and adjusting for a second face image having a different skin tone than the
+
+Application/Control Number: 15/369,698 Page 8
+Art Unit: 2666
+
+ﬁrst face image, and the adjusting comprises applying ﬁll—ﬂash to the two face images in different
+
+relative amounts depending on the different skin tones (claim 1, col. 37, lines 30—48).
+
+Regarding claim 4, Corcoran discloses the method of claim 1, Wherein the adjusting
+
+comprises adjusting a luminance of the face image depending on the skin tone (claim 1, col. 37, lines
+
+43-53).
+
+Regarding claim 5, claim 5 has been analyzed and rejected as per claim 1 of Corcoran.
+
+Regarding claims 6 and 7, claims 6 and 7 have been analyzed and rejected as per claim 4 of
+
+Corcoran.
+
+Regarding claim 8, claim 8 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Regarding claim 9, claim 9 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Regarding claim 10, claim 10 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Regarding claim 11, claim 11 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Regarding claim 12, claim 12 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Application/Control Number: 15/369,698 Page 9
+Art Unit: 2666
+
+Regarding claims 13 and 14, claims 13 and 14 have been analyzed and rejected as per claim
+
+10 of Corcoran.
+
+Regarding claim 15, claim 15 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 16, claim 16 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 17, claim 17 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 18, claim 18 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 19, claim 19 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 20, claim 20 has been analyzed and rejected as per claim 16 of Corcoran.
+
+6. Claims 1—20 are rejected on the ground of nonstatutory double patenting as being
+
+unpatentable over claims 1—17 of US. Patent No. 8,908,932 (herein referred to as Corcoran).
+
+Although the claims at issue are not identical, they are not patentably distinct from each other
+
+because:
+
+Regarding claim 1, Corcoran discloses a method of processing a digital image using face
+
+detection to achieve one or more desired image processing parameters, comprising:
+
+identifying a group of pixels that correspond to a face image Within the digital image (claim
+
+1, col. 36, lines 20—24);
+
+Application/Control Number: 15/369,698 Page 10
+Art Unit: 2666
+
+detecting a skin tone for the face image by determining one or more default color or tonal
+values, or combinations thereof, for the group of pixels (claim 1, col. 36, lines 28—32); and
+adjusting values of one or more parameters for the group of pixels that correspond to the
+
+face image based on the detected skin tone (claim 1, col. 36, lines 33—36).
+
+Regarding claim 2, Corcoran discloses Wherein the adjusting comprises applying ﬁll—ﬂash to
+
+the face image in an amount based on the skin tone (claim 2).
+
+Regarding claim 3, Corcoran discloses the method of claim 1, further comprising repeating
+the identifying, detecting and adjusting for a second face image having a different skin tone than the
+ﬁrst face image, and the adjusting comprises applying ﬁll—ﬂash to the two face images in different
+
+relative amounts depending on the different skin tones (claim 3).
+
+Regarding claim 4, Corcoran discloses the method of claim 1, Wherein the adjusting
+
+comprises adjusting a luminance of the face image depending on the skin tone (claim 1).
+
+Regarding claim 5, claim 5 has been analyzed and rejected as per claim 4 of Corcoran.
+
+Regarding claims 6 and 7, claims 6 and 7 have been analyzed and rejected as per claims 5 and
+
+6 of Corcoran.
+
+Regarding claim 8, claim 8 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Application/Control Number: 15/369,698 Page 11
+Art Unit: 2666
+
+Regarding claim 9, claim 9 has been analyzed and rejected as per claim 8 of Corcoran.
+
+Regarding claim 10, claim 10 has been analyzed and rejected as per claim 9 of Corcoran.
+
+Regarding claim 11, claim 11 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Regarding claim 12, claim 12 has been analyzed and rejected as per claim 10 of Corcoran.
+
+Regarding claims 13 and 14, claims 13 and 14 have been analyzed and rejected as per claims
+
+11 and 12 of Corcoran.
+
+Regarding claim 15, claim 15 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 16, claim 16 has been analyzed and rejected as per claim 14 of Corcoran.
+
+Regarding claim 17, claim 17 has been analyzed and rejected as per claim 15 of Corcoran.
+
+Regarding claim 18, claim 18 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 19, claim 19 has been analyzed and rejected as per claim 16 of Corcoran.
+
+Regarding claim 20, claim 20 has been analyzed and rejected as per claim 17 of Corcoran.
+
+Application/Control Number: 15/369,698 Page 12
+Art Unit: 2666
+
+7. Claims 1—20 are rejected on the ground of nonstatutory double patenting as being
+unpatentable over claims 1—20 of US. Patent No. 8,369,586 (herein referred to as Corcoran).
+Although the claims at issue are not identical, they are not patentably distinct from each other
+because:
+
+Regarding claim 1, Corcoran discloses a method of processing a digital image using face
+detection to achieve one or more desired image processing parameters, comprising:
+
+identifying a group of pixels that correspond to a face image Within the digital image (claim
+1, col. 36, lines 1—16);
+
+detecting a skin tone for the face image by determining one or more default color or tonal
+values, or combinations thereof, for the group of pixels (claim 1, col. 36, lines 22—26); and
+
+adjusting values of one or more parameters for the group of pixels that correspond to the
+
+face image based on the detected skin tone (claim 1, col. 36, lines 27—29).
+
+Regarding claim 2, Corcoran discloses Wherein the adjusting comprises applying ﬁll—ﬂash to
+
+the face image in an amount based on the skin tone (claim 2).
+
+Regarding claim 3, Corcoran discloses the method of claim 1, further comprising repeating
+the identifying, detecting and adjusting for a second face image having a different skin tone than the
+ﬁrst face image, and the adjusting comprises applying ﬁH—ﬂash to the two face images in different
+
+relative amounts depending on the different skin tones (claim 3).
+
+Regarding claim 4, Corcoran discloses the method of claim 1, Wherein the adjusting
+
+comprises adjusting a luminance of the face image depending on the skin tone (claim 4).
+
+Application/Control Number: 15/369,698 Page 13
+Art Unit: 2666
+
+Regarding claim 5, claim 5 has been analyzed and rejected as per claim 5 of Corcoran.
+
+Regarding claims 6 and 7, claims 6 and 7 have been analyzed and rejected as per claims 6 and
+
+7 of Corcoran.
+
+Regarding claim 8, claim 8 has been analyzed and rejected as per claim 8 of Corcoran.
+
+Regarding claim 9, claim 9 has been analyzed and rejected as per claim 9 of Corcoran.
+
+Regarding claim 10, claim 10 has been analyzed and rejected as per claim 10 of Corcoran.
+
+Regarding claim 11, claim 11 has been analyzed and rejected as per claim 11 of Corcoran.
+
+Regarding claim 12, claim 12 has been analyzed and rejected as per claim 12 of Corcoran.
+
+Regarding claims 13 and 14, claims 13 and 14 have been analyzed and rejected as per claims
+
+13 and 14 of Corcoran.
+
+Regarding claim 15, claim 15 has been analyzed and rejected as per claim 15 of Corcoran.
+
+Regarding claim 16, claim 16 has been analyzed and rejected as per claim 16 of Corcoran.
+
+Application/Control Number: 15/369,698 Page 14
+Art Unit: 2666
+
+Regarding claim 17, claim 17 has been analyzed and rejected as per claim 17 of Corcoran.
+
+Regarding claim 18, claim 18 has been analyzed and rejected as per claim 18 of Corcoran.
+
+Regarding claim 19, claim 19 has been analyzed and rejected as per claim 19 of Corcoran.
+
+Regarding claim 20, claim 20 has been analyzed and rejected as per claim 20 of Corcoran.
+
+8. Claims 1—20 are rejected on the ground of nonstatutory double patenting as being
+unpatentable over claims 1—17 of US. Patent No. 8,121,430 (herein referred to as Corcoran).
+Although the claims at issue are not identical, they are not patentably distinct from each other
+because:
+
+Regarding claim 1, Corcoran discloses a method of processing a digital image using face
+detection to achieve one or more desired image processing parameters, comprising:
+
+identifying a group of pixels that correspond to a face image Within the digital image (claim
+1, col.36,hnes11—15);
+
+detecting a skin tone for the face image by determining one or more default color or tonal
+values, or combinations thereof, for the group of pixels (claim 1, col. 36, lines 16—20); and
+
+adjusting values of one or more parameters for the group of pixels that correspond to the
+
+face image based on the detected skin tone (claim 1, col. 36, lines 21—25).
+
+Regarding claim 2, Corcoran discloses Wherein the adjusting comprises applying ﬁll—ﬂash to
+
+the face image in an amount based on the skin tone (claim 1).
+
+Application/Control Number: 15/369,698 Page 15
+Art Unit: 2666
+
+Regarding claim 3, Corcoran discloses the method of claim 1, further comprising repeating
+
+the identifying, detecting and adjusting for a second face image having a different skin tone than the
+
+ﬁrst face image, and the adjusting comprises applying ﬁll—ﬂash to the two face images in different
+
+relative amounts depending on the different skin tones (claim 2).
+
+Regarding claim 4, Corcoran discloses the method of claim 1, Wherein the adjusting
+
+comprises adjusting a luminance of the face image depending on the skin tone (claim 3).
+
+Regarding claim 5, claim 5 has been analyzed and rejected as per claim 4 of Corcoran.
+
+Regarding claims 6 and 7, claims 6 and 7 have been analyzed and rejected as per claims 5 and
+
+6 of Corcoran.
+
+Regarding claim 8, claim 8 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Regarding claim 9, claim 9 has been analyzed and rejected as per claim 7 of Corcoran.
+
+Regarding claim 10, claim 10 has been analyzed and rejected as per claim 8 of Corcoran.
+
+Regarding claim 11, claim 11 has been analyzed and rejected as per claim 9 of Corcoran.
+
+Regarding claim 12, claim 12 has been analyzed and rejected as per claim 10 of Corcoran.
+
+Application/Control Number: 15/369,698 Page 16
+Art Unit: 2666
+
+Regarding claims 13 and 14, claims 13 and 14 have been analyzed and rejected as per claims
+
+11 and 12 of Corcoran.
+
+Regarding claim 15, claim 15 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 16, claim 16 has been analyzed and rejected as per claim 13 of Corcoran.
+
+Regarding claim 17, claim 17 has been analyzed and rejected as per claim 14 of Corcoran.
+
+Regarding claim 18, claim 18 has been analyzed and rejected as per claim 15 of Corcoran.
+
+Regarding claim 19, claim 19 has been analyzed and rejected as per claim 16 of Corcoran.
+
+Regarding claim 20, claim 20 has been analyzed and rejected as per claim 17 of Corcoran.
+
+Examiner note: Examiner has cited particular columns and line numbers in the references as
+applied to the claims above for the convenience of the applicant. Although the specified citations are
+representative of the teachings for the art and are applied to the speciﬁc limitations Within the
+individual claim, other passages and ﬁgures may be applied as well. It is respectfully requested from
+the applicant in preparing responses, to fully consider the references entirely as potential teachings
+all or part of the claimed invention, as well as the context of the passage as taught by the prior art or
+disclosed by the examiner.
+
+Application/Control Number: 15/369,698 Page 17
+Art Unit: 2666
+
+Any inquiry concerning this communication or earlier communications from the examiner
+should be directed to Manav Seth Whose telephone number is (571) 272—7456. The examiner can
+
+normally be reached on Monday to Friday from 8:30 am to 5:00 pm.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner's supervisor,
+Sumati Lefkowitz, can be reached on (571) 272—3638. The fax phone number for the organization
+
+Where this application or proceeding is assigned is 571—273—8300.
+
+Information regarding the status of an application may be obtained from the Patent
+Application Information Retrieval (PAIR) system. Status information for published applications
+may be obtained from either Private PAIR or Public PAIR. Status information for unpublished
+applications is available through Private PAIR only. For more information about the PAIR system,
+see http://pair—direct.uspto.gov. Should you have questions on access to the Private PAIR system,
+
+contact the Electronic Business Center (BBC) at 866—217—9197 (toH—free).
+
+/Manay Seth/
+Primary Examiner, Art Unit 2666
+February 5, 2017
+

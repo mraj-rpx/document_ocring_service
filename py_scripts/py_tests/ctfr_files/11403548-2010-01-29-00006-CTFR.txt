@@ -1,0 +1,998 @@
+ 
+
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+UNITED STATES DEPARTNIEN T OF COMNIERCE
+United States Patent and Trademark Office
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313- 1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO. |
+11/403,548 04/ 13/2006 Christopher S. Signaoff 69936/P002US/ 10601229 7833
+29053 7590 | EXAMINER |
+
+FULBRIGHT & J AWORSKI L.L.P
+
+2200 ROSS AVENUE
+SUITE 2800
+DALLAS, TX 75201-2784
+
+ 
+
+POPHAM, JEFFREY D
+
+ 
+
+ 
+
+ 
+
+ 
+
+| ART UNIT | PAPER NUMBER |
+2437
+| MAIL DATE | DELIVERY MODE |
+01/29/2010 PAPER
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+
+The time period for reply, if any, is set in the attached communication.
+
+PTOL—90A (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+11/403,548 SIGNAOFF ET AL.
+
+Office Action Summary Examiner Art Unit
+JEFFREY D. POPHAM 2437
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event however may a reply be timely filed
+
+after SIX (6) MONTHS from the mailing date of this communication.
+- If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+1)|Z| Responsive to communication(s) filed on 10 November 2009.
+2a)|Z| This action is FINAL. 2b)|:| This action is non-final.
+3)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 0.6. 213.
+
+Disposition of Claims
+
+4)|Z| Claim(s) 1-23 is/are pending in the application.
+
+ 
+
+4a) Of the above claim(s) is/are withdrawn from consideration.
+5)|:| Claim(s) _ is/are allowed.
+6)|Z| Claim(s) ﬂ is/are rejected.
+7)|:| Claim(s) _ is/are objected to.
+8)|:| Claim(s) _ are subject to restriction and/or election requirement.
+
+Application Papers
+
+9)|:| The specification is objected to by the Examiner.
+10)|z The drawing(s) filed on 10 November 2009 is/are: a)|Z| accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)|:| The oath or declaration is objected to by the Examiner. Note the attached Office Action or form PTO-152.
+
+Priority under 35 U.S.C. § 119
+
+12)|:| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:| AII b)|:| Some * c)|:| None of:
+1.|:| Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No. _
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) x Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) D Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mai| Date. _
+
+3) IZI Information Disclosure Statement(s) (PTO/SB/08) 5) D Notice of Informal Patent Application
+Paper No(s)/Mai| Date 20091104. 6) D Other:
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL-326 (Rev. 08-06) Office Action Summary Part of Paper No./Mai| Date 20100126
+
+Application/Control Number: 11/403,548 Page 2
+Art Unit: 2437
+
+Remarks
+
+Claims 1-23 are pending.
+
+Response to Arguments
+1. Applicant argues that “claim 9 is directed to recognized statutory subject
+matter because the claimed "communication community" is expressly recited as
+
+comprising devices, namely "one or more shared controllers connected to one or
+
+ 
+
+more endpoint communication devices". It is first noted that the communication
+community comprises "one or more shared controllers", "at least one individual
+controller", and "an external controller". No endpoint devices are actually
+claimed as being within this community. While the one or more shared
+controllers may be connected to one or more endpoint communication devices,
+the endpoint communication devices are n_ot part of the claimed communication
+community, but rather merely entities connected to the controller. Therefore, one
+must define what a “controller” can be.
+
+Applicant argues that “The backend controllers (e.g., behind the firewalls)
+are described as devices to which the endpoints are connected which manage
+the communication interactions with the endpoints (see e.g., paragraph 0033),
+and the backend controllers are described as being communicatively coupled
+with the frontend controller." Nothing in paragraph 33 states that the backend
+controller is a device. Applicant provides further arguments regarding the
+
+functionality of the controllers, such as the frontend controller having an address,
+
+such as an IP address or URL, and being operable to manage a multimedia
+
+Application/Control Number: 11/403,548 Page 3
+Art Unit: 2437
+
+communication stream between endpoints. However, a logic entity such as
+software can provide this functionality and have an address.
+
+As the application does not define a controller to be inherently hardware,
+one is left to define a controller in the realm of what one of ordinary skill in the art
+would recognize. Looking to figure 4, one will see firewalls, controllers, switches,
+and endpoints. Each is provided as its own separate entity within the figure.
+Therefore, it appears logical that, in the absence of a distinct definition for any of
+those entities, the broadest reasonable interpretation would encompass the
+broadest definition for any of the entities of figure 4 that are actually defined. A
+firewall is defined in the instant application as “Firewalls, which can be software,
+hardware, or a combination of both” (paragraph 4). Therefore, the firewalls of
+figure 4 can be software, hardware, or a combination thereof. An endpoint is
+defined as “endpoints, 403-406, such as telephones, computer terminals, and the
+like, that are configured for multimedia communication.” Therefore, an endpoint
+appears as though it includes hardware. However, a controller is never defined
+in the application as being hardware, software, or anything else. The broadest
+reasonable interpretation for a controller is, therefore, the broadest reasonable
+interpretation of an entity of figure 4, for example, which has been defined. As a
+firewall has been defined as "software, hardware, or a combination of both", this
+is the broadest reasonable interpretation that has been taken with respect to a
+controller.
+
+Applicant argues that “Applicant fails to understand how the controllers
+
+could be construed as mere software that is not residing on or executing on
+
+Application/Control Number: 11/403,548 Page 4
+Art Unit: 2437
+
+some hardware, as Applicant is aware of no such software that is operable in the
+complete absence of hardware." Here, Applicant shows the distinction between
+software and hardware. If a controller can be purely software, then the controller
+is clearly not the device on which the controller resides. Therefore, there is no
+hardware in the communication community of claim 9 in the case that the
+controller is IogicaI/software, as the hardware on which the controller resides is
+not claimed. It is noted that claim 19 has been added, dependent from claim 9,
+and stating that "said one or more shared controllers, said at least one individual
+controller, and said external controller each comprise a device.” If this claim
+were incorporated into claim 9 (or even ifjust one of the 3 entities of claim 9 were
+amended to state this aspect), the 101 issues would be fixed.
+
+Applicant's arguments with respect to the prior art rejections of claims 1-23
+
+have been considered but are moot in view of the new ground(s) of rejection.
+
+Claim Objections
+2. Claims 16, 17, and 19 are objected to because of the following
+informalities:
+
+- Claim 16 refers to “said first and second external communication
+controllers”. It appears as though this should read “said first and
+second external controllers”, in order to provide proper antecedent
+basis. Claim 17 has a like issue referring to “said first external
+communication controller” and “said second external
+
+communication controller”.
+
+Application/Control Number: 11/403,548 Page 5
+Art Unit: 2437
+
+- Claim 19 claims dependence on “The method of claim 9”.
+However, claim 9 is a “communication community”, and not a
+method.
+
+Appropriate correction is required.
+
+Claim Rejections - 35 USC § 101
+
+35 U.S.C. 101 reads as follows:
+
+Whoever invents or discovers any new and useful process, machine, manufacture, or
+composition of matter, or any new and useful improvement thereof, may obtain a patent
+therefor, subject to the conditions and requirements of this title.
+
+3. Claims 9-13 are rejected under 35 U.S.C. 101 because the claimed
+invention is directed to non-statutory subject matter.
+
+Claim 9 is directed to “A communication community comprising:” one or
+more shared controllers, at least one individual controller, and an external
+controller. However, none of these controllers are defined in the application as
+being physical entities (e.g. devices), logical entities (e.g. program code), or
+anything at all. Therefore, these controllers are as broad as to be any entity that
+can perform the functions of said controllers. As one can see, these controllers
+may be hardware, software, or a combination thereof. Therefore, claim 9 fails to
+fall in one of the statutory categories of invention, since it is not a process,
+apparatus, article of manufacture, or composition of matter. None of claims 10-
+13 fix this issue, therefore, claims 10-13 are rejected for the same reasons.
+
+Claim 19, however, does fix this issue, as discussed above.
+
+Application/Control Number: 11/403,548 Page 6
+Art Unit: 2437
+
+Claim Rejections - 35 USC § 103
+The following is a quotation of 35 U.S.C. 103(a) which forms the basis for
+
+all obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described
+as set forth in section 102 of this title, if the differences between the subject matter sought to
+be patented and the prior art are such that the subject matter as a whole would have been
+obvious at the time the invention was made to a person having ordinary skill in the art to which
+said subject matter pertains. Patentability shall not be negatived by the manner in which the
+invention was made.
+
+4. Claims 14-16, 22, and 23 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over AIt (US. Patent Application Publication 2007/0036143) in view
+of Li (US. Patent Application Publication 2005/0080919).
+Regarding Claim 14,
+Alt discloses a method for communicating comprising:
+Establishing a first communication connection between a
+first internal controller behind a firewall and a first external controller
+in a first communication community, the first external controller not
+behind the firewall, wherein a first communication request is
+initiated by a local communication device connected to the first
+internal controller (Figures 2 and 6; and Paragraphs 48, 57, and 95-
+97; the internal controllers may be the NAT devices, for example,
+while the external controllers may be any portion of the service
+provider network, such as SIP proxy server 611, ENUM, STUN,
+TURN, or a combination thereof, for example);
+Establishing a second communication connection between a
+
+second internal controller behind a second firewall and a second
+
+Application/Control Number: 11/403,548 Page 7
+Art Unit: 2437
+
+external controller in a second communication community, the
+second external controller not behind the second firewall, wherein a
+second communication request is initiated by a remote
+communication device connected to the second internal controller
+(Figures 2 and 6; and Paragraphs 48, 57, 58, and 95-100);
+
+Responsive to one or more of the first and second
+communication request requesting communication between the
+local communication device and the remote communication device,
+establishing a third communication connection between the first
+and second external communication controllers (Figure 4; and
+Paragraphs 95-100); and
+
+Transmitting communication data between the first and
+second communication communities through the third
+communication connection (Paragraphs 95-100), wherein
+transmitting comprises:
+
+Receiving, at a first intermediate communication device that
+is behind the firewall a plurality of multiport packets of data in a
+multiport communication protocol for communication from the local
+communication device in the first communication community
+(Figure 2; and Paragraphs 40, 43, and 47);
+
+Translating, by the first intermediate communication device,
+the ports and/or addresses of the plurality of multiport packets
+
+(Paragraph 40 and 47);
+
+Application/Control Number: 11/403,548 Page 8
+Art Unit: 2437
+
+Transmitting, through the third communication connection,
+the plurality of packets to a second intermediate communication
+device that is behind the second firewall (Figures 2 and 4; and
+Paragraphs 47 and 100-101);
+
+Receiving the plurality of packets at the second intermediate
+communication device (Figures 2 and 4; and Paragraphs 47 and
+100-101);
+
+Translating, by the second intermediate communication
+device, the ports and/or addresses of the plurality of packets
+(Figures 2 and 4; and Paragraphs 47 and 100-101);
+
+Delivering, from the second intermediate communication
+device to the remote communication device in the second
+communication community, the reconverted plurality of multiport
+packets using two or more ports associated with the multiport
+communication protocol (Figure 4; and Paragraphs 44 and 100-
+101);
+
+But does not explicitly disclose that the translating performed
+by the first intermediate communication device comprises
+converting the plurality of multiport packets into a plurality of single
+port packets in a single port communication protocol; transmitting
+the plurality of single port packets; receiving the plurality of single
+port; and that the translating performed by the second intermediate
+
+communication device comprises reconverting the received plurality
+
+Application/Control Number: 11/403,548 Page 9
+Art Unit: 2437
+
+of single port packets into the multiport communication protocol,
+resulting in reconverted plurality of multiport packets.
+
+Li, however, discloses that the translating performed by the
+first intermediate communication device comprises converting the
+plurality of multiport packets into a plurality of single port packets in
+a single port communication protocol; transmitting the plurality of
+single port packets; receiving the plurality of single port; and that
+the translating performed by the second intermediate
+communication device comprises reconverting the received plurality
+of single port packets into the multiport communication protocol,
+resulting in reconverted plurality of multiport packets (Paragraphs
+28-29, 31-33, and 39). It would have been obvious to one of
+ordinary skill in the art at the time of applicant's invention to
+incorporate the port tunneling techniques of Li into the
+communication system of AIt in order to allow the system to
+communicate multiport multimedia data through existing firewalls,
+while maintaining the high speed required for real time
+communications and without providing a security hole by opening
+many ports in the firewall.
+
+Regarding Claim 15,
+
+Alt as modified by Li discloses the method of claim 14, in
+
+addition, AIt discloses verifying at the first external controller the
+
+first communication request prior to establishing the first
+
+Application/Control Number: 11/403,548 Page 10
+Art Unit: 2437
+
+communication connection (Figure 4; and Paragraphs 95-97, step
+405, for example);
+
+Verifying at the second external controller the second
+communication request prior to establishing the second
+communication connection (Figures 2, 4, and 6; and Paragraphs
+48, 57, 58, and 95-100; as described above, either phone can
+initiate communications and, in the case that the second endpoint
+initiates communication, step 405 will be performed between the
+second endpoint and the second controller).
+
+Regarding Claim 16,
+
+Alt as modified by Li discloses the method of claim 15, in
+addition, Alt discloses issuing a third communication request
+between the first and second external controllers (Figure 4; and
+Paragraphs 95-100; such request comprising, for example, step
+413); and
+
+Verifying the third communication request prior to
+establishing the third communication connection (Figure 4; and
+Paragraphs 95-100; verification comprising, for example, the DNS
+lookup and response in step 415).
+
+Regarding Claim 22,
+
+Alt as modified by Li discloses the method of claim 14, in
+
+addition, AIt discloses that the first internal controller comprises the
+
+first intermediate communication device, and wherein the second
+
+Application/Control Number: 11/403,548 Page 11
+Art Unit: 2437
+
+internal controller comprises the second intermediate
+communication device (Figure 2; and Paragraphs 40 and 47).
+Regarding Claim 23,
+
+Alt as modified by Li discloses the method of claim 14, in
+addition, Li discloses that transmitting, through the third
+communication connection, the plurality of single port packets to a
+second intermediate communication device that is behind the
+second firewall comprises transmitting the plurality of single port
+packets over a commonly open port (Paragraphs 28-29, 31-33, and
+
+39).
+
+5. Claims 17 and 18 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over AIt in view of Li, further in view of Strathmeyer (US. Patent
+Application Publication 2005/0122964).
+
+Regarding Claim 17,
+
+Alt as modified by Li does not appear to explicitly disclose
+that establishing the third communication connection comprises
+issuing a third communication request to a central communication
+controller, establishing a first central communication channel
+between the first external controller and the central communication
+controller, issuing a fourth communication request from the central
+communication controller to the second external controller, and
+
+establishing a second central communication channel between the
+
+Application/Control Number: 11/403,548 Page 12
+Art Unit: 2437
+
+central communication controller and the second external
+controller.
+
+Strathmeyer, however, discloses that establishing the third
+communication connection comprises issuing a third
+communication request to a central communication controller;
+establishing a first central communication channel between the first
+external controller and the central communication controller; issuing
+a fourth communication request from the central communication
+controller to the second external controller; and establishing a
+second central communication channel between the central
+communication controller and the second external controller
+(Figures 6 and 7; and Paragraphs 52, 61, 63-65, and 74; as can be
+seen, all communications go through all entities, therefore, in figure
+6, for example, the outbound proxy could correspond to the first
+external controller, while entity 602 may correspond to the central
+controller. In figure 7, the proxy server may correspond to the first
+external controller and the server 505 may correspond to the
+central controller, which also connects to the SIP proxy 611 in the
+combination, for example). It would have been obvious to one of
+ordinary skill in the art at the time of applicant's invention to
+incorporate the IP telephony system of Strathmeyer into the
+communication system of AIt as modified by Li in order to allow the
+
+system to provide call control and monitoring in a way that does not
+
+Application/Control Number: 11/403,548 Page 13
+Art Unit: 2437
+
+affect the operation of current proxy servers and such that the
+control and monitoring system has full access to all caII data,
+thereby ensuring that all caII data is available for monitoring and
+control and that the monitoring/control system makes fuIIy-informed
+decisions and logs of the call data.
+
+Regarding Claim 18,
+
+Alt as modified by Li and Strathmeyer discloses the method
+of claim 17, in addition, AIt discloses verifying the communication
+requests at the central communication controller prior to
+establishing the central communication channels (Figure 4; and
+Paragraphs 95-100); and Strathmeyer discloses verifying the
+communication requests prior to establishing the central
+communication channels (Figures 6 and 7; and Paragraphs 52, 61,
+63-65, and 74; such verification could be merely a response
+
+provided back through the communication links, for example).
+
+6. Claims 1-5, 9-13, and 19-21 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over AIt in view of Aasman (US. Patent Application Publication
+2003/0065737) and Li.
+Regarding Claim 1,
+Alt discloses a method for a multimedia communication
+
+comprising:
+
+Application/Control Number: 11/403,548 Page 14
+Art Unit: 2437
+
+Receiving, at a controller that is behind a firewall and that is
+communicatively coupled with a plurality of endpoint
+communication devices, a plurality of multiport packets of data in a
+multiport communication protocol for communication from at least
+one of the plurality of endpoint communication devices (Figure 2;
+and Paragraphs 40, 43, and 47; the controller may be the NAT
+device or a combination of the NAT device with a proxy server; the
+multiport packets comprising H.323 packets for example. It is
+noted here that the word “controller” in the claim does not appear to
+mean anything other than that the controller is some entity (e.g. a
+device, a program, a portion of a device, a combination of devices
+and/or programs). This is how controller has been construed.);
+
+Translating, by the controller, the ports and/or addresses of
+the plurality of multiport packets (Paragraph 40 and 47);
+
+Receiving at an external controller a communication request
+from the controller behind the firewall, wherein the external
+controller is not behind the firewall (Figure 2; and Paragraphs 40,
+47, 48, 57, and 95-97; the external controller may be the STUN,
+ENUM, TURN, and/or a combination of them (e.g. any single entity
+or the entirety of the service provider network));
+
+Establishing a communication channel between the
+controller and the external controller (Figure 3; and Paragraphs 40,
+
+47, 57, and 95-97; steps 401, 403, and 413-415 correspond to such
+
+Application/Control Number: 11/403,548 Page 15
+Art Unit: 2437
+
+establishment of communication between the controllers discussed
+above, for example);
+
+Opening a second communication channel between the
+external controller and at least one other controller behind another
+firewall (Paragraphs 47 and 97-100; communication with endpoint
+209d being performed via the TURN server and NAT 209b);
+
+Transmitting multimedia communication data between the
+controller and the at least one other controIIer wherein the
+multimedia communication data passes through the external
+controIIer (Figures 2 and 4; and Paragraphs 47 and 100-101; the
+endpoints exchanging media via the TURN server; this traffic going
+through the firewalls on each side and the NAT devices on each
+side, as one can see form the communication links of figure 2 and
+the description of firewalls and NAT devices (paragraphs 39-40, for
+example)): and
+
+Distributing the multimedia communication data to one or
+more of the plurality of endpoint communication devices and
+another endpoint communication device (Figure 4; and Paragraphs
+44 and 100-101);
+
+But does not explicitly disclose that the at least one other
+controller is configured to service a single endpoint, or that the
+
+translating performed by the controller comprises converting the
+
+Application/Control Number: 11/403,548 Page 16
+Art Unit: 2437
+
+plurality of multiport packets into a plurality of single port packets in
+a single port communication protocol.
+
+Aasman, however, discloses that the at least one other
+controller is configured to service a single endpoint communication
+device (Figure 1; and Paragraphs 64, 72-73, and 80-81; personal
+proxy 9, for example, corresponding to a controller servicing a
+single endpoint). It would have been obvious to one of ordinary
+skill in the art at the time of applicant’s invention to incorporate the
+proxy techniques of Aasman into the communication system of AIt
+in order to allow for various user editable filters to be used in
+proxies separate from and/or within the endpoints, such filters
+allowing for the modification of data to be perceived by the user,
+such that extraneous data can be removed and display of data can
+be modified to meet screen resolutions/Iimitations.
+
+Li, however, discloses that the translating performed by the
+controller comprises converting the plurality of multiport packets
+into a plurality of single port packets in a single port communication
+protocol (Paragraphs 28-29, and 31-33; converting multiport
+packets into single port packets by adding an extra tunneling
+header thereon, conforming to TOP. In the combination, this
+converting will be performed in the NAT of Alt). It would have been
+obvious to one of ordinary skill in the art at the time of applicant's
+
+invention to incorporate the port tunneling techniques of Li into the
+
+Application/Control Number: 11/403,548 Page 17
+Art Unit: 2437
+
+communication system of AIt as modified by Aasman in order to
+allow the system to communicate multiport multimedia data through
+existing firewalls, while maintaining the high speed required for real
+time communications and without providing a security hole by
+opening many ports in the firewall.
+
+Regarding Claim 2,
+
+Alt as modified by Aasman and Li discloses the method of
+claim 1, in addition, AIt discloses verifying the communication
+request at the external controller (Paragraphs 68-72; authentication
+via certificates, private keys, and/or shared keys, for example,
+being performed by entities in the service provider network).
+
+Regarding Claim 3,
+
+Alt as modified by Aasman and Li discloses the method of
+claim 1, in addition, AIt discloses transmitting a security key from
+the controller to the external controller for authorization of the
+communication request (Paragraphs 68-72).
+
+Regarding Claim 4,
+
+Alt as modified by Aasman and Li discloses the method of
+claim 1, in addition, AIt discloses sending an external request from
+the external controller to an additional external controller
+responsive to the communication request requesting to
+communicate with an additional endpoint communication device
+
+connected to the additional external controller (Figures 2, 5, and 6a;
+
+Application/Control Number: 11/403,548 Page 18
+Art Unit: 2437
+
+and Paragraphs 59 and 101-110; in the scenario of figure 5
+(paragraphs 101 -1 05), gateway 215 may correspond to the
+additional external controller, and an entity on the PSTN network
+may correspond to the additional endpoint, such as the cell phone
+217 or POTS phone 219, for example. In the scenario of figure 6a
+(paragraphs 106-110), SIP proxy server 611 may correspond to the
+additional external controller, while endpoints 605, 607, or 609 may
+be the additional endpoint, for example).
+
+Regarding Claim 5,
+
+Alt as modified by Aasman and Li discloses the method of
+claim 4, in addition, AIt discloses establishing an external channel
+between the external controller and the additional external
+controller; and forwarding the multimedia communication data to
+the additional external controller from the external controller; and
+distributing the multimedia communication data to the additional
+endpoint communication device (Figure 2; and Paragraphs 59 and
+101-110).
+
+Regarding Claim 9,
+
+Alt discloses a communication community comprising:
+
+One or more shared controllers connected to one or more
+endpoint communication devices, wherein the one or more shared
+controllers is behind a firewall, and wherein the one or more shared
+
+controllers is operable to translate the ports and/or addresses of the
+
+Application/Control Number: 11/403,548 Page 19
+Art Unit: 2437
+
+plurality of multiport packets (Figure 2; and Paragraphs 40, 43, and
+47);
+
+At least one other controller connected to another endpoint
+communication device, wherein the at least one other controller is
+behind another firewall, and wherein the at least one other
+controller is operable to translate the ports and/or addresses of the
+plurality of multiport packets, and transmit to the other endpoint
+communication device the translated plurality of multiport packets
+using two or more ports associated with the multiport
+communication protocol (Figures 2 and 4; and Paragraphs 40, 43,
+47, and 100-101); and
+
+An external controller in connection to the one or more
+shared controllers and the at least one other controller, wherein the
+external controller is not behind the firewall or the another firewall,
+and wherein the external controller facilitates communication
+between ones of the one or more endpoint communication devices
+and the other endpoint communication device (Figure 3; and
+Paragraphs 40, 47, 57, and 95-101);
+
+But does not explicitly disclose that the at least one other
+controller is an individual controller connected to a single
+communication endpoint, that translating in the one or more shared
+controllers comprises converting a plurality of multiport packets
+
+received from the one or more endpoint communication devices
+
+Application/Control Number: 11/403,548 Page 20
+Art Unit: 2437
+
+into a plurality of single port packets in a single port communication
+protocol, or that translating in the one or more other controllers
+comprises reconverting the plurality of single port packets into the
+multiport communication protocol, resulting in reconverted plurality
+of multiport packets.
+
+Aasman, however, discloses that the at least one other
+controller is an individual controller connected to a single
+communication endpoint (Figure 1; and Paragraphs 64, 72-73, and
+80-81; personal proxy 9, for example, corresponding to a controller
+servicing a single endpoint). It would have been obvious to one of
+ordinary skill in the art at the time of applicant’s invention to
+incorporate the proxy techniques of Aasman into the
+communication system of AIt in order to allow for various user
+editable filters to be used in proxies separate from and/or within the
+endpoints, such filters allowing for the modification of data to be
+perceived by the user, such that extraneous data can be removed
+and display of data can be modified to meet screen
+resolutions/Iimitations.
+
+Li, however, discloses that translating in the one or more
+shared controllers comprises converting a plurality of multiport
+packets received from the one or more endpoint communication
+devices into a plurality of single port packets in a single port
+
+communication protocol, or that translating in the one or more other
+
+Application/Control Number: 11/403,548 Page 21
+Art Unit: 2437
+
+controllers comprises reconverting the plurality of single port
+packets into the multiport communication protocol, resulting in
+reconverted plurality of multiport packets (Paragraphs 28-29, 31-33,
+and 39). It would have been obvious to one of ordinary skill in the
+art at the time of applicant's invention to incorporate the port
+tunneling techniques of Li into the communication system of AIt as
+modified by Aasman in order to allow the system to communicate
+multiport multimedia data through existing firewalls, while
+maintaining the high speed required for real time communications
+and without providing a security hole by opening many ports in the
+firewall.
+
+Regarding Claim 10,
+
+Alt as modified by Aasman and Li discloses the community
+of claim 9, in addition, AIt discloses a verification utility within the
+external controller for verifying one or more communication
+requests from one or more of the one or more shared controllers
+and the individual controller (Paragraphs 68-72 and 82-83).
+
+Regarding Claim 11,
+
+Alt as modified by Aasman and Li discloses the community
+of claim 9, in addition, AIt discloses a security key repository within
+each of the one or more shared controllers and the individual
+controller, wherein the one or more shared controllers and the
+
+individual controller transmit a security key for verification by the
+
+Application/Control Number: 11/403,548 Page 22
+Art Unit: 2437
+
+external controller for each communication request issued to the
+external controller (Paragraphs 68-72 and 82-83; when a certificate
+is allocated per island and stored on the respective island, this
+certificate will be stored on a controller of the island (island being
+defined as a closed community of IP-enabled users in paragraph 4
+of Alt). If an endpoint also has a specific key or certificate, it will
+also be temporarily stored in some fashion in the controller and
+transmitted with requests).
+
+Regarding Claim 12,
+
+Alt as modified by Aasman and Li discloses the community
+of claim 9, in addition, AIt discloses an external communication
+interface within the external controller for communicating with a
+second communication community (Figure 2).
+
+Regarding Claim 13,
+
+Alt as modified by Aasman and Li discloses the community
+of claim 12, in addition, AIt discloses that the external controller
+communicates with a central communication controller to establish
+a communication channel with the second communication
+community (Paragraphs 97-105; DNS Iookups to an ENUM server,
+for example).
+
+Regarding Claim 19,
+Alt as modified by Aasman and Li discloses the community
+
+of claim 9, in addition, AIt discloses that the one or more shared
+
+Application/Control Number: 11/403,548 Page 23
+Art Unit: 2437
+
+controls, the at least one other controller, and the external controIIer
+each comprise a device (Figure 2; and Paragraphs 40, 47, 48, 57,
+and 209-218; showing hardware aspects of the devices of the
+system).
+
+Regarding Claim 20,
+
+Alt as modified by Aasman and Li discloses the method of
+claim 1, in addition, AIt discloses that transmitting the multimedia
+communication data between the controller and the at least one
+other controIIer comprises transmitting from the controller the
+plurality of packets to the at least one other controller (Figures 2
+and 4; and Paragraphs 47 and 100-101); and
+
+Li discloses that transmitting the plurality of packets
+comprises transmitting the plurality of single port packets over a
+commonly open port to the at least one other controller, the plurality
+of single port packets traversing one or more firewalls using the
+commonly open port (Paragraphs 32 and 39; stripping/removing the
+extra tunneling header, providing multiport packets once again).
+
+Regarding Claim 21,
+
+Alt as modified by Aasman and Li discloses the method of
+claim 20, in addition, AIt disclose receiving the plurality of packets
+at the at least one other controller, and delivering, from the at least
+one other controller to another endpoint communication device, the
+
+plurality of multiport packets using two or more ports associated
+
+Application/Control Number: 11/403,548 Page 24
+Art Unit: 2437
+
+with the multiport communication protocol (Figures 2 and 4; and
+Paragraphs 47 and 100-101);
+
+Aasman discloses that the another endpoint communication
+device is the single endpoint communication device (Figure 1; and
+Paragraphs 64, 72-73, and 80-81); and
+
+Li discloses receiving the plurality of single port packets at
+the at least one other controller (Paragraphs 32 and 39);
+
+Reconverting, by the at least one other controller, the
+received plurality of single port packets into the multiport
+communication protocol, resulting in reconverted plurality of
+multiport packets (Paragraphs 32 and 39); and
+
+Delivering, from the at least one other controller to the single
+endpoint communication device, the reconverted plurality of
+multiport packets using two or more ports associated with the
+
+multiport communication protocol (Paragraphs 32 and 39).
+
+7. Claims 6-8 are rejected under 35 U.S.C. 103(a) as being unpatentable
+over AIt in view of Aasman and Li, further in view of Strathmeyer.
+Regarding Claim 6,
+Alt as modified by Aasman and Li discloses the method of
+claim 1, in addition, AIt discloses a communication request
+requesting to communicate with an external endpoint device not
+
+connected to one or more of the controller and the at least one
+
+Application/Control Number: 11/403,548 Page 25
+Art Unit: 2437
+
+other controIIer (Figure 2; and Paragraphs 59 and 101-110); but
+does not explicitly disclose issuing a central request from the
+external controller to a central controIIer responsive to the
+communication request requesting to communicate with an external
+endpoint device not connected to one or more of the controller and
+the at least one other controller and receiving the multimedia
+communication data at the central controller.
+
+Strathmeyer, however, discloses issuing a central request
+from the external controller to a central controIIer responsive to the
+communication request requesting to communicate with an external
+endpoint device not connected to one or more of the controller and
+the at least one other controller and receiving the multimedia
+communication data at the central controller (Figures 6 and 7; and
+Paragraphs 52, 61, 63-65, and 74; in this situation, the elements
+described above as the central controller, and the external
+controller will comprise the passthrough server, the proxy server,
+and/or the server in figure 7, for example; or the outbound proxy of
+figure 6, for example). It would have been obvious to one of
+ordinary skill in the art at the time of applicant's invention to
+incorporate the IP telephony system of Strathmeyer into the
+communication system of AIt as modified by Aasman and Li in
+order to allow the system to provide call control and monitoring in a
+
+way that does not affect the operation of current proxy servers and
+
+Application/Control Number: 11/403,548 Page 26
+Art Unit: 2437
+
+such that the control and monitoring system has full access to all
+caII data, thereby ensuring that all caII data is available for
+monitoring and control and that the monitoring/control system
+makes fuIIy-informed decisions and logs of the call data.
+Regarding Claim 7,
+
+Alt as modified by Aasman, Li, and Strathmeyer discloses
+the method of claim 6, in addition, AIt discloses determining a
+peripheral controller connected to the external endpoint device;
+opening another external channel between the central controller
+and the peripheral controller; forwarding the multimedia
+communication data to the peripheral controller from the central
+controller; and distributing the multimedia communication data to
+the external endpoint device (Figure 2; and Paragraphs 59 and
+101-110; as discussed above, in the combination, entities in the
+service provider network may be construed as the central
+controller; and as discussed with respect to claims 4 and 5 above,
+the gateway may be the peripheral controller in this claim, for
+example).
+
+Regarding Claim 8,
+
+Alt as modified by Aasman, Li, and Strathmeyer discloses
+
+the method of claim 6, in addition, AIt discloses distributing the
+
+multimedia communication data to the external endpoint device
+
+Application/Control Number: 11/403,548 Page 27
+Art Unit: 2437
+
+when the external endpoint device is connected to the central
+
+controller (Figure 2; and Paragraphs 59 and 101-110).
+
+Conclusion
+
+Applicant's amendment necessitated the new ground(s) of rejection
+presented in this Office action. Accordingly, THIS ACTION IS MADE FINAL.
+See MPEP § 706.07(a). Applicant is reminded of the extension of time policy as
+set forth in 37 CFR 1.136(a).
+
+A shortened statutory period for reply to this final action is set to expire
+THREE MONTHS from the mailing date of this action. In the event a first reply is
+filed within TWO MONTHS of the mailing date of this final action and the advisory
+action is not mailed until after the end of the THREE-MONTH shortened statutory
+period, then the shortened statutory period will expire on the date the advisory
+action is mailed, and any extension fee pursuant to 37 CFR 1.136(a) will be
+calculated from the mailing date of the advisory action. In no event, however, will
+the statutory period for reply expire later than SIX MONTHS from the date of this
+final action.
+
+Any inquiry concerning this communication or earlier communications from
+the examiner should be directed to JEFFREY D. POPHAM whose telephone
+number is (571 )272-7215. The examiner can normally be reached on M-F 9:00-
+5:30.
+
+If attempts to reach the examiner by telephone are unsuccessful, the
+
+examiner’s supervisor, Emmanuel Moise can be reached on (571)272-3865. The
+
+Application/Control Number: 11/403,548 Page 28
+Art Unit: 2437
+
+fax phone number for the organization where this application or proceeding is
+assigned is 571 -273-8300.
+
+Information regarding the status of an application may be obtained from
+the Patent Application Information Retrieval (PAIR) system. Status information
+for published applications may be obtained from either Private PAIR or Public
+PAIR. Status information for unpublished applications is available through
+Private PAIR only. For more information about the PAIR system, see http://pair-
+direct.uspto.gov. Should you have questions on access to the Private PAIR
+system, contact the Electronic Business Center (EBC) at 866-217-9197 (toll-
+free). If you would like assistance from a USPTO Customer Service
+Representative or access to the automated information system, call 800-786-
+9199 (IN USA OR CANADA) or 571 -272-1 000.
+
+Jeffrey D Popham
+Examiner
+Art Unit 2437
+
+/Jeffrey D Popham/
+Examiner, Art Unit 2437
+
+/Emmanue| L. Moise/
+Supervisory Patent Examiner, Art Unit 2437
+

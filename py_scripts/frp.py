@@ -33,7 +33,7 @@ _are_literal = pp.CaselessLiteral('are')
 _provis_literal = pp.CaselessLiteral('provisionally')
 
 _rejected_str = pp.And([
-    pp.Or([pp.And([_is_literal, pp.Literal('/'), _are_literal]), _is_literal, _are_literal, _provis_literal]).suppress(),
+    pp.Optional(pp.Or([pp.And([_is_literal, pp.Literal('/'), _are_literal]), _is_literal, _are_literal, _provis_literal])).suppress(),
     pp.CaselessLiteral('rejected')
 ])
 
@@ -137,7 +137,8 @@ _ref_doc_num_prepend_options = pp.Or([
     pp.Each([
         pp.CaselessLiteral('u'),
         pp.Optional(pp.CaselessLiteral('.')),
-        pp.CaselessLiteral('s.'),
+        pp.CaselessLiteral('s'),
+        pp.Optional(pp.CaselessLiteral('.')),
         pp.CaselessLiteral('patent'),
         pp.Optional(pp.CaselessLiteral('publication')),
         pp.Optional(pp.CaselessLiteral('no.')),
@@ -146,14 +147,21 @@ _ref_doc_num_prepend_options = pp.Or([
     pp.Each([
         pp.CaselessLiteral('u'),
         pp.Optional(pp.CaselessLiteral('.')),
-        pp.CaselessLiteral('s.'),
+        pp.CaselessLiteral('s'),
+        pp.Optional(pp.CaselessLiteral('.')),
         pp.CaselessLiteral('patent'),
         pp.CaselessLiteral('application'),
         pp.CaselessLiteral('publication'),
         pp.Optional(pp.CaselessLiteral('number'))
     ]),
     pp.Each([
-        pp.CaselessLiteral('us'),
+        pp.CaselessLiteral('u'),
+        pp.Optional(pp.CaselessLiteral('.')),
+        pp.CaselessLiteral('s'),
+        pp.Optional(pp.CaselessLiteral('.')),
+        pp.Optional(pp.CaselessLiteral('pub')),
+        pp.Optional(pp.CaselessLiteral('.')),
+        pp.Optional(pp.CaselessLiteral('no')),
         pp.Optional(pp.CaselessLiteral('.')),
         pp.Optional(pp.CaselessLiteral('#')),
         pp.Optional(pp.CaselessLiteral('patent')),
@@ -162,7 +170,10 @@ _ref_doc_num_prepend_options = pp.Or([
         pp.Optional(pp.CaselessLiteral('number'))
     ]),
     pp.Each([
-        pp.CaselessLiteral('us'),
+        pp.CaselessLiteral('u'),
+        pp.Optional(pp.CaselessLiteral('.')),
+        pp.CaselessLiteral('s'),
+        pp.Optional(pp.CaselessLiteral('.')),
         pp.CaselessLiteral('patent'),
         pp.CaselessLiteral('application'),
         pp.CaselessLiteral(','),
@@ -201,19 +212,22 @@ _ref_doc_num_prepend_options = pp.Or([
         pp.CaselessLiteral(':'),
         pp.CaselessLiteral('us'),
         pp.Optional(pp.CaselessLiteral('number'))
+    ]),
+    pp.Each([
+        pp.CaselessLiteral('cited')
     ])
 ])
 
-_ref_doc_num_1 = pp.Combine(pp.And([
+_ref_doc_num_1 = pp.originalTextFor(pp.Combine(pp.And([
     pp.Word(pp.nums, exact=1),
     pp.Literal(','),
     pp.Word(pp.nums, exact=3),
     pp.Literal(','),
     pp.Word(pp.nums, exact=3)
-]))
+]), adjacent=False))
 
 _ref_doc_num_2 = pp.originalTextFor(pp.Combine(pp.And([
-    pp.CaselessLiteral('us'),
+    _ref_doc_num_prepend_options,
     pp.Word(pp.nums),
     pp.Literal('/'),
     pp.Word(pp.nums),
@@ -229,18 +243,13 @@ _ref_doc_num_2_without_us = pp.originalTextFor(pp.Combine(pp.And([
     pp.Word(pp.nums)
 ]), adjacent=False))
 
-_ref_doc_num_3 = pp.And([
-    _ref_doc_num_prepend_options.suppress(),
+_ref_doc_num_3 = pp.originalTextFor(pp.Combine(pp.And([
+    _ref_doc_num_prepend_options,
     _ref_doc_num_1
-])
+]), adjacent=False))
 
 _ref_doc_num_4 = pp.originalTextFor(pp.Combine(pp.And([
-    pp.CaselessLiteral('u'),
-    pp.Optional(pp.CaselessLiteral('.')),
-    pp.CaselessLiteral('s'),
-    pp.Optional(pp.CaselessLiteral('.')),
-    pp.CaselessLiteral('pub.'),
-    pp.CaselessLiteral('no.'),
+    _ref_doc_num_prepend_options,
     pp.Word(pp.nums),
     pp.Literal('/'),
     pp.Word(pp.nums)
@@ -248,42 +257,42 @@ _ref_doc_num_4 = pp.originalTextFor(pp.Combine(pp.And([
 
 
 _ref_doc_num_5 = pp.originalTextFor(pp.Combine(pp.And([
-    pp.CaselessLiteral('us'),
+    _ref_doc_num_prepend_options,
     pp.Word(pp.nums),
     pp.Word(pp.alphas, exact=1),
     pp.Word(pp.nums)
 ]), adjacent=False))
 
 _ref_doc_num_6 = pp.originalTextFor(pp.Combine(pp.And([
-    pp.CaselessLiteral('us'),
+    _ref_doc_num_prepend_options,
     pp.Word(pp.nums)
 ]), adjacent=False))
 
-_ref_doc_num_7 = pp.And([
-    _ref_doc_num_prepend_options.suppress(),
+_ref_doc_num_7 = pp.originalTextFor(pp.Combine(pp.And([
+    _ref_doc_num_prepend_options,
     pp.Word(pp.nums + '/,')
-])
+]), adjacent=False))
 
-_ref_doc_num_8 = pp.And([
-    pp.Optional(_ref_doc_num_prepend_options).suppress(),
+_ref_doc_num_8 = pp.originalTextFor(pp.Combine(pp.And([
+    pp.Optional(_ref_doc_num_prepend_options),
     _ref_doc_num_2,
-    pp.Optional(pp.CaselessLiteral('_')).suppress()
-])
+    pp.Optional(pp.CaselessLiteral('_'))
+]), adjacent=False))
 
-_ref_doc_num_9 = pp.And([
-    pp.Optional(_ref_doc_num_prepend_options).suppress(),
+_ref_doc_num_9 = pp.originalTextFor(pp.Combine(pp.And([
+    pp.Optional(_ref_doc_num_prepend_options),
     _ref_doc_num_2_without_us
-])
+]), adjacent=False))
 
 _ref_doc_num_1_additional = pp.And([
     _ref_doc_num_1,
     pp.Word(pp.alphanums, exact=2)
 ])
 
-_ref_doc_num_10 = pp.And([
-    pp.Optional(_ref_doc_num_prepend_options).suppress(),
+_ref_doc_num_10 = pp.originalTextFor(pp.Combine(pp.And([
+    pp.Optional(_ref_doc_num_prepend_options),
     _ref_doc_num_1_additional
-])
+]), adjacent=False))
 
 _ref_doc_num = pp.Or([
     _ref_doc_num_1,
@@ -601,7 +610,11 @@ _common_ref_doc_num =  pp.And([
 ])
 
 failon_for_g_13 = pp.Or([
-    _common_ref_doc_num
+    _common_ref_doc_num,
+    _rejection_ground_prefix_str,
+    _rejected_str,
+    _rejected_under_usc,
+    _rejected_under
 ])
 
 grammer_13 = pp.And([
@@ -664,21 +677,21 @@ grammer_15 = pp.And([
 """
 """
 grammers = [
-    grammer_6,
-    grammer_9,
-    grammer_7,
-    grammer_8,
-    grammer_4,
-    grammer_1,
-    grammer_2,
-    grammer_3,
-    grammer_5,
-    grammer_13,
-    grammer_14,
-    grammer_15,
-    grammer_10,
-    grammer_11,
-    grammer_12
+    grammer_6,    #1
+    grammer_9,    #2
+    grammer_7,    #3
+    grammer_8,    #4
+    grammer_4,    #5
+    grammer_1,    #6
+    grammer_2,    #7
+    grammer_3,    #8
+    grammer_5,    #9
+    grammer_13,  #10
+    grammer_14,  #11
+    grammer_15,  #12
+    grammer_10,  #13
+    grammer_11,  #14
+    grammer_12   #15
 ]
 
 def claim_num_fun(claims):
@@ -689,6 +702,25 @@ def claim_num_fun(claims):
         else:
             nums.append(int(num))
     return nums
+
+def format_data(rr):
+    c_num_1 = rr.get('claim_num_1')
+    c_num_2 = rr.get('claim_num_2')
+    c_nums = []
+
+    if c_num_1:
+        c_nums = c_nums + claim_num_fun(c_num_1)
+        del(rr['claim_num_1'])
+    if c_num_2:
+        c_nums = c_nums + claim_num_fun(c_num_2)
+        del(rr['claim_num_2'])
+
+    if 'claim_num_1' in rr:
+        del(rr['claim_num_1'])
+    if 'claim_num_2' in rr:
+        del(rr['claim_num_2'])
+    rr['claim_nums'] = c_nums
+    return rr
 
 def parse(rej_str):
     data = {}
@@ -710,28 +742,52 @@ def parse(rej_str):
 
     for grammer in grammers:
         for result, st, en in grammer.scanString(rej_str):
-            rr = result.asDict()
-            c_num_1 = rr.get('claim_num_1')
-            c_num_2 = rr.get('claim_num_2')
-            c_nums = []
-
-            if c_num_1:
-                c_nums = c_nums + claim_num_fun(c_num_1)
-                del(rr['claim_num_1'])
-            if c_num_2:
-                c_nums = c_nums + claim_num_fun(c_num_2)
-                del(rr['claim_num_2'])
-
-            if 'claim_num_1' in rr:
-                del(rr['claim_num_1'])
-            if 'claim_num_2' in rr:
-                del(rr['claim_num_2'])
-            rr['claim_nums'] = c_nums
+            rr = format_data(result.asDict())
             data[st] = rr
         # print("FINISHING GRAMMER: {0}".format(grammer_idx))
         # grammer_idx = grammer_idx + 1
-        # embed()
-    # embed()
+
+    invalid_ref_name_idx = {}
+
+    for idx in data:
+        rej_data = data[idx]
+        fields = []
+
+        if 'ref_name' in rej_data and len(rej_data['ref_name']) > 255:
+            fields.append('ref_name')
+        if 'in_view_ref_name' in rej_data and len(rej_data['ref_name']) > 255:
+            fields.append('in_view_ref_name')
+        if 'in_further_view_ref_name' in rej_data and len(rej_data['ref_name']) > 255:
+            fields.append('in_further_view_ref_name')
+        if fields:
+            invalid_ref_name_idx[idx] = fields
+
+    ref_name_data = {}
+
+    for grammer in [grammer_7, grammer_8]:
+        for result, st, en in grammer.scanString(rej_str):
+            rr = format_data(result.asDict())
+            ref_name_data[st] = rr
+
+    for idx in invalid_ref_name_idx:
+        fields = invalid_ref_name_idx[idx]
+        field_vals = {}
+        doc_num_field = None
+
+        for field in fields:
+            if field == 'ref_name':
+                field_vals = {'ref_name': ref_name_data[idx]['ref_name']}
+                doc_num_field = 'ref_doc_num'
+            elif field == 'in_view_ref_name':
+                field_vals = {'in_view_ref_name': ref_name_data[idx]['in_view_ref_name']}
+                doc_num_field = 'in_view_ref_doc_num'
+            elif field == 'in_further_view_ref_name':
+                field_vals = {'in_further_view_ref_name': ref_name_data[idx]['in_further_view_ref_name']}
+                doc_num_field = 'in_further_view_ref_doc_num'
+        data[idx].update(field_vals)
+        if doc_num_field in data[idx]:
+            del(data[idx][doc_num_field])
+
     return list(data.values())
 
 _rejection_date = pp.And([
