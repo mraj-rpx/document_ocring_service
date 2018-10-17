@@ -13,17 +13,21 @@ from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from io import StringIO
+import configparser
 
-MAX_PROCESS_POOL = 2
-PDF_MAX_POOL = MAX_PROCESS_POOL *2
-PAGE_MAX_POOL = MAX_PROCESS_POOL *2
-RECORD_LIMIT = 1
-RECORD_OFFSET = 600
+config = configparser.ConfigParser()
+config.read('app_data_ocr_config.ini')
 
-DB_NAME = 'db-name'
-DB_HOST = 'db-host'
-DB_USER = 'db-user'
-DB_PASS = 'db-pass'
+MAX_PROCESS_POOL = config['DEFAULT']['MAX_PROCESS_POOL']
+PDF_MAX_POOL = MAX_PROCESS_POOL * 2
+PAGE_MAX_POOL = MAX_PROCESS_POOL * 2
+RECORD_LIMIT = config['DEFAULT']['RECORD_LIMIT']
+RECORD_OFFSET = config['DEFAULT']['RECORD_OFFSET']
+
+DB_NAME = config['DEFAULT']['DB_NAME']
+DB_HOST = config['DEFAULT']['DB_HOST']
+DB_USER = config['DEFAULT']['DB_USER']
+DB_PASS = config['DEFAULT']['DB_PASS']
 
 IMG_WRAPPER_DIR_NOT_EXIST_STATUS = 1
 NO_NEW_FILES_STATUS = 2
@@ -130,7 +134,7 @@ class OcrProcess:
 
         if self.ocr_zip:
             self.execute_cmd("aws s3 cp --profile default s3://{0} {1}/".format(self.ocr_zip, self.zip_dir))
-            self.execute_cmd("unzip {0} -d {1}".format(self.ocr_zip_file, self.zip_dir))
+            self.execute_cmd("unzip -j {0} -d {1}".format(self.ocr_zip_file, self.zip_dir))
         else:
             os.mkdir(self.ocr_unzip_dir)
 
@@ -182,19 +186,40 @@ class OcrProcess:
             return IMG_WRAPPER_DIR_NOT_EXIST_STATUS
 
 if __name__ == '__main__':
+    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
+    cur = conn.cursor()
+
     def worker_start_ocr(tup):
         ocr_process = OcrProcess(tup)
-        return ocr_process.ocr()
+        ocr_status = ocr_process.ocr()
+
+        sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
+        img_sql_update = "UPDATE pair.image_file_wrapper SET is_ocred = %s, updated_at = CURRENT_TIMESTAMP WHERE app_data_id = %s AND file_name IN %s"
+        needs_ocr_update_sql = "UPDATE pair.pair_ocr SET needs_ocr = %s, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
+
+        if ocr_status:
+            if ocr_status == IMG_WRAPPER_DIR_NOT_EXIST_STATUS:
+                print("IMG FILE wrapper dir does not exist for PAIR ID: '{0}'".format(ocr_process.pair_ocr_id))
+            elif ocr_status == NO_NEW_FILES_STATUS:
+                print("No new files available for OCR, for PAIR ID: '{0}'".format(ocr_process.pair_ocr_id))
+                cur.execute(needs_ocr_update_sql, (False, ocr_process.pair_ocr_id))
+                conn.commit()
+            else:
+                ocr_s3_path = ocr_status['ocr_s3_path']
+                ocred_files = tuple(ocr_status['ocred_files'])
+                needs_ocr = ocr_status["needs_ocr"]
+
+                cur.execute(sql_update, (ocr_s3_path, needs_ocr, ocr_process.pair_ocr_id))
+                cur.execute(img_sql_update, (True, ocr_process.app_data_id, ocred_files))
+                conn.commit()
+        else:
+            print("Could not OCR the PAIR: '{0}'".format(tup))
+        return ocr_process
 
     def start_ocr():
-        conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
-        cur = conn.cursor()
         sql_select = """
         SELECT id, app_s3_path, ocr_s3_path, app_data_id FROM pair.pair_ocr WHERE needs_ocr = %s AND ocr_s3_path IS NULL ORDER BY ocr_priority LIMIT %s OFFSET %s;
         """
-        sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
-        img_sql_update = "UPDATE pair.image_file_wrapper SET is_ocred = %s, updated_at = CURRENT_TIMESTAMP WHERE app_data_id = %s AND file_name IN %s"
-        needs_ocr_update_sql = "UPDATE pair.pair_ocr SET needs_ocr = %s WHERE id = %s"
 
         cur.execute(sql_select, (True, RECORD_LIMIT, RECORD_OFFSET))
         tuple_vals = cur.fetchall()
@@ -202,27 +227,8 @@ if __name__ == '__main__':
         pair_ids = [[tup[0], tup[3]] for tup in tuple_vals]
 
         with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_PROCESS_POOL) as process_pool:
-            for (pair_id, app_data_id), ocr_status in zip(pair_ids, process_pool.map(worker_start_ocr, tuple_vals)):
-                if ocr_status:
-                    if ocr_status == IMG_WRAPPER_DIR_NOT_EXIST_STATUS:
-                        print("IMG FILE wrapper dir does not exist for PAIR ID: '{0}'".format(pair_id))
-                    elif ocr_status == NO_NEW_FILES_STATUS:
-                        print("No new files available for OCR, for PAIR ID: '{0}'").format(pair_id)
-                        cur.execute(needs_ocr_update_sql, (False, pair_id))
-                        conn.commit()
-                    else:
-                        print("Completed OCR for the PAIR ID: '{0}'".format(pair_id))
-                        print(ocr_status)
-                        ocr_s3_path = ocr_status['ocr_s3_path']
-                        ocred_files = tuple(ocr_status['ocred_files'])
-                        needs_ocr = ocr_status["needs_ocr"]
-
-                        cur.execute(sql_update, (ocr_s3_path, needs_ocr, pair_id))
-                        cur.execute(img_sql_update, (True, app_data_id, ocred_files))
-                        conn.commit()
-                else:
-                    print("Could not OCR the PAIR: '{0}'".format(tup))
-        conn.close()
+            for pair_id, ocr_process in zip(pair_ids, process_pool.map(worker_start_ocr, tuple_vals)):
+                print("Completed OCR for PAIR_ID: {0}".format(ocr_process.pair_ocr_id))
 
     cont = True
     while cont:
