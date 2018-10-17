@@ -1,0 +1,419 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+ 
+
+UNITED STATES DEPARTNIEN T OF COMNIERCE
+United States Patent and Trademark Office
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313- 1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO. |
+12/290,25 8 10/29/ 2008 Leigh M. Rothschild Rothschild—S CON 4544
+1218 7590 04/02/2010 | l
+EXAMINER
+HESPOS & PORCO LLP
+1 10 West 40th Street DURNFORD GESZVAIN, DILLON
+Suite 2501 ART UNIT PAPER NUMBER
+NEW YORK, NY 10018 | l l
+2622
+| MAIL DATE | DELIVERY MODE |
+04/02/2010 PAPER
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+
+The time period for reply, if any, is set in the attached communication.
+
+PTOL—90A (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+
+12/290,258 ROTHSCHILD, LEIGH M.
+Office Action Summary Examiner Art Unit
+
+DiIIon Durnford-Geszvain 2622
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event however may a reply be timely filed
+
+after SIX (6) MONTHS from the mailing date of this communication.
+- If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+1)|Z| Responsive to communication(s) filed on 29 October 2008.
+2a)|:| This action is FINAL. 2b)|Z| This action is non-final.
+3)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 0.6. 213.
+
+Disposition of Claims
+
+4)|Z| Claim(s) M is/are pending in the application.
+4a) Of the above claim(s) is/are withdrawn from consideration.
+5)|:| Claim(s) _ is/are allowed.
+6)|Z| Claim(s) M is/are rejected.
+7)|:| Claim(s) _ is/are objected to.
+8)|:| Claim(s) _ are subject to restriction and/or election requirement.
+
+ 
+
+Application Papers
+
+9)|:| The specification is objected to by the Examiner.
+10)|z The drawing(s) filed on 29 October 2008 is/are: a)|Z| accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)|:| The oath or declaration is objected to by the Examiner. Note the attached Office Action or form PTO-152.
+
+Priority under 35 U.S.C. § 119
+
+12)|:| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:| AII b)|:| Some * c)|:| None of:
+1.|:| Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No. _
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) x Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) D Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mai| Date. _
+
+3) IZI Information Disclosure Statement(s) (PTO/SB/08) 5) D Notice of Informal Patent Application
+Paper No(s)/Mai| Date _. 6) D Other: _
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL-326 (Rev. 08-06) Office Action Summary Part of Paper No./Mai| Date 20100316
+
+Application/Control Number: 12/290,258 Page 2
+Art Unit: 2622
+
+DETAILED ACTION
+
+Double Patenting
+
+1. The nonstatutory double patenting rejection is based on a judicially created
+doctrine grounded in public policy (a policy reflected in the statute) so as to prevent the
+unjustified or improper timewise extension of the “right to exclude” granted by a patent
+and to prevent possible harassment by multiple assignees. A nonstatutory
+obviousness-type double patenting rejection is appropriate where the conﬂicting claims
+are not identical, but at least one examined application claim is not patentably distinct
+from the reference claim(s) because the examined application claim is either anticipated
+by, or would have been obvious over, the reference claim(s). See, e.g., In re Berg, 140
+F.3d 1428, 46 USPQ2d 1226 (Fed. Cir. 1998); In re Goodman, 11 F.3d 1046, 29
+USPQ2d 2010 (Fed. Cir. 1993); In re Longi, 759 F.2d 887, 225 USPQ 645 (Fed. Cir.
+1985); In re Van Ornum, 686 F.2d 937, 214 USPQ 761 (CCPA 1982); In re Vogel, 422
+F.2d 438, 164 USPQ 619 (CCPA 1970); and In re Thorington, 418 F.2d 528, 163
+USPQ 644 (CCPA 1969).
+
+A timely filed terminal disclaimer in compliance with 37 CFR 1.321(c) or 1 .321(d)
+may be used to overcome an actual or provisional rejection based on a nonstatutory
+double patenting ground provided the conflicting application or patent either is shown to
+be commonly owned with this application, or claims an invention made as a result of
+activities undertaken within the scope of a joint research agreement.
+
+Effective January 1, 1994, a registered attorney or agent of record may sign a
+terminal disclaimer. A terminal disclaimer signed by the assignee must fully comply with
+37 CFR 3.73(b).
+
+2. Claims 54, 56- are rejected on the ground of nonstatutory obviousness-type
+
+double patenting as being unpatentable over claims 1, 3, 4, 9, 11, 13, 16, 18, 22-25, 27-
+29, 36, 38 and 39 of US. Patent No. 7,456,872. Although the conflicting claims are not
+identical, they are not patentably distinct from each other because the all of the
+limitations of the identified claims in the application are contained in the claims of the
+
+patent.
+
+Claim Rejections - 35 USC § 103
+
+Application/Control Number: 12/290,258 Page 3
+Art Unit: 2622
+
+3. The following is a quotation of 35 U.S.C. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.
+
+4. Claims 54-57, 58, 60, 67, 72 and 73 are rejected under 35 U.S.C. 103(a) as
+being unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362
+
+(Murphy).
+
+5. As to claim 54, Takahashi teaches an image verification device comprising:
+
+a user verification module 7 for verifying an identity of a user of the device,
+wherein upon verification, the user verification module enables operation of the device
+(Figs. 1 and 7, when the user is verified the camera is enabled);
+
+a capture module for capturing at least one image and creating a digital image
+file, wherein the user verification module verifies the identity of the user of the device at
+a time of the image capture (Fig. 7);
+
+a processing module 1 for associating the user identity to the digital image file
+(Fig. 7, [0023] and [0077]); and
+
+an encryption module 1 for encrypting the digital image file and associated
+information upon image capture (the Examiner considers watermarking and copyright
+insertion to be encryption of the associated information and the digital image, [0077]).
+
+What Takahashi does not teach is a locational information module for
+
+determining a location when capturing the image and associating the location
+
+Application/Control Number: 12/290,258 Page 4
+Art Unit: 2622
+
+information with the captured image. However, Murphy teaches a camera that has a
+locational information module 110 that determines a location when capturing image data
+and a processing module 140 that associates the locational information with the
+captured image (Fig. 1 and 09 L62-67). Murphy also discusses encrypting the image
+data and associated data for authentication (C6 L56-62). Therefore it would have been
+obvious to one of ordinary skill in the art at the time the invention was made to have
+incorporated a locational information module into the device taught by Takahashi as this
+would allow for the position of a captured image to be known without the user having to
+remember the location of every image that they take. It further would have been obvious
+to have encrypted the location information so that it could not be tampered with by a
+
+third party.
+
+6. As to claim 55, see the rejection of claim 54 and note that Takahashi further
+teaches the device as in claim 54, wherein the at least one image is multiple images
+processed in at least one video format (Note that Takahashi teaches the device can be
+
+a camera that captures video [0023]).
+
+7. As to claim 56, see the rejection of claim 54 and note that Takahashi further
+teaches the device as in claim 54, further comprising a display module 3 for displaying
+
+the captured at least one image ([0056]).
+
+Application/Control Number: 12/290,258 Page 5
+Art Unit: 2622
+
+8. As to claim 58, see the rejection of claim 54 and note that Takahashi further
+teaches the device as in claim 54, further comprising a storage module 6 for storing at
+least one digital image file and the information associated to the digital image file
+
+“0077”.
+
+9. As to claim 60, see the rejection of claim 54 and note that Murphy further teaches
+an auxiliary input module for generating auxiliary information related to a captured
+image, wherein the auxiliary information is date, time and sequence number (C10 L1-5
+and note that the Examiner interprets the time Ti of Murphy to include the date
+information). Therefore it would have been obvious to one of ordinary skill in the art at
+the time the invention was made to have generated this information as it would be
+
+useful to a user in recalling when the image was captured.
+
+10. Claims 67 and 73 are method claims that are similar to the device claims 54 and
+
+55 respectively and are rejected on similar grounds but directed to a method.
+
+11. As to claim 72, see the rejection of claim 67 and note that Murphy further teaches
+transmitting the encrypted information and digital image file to a computing
+device;
+unencrypting the information and digital image file at the computing device; and
+
+verifying the location and date and time of the image capture (C6 L63 to C7 L25).
+
+Application/Control Number: 12/290,258 Page 6
+Art Unit: 2622
+
+12. Claims 57, 61-63, 70 and 71 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362 (Murphy)
+further in view of US 6,642,959 (Arai).
+
+13. As to claim 57, see the rejection of claim 54 and note that neither Takahashi nor
+Murphy teach the display module adapted to prompt a user to input information
+regarding the captured image. However, Arai teaches a digital camera with a display 12
+that is adapted to prompt a user to input information regarding a captured image (Fig.
+8). Therefore it would have been obvious to one of ordinary skill in the art at the time the
+invention was made to have used the display to prompt a user to input information
+regarding a captured image as this is an efficient way to prompt a user to enter
+
+information.
+
+14. As to claim 61, see the rejection of claim 54 and note that neither Takahashi nor
+Murphy teach an input module for inputting information regarding the captured image,
+and then associating that information with the image file. However, Arai teaches an
+input module for inputting information related to a captured image and associating that
+information with the image data (Figs. 1, 3, 8 and 9). Therefore it would have been
+obvious to one of ordinary skill in the art at the time the invention was made to have
+used an input module such as that taught by Arai as this would allow a user to enter
+memo at the time of image capture that could remind them about the contents of the
+
+image or why they captured the image or who is in the image which they could not do
+
+Application/Control Number: 12/290,258 Page 7
+Art Unit: 2622
+
+with the device taught by the combination of Takahashi and Murphy.
+
+15. As to claim 62, see the rejection of claim 61 and note that Murphy further teaches
+that the device creates a separate information file including location information and
+inputted information that is linked to the digital information file (through hyperlinks, C10
+
+L1-5).
+
+16. As to claim 63, see the rejection of claim 61 and note that Arai further teaches
+
+that the device appends additional information to the digital image file (Fig. 3).
+
+17. Claims 70 and 71 are method claims that are similar to the device claims 62 and
+
+63 respectively and are rejected on similar grounds but directed to a method.
+
+18. Claims 59, 64, 65 and 68 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362 (Murphy)
+further in view of US 7,006,146 (Tanaka).
+
+19. As to claim 59, what neither Takahashi nor Murphy teach is a transmission
+module for transmitting at least one digital image file and its associated information to a
+computing device. However, Tanaka teaches a camera 5 coupled to a mobile phone 1
+with a communication device 11 that transmits a digital image file to a computing device
+(C8 L8-12 and Fig. 2). Therefore it would have been obvious to one of ordinary skill in
+
+the art at the time the invention was made to have used a transmission module to send
+
+Application/Control Number: 12/290,258 Page 8
+Art Unit: 2622
+
+images and their associated data to a remote device as this would be very convenient
+for a user of the device to be able to send images to a remote location for processing or
+
+viewing by another party.
+
+20. As to claim 64, what neither Takahashi nor Murphy teach is a communication
+module coupled to an antenna for wirelessly receiving and transmitting communication
+messages. However, Tanaka teaches a camera 5 coupled to a mobile phone 1 with a
+communication device 11 that transmits a digital image file to a computing device (08
+L8-12 and Fig. 2). Therefore it would have been obvious to one of ordinary skill in the
+art at the time the invention was made to have used a transmission module to send
+images and their associated data to a remote device as this would be very convenient
+for a user of the device to be able to send images to a remote location for processing or
+
+viewing by another party.
+
+21. As to claim 65, see the rejection of claim 64 and note that Takahashi further
+teaches a transmission module 11 coupled to the antenna for transmitting as least one
+digital image to a computing device (C8 L8-12 and Fig. 2). Therefore it would have been
+obvious to one of ordinary skill in the art at the time the invention was made to have
+used a transmission module to send images and their associated data to a remote
+device as this would be very convenient for a user of the device to be able to send
+
+images to a remote location for processing or viewing by another party.
+
+Application/Control Number: 12/290,258 Page 9
+Art Unit: 2622
+
+22. Claim 68 is a method claim that is similar to the device of claim 59 and is rejected
+
+on similar grounds.
+
+23. Claims 66 and 69 are rejected under 35 U.S.C. 103(a) as being unpatentable
+over US 2005/0036656 (Takahashi) in view of US 6,282,362 (Murphy) further in
+view of US 6,810,323 (Bullock).
+
+24. As to claim 66, see the rejection of claim 54 and note that neither Takahashi nor
+Murphy teach displaying direction to the location of a captured image. However, Bullock
+teaches providing a map service that displays directions to the location of a captured
+image (C2 L49-55 and C7 L66 to CS L14). Therefore it would have been obvious to one
+of ordinary skill in the art at the time the invention was made to have provided the
+device taught by Takahashi in view of Murphy to provide directions to the location of a
+captured image as this would allow a user to navigate back to the location where a
+picture was taken allowing them to easily find locations that they like but may not know
+
+the way to.
+
+25. Claim 69 is a method claim that is similar to the device of claim 66 and is rejected
+
+on similar grounds.
+
+Conclusion
+
+Application/Control Number: 12/290,258 Page 10
+Art Unit: 2622
+
+Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to DiIIon Durnford-Geszvain whose telephone number is
+(571) 272-2829. The examiner can normally be reached on Monday through Friday 8
+am to 5 pm.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Dave Ometz can be reached on (571) 272-7593. The fax phone number for
+the organization where this application or proceeding is assigned is 571 -273-8300.
+
+Information regarding the status of an application may be obtained from the
+Patent Application Information Retrieval (PAIR) system. Status information for
+published applications may be obtained from either Private PAIR or Public PAIR.
+Status information for unpublished applications is available through Private PAIR only.
+For more information about the PAIR system, see http://pair-direct.uspto.gov. Should
+you have questions on access to the Private PAIR system, contact the Electronic
+Business Center (EBC) at 866-217-9197 (toII-free). If you would like assistance from a
+USPTO Customer Service Representative or access to the automated information
+
+system, call 800-786-9199 (IN USA OR CANADA) or 571-272-1000.
+
+/DDG/ 3/17/2010
+
+/David L. Ometz/
+Supervisory Patent Examiner, Art Unit 2622
+

@@ -1,0 +1,375 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+UNITED STATS DEPARHIENT OF COMZMERCE
+United States Patent and Trndcnmrk Ofﬁce
+Address: COWHSSIONER OF PATENTS AND TRADEMARKS
+
+Washingmn, DC 2023 l
+ww.uspw.ng
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+I APPLICATlON NO. I FILING DATE I FIRST NAMED INVENTOR I ATTORNEY DOCKET NO. I CONFIRMATION N0. J
+09/548,237 04/12/2000 Thomas Mark Leverng 1984.1001-003 6066
+24573 7590 01/28/2003
+BELL, BOYD & LLOYD, LLC I EXAMINER I
+PO BOX 1135
+CHICAGO, IL 60690-1 135 WINDER» PATR‘CE L
+I ART UNIT PAPER NUMBER I
+2155
+
+DATE MAILED: 01/28/2003
+
+Please ﬁnd below and/or attached an Ofﬁce communication concerning this application or proceeding.
+
+PTO-90C (Rev, 07-01)
+
+ 
+
+ 
+
+‘ Application No. ‘ Applicant(s) ﬁt;
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+09/548,237 LEVERGOOD ET AL.
+Office Action Summary Examine, Art Unit
+Patrice L Winder 2155
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE Q MONTH(S) FROM
+THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1. 136(a). In no event, however, may a reply be timelyl ﬁled
+after SIX (6) MONTHS from the mailing date of this communication.
+- If the period for reply speciﬁed above is less than thirty (30) days, a reply within the statutory minimum of thirty (30) days will be considered timely.
+- If NO period for reply is speciﬁed above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+~ Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+- Any reply received by the Ofﬁce later than three months atter the mailing date of this communication. even if timely ﬁled, may reduce any
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+1m Responsive to communication(s) filed on 15 November 2002 .
+23)E] This action is FINAL. 2b)|z This action is non-ﬁnal.
+
+3)E] Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 0G. 213.
+Disposition of Claims
+
+MIX Claim(s) M is/are pending in the application./,,
+43) Of the above claim(s) is/are withdrawn from consideration.
+5)D Claim(s) is/are allowed.
+(DIX Claim(s) M is/are rejected.
+7)|:] Claim(s) _ is/are objected to.
+8)D Claim(s)
+Application Papers
+
+ 
+
+ 
+
+are subject to restriction and/or election requirement.
+
+ 
+
+9)EI The speciﬁcation is objected to by the Examiner.
+10)[:l The drawing(s) ﬁled on
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+
+is/are: a)|:] accepted or b)D objected to by the Examiner.
+
+ 
+
+11)E] The\proposed drawing correction ﬁled on __ is: a)[:] approved b)|:] disapproved by the Examiner.
+If approved, corrected drawings are required in reply to this Office action.
+12)[] The oath or declaration is objected to by the Examiner.
+Priority unéer 35 U.S.C. §§ 119 and 120
+13)D Acknowledgment is made of a claim forforeign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:I All b)I:l Some * c)l:| None of:
+LEI Certiﬁed copies of the priority documents have been received.
+21] Certiﬁed copies of the priority documents have been received in Application No. _
+
+3D Copies of the certiﬁed copies of the priority dOCuments have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Ofﬁce action for a list of the certiﬁed copies not received.
+
+4)l:] Acknowledgment is made of a claim for domestic priority under 35 U.S.C. § 119(e) (to a provisional application).
+
+a) E] The translation of the foreign language provisional application has been received.
+15)D Acknowledgment is made of a claim for domestic priority under 35 U.S.C. §§ 120 and/or 121.
+
+Attachment(s)
+
+1) [1 Notice of References Cited (PTO-892) 4) [1 Interview Summary (PTO-413) Paper No(s).
+
+2) D Notice of Draftsperson’s Patent Drawing Review (PTO-948) 5) D Notice of Informal Patent Application (PTO-152)
+3) D Information Disclosure Statement(s) (PTO-1449) Paper No(s) . 6) D Other:
+
+ 
+
+ 
+
+ 
+
+US. Patent and Trademark Office
+k PTO-326 (Rev. 04-01) Ofﬁce Action Summary - Part of Paper No. 19
+
+Application/Control Number: 09/548,237 Page 2
+Art Unit: 2155
+
+DETAILED ACTION
+Claim Rejections - 35 USC § 112
+
+1. The following is a quotation of the ﬁrst paragraph of 35 U.S.C. 112:
+
+The specification shall contain a written description of the invention, and of the manner and process of
+making and using it, in such fuII, clear, concise, and exact terms as to enable any person skilled in the
+art to which it pertains, or with which it is most nearly connected, to make and use the same and shall
+set forth the best mode contemplated by the inventor of carrying out his invention.
+
+2. Claims 1, 3, and 14 are rejected under 35 U.S.C. 112, ﬁrst paragraph, as
+containing subject matter which was not described in the speciﬁcation in such a way as
+to enable one skilled in the art to which it pertains, or with which it is most nearly
+connected, to make and/or use the invention. Applicant has not provided a detailed
+disclosure of “counting requests exclusive of repeated requests from common clients”.
+The examiner is aware of page 7, lines 17-18 and page 14, lines 9-11 of the disclosure
+where applicant states “counting requests excluding repeated requests from common
+clients” if there is further enablement please indicate the corresponding areas of the
+disclosure.
+
+3. Applicant’s apparent lack of detail corresponding to the claimed limitation of
+“counting requests exclusive of repeated requests from common clients” suggests an
+obvious variation. It is generally understood that the state of the art at the time of the
+invention as understood by the inventor can be determined by the degree of detail in the
+disclosure and that which is left for one of ordinary skill in the art to perform is presumed
+to be within the skill in the art to perform. As applicant has supplied no detail enabled of
+
+this alleged nonobvious process by which to “count requests exclusive of repeated
+
+Application/Control Number: 09/548,237 Page 3
+Art Unit: 2155
+
+requests from common clients” it is presumed to be within the skill of the art (In re Fox
+176 USPQ 340).
+
+4. The remaining dependent claims are rejected on the same rationale as
+previously rejected claims 1, 3 and 14.
+
+5. After review of applicant’s statements filed on November 15, 2002 concerning the
+above rejection, the examiner requests applicant point to portions of the disclosure in
+question which couples “appending a session identifier” to “counting requests exclusive
+
+of repeated requests from common clients".
+
+Claim Rejections - 35 USC § 103
+
+1. The text of those sections of Title 35, US. Code 103 not included in this action
+can be found in a prior Ofﬁce action.
+2. Claims 1-2, 7-10 are rejected under 35 U.S.C. 103(a) as being unpatentable over
+Lara D. Catledge et al., Characterizing Browsing Strategies in the WorId-Wide Web
+(hereafter referred to as Cartledge) in view of José Kahan, A capability-based
+authorization model for the World Wide Web (hereafter referred to as Kahan).
+3. Regarding claim 1, Catledge taught a method of processing service requests
+from a client to a server system through a network, said comprising the steps of:
+
+responding to requests for information received from the client through the
+
+network by returning the requested information to the client (users request documents
+
+through www.gatech.edu, page 3); and
+
+Application/Control Number: 09/548,237 Page 4
+Art Unit: 2155
+
+counting requests to particular information (“A modiﬁed version of the Pattern
+Detection Module (PDM) algorithm user navigation”, page 5) and excluding repeated
+requests to said information from a common client (mechanism to separate per-user
+information, page 5).
+
+Catledge does not speciﬁcally teach appending a session identiﬁer to the
+requests. However, Kahan taught appending a session identifier to the requests
+(appending Ddcap, 2.3 Consultation phase, pages 4-5). It would have been obvious to
+one of ordinary skill in the art at the time the invention was made that incorporating
+Kahan’s appending the session identifier in Catledge’s system for tracking world wide
+web access would have improved system security. The motivation would have been to
+ensure that only authorized users access sites outside of the www.gatech.edu server.
+4. Regarding dependent claim 2, Catledge taught comprising excluding from the
+counting requests made for information from the client within a deﬁned period of time
+(“The PDM analysis five times.” page 6).
+
+5. Regarding dependent claim 7, Catledge does not speciﬁcally teach the session
+identifier is cryptographically generated. However, Catledge taught the session identiﬁer
+is cryptographically generated (pages 9-10). It would have been obvious to one of
+ordinary skill in the art at the time the invention was made that incorporating Kahan’s
+cryptographically generated session identifier in Catledge’s system for accessing
+document would have improved system security. The motivation would have been to
+
+ensure that no unauthorized user access sites outside the www.gatechedu server.
+
+r
+
+Application/Controi Number: 09/548,237 Page 5
+Art Unit: 2155
+6. Regarding dependent claim 8, Catledge taught the excluding requests comprises
+
+excluding requests from a particular user (per-session and per-user, page 6).
+7. Regarding dependent claim 9, Catledge taught the particular user is identiﬁed by
+the appended session identiﬁer (user id, page 4).
+8. Regarding dependent claim 10, Catledge taught further comprising:
+
+logging requests in a transaction log (“original log file occurrence”, page 4);
+and
+
+evaluating the transaction log to determine request counts (“A modified version of
+
+the Pattern Detection Module (PDM) algorithm user navigation”, page 5).
+
+Claim Rejections - 35 USC § 102
+9. The following is a quotation of the appropriate paragraphs of 35 USC. 102 that
+
+form the basis for the rejections under this section made in this Ofﬁce action:
+
+A person shall be entitled to a patent unless —
+
+(a) the invention was known or used by others in this country, or patented or described in a printed
+publication in this or a foreign country, before the invention thereof by the applicant for a patent.
+
+10. Claims 3-6 and 11-12 rejected under 35 USC. 102(a) as being anticipated by
+Lara D. Catledge et al., Characterizing Browsing Strategies in the WorId-Wide Web
+(hereafter referred to as Cartledge).
+
+11. Regarding claim 3, Catledge taught an information server on a network,
+
+comprising:
+
+Application/Control Number: 09/548,237 Page 6
+Art Unit: 2155
+
+means for responding to requests for service received from a client through a
+network by returning the requested service to the client (users request documents
+through www.gatechedu, page 3); and
+
+means for counting requests to a particular service (“A modiﬁed version of the
+Pattern Detection Module (PDM) algorithm user navigation”, page 5) and excluding
+repeated requests to said information from a common client (mechanism to separate
+per-user information, page 5).
+
+12. Regarding dependent claim 4, Catledge taught the requests include a common
+session identiﬁer (user id, page 4) and the server tracks requests within a session of
+requests (“A modified version of the Pattern Detection Module (PDM) user
+navigation.” page 5).
+
+13. Regarding dependent claim 5, Catledge taught further comprising means for
+excluding requests made to a service from the client within a deﬁned period of time
+(excluding other session information from per-session tabulation, page 6).
+
+14. Regarding dependent claim 6, Catledge taught communications to and from the
+client are according to hypertext transfer protocol (“Document requests WWW
+servers.” page 4).
+
+15. Regarding dependent claim 11, Catledge taught said means for counting and
+excluding requests comprises means for excluding requests from a particular user (“per-
+session” tabulation excludes user’s other sessions, page 6).
+
+16. Regarding dependent claim 12, Catledge taught the particular user is identiﬁed
+
+by a user identiﬁer (user id, page 4).
+
+Application/Control Number: 09/548,237 Page 7
+Art Unit: 2155
+
+17. Regarding dependent claim 13, Catledge taught further comprising:
+
+means for logging requests in a transaction log (“original log ﬁle occurrence",
+page 4); and
+
+means for determining request counts from the transaction log (“A modified
+version of the Pattern Detection Module (PDM) algorithm user navigation", page 5).
+18. Regarding claim 14, Catledge taught a method of processing service requests 4
+from a client to a server system through a network (tracking web site access), said
+method comprising the steps of:
+
+responding to requests for service received from a client through a network by
+returning the requested service to the client (users browse documents through
+www.gatechedu, page 3); and
+
+counting requests to particular service (“A modified version of the Pattern
+Detection Module (PDM) algorithm user navigation, page 5) and excluding repeated
+requests to said service from a common client (mechanism to separate per-user
+
+information, page 5).
+
+Response to Arguments
+19. Applicant's arguments ﬁled November 15, 2002 have been fully considered but,
+they are not persuasive.
+20. Applicant argues — “Nowhere does Catledge discuss actually processing user
+
+requests.”
+
+Application/Control Number: 09/548,237 Page 8
+Art Unit: 2155
+
+3. Applicant admits Catledge “recorded and analyzed client events”.
+Applicant leaves out that the client events are “user requests”. Thus, Catledge
+records and analyzes (Le. determines the frequency) of user requests. Therefore,
+applicant’s assertion is moot.
+21. Applicant argues —- “Catledge does not teach excluding counting requests
+excluding requests from common client.”
+b. Catledge taught separating “per-usef’ frequency information from the
+analyzed data.
+22. Applicant argues — “Dcap refers to delegated document capabilities and is not
+equivalent of a session identifier."
+c. Dcap is appended to a uniform resource locator (URL), is cryptographically
+generated and is used to control access to documents. All these are features of
+applicant’s “session identiﬁer (SID)”.
+23. Applicant argues — “Catledge does not teach counting requests to a particular
+service and excluding repeated requests from a common client.”
+d. Catledge taught separating “per-user” frequency information from the
+
+analyzed data.
+
+Conclusion
+24. Any inquiry concerning this communication or earlier communications from the
+
+examiner should be directed to Patrice Winder whose te|ephone number is (703) 305-
+
+Application/Control Number: 09/548,237 Page 9
+Art Unit: 2155
+
+3938. The examiner can normally be reached on Monday-Friday from 10:30 AM to 7:00
+PM.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner's
+supervisor, Ayaz Sheikh, can be reached on (703) 305-9648. The fax phone number(s)
+for this Group are after ﬁnal (703) 746-7238; official (703) 746-7239 and non-
+officianraft (703) 746-7240.
+
+Any inquiry of a general nature or relating to the status of this application or
+proceeding should be directed to the Group receptionist whose telephone number is
+
+(703) 305-3900.
+
+Qagmw .
+
+901mm EXAMINER
+

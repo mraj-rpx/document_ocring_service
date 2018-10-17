@@ -1,0 +1,433 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+UNITED STATES DEPARTNIEN T OF COMNIERCE
+United States Patent and Trademark Office
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313- 1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO. |
+14/159,849 01/21/2014 Eveline Wesby—Van Swaay 3781/1015 4281
+2101 7590 10/08/2014 | l
+. . EXAMINER
+Sunstem Kann Murphy & T1mbers LLP
+125 S UMMER S TREET NGUYEN, NAM V
+BOSTON, MA 021 10-1618
+| ART UNIT | PAPER NUMBER |
+2682
+| NOTIFICATION DATE | DELIVERY MODE |
+10/08/2014 ELECTRONIC
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+The time period for reply, if any, is set in the attached communication.
+Notice of the Office communication was sent electronically on above—indicated "Notification Date" to the
+
+following e—mail address(es):
+
+usptomail@sunsteinlaw.com
+
+PTOL—9OA (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+
+14/159,849 WESBY-VAN SWAAY, EVELINE
+Office Action Summary Examiner Art Unit AIA (First Inventor to File)
+
+NAM v. NGUYEN 2682 ﬁg“
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE Q MONTHS FROM THE MAILING DATE OF
+THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR1.136(a). In no event, however, may a reply be timely filed
+
+after SIX (6) MONTHS from the mailing date of this communication.
+— If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+— Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1 .704(b).
+
+Status
+1)|Z| Responsive to communication(s) filed on M.
+El A declaration(s)/affidavit(s) under 37 CFR 1.130(b) was/were filed on _.
+2a)|:| This action is FINAL. 2b)|Z| This action is non—final.
+
+3)|:| An election was made by the applicant in response to a restriction requirement set forth during the interview on
+_; the restriction requirement and election have been incorporated into this action.
+
+4)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Exparte Quayle, 1935 CD. 11, 453 O.G. 213.
+
+Disposition of Claims*
+5)|Z| Claim(s) 1-20 is/are pending in the application.
+
+ 
+
+5a) Of the above claim(s) is/are withdrawn from consideration.
+6)|:| Claim(s) is/are allowed.
+7)|Z| Claim(s) ﬂ) is/are rejected.
+8)|:| Claim(s) is/are objected to.
+9)|:| Claim(s) are subject to restriction and/or election requirement.
+
+ 
+
+* If any claims have been determined allowable, you may be eligible to benefit from the Patent Prosecution Highway program at a
+participating intellectual property office for the corresponding application. For more information, please see
+http:/'/wv\fw.usotoeov/batente/init events/nnh/indexist) or send an inquiry to PPi-tfeedbackfzébusgto.Gov.
+
+Application Papers
+10)|:| The specification is objected to by the Examiner.
+11)|Z| The drawing(s) filed on 1/21/14 is/are: a)IZ| accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121 (d).
+
+Priority under 35 U.S.C. § 119
+12)|Z| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+Certified copies:
+a)|Z| AII b)|:| Some“ c)|:| None of the:
+1.IZI Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No.
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+** See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) D Notice of References Cited (PTO-892) 3) D Interview Summary (PTO-413)
+
+. . Paper No(s)/Mai| Date. .
+2) x Information Disclosure Statement(s) (PTO/SB/08a and/or PTO/SB/08b)
+
+Paper No(s)/Mai| Date 3/21/14. 4) D Other:—-
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL—326 (Rev. 11—13) Office Action Summary Part of Paper No./Mai| Date 20140930
+
+Application/Control Number: 14/ 159,849 Page 2
+Art Unit: 2682
+
+DETAILED ACTION
+
+The present application is being examined under the pre—AIA first to invent provisions.
+
+The application of Van Swaay for a "programmable communicator" filed J anuary 21,
+
+2014 has been examined.
+
+This application claims foreign priority based on the application 20001239 filed May 23,
+2000 in Finland. Receipt is acknowledged of papers submitted under 35 U.S.C 119(a) — (d),
+
+which papers have been placed of record in the file.
+
+This application is a CON of 13/934,763, filed July 3, 2013 which is now US PAT No.
+8,648,717, which is a CON of 13/801,773 filed March 13, 2013 which is now US PAT No.
+8,542,111, which is a CON of 13/328,095 filed December 16, 2011, which is a CON of
+12,538,603 filed August 10, 2009 which is now US PAT No. 8,094,010, which is a CON of
+11/329,212 filed January 10, 2006 which is now US PAT No. 7,583,197, which is a CON of
+10/296,571 filed J anuary 21, 2003 which is abandoned, which is a 371 of PCT/EP01/05738 filed
+
+May 18,2001.
+
+Claims 1—20 are pending.
+
+Application/Control Number: 14/ 159,849 Page 3
+Art Unit: 2682
+
+Specification
+
+The disclosure is objected to because of the following informalities: Under cross
+references to related applications CON status needs to be updated. Application serial number
+
+13/934,763 filed July 3, 2013 which is now US PAT No. 8,648,717.
+
+Claim Rejections - 35 USC § 103
+The following is a quotation of pre—AIA 35 USC. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+forth in section 102 of this title, if the differences between the subj ect matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.
+
+1. Claims 1—20 are rejected under pre—AIA 35 USC. 103(a) as being unpatentable
+
+over Hayes, Jr. et al. (US# 5,974,312) in View of Anderson (US# 5,995,603).
+
+Referring to Claims 1—20, Hayes, Jr. et a1. disclose an electronic device (100) (i.e. a
+programmable communicator device) (column 2 lines 18 to 34; see Figure 1) comprising:
+a wireless communications circuit (195) having an antenna (118) and configured to communicate
+
+over a communications network (column 5 lines 43 to 53; see Figure 2);
+
+Application/Control Number: 14/ 159,849 Page 4
+Art Unit: 2682
+
+A non—volatile programmable memory (136) (i.e. a programmable identity module)
+having an electronic serial number (ESN) (i.e. a unique identifier associated with the
+programmable communicator (100)) (column 6 lines 27 to 34; see Figure 2);
+
+A system connector interface (180) (i.e. a programmable interface) connected to at least
+one external component (i.e. an attached monitoring device) (column 5 lines 61 to 67; see Figure
+2);
+
+A micro—controller (120) (i.e. a processing module) configured to receive and
+authenticate an at least one transmission from a wireless programmer (200) (i.e. a programming
+transmitter), the at least one transmission including at least one telephone number or IP address
+(see Figures 5A to SC), wherein the processing module (120) is configured to authenticate the at
+least one transmission by determining if the at least one transmission contains the ESN (i.e. a
+unique identifier).
+
+However, Hayes, Jr. et a1. did not explicitly disclose that wherein the programmable
+communicator device is configured to use a memory to store at least one telephone number or IP
+address included within at least one of the transmissions as a list of one or more linked numbers
+to which the programmable communicator device may send outgoing wireless transmissions;
+wherein the one or more wireless transmissions from the programming transmitter comprises a
+General Packet Radio Service (GPRS) or other wireless packet switched data message; and
+wherein the programmable communicator device is configured to process data received through
+the programmable interface from the at least one monitored technical device in response to
+
+programming instructions received in an incoming wireless packet switched data message.
+
+Application/Control Number: l4/ 159,849 Page 5
+Art Unit: 2682
+
+At the same field of endeavor of a communication system, Anderson discloses that a
+memory module (52) configured to store the at least one telephone number from the
+authenticated transmission as one of a plurality of authorized list of callers to allow phone to
+communicate with the incoming callers (column 3 lines 50 to 57; column 5 lines 31 to 45; see
+Figure 3 and 5) in order to generate a distinctive ring for the caller or by redirecting the call to a
+separate telephone or to an answering machine for only authorized list of callers.
+
+At the time of the invention, it would have been obvious to a person of ordinary skill in
+the art to recognize the need to use a memory to store the telephone number from authenticated
+signal as an authorized callers taught by Anderson in an the electronic device for updating a
+memory Via a wireless data transfer of Hayes, J r. et al. because having a memory to store the
+authorized list of caller would improve an arrangement for screening incoming telephone calls
+for convenient of the user.
+
+Using the wireless transmissions from the programming transmitter comprises a General
+Packet Radio Service (GPRS) or other wireless packet switched data message; and wherein the
+programmable communicator device is configured to process data received through the
+programmable interface from the at least one monitored technical device in response to
+programming instructions received in an incoming wireless packet switched data message are
+well—known.
+
+Therefore, it would have been obvious to one of ordinary skill in the art at the time the
+invention was made to modify the wireless communication interface for receiving data over the
+
+wireless communication channel Hayes, Jr. et al. in View of Anderson with the GPRS wireless
+
+Application/Control Number: 14/ 159,849 Page 6
+Art Unit: 2682
+
+transmission because this would provide an alternate wireless communication interface for
+
+wireless data transfer in the programing unit.
+
+Double Patenting
+
+The nonstatutory double patenting rejection is based on a judicially created doctrine
+grounded in public policy (a policy reﬂected in the statute) so as to prevent the unjustified or
+improper timewise extension of the “right to exclude” granted by a patent and to prevent possible
+harassment by multiple assignees. A nonstatutory obviousness—type double patenting rejection
+is appropriate where the conﬂicting claims are not identical, but at least one examined
+application claim is not patentably distinct from the reference c1aim(s) because the examined
+application claim is either anticipated by, or would have been obvious over, the reference
+c1aim(s). See, e.g., In re Berg, 140 F.3d 1428, 46 USPQ2d 1226 (Fed. Cir. 1998); In re
+Goodman, 11 F.3d 1046, 29 USPQ2d 2010 (Fed. Cir. 1993); In re Longi, 759 F.2d 887, 225
+USPQ 645 (Fed. Cir. 1985); In re Van Ornnm, 686 F.2d 937, 214 USPQ 761 (CCPA 1982); In re
+Vogel, 422 F.2d 438, 164 USPQ 619 (CCPA 1970); and In re Thorington, 418 F.2d 528, 163
+USPQ 644 (CCPA 1969).
+
+A timely filed terminal disclaimer in compliance with 37 CFR 1.321(c) or 1.321(d) may
+be used to overcome an actual or provisional rejection based on a nonstatutory double patenting
+ground provided the conﬂicting application or patent either is shown to be commonly owned
+with this application, or claims an invention made as a result of activities undertaken within the
+scope of a joint research agreement.
+
+Effective J anuary 1, 1994, a registered attorney or agent of record may sign a terminal
+disclaimer. A terminal disclaimer signed by the assignee must fully comply with 37 CFR
+3.73(b).
+
+2. Claims 1—20 are rejected on the ground of nonstatutory obviousness—type double
+patenting as being unpatentable over claims 1—134 of US. Patent No. 7,583,197.
+Although the conﬂicting claims are not identical, they are not patentably distinct
+
+from each other because:
+
+Application/Control Number: 14/ 159,849 Page 7
+Art Unit: 2682
+
+Referring to independent Claim 1 of the application, the programmable communicator
+device includes a wireless communications circuit, a programmable interface, a processing
+module, and a memory module. The different is that the independent Claim 1 of the application
+recites wherein the one or more wireless transmissions from the programming transmitter
+comprises GPRS or other wireless packet switched data message which would be obvious to one
+
+skilled in the art to use for wireless transmissions in the independent claims 1, 29, 40, 68, 79 and
+
+107 of the US. Patent No. 7,583,197.
+
+The following claims are patentably similar from each other:
+Application Patent No. 7,583,197
+
+1 1, 29, 40, 68, 79 and 107
+
+3. Claims 1—20 are rejected on the ground of nonstatutory obviousness—type double
+patenting as being unpatentable over claims 1—197 of US. Patent No. 8,094,010.
+Although the conﬂicting claims are not identical, they are not patentably distinct
+
+from each other because:
+
+Referring to independent Claim 1 of the application, the programmable communicator
+device includes a wireless communications circuit, a programmable interface, a processing
+module, and a memory module. The different is that the independent Claim 1 of the application
+use alternative languages for the similar limitations as the independent claims 1, 52, 104 and 151
+
+of the US. Patent No. 8,094,010.
+
+Application/Control Number: 14/ 159,849 Page 8
+Art Unit: 2682
+
+The following claims are patentably similar from each other:
+Application Patent No. 8,094,010
+
+1 1, 52,104 and 151
+
+4. Claims 1—20 are rejected on the ground of nonstatutory obviousness—type double
+patenting as being unpatentable over claims 1—31 of US. Patent No. 8,633,802.
+Although the conﬂicting claims are not identical, they are not patentably distinct
+
+from each other because:
+
+Referring to independent Claim 1 of the application, the programmable communicator
+device includes a wireless communications circuit, a programmable interface, a processing
+module, and a memory module. The different is that the independent Claim 1 of the application
+use alternative languages for the similar limitations as the independent claim 1 and furthermore
+
+the independent Claim 1 of the application is broader.
+
+The following claims are patentably similar from each other:
+Application US. Patent No. 8,633,802
+
+1 1
+
+Application/Control Number: 14/ 159,849 Page 9
+Art Unit: 2682
+
+5. Claims 1—20 are rejected on the ground of nonstatutory obviousness—type double
+patenting as being unpatentable over claims 1—30 of US. Patent No. 8,542,111.
+Although the conﬂicting claims are not identical, they are not patentably distinct
+
+from each other because:
+
+Referring to independent Claim 1 of the application, the programmable communicator
+device includes a wireless communications circuit, a programmable interface, a processing
+module, and a memory module. The different is that the independent Claim 1 of the application
+use alternative languages for the similar limitations as the independent claim 1 and furthermore
+
+the independent Claim 1 of the application is broader.
+
+The following claims are patentably similar from each other:
+Application US. Patent No. 8,542,111
+
+1 1
+
+6. Claims 1—20 are rejected on the ground of nonstatutory obviousness—type double
+patenting as being unpatentable over claims 1—30 of US. Patent No. 8,648,717.
+Although the conﬂicting claims are not identical, they are not patentably distinct
+
+from each other because:
+
+Referring to independent Claim 1 of the application, the programmable communicator
+
+device includes a wireless communications circuit, a programmable interface, a processing
+
+Application/Control Number: 14/ 159,849 Page 10
+Art Unit: 2682
+
+module, and a memory module. The different is that the independent Claim 1 of the application
+use alternative languages for the similar limitations as the independent claim 1 and furthermore
+
+the independent Claim 1 of the application is broader.
+
+The following claims are patentably similar from each other:
+Application US. Patent No. 8,648,717
+
+1 1
+
+Conclusion
+
+Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to Nam V. Nguyen whose telephone number is 571—272—3061. The
+examiner can normally be reached on Mon—Fri, 8:30AM — 5:00PM.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, George Bugg can be reached on 571— 272—2998. The fax phone numbers for the
+organization where this application or proceeding is assigned are 571—273—8300 for regular
+communications.
+
+Information regarding the status of an application may be obtained from the Patent
+Application Information Retrieval (PAIR) system. Status information for published applications
+may be obtained from either Private PAIR or Public PAIR. Status information for unpublished
+
+applications is available through Private PAIR only. For more information about the PAIR
+
+Application/Control Number: 14/ 159,849 Page 11
+Art Unit: 2682
+
+system, see him://mir—direct.usmogm: Should you have questions on access to the Private
+
+ 
+
+PAIR system, contact the Electronic Business Center (EBC) at 866—217—9197 (toll—free).
+
+/NAM V NGUYEN/
+Primary Examiner, Art Unit 2682
+

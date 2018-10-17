@@ -1,0 +1,504 @@
+ 
+
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+UNITED STATES DEPARTNIEN T OF COMNIERCE
+United States Patent and Trademark Office
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313- 1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO. |
+11/403,549 04/13/2006 Christopher S. Signaoff 69936/P001US/10601228 7831
+29053 7590 | EXAMINER |
+
+FULBRIGHT & J AWORSKI L.L.P
+
+2200 ROSS AVENUE
+SUITE 2800
+DALLAS, TX 75201-2784
+
+ 
+
+CHURNET, DARGAYE H
+
+ 
+
+ 
+
+ 
+
+ 
+
+| ART UNIT | PAPER NUMBER |
+24 1 9
+| MAIL DATE | DELIVERY MODE |
+03/03/2009 PAPER
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+
+The time period for reply, if any, is set in the attached communication.
+
+PTOL—90A (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+11/403,549 SIGNAOFF ET AL.
+
+Office Action Summary Examiner Art Unit
+DARGAYE H. CHURNET 2419
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event however may a reply be timely filed
+
+after SIX (6) MONTHS from the mailing date of this communication.
+- If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+1)|Z| Responsive to communication(s) filed on 24 Sthember 2008.
+2a)|Z| This action is FINAL. 2b)|:| This action is non-final.
+3)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 0.6. 213.
+
+Disposition of Claims
+
+4)|Z| Claim(s) 1-21 and 23-30 is/are pending in the application.
+4a) Of the above claim(s) is/are withdrawn from consideration.
+5)|:| Claim(s) _ is/are allowed.
+6)|Z| Claim(s) 1-21 and 23-30 is/are rejected.
+7)|:| Claim(s) _ is/are objected to.
+8)|:| Claim(s) _ are subject to restriction and/or election requirement.
+
+ 
+
+Application Papers
+
+9)|:| The specification is objected to by the Examiner.
+10)|z The drawing(s) filed on 13 AQri12006 is/are: a)|Z| accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)|:| The oath or declaration is objected to by the Examiner. Note the attached Office Action or form PTO-152.
+
+Priority under 35 U.S.C. § 119
+
+12)|:| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:| AII b)|:| Some * c)|:| None of:
+1.|:| Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No.
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) D Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) D Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mai| Date. _
+
+3) [l Information Disclosure Statement(s) (PTO/SB/08) 5) D Notice of Informal Patent Application
+Paper No(s)/Mai| Date _. 6) D Other: _
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL-326 (Rev. 08-06) Office Action Summary Part of Paper No./Mai| Date 20090226
+
+Application/Control Number: 11/403,549 Page 2
+Art Unit: 2419
+
+Detailed Action
+Claim Rejections - 35 USC § 102
+1. The following is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that
+
+form the basis for the rejections under this section made in this Office action:
+
+A person shall be entitled to a patent unless —
+
+(e) the invention was described in (1) an application for patent, published under section 122(b), by
+another filed in the United States before the invention by the applicant for patent or (2) a patent
+granted on an application for patent by another filed in the United States before the invention by the
+applicant for patent, except that an international application filed under the treaty defined in section
+351 (a) shall have the effects for purposes of this subsection of an application filed in the United States
+only if the international application designated the United States and was published under Article 21 (2)
+of such treaty in the English language.
+
+Claims 1, 6-12, and 16-20 are rejected under 35 U.S.C. 102(e) as being
+anticipated by Yim et al. (cited 2006/0104288).
+
+For claim 1, Yim discloses a method for communication between two or more
+endpoints, said method comprising: receiving a plurality of multiport packets of data in a
+multiport communication protocol (see paragraph 35, lines 6-8, wherein a plurality of
+TCP and UDP connections are received at the firewall); converting said plurality of
+multiport packets into a plurality of singIe-port packets in a singIe-port communication
+protocol (see paragraph 35, lines 6-8, wherein the plurality of TCP and UDP
+connections are tunneled into a single TCP connection), wherein said singIe-port
+communication protocol is not hypertext transport protocol (HTTP) (see paragraph 45,
+lines 13-17, wherein the protocol is telnet); transmitting said plurality of singIe-port
+packets over a commonIy-open port (see paragraph 35, line 8, wherein the single TCP
+
+connection is transmitted through open port 80 and see paragraph 45, lines 13-17,
+
+Application/Control Number: 11/403,549 Page 3
+Art Unit: 2419
+
+wherein the port may be 23 for teInet) to one or more endpoints traversing one or more
+firewalls (see paragraph 35, lines 4-5, open port 80 is used to traverse a firewall and
+see paragraph 45, lines 13-17, wherein the port may be 23 for teInet) using said
+commonIy-open port; receiving said plurality of singIe-port packets at said one or more
+endpoints (see paragraph 35, lines 9-12, wherein another H.323 application receives
+the TCP connection); reconverting said plurality of singIe-port packets into said multiport
+communication protocol (see paragraph 35, lines 9-12, wherein the other H.323
+application converts the single TCP connection back to the plurality of TCP and UDP
+connections); and delivering said plurality of multiport packets using two or more ports
+associated with said multiport communication protocol (see fig. 3, wherein server 128
+transmits the multiport packets over a single port through firewall 124 to H.323
+application 122, which converts the single port packets back to multiport packets and
+
+delivers them to client 120).
+
+For claim 12, Yim discloses a system (see fig. 3) comprising: a first network
+device (120), comprising: an interface for receiving a plurality of packets of data from
+two or more ports (see paragraph 35, lines 6-8, wherein a plurality of TCP and UDP
+connections are received at the firewall); and a conversion table for said first network
+device to convert said plurality of packets into a singIe-port communication protocol (see
+paragraph 35, lines 6-8, wherein the plurality of TCP and UDP connections are tunneIed
+into a single TCP connection), wherein said singIe-port communication protocol is
+
+acceptable by any of a plurality of different commonIy-open transmission control
+
+Application/Control Number: 11/403,549 Page 4
+Art Unit: 2419
+
+protocol (TCP) ports (see paragraph 45, lines 13-17, wherein the port is 80 for HTTP
+and 23 for telnet), and wherein said interface communicates said converted plurality of
+packets over a selected one of the plurality of different commonIy-open TCP ports (see
+paragraph 35, line 8, wherein the single TCP connection is transmitted through open
+port 80 and see paragraph 45, lines 13-17, wherein the port may be 23 for telnet); and a
+second network device (128) comprising: a second interface for receiving said
+converted plurality of packets from said selected one of the plurality of different
+commonIy-open TCP ports (see paragraph 35, lines 9-12, wherein another H.323
+application receives the TCP connection); a second conversion table for reconverting
+said converted plurality of packets (see paragraph 35, lines 9-12, wherein the other
+H.323 application converts the single TCP connection back to the plurality of TCP and
+UDP connections); and wherein said second interface distributes each of said plurality
+of packets to said two or more ports (see fig. 3, wherein server 128 transmits the
+multiport packets over a single port through firewall 124 to H.323 application 122, which
+converts the single port packets back to multiport packets and delivers them to client
+120); and wherein one or more firewalls are traversed between said first and second
+network devices using said selected one of the plurality of different commonIy-open
+ports (see paragraph 35, lines 4-5, open port 80 is used to traverse a firewall and see
+
+paragraph 45, lines 13-17, wherein the port may be 23 for teInet).
+
+For claim 6, Yim discloses a portion of said plurality of multiport packets
+
+conforms to a first transmission protocol of said multiport communication protocol (see
+
+Application/Control Number: 11/403,549 Page 5
+Art Unit: 2419
+
+paragraph 35, line 6, TOP protocol); another portion of said plurality of multiport packets
+conforms to a second transmission protocol of said multiport communication protocol
+(see paragraph 35, line 8, UDP protocol); and wherein said transmitting comprises
+transmitting said plurality of singIe-port packets using said first transmission protocol in
+said singIe-port communication protocol (see paragraph 35, lines 6-8, singIe-port
+
+packets transmitted as TCP). Claims 7 and 16 are rejected for similar reasons.
+
+For claim 8, Yim discloses sending alternate data instead of requested data in
+response to a resend request (see paragraph 67, lines 1-8, wherein a request for
+transmission does not result in a transmission of the same data, but rather alternate
+
+data). Claim 17 is rejected for similar reasons.
+
+For claim 9, Yim discloses qualifying said plurality of multiport packets, wherein
+said qualifying comprises: registering a network device; using network ports by said
+registered network device (see paragraph 40, lines 10-15, registering network device
+and using ports by the device); determining whether said plurality of multiport packets
+originated from a network port used by said registered network device; and allowing
+further transmission of said plurality of multiport packets based on said determining (see
+paragraph 40, lines 29-31, wherein the port is checked and transmission is allowed if
+
+the port is registered). Claim 18 is rejected for similar reasons.
+
+Application/Control Number: 11/403,549 Page 6
+Art Unit: 2419
+
+For claim 10, Yim discloses the commonIy-open port is a weII-known port (see
+paragraph 45, lines 13-17, wherein well known port is 23 for teInet). Claim 19 is
+
+rejected for similar reasons.
+
+For claim 11, Yim discloses the commonIy-open port is port 443 (see paragraph
+35, lines 6-12, wherein a commonly open port is used and can be changed from port 80
+
+to port 443 as a matter of design choice). Claim 20 is rejected for similar reasons.
+
+Claim Rejections - 35 USC § 103
+2. The factual inquiries set forth in Graham v. John Deere Co., 383 US. 1, 148
+USPQ 459 (1966), that are applied for establishing a background for determining
+obviousness under 35 U.S.C. 103(a) are summarized as follows:
+Determining the scope and contents of the prior art.
+Ascertaining the differences between the prior art and the claims at issue.
+Resolving the level of ordinary skill in the pertinent art.
+
+Considering objective evidence present in the application indicating
+obviousness or nonobviousness.
+
+ewwe
+
+3. This application currently names joint inventors. In considering patentability of
+the claims under 35 U.S.C. 103(a), the examiner presumes that the subject matter of
+the various claims was commonly owned at the time any inventions covered therein
+were made absent any evidence to the contrary. Applicant is advised of the obligation
+under 37 CFR 1.56 to point out the inventor and invention dates of each claim that was
+
+not commonly owned at the time a later invention was made in order for the examiner to
+
+Application/Control Number: 11/403,549 Page 7
+Art Unit: 2419
+
+consider the applicability of 35 U.S.C. 103(c) and potential 35 U.S.C. 102(e), (f) or (9)
+
+prior art under 35 U.S.C. 103(a).
+
+4. The following is a quotation of 35 U.S.C. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.
+
+Claims 2-5, 13-15, and 23-30 are rejected under 35 U.S.C. 103(a) as being
+unpatentable over Yim in view of AdusimiIIi et al (cited 2003/0081783).
+
+For claim 21, Yim discloses a method comprising: receiving at a first network
+device a plurality of packets of data from two or more ports, said plurality of packets
+having at least one original communication protocol (see paragraph 35, lines 6-8,
+wherein a plurality of TCP and UDP connections are received at the firewall);
+encapsulating the encrypted packets (see paragraph 46, lines 5-9, encapsulating the
+packets) in a singIe-port communication protocol that is acceptable by any of a plurality
+of different commonIy-open ports, thereby resulting in encapsulated packets (see
+paragraph 35, line 8, wherein the single TCP connection is transmitted through open
+port 80 and see paragraph 45, lines 13-17, wherein the port may be 23 for telnet);
+transmitting from said first network device said encapsulated packets over a selected
+one of the plurality of different commonIy-open ports (see paragraph 35, line 8, wherein
+
+the single TCP connection is transmitted through open port 80 and see paragraph 45,
+
+Application/Control Number: 11/403,549 Page 8
+Art Unit: 2419
+
+lines 13-17, wherein the port may be 23 for teInet), wherein said encapsulated packets
+traverse one or more firewalls between said first and second network devices using said
+selected one of the plurality of different commonIy-open ports (see paragraph 35, lines
+4-5, open port 80 is used to traverse a firewall and see paragraph 45, lines 13-17,
+wherein the port may be 23 for telnet); receiving at a second network device said
+encapsulated packets from said selected one of the plurality of different commonIy-open
+ports (see paragraph 35, lines 9-12, wherein another H.323 application receives the
+TCP connection); restoring the decrypted packets to the at least one original
+communication protocol, thereby resulting in restored packets (see paragraph 35, lines
+9-12, wherein the other H.323 application converts the single TCP connection back to
+the plurality of TCP and UDP connections); and distributing on from said second
+network device each of said restored packets to said two or more ports (see fig. 3,
+wherein server 128 transmits the multiport packets over a single port through firewall
+124 to H.323 application 122, which converts the single port packets back to multiport
+packets and delivers them to client 120).
+
+Yim fails to disclose encrypting the packets, thereby resulting in encrypted
+packets and decrypting the received encapsulated packets, thereby resulting in
+decrypted packets. Adusimilli from the same or similar fields of endeavor teaches
+encrypting the packets, thereby resulting in encrypted packets and decrypting the
+received encapsulated packets, thereby resulting in decrypted packets (see paragraph
+104, DES encryption and decryption). Thus, it would have been obvious to the person
+
+of ordinary skill in the art at the time of the invention to incorporate the elements above
+
+Application/Control Number: 11/403,549 Page 9
+Art Unit: 2419
+
+stated by AdusimiIIi in the network of Yim. The method taught by AdusimiIIi is
+modified/implemented into the network of Yim by using encryption and decryption
+methods. The motivation for encrypting the packets, thereby resulting in encrypted
+packets and decrypting the received encapsulated packets, thereby resulting in
+
+decrypted packets to keep the packets secure.
+
+For claim 2, AdusimiIIi teaches encrypting said plurality of singIe-port packets in
+said singIe-port communication protocol prior to said transmitting (see fig. 6, SSL
+Conversion System 674, encrypts single port packets prior to transmission to server
+
+690).
+
+For claim 3, AdusimiIIi teaches decrypting said encrypted plurality of singIe-port
+packets prior to said reconverting (see paragraph 55, lines 6-12, wherein the encrypted
+
+single port packets are decrypted). Claims 13 and 22 are rejected for similar reasons.
+
+For claim 4, AdusimiIIi teaches said encrypting is according to one of: an
+Advanced Encryption Standard (AES) 128-bit algorithm; a Triple Data Encryption
+Standard (TDES) algorithm; or a Skipjack algorithm (see paragraph 69, lines 13-17,
+wherein the encryption is according to a Data Encryption Standard). Claims 14 and 23
+
+are rejected for similar reasons.
+
+Application/Control Number: 11/403,549 Page 10
+Art Unit: 2419
+
+For claim 5, Adusimilli teaches the singIe-port communication protocol
+comprises: Secure Sockets Layer (SSL) protocol (see fig. 6, SSL Conversion System
+
+674). Claims 15 and 24 are rejected for similar reasons.
+
+For claim 25, Yim discloses a portion of said plurality of multiport packets
+conforms to a first transmission protocol of said multiport communication protocol (see
+paragraph 35, line 6, TOP protocol); another portion of said plurality of multiport packets
+conforms to a second transmission protocol of said multiport communication protocol
+(see paragraph 35, line 8, UDP protocol); and wherein said transmitting comprises
+transmitting said plurality of singIe-port packets using said first transmission protocol in
+said singIe-port communication protocol (see paragraph 35, lines 6-8, singIe-port
+
+packets transmitted as TOP).
+
+For claim 26, Yim discloses sending alternate data instead of requested data in
+response to a resend request (see paragraph 67, lines 1-8, wherein a request for
+transmission does not result in a transmission of the same data, but rather alternate
+
+data).
+
+For claim 27, Yim discloses qualifying said plurality of multiport packets, wherein
+said qualifying comprises: registering a network device; using network ports by said
+registered network device (see paragraph 40, lines 10-15, registering network device
+
+and using ports by the device); determining whether said plurality of multiport packets
+
+Application/Control Number: 11/403,549 Page 11
+Art Unit: 2419
+
+originated from a network port used by said registered network device; and allowing
+further transmission of said plurality of multiport packets based on said determining (see
+paragraph 40, lines 29-31, wherein the port is checked and transmission is allowed if
+
+the port is registered).
+
+For claim 28, Yim discloses the selected one of the plurality of different
+commonIy-open port is a well-known port (see paragraph 45, lines 13-17, wherein well
+
+known port is 23 for teInet).
+
+For claim 29, Yim discloses the commonIy-open port is port 443 (see paragraph
+35, lines 6-12, wherein a commonly open port is used and can be changed from port 80
+
+to port 443 as a matter of design choice).
+
+For claim 30, Yim discloses said singIe-port communication protocol is
+acceptable by any of a plurality of different commonIy-open transmission control
+protocol (TCP) ports (see paragraph 45, lines 13-17, wherein the port is 80 for HTTP
+
+and 23 for telnet).
+
+Response to Arguments
+5. Applicant's arguments filed with respect to claims 1, 12, and 21 have been fully
+considered but they are not persuasive. Applicant argues on page 10 of the Remarks
+
+that Yim both fails to teach the newly amended converting multiport data to a singIe-port
+
+Application/Control Number: 11/403,549 Page 12
+Art Unit: 2419
+
+communication protocol that is not HTTP and a singIe-port communication protocol that
+is acceptable by any of a plurality ofdifferent commonIy-open TCP ports. Examiner
+respectfully disagrees. As recited in paragraph 45, lines 13-17, Yim discloses “in one
+embodiment, tunneling header 160 is a 40-byte header that indicates a specific
+Hypertext transfer protocol (HTTP) port number, e.g., port number 80, or any other well-
+known port, such as 23 for teInet”. Yim does not only disclose the conversion to HTTP
+through port 80, but also the conversion to teInet via port 23, thereby teaching the
+
+amended claims.
+
+6. THIS ACTION IS MADE FINAL. Applicant is reminded of the extension of time
+policy as set forth in 37 CFR 1.136(a).
+
+A shortened statutory period for reply to this final action is set to expire THREE
+MONTHS from the mailing date of this action. In the event a first reply is filed within
+TWO MONTHS of the mailing date of this final action and the advisory action is not
+mailed until after the end of the THREE-MONTH shortened statutory period, then the
+shortened statutory period will expire on the date the advisory action is mailed, and any
+extension fee pursuant to 37 CFR 1.136(a) will be calculated from the mailing date of
+the advisory action. In no event, however, will the statutory period for reply expire later
+
+than SIX MONTHS from the mailing date of this final action.
+
+Conclusion
+
+Application/Control Number: 11/403,549 Page 13
+Art Unit: 2419
+
+7. Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to Dargaye H. Churnet whose telephone number is 571-
+270-1417. The examiner can normally be reached on Monday-Friday from 7:30-5:00.
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Chirag Shah can be reached on 571-272-3144. The fax phone number for
+the organization where this application or proceeding is assigned is 571 -273-8300.
+Information regarding the status of an application may be obtained from the
+Patent Application Information Retrieval (PAIR) system. Status information for
+published applications may be obtained from either Private PAIR or Public PAIR.
+Status information for unpublished applications is available through Private PAIR only.
+For more information about the PAIR system, see http://pair-direct.uspto.gov. Should
+you have questions on access to the Private PAIR system, contact the Electronic
+Business Center (EBC) at 866-217-9197 (toII-free). If you would like assistance from a
+USPTO Customer Service Representative or access to the automated information
+
+system, call 800-786-9199 (IN USA OR CANADA) or 571-272-1000.
+
+/Dargaye H Churnet/
+
+Examiner, Art Unit 2419
+
+/Gregory B Sefcheck/
+Primary Examiner, Art Unit 2419
+
+2-27-2009
+
+Application/Control Number: 11/403,549 Page 14
+Art Unit: 2419
+

@@ -1,0 +1,366 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE [A
+
+UNITED STATES DEPARTMENT OF COMMERCE
+United States Patent and Trademark Ofﬁce
+Addrss: COMM1$SlONER F OR PATENTS
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+P.0. Box 1450
+Alcxlndm V'ug'nm' 2313-1450
+www.nsptogov
+I APPLICATKON NO. I FILING DATE I FIRST NAMED INVENTOR J ATTORNEY 00cm NO. | CONFIRMATION NO. I
+09/548,237 04/12/2000 Thomas Mark Levergood 1984.1001-003 6066
+24573 7590 12/15/2005 I EXAMINER —I
+BELL, BOYD & LLOYD, LLC WINDER, PATRlcs L
+PO BOX 1135
+CHICAGO, IL 60690-1 135 I A” ”N” I WE" NUMBER I
+2145
+
+DATE MAILED: 12/15/2005
+
+Please ﬁnd below and/or attached an Ofﬁce communication concerning this application or proceeding.
+
+PTO-90C (Rev. 10/03)
+
+ 
+
+ 
+
+Application No. Applicant(s)
+
+09/548,237 LEVERGOOD ET AL.
+Ofﬁce Action Summary Examine, An Unit
+
+Patrice Winder 2145
+
+ 
+
+ 
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1. 136(e). In no event, however, may a reply be timelyl ﬁled
+
+after SIX (6) MONTHS from the mailing date of this communication.
+- If No period for reply IS speciﬁed above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for rep|y will, by statute. cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any rep|y received by the Otﬁce later than three months after the mailing date of this communication, even if timely ﬁled, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.70403).
+
+Status
+
+HIE Responsive to communication(s) ﬁled on 08 Segtember 2005.
+23). This action is FINAL. 2b)|:] This action is non-ﬁnal.
+3)[:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 O.G. 213.
+
+Disposition of Claims
+
+MIX Claim(s) ﬂ is/are pending in the application.
+43) Of the above claim(s) is/are withdrawn from consideration.
+5)E] Claim(s) is/are allowed.
+6)|2 Claim(s) ﬂ is/are rejected‘
+7)D Claim(s) _ is/are objected to.
+8)[:] Claim(s) __ are subject to restriction and/or election requirement.
+
+ 
+
+ 
+
+Application Papers
+
+9)D The speciﬁcation is objected to by the Examiner.
+10)E] The drawing(s) ﬁled on is/are: a)L—_] accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)D The oath or declaration is objected to by the Examiner. Note the attached Ofﬁce Action or form PTO-152.
+
+ 
+
+Priority under 35 U.S.C. § 119
+
+12)D Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:l AII b)E] Some * c)E] None of:
+11:1 Certiﬁed copies of the priority documents have been received.
+2D Certiﬁed copies of the priority documents have been received in Application No. __
+3D Copies of the certiﬁed copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Ofﬁce action for a list of the certiﬁed copies not received.
+
+Attachment(s)
+
+1) D Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) E] Notice of Drattsperson’s Patent Drawing Review (PTO-948) Paper No(s)lMaiI Date. __
+
+3) [1 Information Disclosure Statement(s) (1970-1449 or PTO/SB/OB) 5) D Notice of Informal Patent Application (PT0-152)
+
+ 
+
+Paper No(s)/Mai| Date 6) C] Other:
+
+ 
+
+ 
+
+ 
+
+US. Patent and Trademark Ofﬁce
+PTOL-326 (Rev. 7-05) Ofﬁce Action Summary Part of Paper No./Mai| Date 20051212
+
+Application/Control Number: 091548237 Page 2
+Art Unit: 2145
+
+DETAILED ACTION
+Claim Rejections - 35 USC § 112
+
+1. The following is a quotation of the ﬁrst paragraph of 35 U.S.C. 112:
+
+The speciﬁcation shall contain a written description of the invention, and of the manner and process of
+making and using it, in such full, clear, concise, and exact terms as to enable any person skilled in the
+art to which it pertains, or with which it is most nearly connected, to make and use the same and shall
+set forth the best mode contemplated by the inventor of carrying out his invention.
+
+2. Claims 1, 3, and 14 are rejected under 35 U.S.C. 112, ﬁrst paragraph, as
+containing subject matter which was not described in the speciﬁcation in such a way as
+to enable one skilled in the art to which it pertains, or with which it is most nearly
+connected, to make and/or use the invention. Applicant has not provided a detailed
+disclosure of “counting requests exclusive of repeated requests from common clients”.
+The examiner is aware of page 7, lines 17-18 and page 14, lines 9-11 of the disclosure
+where applicant states “counting requests excluding repeated requests from common
+clients" if there is further enablement please indicate the corresponding areas of the
+disclosure.
+
+3. Applicant’s apparent lack of detail corresponding to the claimed limitation of
+“counting requests exclusive of repeated requests from common clients” suggests an
+obvious variation. It is generally understood that the state of the art at the time of the
+invention as understood by the inventor can be determined by the degree of detail in the
+disclosure and that which is left for one of ordinary skill in the art to perform is presumed
+to be within the skill in the art to perform. As applicant has supplied no detail enabled of
+
+this alleged nonobvious process by which to “count requests exclusive of repeated
+
+Application/Control Number: 09/548,237 Page 3
+Art Unit: 2145
+
+requests from common clients” it is presumed to be within the skill of the art (In re Fox
+176 USPQ 340).
+
+4. The remaining dependent claims are rejected on the same rationale as
+previously rejected claims 1, 3 and 14.
+
+5. After review of applicant’s statements filed on November 15, 2002 concerning the
+above rejection, the examiner requests applicant point to portions of the disclosure in
+question which couples “appending a session identifief’ to “counting requests exclusive
+
+of repeated requests from common clients”.
+
+Claim Rejections - 35 USC § 103
+
+6. The text of those sections of Title 35, US. Code 103 not included in this action
+can be found in a prior Ofﬁce action.
+7. Claims 1-2, 7-10 are rejected under 35 U.S.C. 103(a) as being unpatentable over
+Lara D. Catledge et al., Characterizing Browsing Strategies in the WorId-Wide'Web
+(hereafter referred to as Cartledge) in view of José Kahan, A capability-based
+authorization model for the World Wide Web (hereafter referred to as Kahan).
+8. Regarding claim 1, Catledge taught a method of processing service requests
+from a client to a server system through a network, said comprising the steps of:
+
+responding to requests for information received from the client through the
+
+network by returning the requested information to the client (users request documents
+
+through www.gatech.edu, page 3); and
+
+Application/Control Number: 09/548,237 Page 4
+Art Unit: 2145
+
+counting requests to particular information (“A modiﬁed version of the Pattern
+Detection Module (PDM) algorithm user navigation”, page 5) and excluding repeated
+requests to said information from a common client (mechanism to separate per-user
+information, page 5).
+
+Catledge does not speciﬁcally teach appending a session identiﬁer to the
+requests. However, Kahan taught appending a session identiﬁer to the requests
+(appending Ddcap, 2.3 Consultation phase, pages 4-5). It would have been obvious to
+one of ordinary skill in the art at the time the invention was made that incorporating
+Kahan’s appending the session identiﬁer in Catledge’s system for tracking world wide
+web access would have improved system security. The motivation would have been to
+ensure that only authorized users access sites outside of the www.gatech.edu server.
+9. Regarding dependent claim 2, Catledge taught comprising excluding from the
+counting requests made for information from the client within a deﬁned period of time
+(“The PDM analysis ﬁve times." page 6).
+
+10. Regarding dependent claim 7, Catledge does not speciﬁcally teach the session
+identifier is cryptographically generated. However, Catledge taught the session identiﬁer
+is cryptographically generated (pages 9-10). It would have been obvious to one of
+ordinary skill in the art at the time the invention was made that incorporating Kahan’s
+cryptographically generated session identiﬁer in Catledge’s system for accessing
+document would have improved system security. The motivation would have been to
+
+ensure that no unauthorized user access sites outside the www.gatech.edu server.
+
+Application/Control Number: 09/548,237 Page 5
+Art Unit: 2145
+
+11. Regarding dependent claim 8, Catledge taught the excluding requests comprises
+excluding requests from a particular user (per-session and per-user, page 6).
+12. Regarding dependent claim 9, Catledge taught the particular user is identiﬁed by
+the appended session identiﬁer (user id, page 4).
+13. Regarding dependent claim 10, Catledge taught further comprising:
+
+logging requests in a transaction log (“original log file occurrence”, page 4);
+and
+
+evaluating the transaction log to determine request counts (“A modiﬁed version of
+
+the Pattern Detection Module (PDM) algorithm user navigation”, page 5).
+
+Claim Rejections - 35 USC § 102
+14. The following is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that
+
+form the basis for the rejections under this section made in this Ofﬁce action:
+
+A person shall be entitled to a patent unless —
+
+(a) the invention was known or used by others in this country, or patented or described in a printed
+publication in this or a foreign country, before the invention thereof by the applicant for a patent.
+
+15. Claims 3-6 and 11-12 rejected under 35 U.S.C. 102(a) as being anticipated by
+Lara D. Catledge et al., Characterizing Browsing Strategies in the WorId-Wide Web
+(hereafter referred to as Cartledge).
+
+16. Regarding claim 3, Catledge taught an information server on a network,
+
+comprising:
+
+Application/Control Number: 09/548,237 Page 6
+Art Unit: 2145
+
+means for responding to requests for service received from a client through a
+network by returning the requested service to the client (users request documents
+through www.gatech.edu, page 3); and
+
+means for counting requests to a particular service (“A modiﬁed version of the
+Pattern Detection Module (PDM) algorithm user navigation", page 5) and excluding
+repeated requests to said information from a common client (mechanism to separate
+per-user information, page 5).
+
+17. Regarding dependent claim 4, Catledge taught the requests include a common
+session identiﬁer (user id, page 4) and the server tracks requests within a session of
+requests (“A modified version of the Pattern Detection Module (PDM) user
+navigation.” page 5).
+
+18. Regarding dependent claim 5, Catledge taught further comprising means for
+excluding requests made to a service from the client within a deﬁned period of time
+(excluding other session information from per-session tabulation, page 6).
+
+19. Regarding dependent claim 6, Catledge taught communications to and from the
+client are according to hypertext transfer protocol (“Document requests WWW
+servers.” page 4).
+
+20. Regarding dependent claim 11, Catledge taught said means for counting and
+excluding requests comprises means for excluding requests from a particular user (“per-
+session” tabulation excludes user’s other sessions, page 6).
+
+21. Regarding dependent claim 12, Catledge taught the particular user is identiﬁed
+
+by a user identiﬁer (user id, page 4).
+
+Application/Control Number: 091548237 Page 7
+Art Unit: 2145
+
+22. Regarding dependent claim 13, Catledge taught further comprising:
+
+means for logging requests in a transaction log (“original log ﬁle occurrence”,
+page 4); and
+
+means for determining request counts from the transaction log (“A modified
+version of the Pattern Detection Module (PDM) algorithm user navigation”, page 5).
+23. Regarding claim 14, Catledge taught a method of processing service requests
+from a client to a server system through a network (tracking web site access), said
+method comprising the steps of:
+
+responding to requests for service received from a client through a network by
+returning the requested service to the client (users browse documents through
+www.gatech.edu, page 3); and
+
+counting requests to particular service (“A modified version of the Pattern
+Detection Module (PDM) algorithm user navigation, page 5) and excluding repeated
+requests to said service from a common client (mechanism to separate per-user
+
+information, page 5).
+
+Application/Control Number: 09/548,237 Page 8
+Art Unit: 2145
+
+Response to Supplemental Evidence
+24. The afﬁdavit ﬁled on September 8, 2005 under 37 CFR 1.131 has been
+considered but is ineffective to overcome the Kahan reference.
+25. The supplemental evidence submitted is insufﬁcient to establish a reduction to
+practice of the invention in this country or a NAFTA or WTO member country prior to the
+effective date of the Kahan reference. Applicant hasnot provided proof of registration of
+
+the copyright date.
+
+Conclusion
+26. THIS ACTION IS MADE FINAL. Applicant is reminded of the extension of time
+policy as set forth in 37 CFR1.136(a).
+
+A shortened statutory period for reply to this ﬁnal action is set to expire THREE
+MONTHS from the mailing date of this action. In the event a ﬁrst reply is ﬁled within
+TWO MONTHS of the mailing date of this ﬁnal action and the advisory action is not
+mailed until after the end of the THREE-MONTH shortened statutory period, then the
+shortened statutory period will expire on the date the advisory action is mailed, and any
+extension fee pursuant to 37 CFR 1.136(a) will be calculated from the mailing date of
+the advisory action. In no event, however, will the statutory period for reply expire later
+
+than SIX MONTHS from the mailing date of this ﬁnal action.
+
+Application/Control Number: 09/548,237 Page 9
+Art Unit: 2145
+
+27. Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to Patrice Winder whose telephone number is 571 -272-
+3935. The examiner can normally be reached on Monday-Friday, 10:30 am-7:00 pm.
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Jason Cardone can be reached on 571-272-3933. The fax phone number
+for the organization where this application or proceeding is assigned is 703-872-9306.
+Information regarding the status of an application may be obtained from the
+Patent Application Information Retrieval (PAIR) system. Status information for
+published applications may be obtained from either Private PAIR or Public PAIR.
+Status information for unpublished applications is available through Private PAIR only.
+For more information about the PAIR system, see http://pair-direct.uspto.gov. Should
+you have questions on access to the Private PAIR system, contact the Electronic
+Business Center (EBC) at 866-217-9197 (toII-free).
+' cam
+Patrice Winder
+Primary Examiner
+
+Art Unit 2145
+
+December 12, 2005
+

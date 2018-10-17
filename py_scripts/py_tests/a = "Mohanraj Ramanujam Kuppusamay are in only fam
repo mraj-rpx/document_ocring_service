@@ -1,0 +1,40 @@
+str = "Mohanraj Ramanujam Kuppusamay are in only family"
+
+
+
+l1 = pp.Literal(' ')
+l2 = pp.Literal(' ')
+
+w1 = pp.Word(pp.alphas)
+w2 = pp.SkipTo(w3).setResultsName('names')
+w3 = pp.Literal("is a function")
+
+w = w1 + w2 + w3
+
+w = w1 + l1 + w2 + l2 + w3
+
+a = pp.Group(pp.Or([pp.Word(pp.alphas), pp.And([pp.Word(pp.alphas), pp.Word(pp.alphas)])]))
+b = pp.Word(pp.alphas)
+
+
+
+aa = pp.Literal("are in only family")
+b = pp.OneOrMore(pp.Word(pp.alphas))
+c = pp.Literal("are in only family")
+d = aa + pp.Group(b) + c
+d.parseString(a)
+
+
+lb = pp.Literal('{')
+rb = pp.Literal('}')
+wordList = pp.OneOrMore(pp.Word(pp.alphas))
+pat1 = lb + wordList + rb
+
+pat2 = lb + pp.Group(wordList) + rb
+pat2.parseString('{ant bee crow}')
+
+name = pp.Word(pp.alphas)
+n = pp.Word(pp.alphas + ' ')
+name1 = pp.Word(pp.alphas)
+
+r = name + pp.Group(pp.FollowedBy(n).setResultsName("pp")) + name1

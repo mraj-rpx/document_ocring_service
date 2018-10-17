@@ -1,0 +1,344 @@
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+UNITED STATES DEPARTMENT OF COMMERCE
+United States Patent and Trademark Ofﬁce
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria, Virginia 22313-1450
+
+www.nspto.gov
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+I APPLICATION NO. FILING DATE FIRST NAMED INVENTOR I ATTORNEY DOCKET NO. CONFIRMATION NO. 1
+09/933,493 08/20/2001 Stefan M. van den 00rd MOBJ-OIOOOUSO 6164
+23910 7590 |0/21/2oo4 I EXAMINER . J
+FLIESLER MEYER, LLP - BURGESS, BARBARA N
+FOUR EMBARCADERO CENTER
+SUITE 400 | ART UNIT PAPER NUMBER , |
+SAN FRANCISCO, CA 941 1 1 2157
+
+DATE MAILED: 10/21/2004
+
+Please ﬁnd below and/or attached an Ofﬁce communication concerning this application or proceeding.
+
+PTO-90C (Rev. 10/03)
+
+/)..
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s) %
+09/933,493 ' VAN DEN OORD ET AL.
+
+Office Action Summary Examine, Art Unit /
+Barbara N Burgess 2157
+
+ 
+
+-- The MAILING DATE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE g MONTH(S) FROM
+THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1. 136(a). in no event, however, may a reply be timely! ﬁled
+after SIX (6) MONTHS from the mailing date of this communication.
+
+- If the period for reply speciﬁed above IS less than thirty (30) days, a reply within the statutory minimum of thirty (30) days will be considered timely.
+- If NO period for reply is speciﬁed above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Ofﬁce later than three months after the mailing date of this communication, even if timely ﬁled, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+”El Responsive to communication(s) ﬁled on 20 August 2001.
+2a)l:| This action is FINAL. 2b)IZ This action is non-final.
+3)[:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 0.6. 213.
+
+Disposition of Claims
+
+4)E Claim(s) 1-27 is/are pending in the application.
+
+43) Of the above Claim(s) is/are withdrawn from consideration.
+
+ 
+
+ 
+
+5)[:] Claim(s) is/are allowed.
+
+QE Claim(s) 1-_27 is/are rejected.
+
+7)D Claim(s) _ is/are objected to.
+
+8)[| Claim(s) _ are subject to restn'ction and/or election requirement.
+
+Application Papers
+
+9)EI The speciﬁcation is objected to by the Examiner.
+10)El The drawing(s) ﬁled on is/are: a)[j accepted or b)|:] objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+
+Replacement drawing sheet(s) including the correction is required ifthe draWing(s) is objected to. See 37 CFR 1.121(d).
+11)EI The oath or declaration is objected to by the Examiner. Note the attached Ofﬁce Action orform PTO—152.
+
+ 
+
+Priority under 35 U.S.C. § 119
+
+12)D Acknowledgment is made of a claim for foreign pn'orityunder 35 U.S.C. § 119(a)-(d) or (f).
+a)D AII b)D Some * c)l:| None of:
+1.I:| Certiﬁed copies of the priority documents have been received.
+2.|:] Certiﬁed copies of the priority documents have been received in Application No.
+3.I:l Copies of the certiﬁed copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Ofﬁce action for a list of the certiﬁed copies not received.
+
+Attachment(s)
+
+ 
+
+ 
+
+ 
+
+1) IE Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) [1 Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mail Date.
+
+3) |21 Information Disclosure Statement(s) (PTO-1449 or PTO/SB/Oa) 5) D Notice of Informal Patent Application (PTO-152)
+Paper No(s)/Mail Date 11-15—02. 6) C] Other: _
+
+ 
+
+ 
+
+US. Patent and Trademark Office
+PTOL-326 (Rev. 104) Ofﬁce Action Summary Part of Paper No./Mai| Date 20041018
+
+Application/Control Number: 09/933,493 - Page 2
+Art Unit: 2157
+
+DETAILED ACTION
+Claim Rejections - 35 USC § 103
+1. The following is a quotation of 35 U.S.'C. 103(a) which forms the basis for all
+obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+
+Patentability shall not be negatived by the manner in which the invention was made.
+
+1. Claims 1- 27 are rejected under 35 U.S.C. 103(a) as being unpatentable over
+Purcell (US 2001/0013038 A1) in view of Hughes et al. (hereinafter “Hughes”, US
+2003/0195876 A1_).
+
+As per claims 1, 19-24, Purcell discloses a system and user interface mechanism for
+session based retrieval and at a client system of content from a server system, said
+server system serving a string based content, said string based content including a
+plurality of strings, comprising:
+
+a communication protocol that provides a session based connection between
+a client system and a server system, and allows said client system to query said server
+system for content (paragraphs [0011], [0019], [0028]);
+
+a client object, in communication with a client software at said client system,
+said client object capable of transmitting to a server object a plurality of queries to
+
+retrieve content from said content engine, wherein each of said plurality of queries
+
+Application/Control Number:~ 09/933,493 , Page 3
+Art Unit: 2157
+
+comprises a single string character, and wherein each subsequent of said plurality of»
+queriesextend the query (paragraphs [0029]-[0030], [0034]-[0035]);
+a server object, in communication with a server software at saidiserver system,
+said server object furthermore in communication with said client object via said
+communlication protocol and in response to each of said queries returns increasingly
+appropriate content information to the client object as the query is being extended
+(paragraphs [0022], [0024], [0030], [0034]—[0036]).
+‘Purcell does not explicitly disclose:
+server object records each of said plurality of queries.
+However, in an analogous art, Hughes discloses a server database that stores query
+records (paragraphs [00121-[0013], [0030], [0039], [0049])
+Therefore, one of ordinary skill in the art at the time the invention was made would have
+found it obvious to implement or incorporate tecording queries in Purcell’s system in
+
+order for the user to have access to past queries made.
+
+As per claim 2, Purcell discloses the system of claim 1 wherein said client
+software operates on or at a first computer and said server software operates on or at a
+second computer, and wherein both of said ﬁrst and said second computers are
+connected via a communication network protocol (paragraphs [00181-[0019], [0022],
+
+[0024]).
+
+Application/Control Number: 09/933,493 , Page 4
+Art Unit: 2157
+
+As per claim 3, Purcell discloses the system of claim 1 wherein said server software
+
+and said client software runs on the same computer (paragraph [0024]).
+
+As per claim 4, Purcell discloses the system of claim 1 wherein said server software
+runs on a plurality of separate computers, and wherein said client queries are
+
+distributed over said separate servers (paragraph [0029]-[0030]). "
+
+As per claim 5, Purcell discloses the system of claim 1.
+
+Purcell does not explicitly discloses:
+wherein said server software stores previously used strings and returns said
+
+stored strings to the client in response to new client queries, without accessing said
+content engine.
+However, in an analogous art, Hughes discloses a server database that stores query
+records (paragraphs [0012]-[0013], [0030], [0039], [0049])
+Therefore, one of ordinary skill in the art at the time the invention was made would have
+found it obvious to implement or incorporate storing previously used strings in Purcell’s
+
+system in order for the-user to have access to past queries made.
+
+As per claims 6 and 25, Purcell further discloses the system and mechanism of
+claims 1 and 24 wherein said client software is embedded into a software application
+
+that provides a visual'interface to an operator (paragraphs [0018], [0036]).
+
+Application/Control Number: 09/933,493 - Page 5
+Art Unit: 2157
+
+As per claim 7, Purcell discloses the system of claim 1 wherein said client software is
+used as a content engine for another software system (paragraphs [0029]—[0030],
+
+[0034}{0035».
+
+As per claim 8, Purcell discloses the system of claim 1 wherein said client software
+accumulates a plurality of said single character queries as they are entered into the
+client, before sending them together to said server software as a string (paragraph
+
+[0034D.
+
+As per claims 9 and 10, Purcell discloses the system of claim 1 wherein said client
+software stores previously received responses and uses these as the response to a
+
+new query by the user, without reassessing the server (paragraphs [0036]-[0037]).
+
+As per claims 11 and 13, Purcelt discloses the system of claim 1.
+Purcell does not explicitly disclose wherein said server software stores the state of
+query and response of the client software, and restores the state of the client software
+after any interruption in said communication protocol.
+However, in an analogous art, Hughes discloses a server database that stores query
+records (paragraphs [0012]-[0013], [0030], [0039], [0049]).
+Therefore, one of ordinary skill in the art at the time the invention was made would have
+found it obvious to implement or incorporate storing queries and responses in Purcell’s
+
+system in order for the user to have access to past queries made
+
+Application/Control Number: 09/933,493 Page 6
+Art Unit: 2157 A
+
+As per claim 12, Purcell discloses the system of claim 1 where said client software
+adds a qualifier to the query that is passed to the content engine by the server, whereby
+the content engine can use said qualiﬁer to execute the query and return appropriate
+
+results based on both the query string and its qualifier (paragraphs[00381-[0039]).
+
+As per claim 14, Purcell discloses the system of claim 1 where said server software
+is distributed within a server tier and a syndication tier, and wherein said client software
+communicates to the server tier on a single computer, and wherein each query is
+forwarded by the server tier to an appropriate syndicate of content channels connected
+
+to the server tier on a different computer (paragraph [0029]).
+
+As per claim 15, Purcell discloses the system of claim 1 where said server software
+applies a content engine dependent pattern and ﬁlter to characters received from the
+
+client-before queries are transmitted to the Content engine (paragraph [OO41]).
+
+As per claim 16, Purcell discloses the system of claim 15 wherein the number of
+
+queries transmitted to the content engine is limited (paragraph [OO36]).
+
+As per claims 17-18, Purcell further discloses the system of claim 1 where server
+
+responses comprise lists of strings, wherein each string is accompanied by
+
+Application/Control Number: 09/933,493 Page 7
+Art Unit: 2157
+
+corresponding metadata, whereby the metadata contains logical links to other data
+
+sources or Uniform Resource Identiﬁers (paragraph [0029]).
+
+As per claim 25, Purcell discloses the mechanism of claim 24, wherein said user
+
+interface element is an application input field.
+
+As per claims 26-27, Purcell discloses the mechanism of claim 24, wherein said
+session indicator displays a triangular display element to indicate the presence of said
+session, and does not display said triangular display element to indicate the absence of
+
+said session (paragraphs [0034]-[0036]).
+
+Conclusion
+2. The prior art made of record and not relied upon is considered pertinent to
+applicant's disclosure.
+US Patent No. 6,772,194 B1
+US Patent No. 6,430,558 B1 .
+Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to Barbara N Burgess whose telephone number is (703)
+305-3366. The examiner can normally be reached on M-F (8:00am-4:00pm).
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Ario Etienne can be reached on (703) 308-7562. The fax phone number for
+
+the organization where this application or proceeding is‘ assigned is 703-872—9306.
+
+Application/Control NUmber: 09/933,493 Page 8
+Art Unit: 2157 '
+
+Information regarding the status of an application may be obtained from the Patent
+Application Information Retrieval (PAIR) system. Status infarmation for published
+applications may be obtained from either Private PAIR or Public PAIR. Status.
+information for unpublished applications is available through Private PAIR only. For
+more information about the PAIR system, see http://pair-direct.uspto.gov. Should you
+have questions on access to the Private PAIR system, contact the Electronic Business
+
+Center (EBC) at 866-217-9197 (toII-free).
+
+Barbara N Burgess Examiner
+
+Art Unit 2157
+
+H NANA“
+anﬁ“ EXAWNER
+

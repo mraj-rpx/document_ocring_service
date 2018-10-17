@@ -1,0 +1,712 @@
+ 
+
+UNITED STATES PATENT AND TRADEMARK OFFICE
+
+UNITED STATES DEPARTNIEN T OF COMNIERCE
+United States Patent and Trademark Office
+Address: COMMISSIONER FOR PATENTS
+
+PO. Box 1450
+
+Alexandria1 Virginia 22313- 1450
+
+WWW.uspto.gov
+
+ 
+
+ 
+
+ 
+
+APPLICATION NO. FILING DATE FIRST NAMED INVENTOR | ATTORNEY DOCKET NO. CONFIRMATION NO. |
+11/403,548 04/ 13/2006 Christopher S. Signaoff 69936/P002US/ 10601229 7833
+29053 7590 | EXAMINER |
+
+FULBRIGHT & J AWORSKI L.L.P
+
+2200 ROSS AVENUE
+SUITE 2800
+DALLAS, TX 75201-2784
+
+ 
+
+POPHAM, JEFFREY D
+
+ 
+
+ 
+
+ 
+
+ 
+
+| ART UNIT | PAPER NUMBER |
+2437
+| MAIL DATE | DELIVERY MODE |
+09/3 0/2009 PAPER
+
+Please find below and/or attached an Office communication concerning this application or proceeding.
+
+The time period for reply, if any, is set in the attached communication.
+
+PTOL—90A (Rev. 04/07)
+
+ 
+
+ 
+
+ 
+
+ 
+
+Application No. Applicant(s)
+11/403,548 SIGNAOFF ET AL.
+
+Office Action Summary Examiner Art Unit
+JEFFREY D. POPHAM 2437
+
+ 
+
+ 
+
+-- The MAILING DA TE of this communication appears on the cover sheet with the correspondence address --
+Period for Reply
+
+A SHORTENED STATUTORY PERIOD FOR REPLY IS SET TO EXPIRE 3 MONTH(S) OR THIRTY (30) DAYS,
+WHICHEVER IS LONGER, FROM THE MAILING DATE OF THIS COMMUNICATION.
+
+Extensions of time may be available under the provisions of 37 CFR 1.136(a). In no event however may a reply be timely filed
+
+after SIX (6) MONTHS from the mailing date of this communication.
+- If NO period for reply is specified above, the maximum statutory period will apply and will expire SIX (6) MONTHS from the mailing date of this communication.
+- Failure to reply within the set or extended period for reply will, by statute, cause the application to become ABANDONED (35 U.S.C. § 133).
+
+Any reply received by the Office later than three months after the mailing date of this communication, even if timely filed, may reduce any
+
+earned patent term adjustment. See 37 CFR 1.704(b).
+
+Status
+
+1)|Z| Responsive to communication(s) filed on 13 AQri12006.
+2a)|:| This action is FINAL. 2b)|Z| This action is non-final.
+3)|:| Since this application is in condition for allowance except for formal matters, prosecution as to the merits is
+closed in accordance with the practice under Ex parte Quayle, 1935 CD. 11, 453 0.6. 213.
+
+Disposition of Claims
+
+4)|Z| Claim(s) 1-18 is/are pending in the application.
+
+ 
+
+4a) Of the above claim(s) is/are withdrawn from consideration.
+5)|:| Claim(s) _ is/are allowed.
+6)|Z| Claim(s) ﬂ? is/are rejected.
+7)|:| Claim(s) _ is/are objected to.
+8)|:| Claim(s) _ are subject to restriction and/or election requirement.
+
+Application Papers
+
+9)|:| The specification is objected to by the Examiner.
+10)|z The drawing(s) filed on 13 AQri12006 is/are: a)|Z| accepted or b)|:| objected to by the Examiner.
+Applicant may not request that any objection to the drawing(s) be held in abeyance. See 37 CFR 1.85(a).
+Replacement drawing sheet(s) including the correction is required if the drawing(s) is objected to. See 37 CFR 1.121(d).
+11)|:| The oath or declaration is objected to by the Examiner. Note the attached Office Action or form PTO-152.
+
+Priority under 35 U.S.C. § 119
+
+12)|:| Acknowledgment is made of a claim for foreign priority under 35 U.S.C. § 119(a)-(d) or (f).
+a)|:| AII b)|:| Some * c)|:| None of:
+1.|:| Certified copies of the priority documents have been received.
+2.|:| Certified copies of the priority documents have been received in Application No. _
+3.|:| Copies of the certified copies of the priority documents have been received in this National Stage
+application from the International Bureau (PCT Rule 17.2(a)).
+* See the attached detailed Office action for a list of the certified copies not received.
+
+Attachment(s)
+
+1) |Z| Notice of References Cited (PTO-892) 4) D Interview Summary (PTO-413)
+
+2) D Notice of Draftsperson’s Patent Drawing Review (PTO-948) Paper No(s)/Mai| Date. _
+
+3) IZI Information Disclosure Statement(s) (PTO/SB/08) 5) D Notice of Informal Patent Application
+Paper No(s)/Mai| Date w. 6) D Other: _
+
+ 
+
+ 
+
+ 
+
+U.S. Patent and Trademark Office
+PTOL-326 (Rev. 08-06) Office Action Summary Part of Paper No./Mai| Date 20090918
+
+Application/Control Number: 11/403,548 Page 2
+Art Unit: 2437
+
+Remarks
+Claims 1-18 are pending.
+Specification
+1. The attempt to incorporate subject matter into this application by reference to
+
+Attorney Docket No. 69936-P001US-1061228 is ineffective because the reference to
+this application does not include an official application, publication, or patent number. In
+paragraphs 1 and 35 of the specification, reference is made to "US. Patent Application
+No. XX/XXX,XXX". In order to be a proper incorporation by reference, the appropriate
+application number may be filled in or the patent number (if patented) may be used, for
+
+example.
+
+Claim Objections
+2. Claim 17 is objected to because of the following informalities: Claim 17,
+dependent from claim 14, refers to "said establishing a third communication request",
+however, no such establishment of such a request has been set forth in claim 14 or 17
+until this point. For purposes of prior art rejection, this has been construed as “said
+
+establishing a third communication connection”. Appropriate correction is required.
+
+Claim Rejections - 35 USC § 112
+
+The following is a quotation of the second paragraph of 35 U.S.C. 112:
+
+The specification shall conclude with one or more claims particularly pointing out and distinctly
+claiming the subject matter which the applicant regards as his invention.
+
+Application/Control Number: 11/403,548 Page 3
+Art Unit: 2437
+
+3. Claims 14-18 are rejected under 35 U.S.C. 112, second paragraph, as being
+indefinite for failing to particularly point out and distinctly claim the subject matter which
+applicant regards as the invention.
+
+The first 2 limitations of claim 14 appear to occur in the alternative. This is noted
+by limitation 3, stating “responsive to one or more of the first and second communication
+
+request...’. It is unclear what limitations are actually part of the claim, which limitations
+always occur, and which may only occur in certain circumstances. The Examiner has
+taken the first 2 limitations in the alternative, such that only 1 need be performed to lead
+into limitation 3. As is clear from the third limitation, only a single one of the first 2
+limitations must be completed before the third limitation can occur. If Applicant intends
+for both of the first two limitations to occur, it must be made clear and, likewise, if
+Applicant intends for only a single one of the first two limitations to occur, it must be
+made clear.
+
+Furthermore, the first limitation of claim 14 recites "establishing a first
+communication connection between a first internaI controIIer behind a firewall and a first
+external controller in a first communication community”. It is unclear what the external
+controller is external from. It cannot be both external (based on the name external
+controller) and internal ("a first external controIIerin a first communication community")
+to the community. It cannot be external to the firewall, as, based on the claimed
+limitations, the firewall appears to separate and form this community (the community
+
+being behind the firewall). At best, this first external controller can be external to the
+
+first internaI controIIer, however, this appears inherent in the claim since the first internaI
+
+Application/Control Number: 11/403,548 Page 4
+Art Unit: 2437
+
+controller is connected to both the local communication device and the first external
+controller. This is how this first external controller has been construed, such that the
+first internaI controller is between the local communication device and the first external
+controller. This appears to be the only logical conclusion that can be made regarding
+an external controIIer within a community including a firewall. The second limitation of
+claim 14 provides a like description of the second external controller, and has been
+construed in the same fashion.
+
+Claim 15 discusses verifying the first communication request in the first limitation
+and verifying the second communication request in the second limitation, however,
+there is no "and" or "or" in between these limitations to show that both must be part of
+the claim or only 1. As discussed above, this has been taken in the alternative. Claim
+18 has the same issue with limitations not being joined with "and" or "or" such that it is
+unclear if both limitations need be performed or only one of them. The Examiner has
+performed a prior art search for and has rejected claims 14-18 as they can best be
+
+understood.
+
+Claim Rejections - 35 USC § 101
+
+35 U.S.C. 101 reads as follows:
+
+Whoever invents or discovers any new and useful process, machine, manufacture, or composition of
+matter, or any new and useful improvement thereof, may obtain a patent therefor, subject to the
+conditions and requirements of this title.
+
+4. Claims 9-13 are rejected under 35 U.S.C. 101 because the claimed invention is
+
+directed to non-statutory subject matter.
+
+Application/Control Number: 11/403,548 Page 5
+Art Unit: 2437
+
+Claim 9 is directed to “A communication community comprising:” one or more
+shared controllers, at least one individual controller, and an external controller.
+However, none of these controllers are defined in the application as being physical
+entities (e.g. devices), logical entities (e.g. program code), or anything at all. Therefore,
+these controllers are as broad as to be any entity that can perform the functions of said
+controllers. As one can see, these controllers may be hardware, software, or a
+combination thereof. Therefore, claim 9 fails to fall in one of the statutory categories of
+invention, since it is not a process, apparatus, article of manufacture, or composition of
+matter. None of claims 10-13 fix this issue, therefore, claims 10-13 are rejected for the
+
+same reasons.
+
+Claim Rejections - 35 USC § 102
+The following is a quotation of the appropriate paragraphs of 35 U.S.C. 102 that
+
+form the basis for the rejections under this section made in this Office action:
+
+A person shall be entitled to a patent unless —
+
+(e) the invention was described in (1) an application for patent, published under section 122(b), by
+another filed in the United States before the invention by the applicant for patent or (2) a patent
+granted on an application for patent by another filed in the United States before the invention by the
+applicant for patent, except that an international application filed under the treaty defined in section
+351 (a) shall have the effects for purposes of this subsection of an application filed in the United States
+only if the international application designated the United States and was published under Article 21 (2)
+of such treaty in the English language.
+
+5. Claims 14-16 are rejected under 35 U.S.C. 102(e) as being anticipated by Alt
+(US. Patent Application Publication 2007/0036143).
+Regarding Claim 14,
+
+Alt discloses a method for communicating comprising:
+
+Application/Control Number: 11/403,548 Page 6
+Art Unit: 2437
+
+Establishing a first communication connection between a first
+internal controller behind a firewall and a first external controller in a first
+communication community, wherein a first communication request is
+initiated by a local communication device connected to the first internal
+controller (Figures 2 and 6; and Paragraphs 48, 57, and 95-97; as
+described above, there is a discrepancy between external and the external
+controller being in the community, therefore, any of SIP proxy servers
+207e, 209e, and 611 may be construed as the external controllers here, in
+addition to the external controllers described below with respect to claim
+1);
+
+Establishing a second communication connection between a
+second internal controller behind a second firewall and a second external
+controller in a second communication community, wherein a second
+communication request is initiated by a remote communication device
+connected to the second internal controller (Figures 2 and 6; and
+Paragraphs 48, 57, 58, and 95-100; as discussed here, use of soft phone
+207d as the originating endpoint and soft phone 209d as the terminating
+endpoint is merely illustrative, and each soft phone in the system is able to
+both originate and terminate connections/calls in the SIP system);
+
+Responsive to one or more of the first and second communication
+request requesting communication between the local communication
+
+device and the remote communication device, establishing a third
+
+Application/Control Number: 11/403,548 Page 7
+Art Unit: 2437
+
+communication connection between the first and second external
+communication controllers (Figure 4; and Paragraphs 95-100;); and
+
+Transmitting communication data between the first and second
+communication communities through the third communication connection
+(Paragraphs 95-100; steps 417, 423, 429, and 435, for example,
+constituting transmitting communication data between the proxies, each in
+one of the communities. Other interpretations are, of course, possible, as
+described below with respect to the external controllers).
+
+Regarding Claim 15,
+
+Alt discloses verifying at the first external controller the first
+communication request prior to establishing the first communication
+connection (Figure 4; and Paragraphs 95-97, step 405, for example);
+
+Verifying at the second external controller the second
+communication request prior to establishing the second communication
+connection (Figures 2, 4, and 6; and Paragraphs 48, 57, 58, and 95-100;
+as described above, either phone can initiate communications and, in the
+case that the second endpoint initiates communication, step 405 will be
+performed between the second endpoint and the second controller).
+
+Regarding Claim 16,
+
+Alt discloses issuing a third communication request between the
+
+first and second external communication controllers (Figure 4; and
+
+Paragraphs 95-100; such request comprising, for example, step 413); and
+
+Application/Control Number: 11/403,548 Page 8
+Art Unit: 2437
+
+Verifying the third communication request prior to establishing the
+third communication connection (Figure 4; and Paragraphs 95-100;
+verification comprising, for example, the DNS lookup and response in step
+
+415).
+
+Claim Rejections - 35 USC § 103
+The following is a quotation of 35 U.S.C. 103(a) which forms the basis for all
+
+obviousness rejections set forth in this Office action:
+
+(a) A patent may not be obtained though the invention is not identically disclosed or described as set
+forth in section 102 of this title, if the differences between the subject matter sought to be patented and
+the prior art are such that the subject matter as a whole would have been obvious at the time the
+invention was made to a person having ordinary skill in the art to which said subject matter pertains.
+Patentability shall not be negatived by the manner in which the invention was made.
+
+6. Claims 17 and 18 are rejected under 35 U.S.C. 103(a) as being unpatentable
+over AIt in view of Strathmeyer (US. Patent Application Publication 2005/0122964).
+Regarding Claim 17,
+Alt discloses that establishing the third communication connection
+comprises:
+Issuing a third communication request to a central communication
+controller (Figure 4; and Paragraphs 95-100, step 413, for example);
+Establishing a first central communication channel between the first
+external communication controller and the central communication
+controller (Figure 4; and Paragraphs 95-100, steps 413 and 415, for
+example, showing a communication channel between the ENUM server
+
+and SIP proxy 1; the ENUM server could be the central communication
+
+Application/Control Number: 11/403,548 Page 9
+Art Unit: 2437
+
+controller, or any entity in (or the entirety of) the service provider network
+may correspond to the central controller);
+
+But does not explicitly disclose issuing a fourth communication
+request from the central communication controller to the second external
+communication controller, and establishing a second central
+communication channel between the central communication controller and
+the second external controller.
+
+Strathmeyer, however, discloses issuing a fourth communication
+request from the central communication controller to the second external
+communication controller; and establishing a second central
+communication channel between the central communication controller and
+the second external controller (Figures 6 and 7; and Paragraphs 52, 61,
+63-65, and 74; as can be seen, all communications go through all entities,
+therefore, in figure 6, for example, the outbound proxy could correspond to
+the first external controller, while entity 602 may correspond to the central
+controller. In figure 7, the proxy server corresponds to the first external
+controller and the server 505 corresponds to the central controller, which
+also connects to the SIP proxy 209e in the combination). It would have
+been obvious to one of ordinary skill in the art at the time of applicant’s
+invention to incorporate the IP telephony system of Strathmeyer into the
+communication system of AIt as modified by Aasman in order to allow the
+
+system to provide call control and monitoring in a way that does not affect
+
+Application/Control Number: 11/403,548 Page 10
+Art Unit: 2437
+
+the operation of current proxy servers and such that the control and
+monitoring system has full access to all caII data, thereby ensuring that all
+caII data is available for monitoring and control and that the
+monitoring/control system makes fuIIy-informed decisions and logs of the
+call data.
+
+Regarding Claim 18,
+
+Alt discloses verifying the third communication request at the
+central communication controller prior to establishing the first central
+communication channel (Figure 4; and Paragraphs 95-100); and
+
+Strathmeyer discloses verifying the fourth communication request
+prior to establishing the second central communication channel (Figures 6
+and 7; and Paragraphs 52, 61, 63-65, and 74; such verification could be
+merely a response provided back through the communication links, for
+
+example).
+
+7. Claims 1-5 and 9-13 are rejected under 35 U.S.C. 103(a) as being unpatentable
+overAIt in view of Aasman (US. Patent Application Publication 2003/0065737).
+Regarding Claim 1,
+Alt discloses a method for a multimedia communication comprising:
+Receiving at an external controller a communication request from a
+controller behind a firewall, wherein the controller is connected to a
+
+plurality of communication endpoints (Figure 2; and Paragraphs 48, 57,
+
+Application/Control Number: 11/403,548 Page 11
+Art Unit: 2437
+
+and 95-97; the controller could be, for example, the NAT or internal SIP
+proxy server, both of which send requests to entities in the service
+provider network, such as the STUN, ENUM, and TURN, any and/or all of
+which (e.g. any single entity or the entirety of the service provider network)
+can correspond to the external controller. It is noted here that the word
+"controller" in the claim does not appear to mean anything other than that
+the controller is some entity (e.g. a device, a program, a portion of a
+device). This is how controller has been construed, so long as the cited
+controIIer performs the claimed functionality.);
+
+Establishing a communication channel between the controller and
+the external controller (Figure 3; and Paragraphs 48, 57, and 95-97; steps
+401, 403, and 413-415 correspond to such establishment of
+communication between the controllers discussed above);
+
+Opening a second communication channel between the external
+controller and at least one other controIIer behind another firewall
+(Paragraphs 97-100; communication with endpoint 209d being performed
+via the TURN server, for example);
+
+Transmitting multimedia communication data between the controller
+and the at least one other controller wherein the multimedia
+communication data passes through the external controller (Figure 4; and
+Paragraphs 100-101; the endpoints exchanging media via the TURN
+
+server; this traffic will go through the firewaIIs on each side and the NAT
+
+Application/Control Number: 11/403,548 Page 12
+Art Unit: 2437
+
+devices on each side, as one can see from the communication links of
+figure 2 and the description of firewalls and NAT devices (paragraphs 39-
+40, for example)); and
+
+Distributing the multimedia communication data to one or more of
+the plurality of communication endpoints and another communication
+endpoint (Figure 4; and Paragraphs 44 and 100-101);
+
+But does not explicitly disclose that the at least one other controller
+is configured to service a single communication endpoint.
+
+Aasman, however, discloses that the at least one other controller is
+configured to service a single communication endpoint (Figure 1; and
+Paragraphs 64, 72-73, and 80-81; personal proxy 9, for example,
+corresponding to a controller servicing a single endpoint). It would have
+been obvious to one of ordinary skill in the art at the time of applicant’s
+invention to incorporate the proxy techniques of Aasman into the
+communication system of AIt in order to allow for various user editable
+filters to be used in proxies separate from and/or within the endpoints,
+such filters allowing for the modification of data to be perceived by the
+user, such that extraneous data can be removed and display of data can
+be modified to meet screen resolutions/Iimitations.
+
+Regarding Claim 2,
+Alt as modified by Aasman discloses the method of claim 1, in
+
+addition, AIt discloses verifying the communication request at the external
+
+Application/Control Number: 11/403,548 Page 13
+Art Unit: 2437
+
+controller (Paragraphs 68-72; authentication via certificates, private keys,
+and/or shared secrets, for example, being performed by entities in the
+service provider network).
+
+Regarding Claim 3,
+
+Alt as modified by Aasman discloses the method of claim 1, in
+addition, AIt discloses transmitting a security key from the controller to the
+external controller for authorization of the communication request
+(Paragraphs 68-72).
+
+Regarding Claim 4,
+
+Alt as modified by Aasman discloses the method of claim 1, in
+addition, Alt discloses sending an external request from the external
+controller to an additional external controller responsive to communication
+requesting to communicate with an additional endpoint connected to the
+additional external controller (Figure 2; and Paragraphs 59 and 101-110;
+in the scenario of figure 5 (paragraphs 101 -105), gateway 215
+corresponds to the additional external controller, and an entity on the
+PSTN network corresponds to the additional endpoint, such as the cell
+phone 217 or POTS phone 219, for example. In the scenario of figure 6a
+(paragraphs 106-110), SIP proxy server 611 may be seen as the
+additional external controller, while endpoints 605, 607, or 609 could be
+the additional endpoint, for example).
+
+Regarding Claim 5,
+
+Application/Control Number: 11/403,548 Page 14
+Art Unit: 2437
+
+Alt as modified by Aasman discloses the method of claim 4, in
+addition, Alt discloses establishing an external channel between the
+external controller and the additional external controller; forwarding the
+multimedia communication data to the additional external controller from
+the external controller; and distributing the multimedia communication data
+to the additional endpoint (Figure 2; and Paragraphs 59 and 101-110).
+
+Regarding Claim 9,
+
+Alt discloses a communication community comprising:
+
+One or more shared controllers connected to one or more
+communication endpoints, wherein the one or more shared controllers is
+behind a firewall (Figure 2; and Paragraphs 48, 57, and 95-97);
+
+At least one other controller connected to a communication
+endpoint, wherein the at least one other controller is behind another
+firewall (Paragraphs 97-100); and
+
+An external controller in connection to the one or more shared
+controllers and the at least one other controller, wherein the external
+controller facilitates communication between ones of the one or more
+communication endpoints and the single communication endpoint (Figure
+4; and Paragraphs 100-101);
+
+But does not explicitly disclose that the at least one other controller
+
+is an individual controller connected to a single communication endpoint.
+
+Application/Control Number: 11/403,548 Page 15
+Art Unit: 2437
+
+Aasman, however, discloses that the at least one other controller is
+an individual controller connected to a single communication endpoint
+(Figure 1; and Paragraphs 64, 72-73, and 80-81; personal proxy 9, for
+example, corresponding to a controller servicing a single endpoint). It
+would have been obvious to one of ordinary skill in the art at the time of
+applicant’s invention to incorporate the proxy techniques of Aasman into
+the communication system of AIt in order to allow for various user editable
+filters to be used in proxies separate from and/or within the endpoints,
+such filters allowing for the modification of data to be perceived by the
+user, such that extraneous data can be removed and display of data can
+be modified to meet screen resolutions/Iimitations.
+
+Regarding Claim 10,
+
+Alt as modified by Aasman discloses the community of claim 9, in
+addition, AIt discloses a verification utility within the external controller for
+verifying one or more communication requests from one or more of the
+one or more shared controllers and the individual controller (Paragraphs
+68-72 and 82-83).
+
+Regarding Claim 11,
+
+Alt as modified by Aasman discloses the community of claim 9, in
+addition, Alt discloses a security key repository within each of the one or
+more shared controllers and the individual controller, wherein the one or
+
+more shared controllers and the individual controller transmit a security
+
+Application/Control Number: 11/403,548 Page 16
+Art Unit: 2437
+
+key for verification by the external controller for each communication
+request issued to the external controller (Paragraphs 68-72 and 82-83;
+when a certificate is allocated per island and stored on the respective
+island, this certificate will be stored on a controller of the island (island
+being defined as a closed community of IP-enabled users in paragraph 4
+of Alt). If an endpoint also has a specific key or certificate, it will be also
+be temporarily stored in some fashion in the controller and transmitted
+with requests).
+Regarding Claim 12,
+Alt as modified by Aasman discloses the community of claim 9, in
+addition, Alt discloses an external interface within the external controller
+for communicating with a second communication community (Figure 2).
+Regarding Claim 13,
+Alt as modified by Aasman discloses the community of claim 12, in
+addition, AIt discloses that the external controller communicates with a
+central communication controller to establish a communication channel
+with the second communication community (Paragraphs 97-105; showing
+
+DNS Iookups to an ENUM server, for example).
+
+8. Claims 6-8 are rejected under 35 U.S.C. 103(a) as being unpatentable over AIt in
+view of Aasman and Strathmeyer.
+
+Regarding Claim 6,
+
+Application/Control Number: 11/403,548 Page 17
+Art Unit: 2437
+
+Alt as modified by Aasman discloses the method of claim 1, in
+addition, Alt discloses a communication request requesting to
+communicate with an external endpoint not connected to one or more of
+the controller and the at least one other controIIer (Figure 2; and
+Paragraphs 59 and 101-110); but does not explicitly disclose issuing a
+central request from the external controller to a central controIIer
+responsive to the communication request requesting to communicate with
+an external endpoint not connected to one or more of the controller and
+the at least one other controller; and receiving the multimedia
+communication data at the central controller.
+
+Strathmeyer, however, discloses issuing a central request from the
+external controller to a central controIIer responsive to a communication
+request requesting to communicate with an external endpoint not
+connected to one or more of the controller and the at least one other
+controller; and receiving the multimedia communication data at the central
+controller (Figures 6 and 7; and Paragraphs 52, 61, 63-65, and 74; in this
+situation, the elements described above as the external controller may be
+construed as the central controller, and the external controller will
+comprise the passthrough server, the proxy server, and/or the server in
+figure 7, for example; or the outbound proxy of figure 6, for example). It
+would have been obvious to one of ordinary skill in the art at the time of
+
+applicant’s invention to incorporate the IP telephony system of
+
+Application/Control Number: 11/403,548 Page 18
+Art Unit: 2437
+
+Strathmeyer into the communication system of AIt as modified by Aasman
+in order to allow the system to provide call control and monitoring in a way
+that does not affect the operation of current proxy servers and such that
+the control and monitoring system has full access to all caII data, thereby
+ensuring that all caII data is available for monitoring and control and that
+the monitoring/control system makes fuIIy-informed decisions and logs of
+the call data.
+
+Regarding Claim 7,
+
+Alt as modified by Aasman and Strathmeyer discloses the method
+of claim 6, in addition, AIt discloses determining a peripheral controller
+connected to the external endpoint; opening another external channel
+between the central controller and the peripheral controller; forwarding the
+multimedia communication data to the peripheral controller from the
+central controller; and distributing the multimedia communication data to
+the external endpoint (Figure 2; and Paragraphs 59 and 101-110; as
+discussed above, in the combination, entities in the service provider
+network may be construed as the central controller; and as discussed with
+respect to claims 4 and 5 above, the gateway may be the peripheral
+controller in this claim).
+
+Regarding Claim 8,
+Alt as modified by Aasman and Strathmeyer discloses the method
+
+of claim 6, in addition, AIt discloses distributing the multimedia
+
+Application/Control Number: 11/403,548 Page 19
+Art Unit: 2437
+
+communication data to the external endpoint when the external endpoint is
+connected to the central controller (Figure 2; and Paragraphs 59 and 101-
+
+110).
+
+Conclusion
+
+Any inquiry concerning this communication or earlier communications from the
+examiner should be directed to JEFFREY D. POPHAM whose telephone number is
+(571 )272-7215. The examiner can normally be reached on M-F 9:00-5:30.
+
+If attempts to reach the examiner by telephone are unsuccessful, the examiner’s
+supervisor, Emmanuel Moise can be reached on (571)272-3865. The fax phone
+number for the organization where this application or proceeding is assigned is 571-
+273-8300.
+
+Information regarding the status of an application may be obtained from the
+Patent Application Information Retrieval (PAIR) system. Status information for
+published applications may be obtained from either Private PAIR or Public PAIR.
+Status information for unpublished applications is available through Private PAIR only.
+For more information about the PAIR system, see http://pair-direct.uspto.gov. Should
+you have questions on access to the Private PAIR system, contact the Electronic
+Business Center (EBC) at 866-217-9197 (toII-free). If you would like assistance from a
+USPTO Customer Service Representative or access to the automated information
+
+system, call 800-786-9199 (IN USA OR CANADA) or 571-272-1000.
+
+Jeffrey D Popham
+
+Application/Control Number: 11/403,548 Page 20
+Art Unit: 2437
+
+Examiner
+Art Unit 2437
+
+/Jeffrey D Popham/
+Examiner, Art Unit 2437
+
