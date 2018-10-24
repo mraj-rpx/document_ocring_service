@@ -18,7 +18,7 @@ import configparser
 config = configparser.ConfigParser()
 config.read('app_data_ocr_config.ini')
 
-MAX_PROCESS_POOL = config['DEFAULT']['MAX_PROCESS_POOL']
+MAX_PROCESS_POOL = int(config['DEFAULT']['MAX_PROCESS_POOL'])
 PDF_MAX_POOL = MAX_PROCESS_POOL * 2
 PAGE_MAX_POOL = MAX_PROCESS_POOL * 2
 RECORD_LIMIT = config['DEFAULT']['RECORD_LIMIT']
@@ -186,12 +186,12 @@ class OcrProcess:
             return IMG_WRAPPER_DIR_NOT_EXIST_STATUS
 
 if __name__ == '__main__':
-    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
-    cur = conn.cursor()
-
     def worker_start_ocr(tup):
         ocr_process = OcrProcess(tup)
         ocr_status = ocr_process.ocr()
+
+        conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
+        cur = conn.cursor()
 
         sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
         img_sql_update = "UPDATE pair.image_file_wrapper SET is_ocred = %s, updated_at = CURRENT_TIMESTAMP WHERE app_data_id = %s AND file_name IN %s"
@@ -212,23 +212,29 @@ if __name__ == '__main__':
                 cur.execute(sql_update, (ocr_s3_path, needs_ocr, ocr_process.pair_ocr_id))
                 cur.execute(img_sql_update, (True, ocr_process.app_data_id, ocred_files))
                 conn.commit()
+                print("Completed OCR for PAIR_ID: {0}".format(ocr_process.pair_ocr_id))
         else:
             print("Could not OCR the PAIR: '{0}'".format(tup))
+
+        conn.close()
         return ocr_process
 
     def start_ocr():
         sql_select = """
         SELECT id, app_s3_path, ocr_s3_path, app_data_id FROM pair.pair_ocr WHERE needs_ocr = %s AND ocr_s3_path IS NULL ORDER BY ocr_priority LIMIT %s OFFSET %s;
         """
-
+        conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
+        cur = conn.cursor()
         cur.execute(sql_select, (True, RECORD_LIMIT, RECORD_OFFSET))
         tuple_vals = cur.fetchall()
+        conn.close()
+
         print("Fetched tuples: {0}".format(tuple_vals))
         pair_ids = [[tup[0], tup[3]] for tup in tuple_vals]
 
         with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_PROCESS_POOL) as process_pool:
             for pair_id, ocr_process in zip(pair_ids, process_pool.map(worker_start_ocr, tuple_vals)):
-                print("Completed OCR for PAIR_ID: {0}".format(ocr_process.pair_ocr_id))
+                pass
 
     cont = True
     while cont:
