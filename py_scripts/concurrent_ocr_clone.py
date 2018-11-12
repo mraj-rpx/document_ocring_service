@@ -31,6 +31,7 @@ DB_PASS = config['DEFAULT']['DB_PASS']
 
 IMG_WRAPPER_DIR_NOT_EXIST_STATUS = 1
 NO_NEW_FILES_STATUS = 2
+UNKNOWN_ERROR_STATUS = 3
 
 class ImageFileWrapperDirNotExistException(Exception):
     def __init__(self, message):
@@ -184,6 +185,9 @@ class OcrProcess:
         except ImageFileWrapperDirNotExistException as img_wrap_dir_not_exist:
             shutil.rmtree(self.zip_dir)
             return IMG_WRAPPER_DIR_NOT_EXIST_STATUS
+        except Exception as exeception:
+            shutil.rmtree(self.zip_dir)
+            return UNKNOWN_ERROR_STATUS
 
 if __name__ == '__main__':
     def worker_start_ocr(tup):
@@ -200,6 +204,12 @@ if __name__ == '__main__':
         if ocr_status:
             if ocr_status == IMG_WRAPPER_DIR_NOT_EXIST_STATUS:
                 print("IMG FILE wrapper dir does not exist for PAIR ID: '{0}'".format(ocr_process.pair_ocr_id))
+                cur.execute(needs_ocr_update_sql, (True, ocr_process.pair_ocr_id))
+                conn.commit()
+            elif ocr_status == UNKNOWN_ERROR_STATUS:
+                print("Unknown error for PAIR ID: '{0}'".format(ocr_process.pair_ocr_id))
+                cur.execute(needs_ocr_update_sql, (True, ocr_process.pair_ocr_id))
+                conn.commit()
             elif ocr_status == NO_NEW_FILES_STATUS:
                 print("No new files available for OCR, for PAIR ID: '{0}'".format(ocr_process.pair_ocr_id))
                 cur.execute(needs_ocr_update_sql, (False, ocr_process.pair_ocr_id))
@@ -223,18 +233,37 @@ if __name__ == '__main__':
         sql_select = """
         SELECT id, app_s3_path, ocr_s3_path, app_data_id FROM pair.pair_ocr WHERE needs_ocr = %s AND ocr_s3_path IS NULL ORDER BY ocr_priority LIMIT %s OFFSET %s;
         """
+        sql_update_processing = "UPDATE pair.pair_ocr SET needs_ocr = %s WHERE id IN %s"
+
         conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
         cur = conn.cursor()
         cur.execute(sql_select, (True, RECORD_LIMIT, RECORD_OFFSET))
         tuple_vals = cur.fetchall()
-        conn.close()
 
         print("Fetched tuples: {0}".format(tuple_vals))
-        pair_ids = [[tup[0], tup[3]] for tup in tuple_vals]
 
-        with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_PROCESS_POOL) as process_pool:
-            for pair_id, ocr_process in zip(pair_ids, process_pool.map(worker_start_ocr, tuple_vals)):
-                pass
+        if not tuple_vals:
+            print("No records to process")
+            return
+
+        pair_ids = [[tup[0], tup[3]] for tup in tuple_vals]
+        p_ids = [tup[0] for tup in tuple_vals]
+        cur.execute(sql_update_processing, (None, tuple(p_ids)))
+
+        conn.commit()
+        conn.close()
+
+        try:
+            with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_PROCESS_POOL) as process_pool:
+                for pair_id, ocr_process in zip(pair_ids, process_pool.map(worker_start_ocr, tuple_vals)):
+                    pass
+        except Exception as e:
+            print("There's an exception while processing PROCESS POOL EXECUTOR and the exception is: '{0}'".format(e))
+            conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
+            cur = conn.cursor()
+            cur.execute(sql_update_processing, (True, tuple(p_ids)))
+            conn.commit()
+            conn.close()
 
     cont = True
     while cont:
