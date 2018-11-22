@@ -10,11 +10,14 @@ class DocumentsOcrStatusPresenter < Struct.new(:options)
   end
 
   def lit_docs_ocred_count
-    @ocred_count ||= LitDocument.where('lit_document_type_id in (?) AND document_status_id = ? AND ocr_text_s3_path IS NOT NULL', DOCUMENT_TYPE_IDS, 3).count
+    @ocred_count ||= LitDocument.where('lit_document_type_id in (?) AND document_status_id = ? AND ocr_text_s3_path 
+      IS NOT NULL', DOCUMENT_TYPE_IDS, 3).count
   end
 
   def lit_docs_ocrable_count
-    @ocrable_count ||= LitDocument.where('lit_document_type_id in (?) AND document_status_id <> ?', DOCUMENT_TYPE_IDS, 3).count
+    @ocrable_count ||= LitDocument.joins(docket_entry_documents_maps: [docket_entry: [:lit]]).where(
+      'lit_document_type_id in (?) AND document_status_id = ? AND ocr_text_s3_path IS NULL AND (ocr_text IS NULL OR 
+      ocr_text = ?)', DOCUMENT_TYPE_IDS, 3, '-- NOT OCR-ED --').count
   end
 
   def lit_docs_ocred_cases

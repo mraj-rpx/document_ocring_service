@@ -1,0 +1,56 @@
+.page-header
+  %h3 AppData documents OCR status
+
+.ocr-docs-count-details.col-lg-5
+  %ul.list-group
+    %li.list-group-item.text-primary
+      No. of documents OCR'ed
+      %span.badge
+        = @appdata_ocred_count
+    %li.list-group-item.text-danger
+      No. of documents yet to be OCR'ed
+      %span.badge
+        = @appdata_ocrable_count
+
+.ocred-cass-list.col-lg-12
+  .page-header
+    %h4 Appdata Documents based on priority list
+
+  %table.table.table-striped.table-bordered
+    %thead
+      %tr
+        %th Priority
+        %th Total documents
+        %th Ocred documents
+        %th Ocrable documents
+    %tbody
+      %tr
+        %td 0 - User requests
+        %td #{@app_data_total_doc_priority[0]}
+        %td #{@app_data_ocred_docs_priority[0]}
+        %td #{@app_data_ocrable_docs_priority[0]}
+      %tr
+        %td 1 - Patents & families from prior-art queue (Open)
+        %td #{@app_data_total_doc_priority[1]}
+        %td #{@app_data_ocred_docs_priority[1]}
+        %td #{@app_data_ocrable_docs_priority[1]}
+      %tr
+        %td 2 - Patents & families from prior-art queue (All)
+        %td #{@app_data_total_doc_priority[2]}
+        %td #{@app_data_ocred_docs_priority[2]}
+        %td #{@app_data_ocrable_docs_priority[2]}
+      %tr
+        %td 3 - Re-exam Patents
+        %td #{@app_data_total_doc_priority[3]}
+        %td #{@app_data_ocred_docs_priority[3]}
+        %td #{@app_data_ocrable_docs_priority[3]}
+      %tr
+        %td 5 - Litigated Patents (DC, PTAB & ITC)
+        %td #{@app_data_total_doc_priority[5]}
+        %td #{@app_data_ocred_docs_priority[5]}
+        %td #{@app_data_ocrable_docs_priority[5]}
+      %tr
+        %td 6 - All Patents & Families from OMA Portfolios (All Phases)
+        %td #{@app_data_total_doc_priority[6]}
+        %td #{@app_data_ocred_docs_priority[6]}
+        %td #{@app_data_ocrable_docs_priority[6]}

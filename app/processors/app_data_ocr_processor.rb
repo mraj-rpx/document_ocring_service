@@ -1,8 +1,9 @@
 class AppDataOcrProcessor < OcrProcessorBase
   FREQUENCY = '3m'
+  OCR_LIMIT = 50
 
   def process!
-    pair_ocrs = PairOcr.ocrable_documents
+    pair_ocrs = PairOcr.ocrable_documents.limit(OCR_LIMIT)
 
     pair_ocrs.each do |pair_ocr|
       begin

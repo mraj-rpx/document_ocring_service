@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  root to: 'documents#index'
+  root to: 'home#index'
 
+  resources :home, only: [:index]
   resources :documents, only: [:index, :create, :destroy] do
     collection do
       get :upload_documents
@@ -34,6 +35,7 @@ Rails.application.routes.draw do
     collection do
       get :lit_documents
       get :ptab_documents
+      get :app_data_documents
     end
   end
 end
