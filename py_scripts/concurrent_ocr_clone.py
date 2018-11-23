@@ -271,4 +271,5 @@ if __name__ == '__main__':
         start_ocr()
         print("Completed a round and proceeding next...")
         print(time.ctime())
+        subprocess.Popen('rm -rf /tmp/gm*', stdout=subprocess.PIPE, shell=True).communicate()
         time.sleep(5)

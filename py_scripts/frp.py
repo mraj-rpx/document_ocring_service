@@ -801,7 +801,7 @@ _rejection_date = pp.And([
 filename_parser = pp.And([
     pp.Word(pp.nums).setResultsName('app_num'),
     _hyphen,
-    pp.Combine(_rejection_date).setResultsName('rejection_date')
+    pp.Combine(_rejection_date).setResultsName('mailing_date')
 ])
 
 def parse_rej_date(filename):

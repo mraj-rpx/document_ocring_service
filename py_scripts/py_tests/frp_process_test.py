@@ -8,10 +8,10 @@ from psycopg2 import extras as pg_extras
 import frp
 from IPython import embed
 
-DB_NAME = 'rpx'
-DB_HOST = 'dev-coredb'
-DB_USER = 'document_ocr_service'
-DB_PASS = 'document_ocr_service-dev'
+DB_NAME = 'frp'
+DB_HOST = 'localhost'
+DB_USER = 'arun'
+DB_PASS = '1234'
 
 class FrpProcess:
     def __init__(self, tup):
@@ -107,54 +107,56 @@ class FrpProcess:
         shutil.rmtree(self.zip_dir)
         return self.dataset
 
+def start_process():
+    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
+    cur = conn.cursor()
+    sql_select = """
+    SELECT id, ocr_s3_path, app_data_id FROM pair.pair_ocr WHERE needs_ocr = %s AND ocr_s3_path IS NOT NULL ORDER BY id ASC LIMIT 5;
+    """
+    """
+    INSERT INTO document_ocr_service.app_data_rejections (claim_nums, rejection_ground, rejection_reason, ref_name, ref_doc_num, in_view_ref_name, in_view_ref_doc_num, in_further_view_ref_name, in_further_view_ref_doc_num, app_num, rejection_date, rejection_type, pair_ocr_id) VALUES %s
+    """
+   # insert_sql = "INSERT INTO document_ocr_service.app_data_rejections (claim_nums, rejection_ground, rejection_reason, ref_name, ref_doc_num, in_view_ref_name, in_view_ref_doc_num, in_further_view_ref_name, in_further_view_ref_doc_num, app_num, rejection_date, rejection_type, pair_ocr_id) VALUES %s;"
+
+    insert_oa_sql = """
+    INSERT INTO app_office_actions (app_num, mailing_date, rejection_type, pair_ocr_id) values (%s, %s, %s, %s) RETURNING id;
+    """
+    insert_rej_sql = """
+    INSERT INTO app_rejections (claim_nums, rejection_ground, rejection_reason, app_office_action_id) VALUES (%s, %s, %s, %s) RETURNING id;
+    """
+    insert_cit_sql = """
+    INSERT INTO app_citations (ref_name, ref_app_num, ref_flag, app_rejection_id) values %s;
+    """
+
+    # cur.execute(sql_select, (False,))
+    # tuple_vals = cur.fetchall()
+    # print("Fetched tuples: {0}".format(tuple_vals))
+    tuple_vals = [(1, 'rpx-public-pair/14159849/image_file_wrapper_ocr.zip', 6283226), (2, 'rpx-public-pair/10913441/image_file_wrapper_ocr.zip', 3311428), (3, 'rpx-public-pair/13953101/image_file_wrapper_ocr.zip', 6284791), (4, 'rpx-public-pair/13673692/image_file_wrapper_ocr.zip', 6286802), (5, 'rpx-public-pair/12317727/image_file_wrapper_ocr.zip', 44654)]
+
+
+    cits_list = []
+    for tup in tuple_vals:
+        frp_proc = FrpProcess(tup)
+        rej_data = frp_proc.process()
+        tup_coll = []
+        for fname, dd in rej_data.items():
+            oa_values = list(dd['office_action'].values())
+            cur.execute(insert_oa_sql, tuple(oa_values))
+            oa_id = cur.fetchone()[0]
+            for regkey, rej in dd['rejections'].items():
+                rejn = list(rej['rejection'].values())
+                rejn.append(oa_id)
+                cur.execute(insert_rej_sql, tuple(rejn))
+                rej_id = cur.fetchone()[0]
+                for cit in rej['citations']:
+                    cit_tup = list(cit.values())
+                    cit_tup.append(rej_id)
+                    cits_list.append(tuple(cit_tup))
+
+
+    pg_extras.execute_values(cur, insert_cit_sql, cits_list, template=None, page_size=100)
+    conn.commit()
+    conn.close()
+
 if __name__ == '__main__':
-    def start_process():
-        conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
-        cur = conn.cursor()
-        sql_select = """
-        SELECT id, ocr_s3_path, app_data_id FROM pair.pair_ocr WHERE needs_ocr = %s AND ocr_s3_path IS NOT NULL ORDER BY id ASC LIMIT 100;
-        """
-
-        insert_oa_sql = """
-        INSERT INTO app_office_actions (app_num, mailing_date, rejection_type, pair_ocr_id) values (%s, %s, %s, %s) RETURNING id;
-        """
-        insert_rej_sql = """
-        INSERT INTO app_rejections (claim_nums, rejection_ground, rejection_reason, app_office_action_id) VALUES (%s, %s, %s, %s) RETURNING id;
-        """
-        insert_cit_sql = """
-        INSERT INTO app_citations (ref_name, ref_app_num, ref_flag, app_rejection_id) values %s;
-        """
-
-        cur.execute(sql_select, (False,))
-        tuple_vals = cur.fetchall()
-        print("Fetched tuples: {0}".format(tuple_vals))
-
-        for tup in tuple_vals:
-            frp_proc = FrpProcess(tup)
-            rej_data = frp_proc.process()
-            cits_list = []
-            for fname, dd in rej_data.items():
-                oa_values = list(dd['office_action'].values())
-                cur.execute(insert_oa_sql, tuple(oa_values))
-                oa_id = cur.fetchone()[0]
-                for regkey, rej in dd['rejections'].items():
-                    rejn = list(rej['rejection'].values())
-                    rejn.append(oa_id)
-                    cur.execute(insert_rej_sql, tuple(rejn))
-                    rej_id = cur.fetchone()[0]
-                    for cit in rej['citations']:
-                        cit_tup = list(cit.values())
-                        cit_tup.append(rej_id)
-                        cits_list.append(tuple(cit_tup))
-
-            pg_extras.execute_values(cur, insert_cit_sql, cits_list, template=None, page_size=100)
-            conn.commit()
-        conn.close()
-
-    cont = True
-    while cont:
-        print(time.ctime())
-        start_process()
-        print("Completed a round and proceeding next...")
-        print(time.ctime())
-        time.sleep(5)
+    start_process()
