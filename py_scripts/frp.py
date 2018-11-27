@@ -722,6 +722,25 @@ def format_data(rr):
     rr['claim_nums'] = c_nums
     return rr
 
+def get_rej_sentences(rej_str):
+    rej_sentence_idx = []
+    rej_sentences = {}
+
+    for result, st, en in grammer_6.scanString(rej_str):
+        rej_sentence_idx.append(st)
+
+    rej_sentence_idx.sort()
+    idx_len = len(rej_sentence_idx)
+
+    for idx in range(0, idx_len):
+        start_idx = rej_sentence_idx[idx]
+        end_idx = start_idx + 600
+
+        if (idx + 1) <= (idx_len - 1) and end_idx >= rej_sentence_idx[idx + 1]:
+            end_idx = rej_sentence_idx[idx + 1] - 1
+        rej_sentences[start_idx] = rej_str[start_idx:end_idx]
+    return rej_sentences
+
 def parse(rej_str):
     data = {}
     remove_line_idx = []
@@ -738,14 +757,15 @@ def parse(rej_str):
     rej_str = re.sub(r'[\u2010\u2012-\u2015]', r'-', rej_str)
     # Replace the NON-ASCII chars by SPACE
     rej_str = re.sub(r'[^\x00-\x7f“”]', r'', rej_str)
-    grammer_idx = 1
+    # Convert the whole file content to rejection sentences
+    rej_sentences = get_rej_sentences(rej_str)
 
-    for grammer in grammers:
-        for result, st, en in grammer.scanString(rej_str):
-            rr = format_data(result.asDict())
-            data[st] = rr
-        # print("FINISHING GRAMMER: {0}".format(grammer_idx))
-        # grammer_idx = grammer_idx + 1
+    for idx, sentence in rej_sentences.items():
+        for grammer in grammers:
+            for result, st, en in grammer.scanString(sentence):
+                rr = format_data(result.asDict())
+                rr['rejection_sentence'] = sentence
+                data[idx] = rr
 
     invalid_ref_name_idx = {}
 
@@ -764,11 +784,11 @@ def parse(rej_str):
 
     ref_name_data = {}
 
-    for grammer in [grammer_7, grammer_8]:
-        for result, st, en in grammer.scanString(rej_str):
-            rr = format_data(result.asDict())
-            ref_name_data[st] = rr
-
+    for idx, sentence in rej_sentences.items():
+        for grammer in [grammer_7, grammer_8]:
+            for result, st, en in grammer.scanString(sentence):
+                rr = format_data(result.asDict())
+                ref_name_data[idx] = rr
     for idx in invalid_ref_name_idx:
         fields = invalid_ref_name_idx[idx]
         field_vals = {}

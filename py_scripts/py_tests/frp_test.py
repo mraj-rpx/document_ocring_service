@@ -6,6 +6,9 @@ sys.path.insert(0, '..')
 
 import frp
 
+def del_rej_sent(dic):
+    del(dic['rejection_sentence'])
+
 class FrpTest(unittest.TestCase):
     """
     Should capture the details from the straight forward input string
@@ -13,6 +16,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_from_straight_ip_text(self):
         text = "Claims 50-51 are rejected under 35 U.S.C. 102(e) as being anticipated by Huang (6,362,748)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [50, 51],
             'rejection_ground': '102(e)',
@@ -28,6 +32,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_from_in_view_ref(self):
         text = "Claims 2,4,5,11,14,17-19 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang (6,362,748) in view of Amro (6,292,747)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [2, 4, 5, 11, 14, 17, 18, 19],
             'rejection_ground': '103(a)',
@@ -45,6 +50,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_from_in_further_view_ref(self):
         text = "Claims 3,6,7,10,15 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Amro as applied to claim 2 above, and further in view of Knockeart (6,662,083)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [3, 6, 7, 10, 15],
             'rejection_ground': '103(a)',
@@ -62,6 +68,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_from_in_further_view_ref_with_doc_num_US_NUM(self):
         text = "Claims 12-13 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Amro as applied to claim 2 above, and further in view of Newell (US 2001/0142759 A1)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [12, 13],
             'rejection_ground': '103(a)',
@@ -79,6 +86,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_from_in_view_with_multiple_range_claim_nums(self):
         text = "Claims 37-42, 46, 48-49 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Witkowski (7,257,426)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [37, 38, 39, 40, 41, 42, 46, 48, 49],
             'rejection_ground': '103(a)',
@@ -95,6 +103,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_from_in_view_with_single_claim_nums(self):
         text = "Claim 43 is rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Witkowski as applied to claim 37 above, and further in view of Comerford (7,024,363)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [43],
             'rejection_ground': '103(a)',
@@ -112,6 +121,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_from_in_view_with_diff_claim_and_same_in_view(self):
         text = "Claims 44-45 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Witkowski as applied to claim 37 above, and further in view of Newell (US 2002/0142759 A1)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [44, 45],
             'rejection_ground': '103(a)',
@@ -129,6 +139,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_anticipated_rej_reason(self):
         text = "Claim 1 is rejected under 35 U.S.C. 102(e) as being anticipated by Chen (US 2005/0240672 A1)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1],
             'rejection_ground': '102(e)',
@@ -144,6 +155,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_multiple_words_in_ref_name(self):
         text = "Claims 1,5,6,7,17,20,26,28,31-37 and 43-45 are rejected under 35 U.S.C. 102(b) as being anticipated by Barenwald et al (Patent No 5,782,371)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1, 5, 6, 7, 17, 20, 26, 28, 31, 32, 33, 34, 35, 36, 37, 43, 44, 45],
             'rejection_ground': '102(b)',
@@ -160,6 +172,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/10913441-2006-03-09-00006-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [148, 149, 150, 151]
         },
@@ -185,6 +198,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/10913441-2007-09-27-00003-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [138, 139, 140, 141, 151]
         },
@@ -211,6 +225,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/12317727-2010-09-16-00007-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 44, 45]
         },
@@ -230,6 +245,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/13673692-2013-11-06-00006-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': list(range(1, 44)),
             'rejection_ground': 'nonstatutory double patenting',
@@ -244,6 +260,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_format_TEST_FROM_XLS_1(self):
         text = 'Claim(s) 1,5,6,10,14,16,21,28,31-37 and 43-45 is/are rejected.'
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1, 5, 6, 10, 14, 16, 21, 28, 31, 32, 33, 34, 35, 36, 37, 43, 44, 45]
         }]
@@ -255,6 +272,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_format_TEST_FROM_XLS_2(self):
         text = 'Claims 1,5,6,7,17,20,26,28,31-37 and 43-45 are rejected under 35 U.S.C. 102(b) as being anticipated by Barenwald et al (Patent No 5,782,371).'
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1, 5, 6, 7, 17, 20, 26, 28, 31, 32, 33, 34, 35, 36, 37, 43, 44, 45],
             'rejection_ground': '102(b)',
@@ -271,6 +289,7 @@ class FrpTest(unittest.TestCase):
         with open('ctfr_files/10913441-2006-10-17-00002-CTFR.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [148, 149, 150, 151]
         },
@@ -296,6 +315,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_format_6(self):
         text = "Claim 1, 5, 6, 10, 20, 32-34, 36, 37, 43 and 45 are rejected under 35 U.S.C. 102(b) as being anticipated by Baerenwald et al (Patent no. 5,782,371)."
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1,5,6,10,20,32,33,34,36,37,43,45],
             'rejection_ground': '102(b)',
@@ -311,6 +331,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_format_7(self):
         text = "Claims 1, 2, 5-7 and 9 are rejected under 35 U.S.C. 102(b) as being anticipated by Orikasa (US 20020119414 A1)."
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1,2,5,6,7,9],
             'rejection_ground': '102(b)',
@@ -326,6 +347,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_format_without_doc_kind_code(self):
         text = "Claims 1, 2, 5-13 and 16-19 are rejected under 35 U.S.C. 102(b) as being anticipated by Christoff et al (US 6071119)."
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 16, 17, 18, 19],
             'rejection_ground': '102(b)',
@@ -341,6 +363,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_format_without_doc_kind_code_with_in_view_ref(self):
         text = "Claims 52-59 and 62 are rejected under 35 U.S.C. 102(b) as being unpatentable over Inoue et al. (US 5,553,347) in view of Bell et al. (US 6,018,886)."
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [52, 53, 54, 55, 56, 57, 58, 59, 62],
             'rejection_ground': '102(b)',
@@ -359,6 +382,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/13052759-2012-01-10-00008-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': list(range(1, 720))
         },
@@ -414,6 +438,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_format_with_clearly_anticipated(self):
         text = "Claims 14 is rejected under 35 U.S.C. 102(b) as being clearly anticipated by Song, et al. (Research progress of ZnO single crystals) Song, et al teaches a flux method for growing bulk zinc-oxide (ZnO) utilizing the Bridgman method."
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [14],
             'rejection_ground': '102(b)',
@@ -429,6 +454,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/13566986-2012-11-01-00007-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': 'nonstatutory obviousness-type double patenting',
@@ -525,6 +551,7 @@ class FrpTest(unittest.TestCase):
     def test_fr_for_ctnf_should_failon_next_doc_num(self):
         text = "Claims 3,6,7 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang (6,662,081). Claims 3,6,7,10 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Amro (6,662,082). Claims 3,6,7,10,15 are rejected under 35 U.S.C. 103(a) as being unpatentable over Huang in view of Amro as applied to claim 2 above, and further in view of Knockeart (6,662,083)"
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [3, 6, 7],
             'rejection_ground': '103(a)',
@@ -559,6 +586,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09933493-2004-10-21-00006-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': list(range(1, 28)),
             'rejection_ground': '103(a)',
@@ -575,6 +603,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09933493-2006-03-09-00004-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'claim_nums': [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,20,21,24,25,26,27,29,30,31,32, 33]
@@ -595,6 +624,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09933493-2006-12-04-00004-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37]
@@ -617,6 +647,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09933493-2008-11-13-00004-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 1, 7, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 63, 64]
@@ -659,6 +690,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09271617-2003-09-03-00005-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'rejection_ground': '102(b)',
             'rejection_reason': 'anticipated',
@@ -681,6 +713,7 @@ class FrpTest(unittest.TestCase):
         with open('ctfr_files/12317727-2011-02-10-00005-CTFR.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'claim_nums': [10, 11, 12, 13, 14, 15, 16, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56]
@@ -701,6 +734,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09933493-2008-02-20-00004-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [{
             'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 17, 24, 25, 26, 27, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
         },
@@ -720,6 +754,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/11403548-2009-09-30-00007-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': '112',
@@ -771,6 +806,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/12290258-2010-04-02-00007-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': '103(a)',
@@ -829,6 +865,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09632466-2002-11-27-00003-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': '102(e)',
@@ -853,6 +890,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/09632466-2003-05-07-00002-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': '102(e)',
@@ -878,6 +916,7 @@ class FrpTest(unittest.TestCase):
         with open('ctnf_files/14159849-2014-10-08-00006-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': '103(a)',
@@ -929,6 +968,7 @@ Patent No. 7,039,222.
         with open('ctnf_files/15369698-2017-02-08-00011-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': '102(e)',
@@ -986,6 +1026,7 @@ al., (hereinafter “Lewak”, US. Patent Number 5544360) and further in view of
         (US. Patent Application Publication Number 2003/0088593).
         """
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'rejection_ground': '103(a)',
@@ -1012,6 +1053,7 @@ unpatentable over Yim in view of AdusimiIIi et al (cited 2003/0081783).
         with open('ctfr_files/11403549-2009-03-03-00004-CTFR.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
         result = [
         {
             'claim_nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 23, 24, 25, 26, 27, 28, 29, 30]
@@ -1068,6 +1110,8 @@ unpatentable over Yim in view of AdusimiIIi et al (cited 2003/0081783).
         with open('ctnf_files/09548237-2003-01-28-00001-CTNF.txt') as ff:
             text = ff.read()
         data = frp.parse(text)
+        list(map(del_rej_sent, data))
+
         result = [
         {
             'rejection_ground': '112',
@@ -1089,6 +1133,11 @@ unpatentable over Yim in view of AdusimiIIi et al (cited 2003/0081783).
             'claim_nums': [3, 4, 5, 6, 11, 12]
         }]
         self.assertEqual(data, result)
+
+    def test_get_the_rejection_sentences(self):
+        with open('ctnf_files/09548237-2003-01-28-00001-CTNF.txt') as ff:
+            text = ff.read()
+        frp.get_rej_sentences(text)
 
 if __name__ == '__main__':
     unittest.main()

@@ -52,7 +52,8 @@ class FrpProcess:
                         'in_view_ref_name': None,
                         'in_view_ref_doc_num': None,
                         'in_further_view_ref_name': None,
-                        'in_further_view_ref_doc_num': None
+                        'in_further_view_ref_doc_num': None,
+                        'rejection_sentence': None
                     }
                     a_record.update(dd)
 
@@ -62,7 +63,8 @@ class FrpProcess:
                             'rejection': {
                                 'claim_nums': a_record['claim_nums'],
                                 'rejection_ground': a_record['rejection_ground'],
-                                'rejection_reason': a_record['rejection_reason']
+                                'rejection_reason': a_record['rejection_reason'],
+                                'rejection_sentence': a_record['rejection_sentence']
                             },
                             'citations': []
                         }
@@ -99,6 +101,7 @@ class FrpProcess:
             self.ocr_unzip_dir = "{0}/image_file_wrapper_ocr".format(self.zip_dir)
 
         all_files = os.listdir(self.ocr_unzip_dir)
+
         ctnf_files = list(filter((lambda x: x.endswith('CTNF.txt')), all_files))
         ctfr_files = list(filter((lambda x: x.endswith('CTFR.txt')), all_files))
 
@@ -116,7 +119,7 @@ if __name__ == '__main__':
         """
 
         insert_oa_sql = """
-        INSERT INTO app_office_actions (app_num, mailing_date, rejection_type, pair_ocr_id) values (%s, %s, %s, %s) RETURNING id;
+        INSERT INTO app_office_actions (app_num, mailing_date, rejection_type, rejection_sentence, pair_ocr_id) values (%s, %s, %s, %s) RETURNING id;
         """
         insert_rej_sql = """
         INSERT INTO app_rejections (claim_nums, rejection_ground, rejection_reason, app_office_action_id) VALUES (%s, %s, %s, %s) RETURNING id;
