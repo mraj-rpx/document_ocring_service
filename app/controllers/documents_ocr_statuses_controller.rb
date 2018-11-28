@@ -11,6 +11,9 @@ class DocumentsOcrStatusesController < ApplicationController
   def ptab_documents
     @ptab_ocrable_count = PtabCaseDetail.ocrable_docs_for_backfill.count
     @ptab_ocred_count = PtabCaseDetail.ocred_docs.count
+    @ptab_total_docs_doctype = PtabCaseDetail.total_docs_on_doc_types
+    @ptab_ocred_docs_doctype = PtabCaseDetail.ocred_docs_on_doc_types
+    @ptab_ocrable_docs_doctype = PtabCaseDetail.ocrable_docs_on_doc_types
   end
 
   def app_data_documents

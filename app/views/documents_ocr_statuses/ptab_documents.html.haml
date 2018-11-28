@@ -1,3 +1,4 @@
+=  link_to "Home",home_index_path, class: 'pull-right', style: 'font-weight: bold;margin-top:34px;'
 .page-header
   %h3 PTAB documents OCR status
 
@@ -11,3 +12,30 @@
       No. of documents yet to be OCR'ed
       %span.badge
         = @ptab_ocrable_count
+
+.ocred-cass-list.col-lg-12
+  .page-header
+    %h4 Ptab Documents based on document types
+
+  %table.table.table-striped.table-bordered
+    %thead
+      %tr
+        %th Document Type
+        %th Total documents
+        %th Ocred documents
+        %th Ocrable documents
+    %tbody
+      - @ptab_total_docs_doctype.each do |ptab_docs_doctype|
+        %tr
+          %td #{ptab_docs_doctype.attributes['doc_type']}
+          %td #{ptab_docs_doctype.attributes['count']}
+          - ocred_doc_res = @ptab_ocred_docs_doctype.select{|x| x.attributes['doc_type'] == ptab_docs_doctype.attributes['doc_type']}
+          -if ocred_doc_res.present?
+            %td #{ocred_doc_res.first.attributes['count']}
+          -else
+            %td 0
+          - ocrable_doc_res = @ptab_ocrable_docs_doctype.select{|x| x.attributes['doc_type'] == ptab_docs_doctype.attributes['doc_type']}
+          -if ocrable_doc_res.present?
+            %td #{ocrable_doc_res.first.attributes['count']}
+          -else
+            %td 0
