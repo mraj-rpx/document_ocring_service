@@ -25,23 +25,23 @@ class DocumentsOcrStatusPresenter < Struct.new(:options)
   end
 
   def lit_total_docs_doc_type
-    @lit_total_docs_doc_type = LitDocument.joins(docket_entry_documents_maps: [docket_entry: [:lit]])
-      .joins('LEFT JOIN core.lit_document_types as lit_doc_type ON lit_doc_type.id = lit_document_type_id')
+    @lit_total_docs_doc_type ||= LitDocument.joins('LEFT JOIN core.lit_document_types as lit_doc_type ON 
+       lit_doc_type.id = lit_document_type_id')
       .where('lit_document_type_id IN (?)', DOCUMENT_TYPE_IDS)
       .select("coalesce(lit_doc_type.description) as doc_type, count(*)").group("coalesce(lit_doc_type.description)")
   end
 
   def lit_ocred_docs_doc_type
-    @lit_total_docs_doc_type = LitDocument.joins(docket_entry_documents_maps: [docket_entry: [:lit]])
-      .joins('LEFT JOIN core.lit_document_types as lit_doc_type ON lit_doc_type.id = lit_document_type_id')
+    @lit_ocred_docs_doc_type ||= LitDocument.joins('LEFT JOIN core.lit_document_types as lit_doc_type ON 
+       lit_doc_type.id = lit_document_type_id')
       .where('lit_document_type_id IN (?) AND document_status_id = ? AND ocr_text_s3_path 
       IS NOT NULL', DOCUMENT_TYPE_IDS, 3)
       .select("coalesce(lit_doc_type.description) as doc_type, count(*)").group("coalesce(lit_doc_type.description)")
   end
 
   def lit_ocrable_docs_doc_type
-    @lit_total_docs_doc_type = LitDocument.joins(docket_entry_documents_maps: [docket_entry: [:lit]])
-      .joins('LEFT JOIN core.lit_document_types as lit_doc_type ON lit_doc_type.id = lit_document_type_id')
+    @lit_ocrable_docs_doc_type ||= LitDocument.joins('LEFT JOIN core.lit_document_types as lit_doc_type ON 
+       lit_doc_type.id = lit_document_type_id')
       .where('lit_document_type_id IN (?) AND document_status_id = ? AND ocr_text_s3_path IS NULL AND (ocr_text IS NULL OR 
       ocr_text = ?)', DOCUMENT_TYPE_IDS, 3, '-- NOT OCR-ED --')
       .select("coalesce(lit_doc_type.description) as doc_type, count(*)").group("coalesce(lit_doc_type.description)")
