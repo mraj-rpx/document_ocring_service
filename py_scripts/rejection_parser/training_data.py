@@ -19,13 +19,12 @@ LABEL = 'CLAIMS'
 TRAIN_DATA = [
     # UNPATENTABLE
     ("Claims 7-10, 18-21, and 25-28 are rejected under 35 U.S.C. 103(a) as being unpatentable over “InfoSIeuth: Agent-Based Semantic Integration of Information in Open and Dynamic Environments\" by BAYARDO et at  As to claims 7-10, BAYARDO teaches the agents are objects and a user agent communicates with data objects through a resource agent. However, BAYARDO does not teach that the other distributed component system utilizes a distributed object  service or that service is Jini, Corba, or Java service. “Official Notice” is taken that JINI,  . .   CORBA, and Java are well-known object oriented softwa", {
-        'entities': [
-            (0, 29, 'CLAIMS'),
-            (49, 65, 'GROUND'),
-            (75, 87, 'REASON'),
-            (192, 205, 'ORG')
-        ]
-    }),
+    'entities': [
+        (0, 29, 'CLAIMS'),
+        (49, 65, 'GROUND'),
+        (75, 87, 'REASON'),
+        (192, 205, 'ORG')
+    ]}),
     # ANTICIPATED
     ("Claims 1, 3, 5, 6, 15-17, 39, and 40 are rejected under 35 U.S.C. 102(b) as being anticipated by “InfoSIeuth: Agent-Based Semantic Integration of Information in Open and Dynamic Environments” by BAYARDO et al.  As to claim 1, BAYARDO teaches a computer-implemented method for communication and cooperative task completion between a community of distributed electronic agents communicating using a dynamically expandable interagent- communication language, ICL, (KQML) (pg. 197, Agent Communication Language) and  at least on other distributed component system (Resource Agent system), the other   dis", {
     'entities': [
@@ -33,22 +32,20 @@ TRAIN_DATA = [
         (56, 72, 'GROUND'),
         (82, 93, 'REASON'),
         (195, 209, 'ORG')
-    ]
-    }),
+    ]}),
     ("Claims 1, 3, and 14 are rejected under 35 U.S.C. 112, rst paragraph, as containing subject matter which was not described in the specication in such a way as to enable one skilled in the art to which it pertains, or with which it is most nearly connected, to make and/or use the invention. Applicant has not provided a detailed disclosure of “counting requests exclusive of repeated requests from common clients”. The examiner is aware of page 7, lines 17-18 and page 14, lines 9-11 of the disclosure where applicant states “counting requests excluding repeated requests from common clients” if there", {
     'entities': [
         (0, 19, 'CLAIMS'),
         (39, 52, 'GROUND')
-    ]
-    }),
+    ]}),
+    # format USC.
     ("Claims 3-6 and 11-12 rejected under 35 USC. 102(a) as being anticipated by Lara D. Catledge et al., Characterizing Browsing Strategies in the WorId-Wide Web (hereafter referred to as Cartledge).  11. Regarding claim 3, Catledge taught an information server on a network,  comprising:   means for responding to requests for service received from a client through a network by returning the requested service to the client (users request documents through www.gatechedu, page 3); and  means for counting requests to a particular service (“A modied version of the Pattern Detection Module (PDM) algorith", {
     'entities': [
         (0, 20, 'CLAIMS'),
         (36, 50, 'GROUND'),
         (60, 71, 'REASON'),
         (75, 98, 'ORG')
-    ]
-    })
+    ]})
 ]
 
 @plac.annotations(

@@ -54,5 +54,4 @@ def get_rej_details(rej_str):
         for ent in doc.ents:
             rej_dict.update(ent_formatter[ent.label_](ent))
         rejs_list.append(rej_dict)
-    embed()
     return rejs_list
