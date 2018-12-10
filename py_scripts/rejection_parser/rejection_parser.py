@@ -35,36 +35,13 @@ def format_org(ent):
 def format_patent(ent):
     return {'ref_doc_num': ent.text.strip()}
 
-def format_org_1(ent):
-    return {'in_view_ref_name': ent.text.strip()}
-
-def format_patent_1(ent):
-    return {'in_view_ref_doc_num': ent.text.strip()}
-
-def format_org_2(ent):
-    return {'in_further_view_ref_name': ent.text.strip()}
-
-def format_patent_2(ent):
-    return {'in_further_view_ref_doc_num': ent.text.strip()}
-
-def format_org_3(ent):
-    return {'and_in_further_view_ref_name': ent.text.strip()}
-
-def format_patent_3(ent):
-    return {'and_in_further_view_ref_doc_num': ent.text.strip()}
 
 ent_formatter = {
     'CLAIMS': format_claims,
     'GROUND': format_ground,
     'REASON': format_reason,
     'ORG': format_org,
-    'PATENT': format_patent,
-    'ORG_1': format_org_1,
-    'PATENT_1': format_patent_1,
-    'ORG_2': format_org_2,
-    'PATENT_2': format_patent_2,
-    'ORG_3': format_org_3,
-    'PATENT_3': format_patent_3,
+    'PATENT': format_patent
 }
 
 def get_rej_details(rej_str):

@@ -9,7 +9,7 @@ from spacy.util import minibatch, compounding
 
 
 # new entity label
-LABELS = ['CLAIMS', 'GROUND', 'REASON', 'ORG', 'PATENT', 'ORG_1', 'PATENT_1', 'ORG_2', 'PATENT_2', 'ORG_3', 'PATENT_3']
+LABELS = ['CLAIMS', 'GROUND', 'REASON', 'ORG', 'PATENT']
 
 # training data
 # Note: If you're using an existing model, make sure to mix in examples of
@@ -122,8 +122,8 @@ TRAIN_DATA = [
         (58, 70, 'REASON'),
         (76, 83, 'ORG'),
         (85, 103, 'PATENT'),
-        (116, 129, 'ORG_1'),
-        (153, 172, 'PATENT_1')
+        (116, 129, 'ORG'),
+        (153, 172, 'PATENT')
     ]}),
     # hereinafter for both normal and in view ref
     ('Claims 1- 15, 17, 24-27, 29-37 are rejected under 35 U.S.C. 103(a) as being unpatentable over Zimowski et al. (hereinafter “Zim”, US Pateht 5,632,015) in view of  Spaey et al. (hereinafter “Spaey", US Patent Publication 2002/0055981 A1).  As per claims 1, 24, 29, 32-33, Zim discloses a system, user interface mechanism, and method of providing session-based retrieval and at a client system of string-based content from a server comprising:  0 - A communication protocol that enables session based connection between a  client system and a server system, and allows the client system to send, within', {
@@ -133,8 +133,8 @@ TRAIN_DATA = [
         (76, 88, 'REASON'),
         (94, 109, 'ORG'),
         (130, 149, 'PATENT'),
-        (163, 175, 'ORG_1'),
-        (198, 235, 'PATENT_1')
+        (163, 175, 'ORG'),
+        (198, 235, 'PATENT')
     ]}),
     #two org and one patent
     ('Claims 17 and 18 are rejected under 35 U.S.C. 103(a) as being unpatentable over AIt in view of Strathmeyer (US. Patent Application Publication 2005/0122964). Regarding Claim 17, Alt discloses that establishing the third communication connection comprises: Issuing a third communication request to a central communication controller (Figure 4; and Paragraphs 95-100, step 413, for example); Establishing a first central communication channel between the first external communication controller and the central communication controller (Figure 4; and Paragraphs 95-100, steps 413 and 415, for example, ', {
@@ -143,8 +143,8 @@ TRAIN_DATA = [
         (46, 52, 'GROUND'),
         (62, 74, 'REASON'),
         (80, 83, 'ORG'),
-        (95, 106, 'ORG_1'),
-        (108, 155, 'PATENT_1')
+        (95, 106, 'ORG'),
+        (108, 155, 'PATENT')
     ]}),
     ("Claims 54-57, 58, 60, 67, 72 and 73 are rejected under 35 U.S.C. 103(a) as being unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362  (Murphy).  5. As to claim 54, Takahashi teaches an image verification device comprising:  a user verification module 7 for verifying an identity of a user of the device, wherein upon verification, the user verification module enables operation of the device (Figs. 1 and 7, when the user is verified the camera is enabled);  a capture module for capturing at least one image and creating a digital image file, wherein the user verification module v", {
     'entities': [
@@ -153,8 +153,8 @@ TRAIN_DATA = [
         (81, 93, 'REASON'),
         (99, 114, 'PATENT'),
         (116, 125, 'ORG'),
-        (138, 150, 'PATENT_1'),
-        (153, 159, 'ORG_1')
+        (138, 150, 'PATENT'),
+        (153, 159, 'ORG')
     ]}),
 
     # 3 ORG and PATENT
@@ -165,10 +165,10 @@ TRAIN_DATA = [
         (77, 89, 'REASON'),
         (95, 106, 'ORG'),
         (128, 167, 'PATENT'),
-        (180, 195, 'ORG_1'),
-        (217, 239, 'PATENT_1'),
-        (265, 276, 'ORG_2'),
-        (298, 335, 'PATENT_2')
+        (180, 195, 'ORG'),
+        (217, 239, 'PATENT'),
+        (265, 276, 'ORG'),
+        (298, 335, 'PATENT')
     ]}),
     ("Claims 57, 61-63, 70 and 71 are rejected under 35 U.S.C. 103(a) as being unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362 (Murphy) further in view of US 6,642,959 (Arai).  13. As to claim 57, see the rejection of claim 54 and note that neither Takahashi nor Murphy teach the display module adapted to prompt a user to input information regarding the captured image. However, Arai teaches a digital camera with a display 12 that is adapted to prompt a user to input information regarding a captured image (Fig. 8). Therefore it would have been obvious to one of ordinary skill in '", {
     'entities': [
@@ -177,10 +177,10 @@ TRAIN_DATA = [
         (73, 85, 'REASON'),
         (91, 106, 'PATENT'),
         (108, 117, 'ORG'),
-        (130, 142, 'PATENT_1'),
-        (144, 150, 'ORG_1'),
-        (171, 183, 'PATENT_2'),
-        (185, 189, 'ORG_2')]
+        (130, 142, 'PATENT'),
+        (144, 150, 'ORG'),
+        (171, 183, 'PATENT'),
+        (185, 189, 'ORG')]
     }),
     ("Claims 66 and 69 are rejected under 35 U.S.C. 103(a) as being unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362 (Murphy) further in view of US 6,810,323 (Bullock).  24. As to claim 66, see the rejection of claim 54 and note that neither Takahashi nor Murphy teach displaying direction to the location of a captured image. However, Bullock teaches providing a map service that displays directions to the location of a captured image (C2 L49-55 and C7 L66 to CS L14). Therefore it would have been obvious to one of ordinary skill in the art at the time the invention was made to hav", {
     'entities': [
@@ -189,10 +189,10 @@ TRAIN_DATA = [
         (62, 74, 'REASON'),
         (80, 95, 'PATENT'),
         (97, 106, 'ORG'),
-        (119, 131, 'PATENT_1'),
-        (133, 139, 'ORG_1'),
-        (160, 172, 'PATENT_2'),
-        (174, 181, 'ORG_2')
+        (119, 131, 'PATENT'),
+        (133, 139, 'ORG'),
+        (160, 172, 'PATENT'),
+        (174, 181, 'ORG')
     ]}),
 
     # 4 REFERENCES
@@ -203,12 +203,12 @@ TRAIN_DATA = [
         (65, 77, 'REASON'),
         (83, 94, 'ORG'),
         (116, 153, 'PATENT'),
-        (166, 181, 'ORG_1'),
-        (203, 225, 'PATENT_1'),
-        (246, 257, 'ORG_2'),
-        (279, 316, 'PATENT_2'),
-        (341, 352, 'ORG_3'),
-        (374, 396, 'PATENT_3')
+        (166, 181, 'ORG'),
+        (203, 225, 'PATENT'),
+        (246, 257, 'ORG'),
+        (279, 316, 'PATENT'),
+        (341, 352, 'ORG'),
+        (374, 396, 'PATENT')
     ]}),
 
 
@@ -219,7 +219,7 @@ TRAIN_DATA = [
         (40, 46, 'GROUND'),
         (56, 68, 'REASON'),
         (74, 82, 'ORG'),
-        (94, 110, 'ORG_1')
+        (94, 110, 'ORG')
     ]})
 ]
 
