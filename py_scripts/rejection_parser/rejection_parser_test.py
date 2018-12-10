@@ -218,5 +218,68 @@ class RejectionParserTest(unittest.TestCase):
         ]
         self.assertEqual(data, result)
 
+
+    def test_1ref_name_app_num(self):
+        with open('../py_tests/ctnf_files/10913441-2006-03-09-00006-CTNF.txt') as f:
+            text = f.read()
+        data = rejection_parser.get_rej_details(text)
+        list(map(del_rej_sent, data))
+        result = [
+            {
+              'claim_nums': [148],
+              'rejection_ground': '102(b)',
+              'rejection_reason': 'anticipated',
+              'ref_name': 'Ogawa et al',
+              'ref_doc_num': 'US. Patent 5,437,894'
+              },{
+              'claim_nums': [149, 150, 151],
+              'rejection_ground': '103(a)',
+              'rejection_reason': 'unpatentable',
+              'ref_name': 'Ogawa et al'
+              }]
+                    
+        self.assertEqual(data, result)
+
+    def test_1ref_name_app_num(self):
+        with open('../py_tests/ctnf_files/11403548-2009-09-30-00007-CTNF.txt') as f:
+            text = f.read()
+        data = rejection_parser.get_rej_details(text)
+        list(map(del_rej_sent, data))
+        result = [
+            {
+              'claim_nums': [14, 15, 16, 17, 18],
+              'rejection_ground': '112',
+              'rejection_reason': 'indefinite'
+            },{
+              'claim_nums': [9, 10, 11, 12, 13],
+              'rejection_ground' : '101'
+            },{
+              'claim_nums': [14, 15, 16],
+              'rejection_ground': '102(e)',
+              'rejection_reason': 'anticipated',
+              'ref_name': 'Alt',
+              'ref_doc_num': 'US. Patent Application Publication 2007/0036143'
+            },{
+              'claim_nums': [17, 18],
+              'rejection_ground': '103(a)',
+              'rejection_reason': 'unpatentable',
+              'ref_name': 'AIt',
+              'in_view_ref_name': 'Strathmeyer',
+              'in_view_ref_doc_num': 'US. Patent Application Publication 2005/0122964'
+            },{
+              'claim_nums': [1, 2, 3, 4, 5, 9, 10, 11, 12, 13],
+              'rejection_ground': '103(a)',
+              'rejection_reason': 'unpatentable',   #lost ORG name 'AIt' due to OCR error - sentence  --> overAIt ---
+              'in_view_ref_name': 'Aasman',
+              'in_view_ref_doc_num': 'US. Patent Application Publication 2003/0065737'
+            },{
+              'claim_nums': [6, 7, 8],
+              'rejection_ground': '103(a)',
+              'rejection_reason': 'unpatentable',
+              'ref_name': 'AIt',
+              'in_view_ref_name': 'Aasman and Strathmeyer'
+            }]
+        self.assertEqual(data, result)
+
 if __name__ == '__main__':
     unittest.main()

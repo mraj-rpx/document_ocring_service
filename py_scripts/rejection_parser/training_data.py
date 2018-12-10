@@ -9,7 +9,7 @@ from spacy.util import minibatch, compounding
 
 
 # new entity label
-LABEL = 'CLAIMS'
+LABELS = ['CLAIMS', 'GROUND', 'REASON', 'ORG', 'PATENT', 'ORG_1', 'PATENT_1', 'ORG_2', 'PATENT_2', 'ORG_3', 'PATENT_3']
 
 # training data
 # Note: If you're using an existing model, make sure to mix in examples of
@@ -25,7 +25,6 @@ TRAIN_DATA = [
         (75, 87, 'REASON'),
         (192, 205, 'ORG')
     ]}),
-    # ANTICIPATED
     ("Claims 1, 3, 5, 6, 15-17, 39, and 40 are rejected under 35 U.S.C. 102(b) as being anticipated by “InfoSIeuth: Agent-Based Semantic Integration of Information in Open and Dynamic Environments” by BAYARDO et al.  As to claim 1, BAYARDO teaches a computer-implemented method for communication and cooperative task completion between a community of distributed electronic agents communicating using a dynamically expandable interagent- communication language, ICL, (KQML) (pg. 197, Agent Communication Language) and  at least on other distributed component system (Resource Agent system), the other   dis", {
     'entities': [
         (0, 36, 'CLAIMS'),
@@ -33,6 +32,15 @@ TRAIN_DATA = [
         (82, 93, 'REASON'),
         (195, 209, 'ORG')
     ]}),
+    #ground and reason
+    ("Claims 14-18 are rejected under 35 U.S.C. 112, second paragraph, as being indefinite for failing to particularly point out and distinctly claim the subject matter which applicant regards as the invention.  The first 2 limitations of claim 14 appear to occur in the alternative. This is noted by limitation 3, stating “responsive to one or more of the first and second communication  request.... It is unclear what limitations are actually part of the claim, which limitations always occur, and which may only occur in certain circumstances. The Examiner has taken the first 2 limitations in the alter", {
+    'entities': [
+        (0, 12, 'CLAIMS'),
+        (42, 45, 'GROUND'),
+        (74, 84, 'REASON')
+    ]}),
+
+    #only claims and ground
     ("Claims 1, 3, and 14 are rejected under 35 U.S.C. 112, rst paragraph, as containing subject matter which was not described in the specication in such a way as to enable one skilled in the art to which it pertains, or with which it is most nearly connected, to make and/or use the invention. Applicant has not provided a detailed disclosure of “counting requests exclusive of repeated requests from common clients”. The examiner is aware of page 7, lines 17-18 and page 14, lines 9-11 of the disclosure where applicant states “counting requests excluding repeated requests from common clients” if there", {
     'entities': [
         (0, 19, 'CLAIMS'),
@@ -46,7 +54,13 @@ TRAIN_DATA = [
         (60, 71, 'REASON'),
         (75, 98, 'ORG')
     ]}),
-
+    ("Claims 149-151 are rejected under 35 U.S.C. 103(a) as being unpatentable over Ogawa et al as applied to claim 148 above, and further in view of the following comments]  Ogawa et al discloses the claimed invention except for forming a bond between said rst and second bonding surfaces at room temperature with a strength of at least 500 mJ/mz, 1000 mJ/mz, and 2000 mJ/m2. It would have been obvious to one having ordinary skill in the art at the time the invention was made to determine a suitable bond strength between the rst and second bonding surfaces, since it has been held that where the genera", {
+    'entities': [
+        (0, 14, 'CLAIMS'),
+        (44, 50, 'GROUND'),
+        (60, 72, 'REASON'),
+        (78, 89, 'ORG')
+    ]}),
 
     # ref_name and app_num
     ("Claims 1-5 and 7-10 are rejected under 35 U.S.C. 102(e) as being anticipated by Garney et at. (US Patent 5,890,015) a. As per claims 1 and 10, Garney discloses wireless USB hub comprising:  - a data reception circuit for receiving data in a wireless manner from the one or more remote wireless peripheral devices; (coi.5, lines 30-47), (fig.5, 520)  - an upstream port connected to the computer; (fig.4), (co|.5, lines  18-29)   - a hub controller for passing information from the data reception circuit to the upstream port for transmission to the computer. (col.5, lines 18-47), (fig.5, 420) b. As", {
@@ -91,7 +105,14 @@ TRAIN_DATA = [
         (78, 93, 'ORG'),
         (95, 123, 'PATENT')
     ]}),
-
+    ("Claim 148 is rejected under 35 U.S.C. 102(b) as being anticipated by Ogawa et al (US. Patent 5,437,894). -  Ogawa et al discloses a bonding method, comprising forming- rst and second materials having rst and second bonding surfaces, respectively, etching said rst and second bonding surfaces (Column 9, lines 55-65, and Column 31, lines 53-67), bringing into direct contact said rst and second bonding surfaces after said etching step, and forming a chemical bond near room  temperature between said rst and second bonding surfaces (Column 32, lines 10-63). ", {
+    'entities': [
+        (0, 9, 'CLAIMS'),
+        (38, 44, 'GROUND'),
+        (54, 65, 'REASON'),
+        (69, 80, 'ORG'),
+        (82, 102, 'PATENT')
+    ]}),
 
     # with in view ref name and app num
     ("Claims 1- 27 are rejected under 35 U.S.C. 103(a) as being unpatentable over Purcell (US 2001/0013038 A1) in view of Hughes et al. (hereinafter “Hughes”, US 2003/0195876 A1_). As per claims 1, 19-24, Purcell discloses a system and user interface mechanism for session based retrieval and at a client system of content from a server system, said server system serving a string based content, said string based content including a plurality of strings, comprising:  a communication protocol that provides a session based connection between a client system and a server system, and allows said client sy", {
@@ -114,6 +135,16 @@ TRAIN_DATA = [
         (130, 149, 'PATENT'),
         (163, 175, 'ORG_1'),
         (198, 235, 'PATENT_1')
+    ]}),
+    #two org and one patent
+    ('Claims 17 and 18 are rejected under 35 U.S.C. 103(a) as being unpatentable over AIt in view of Strathmeyer (US. Patent Application Publication 2005/0122964). Regarding Claim 17, Alt discloses that establishing the third communication connection comprises: Issuing a third communication request to a central communication controller (Figure 4; and Paragraphs 95-100, step 413, for example); Establishing a first central communication channel between the first external communication controller and the central communication controller (Figure 4; and Paragraphs 95-100, steps 413 and 415, for example, ', {
+    'entities': [
+        (0, 16, 'CLAIMS'),
+        (46, 52, 'GROUND'),
+        (62, 74, 'REASON'),
+        (80, 83, 'ORG'),
+        (95, 106, 'ORG_1'),
+        (108, 155, 'PATENT_1')
     ]}),
 
 
@@ -144,7 +175,19 @@ TRAIN_DATA = [
         (279, 316, 'PATENT_2'),
         (341, 352, 'ORG_3'),
         (374, 396, 'PATENT_3')
+    ]}),
+
+
+    #compund ORG names
+    ('Claims 6-8 are rejected under 35 U.S.C. 103(a) as being unpatentable over Mizutani in view of Aasman and Steve.  Regarding Claim 6,   Alt as modified by Aasman discloses the method of claim 1, in addition, Alt discloses a communication request requesting to communicate with an external endpoint not connected to one or more of the controller and the at least one other controIIer (Figure 2; and Paragraphs 59 and 101-110); but does not explicitly disclose issuing a central request from the external controller to a central controIIer responsive to the communication request requesting to communica', {
+    'entities': [
+        (0, 10, 'CLAIMS'),
+        (40, 46, 'GROUND'),
+        (56, 68, 'REASON'),
+        (74, 82, 'ORG'),
+        (94, 110, 'ORG_1')
     ]})
+
 ]
 
 @plac.annotations(
@@ -169,17 +212,9 @@ def main(model=None, new_model_name='claims', output_dir=Path('./training_model'
     else:
         ner = nlp.get_pipe('ner')
 
-    ner.add_label(LABEL)
-    ner.add_label('ORG')
-    ner.add_label('GROUND')
-    ner.add_label('REASON')
-    ner.add_label('PATENT')
-    ner.add_label('ORG_1')
-    ner.add_label('PATENT_1')
-    ner.add_label('ORG_2')
-    ner.add_label('PATENT_2')
-    ner.add_label('ORG_3')
-    ner.add_label('PATENT_3')
+    for LABEL in LABELS:
+        ner.add_label(LABEL)
+    
       # add new entity label to entity recognizer
     if model is None:
         optimizer = nlp.begin_training()
