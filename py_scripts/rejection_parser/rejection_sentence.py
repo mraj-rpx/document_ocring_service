@@ -4,16 +4,6 @@ import pyparsing as pp
 import re
 from IPython import embed
 
-
-def join_matched_list(matched_list):
-    return ''.join(matched_list[0])
-
-def strip_ref_name(matched_list):
-    return ' '.join(matched_list).strip()
-
-def format_doc_num(matched_list):
-    return matched_list[0].strip()
-
 _start_1 = pp.CaselessLiteral("claims")
 _start_2 = pp.CaselessLiteral("claim")
 _start_3 = pp.CaselessLiteral("claim(s)")
