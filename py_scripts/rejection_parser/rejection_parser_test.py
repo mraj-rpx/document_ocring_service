@@ -237,7 +237,7 @@ class RejectionParserTest(unittest.TestCase):
               'rejection_reason': 'unpatentable',
               'ref_name': 'Ogawa et al'
               }]
-                    
+
         self.assertEqual(data, result)
 
     def test_1ref_name_app_num(self):
@@ -279,6 +279,58 @@ class RejectionParserTest(unittest.TestCase):
               'ref_name': 'AIt',
               'in_view_ref_name': 'Aasman and Strathmeyer'
             }]
+        self.assertEqual(data, result)
+
+    def test_1ref_name_app_num_1(self):
+        with open('../py_tests/ctnf_files/12290258-2010-04-02-00007-CTNF.txt') as f:
+            text = f.read()
+        data = rejection_parser.get_rej_details(text)
+        embed()
+        list(map(del_rej_sent, data))
+        result = [
+            {
+                'claim_nums': [54, 55, 56, 57, 58, 60, 67, 72, 73],
+                'rejection_ground': '103(a)',
+                'rejection_reason': 'unpatentable',
+                'ref_doc_num': 'US 2005/0036656',
+                'ref_name': 'Takahashi',
+                'in_view_ref_doc_num': 'US 6,282,362',
+                'in_view_ref_name': 'Murphy'
+            },
+            {
+                'claim_nums': [57, 61, 62, 63, 70, 71],
+                'rejection_ground': '103(a)',
+                'rejection_reason': 'unpatentable',
+                'ref_doc_num': 'US 2005/0036656',
+                'ref_name': 'Takahashi',
+                'in_view_ref_doc_num': 'US 6,282,362',
+                'in_view_ref_name': 'Murphy',
+                'in_further_view_ref_doc_num': 'US 6,642,959',
+                'in_further_view_ref_name': 'Arai'
+            },
+            {
+                'claim_nums': [59, 64, 65, 68],
+                'rejection_ground': '103(a)',
+                'rejection_reason': 'unpatentable',
+                'ref_doc_num': 'US 2005/0036656',
+                'ref_name': 'Takahashi',
+                'in_view_ref_doc_num': 'US 6,282,362',
+                'in_view_ref_name': 'Murphy',
+                'in_further_view_ref_doc_num': 'US 7,006,146',
+                'in_further_view_ref_name': 'Tanaka'
+            },
+            {
+                'claim_nums': [66, 69],
+                'rejection_ground': '103(a)',
+                'rejection_reason': 'unpatentable',
+                'ref_doc_num': 'US 2005/0036656',
+                'ref_name': 'Takahashi',
+                'in_view_ref_doc_num': 'US 6,282,362',
+                'in_view_ref_name': 'Murphy',
+                'in_further_view_ref_doc_num': 'US 6,810,323',
+                'in_further_view_ref_name': 'Bullock'
+            }
+        ]
         self.assertEqual(data, result)
 
 if __name__ == '__main__':

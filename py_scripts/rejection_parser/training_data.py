@@ -146,8 +146,18 @@ TRAIN_DATA = [
         (95, 106, 'ORG_1'),
         (108, 155, 'PATENT_1')
     ]}),
+    ("Claims 54-57, 58, 60, 67, 72 and 73 are rejected under 35 U.S.C. 103(a) as being unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362  (Murphy).  5. As to claim 54, Takahashi teaches an image verification device comprising:  a user verification module 7 for verifying an identity of a user of the device, wherein upon verification, the user verification module enables operation of the device (Figs. 1 and 7, when the user is verified the camera is enabled);  a capture module for capturing at least one image and creating a digital image file, wherein the user verification module v", {
+    'entities': [
+        (0, 35, 'CLAIMS'),
+        (65, 71, 'GROUND'),
+        (81, 93, 'REASON'),
+        (99, 114, 'PATENT'),
+        (116, 125, 'ORG'),
+        (138, 150, 'PATENT_1'),
+        (153, 159, 'ORG_1')
+    ]}),
 
-
+    # 3 ORG and PATENT
     ('Claims 1- 15, 17, 29-51, 54-60 are rejected under 35 U.S.C. 103(a) as being  unpatentable over Yano et al. (hereinafter “Yano”, US Patent Publication 2006/0184546   A1) in view of Hailpern et al. (hereinafter “Hail”, US Patent 7,383,299 Bi) and in further  view of Chua et al. (hereinafter "Chua", US Patent Publication 2002/0049756 A1).  As per claims 1, 29, 32-33, Yano discloses a system, user interface mechanism,  and method of providing session-based retrieval and at a client system of string-based  content from a server comprising:  A communication protocol that enables connection over a ne', {
     'entities': [
         (0, 30, 'CLAIMS'),
@@ -159,6 +169,30 @@ TRAIN_DATA = [
         (217, 239, 'PATENT_1'),
         (265, 276, 'ORG_2'),
         (298, 335, 'PATENT_2')
+    ]}),
+    ("Claims 57, 61-63, 70 and 71 are rejected under 35 U.S.C. 103(a) as being unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362 (Murphy) further in view of US 6,642,959 (Arai).  13. As to claim 57, see the rejection of claim 54 and note that neither Takahashi nor Murphy teach the display module adapted to prompt a user to input information regarding the captured image. However, Arai teaches a digital camera with a display 12 that is adapted to prompt a user to input information regarding a captured image (Fig. 8). Therefore it would have been obvious to one of ordinary skill in '", {
+    'entities': [
+        (0, 27, 'CLAIMS'),
+        (57, 63, 'GROUND'),
+        (73, 85, 'REASON'),
+        (91, 106, 'PATENT'),
+        (108, 117, 'ORG'),
+        (130, 142, 'PATENT_1'),
+        (144, 150, 'ORG_1'),
+        (171, 183, 'PATENT_2'),
+        (185, 189, 'ORG_2')]
+    }),
+    ("Claims 66 and 69 are rejected under 35 U.S.C. 103(a) as being unpatentable over US 2005/0036656 (Takahashi) in view of US 6,282,362 (Murphy) further in view of US 6,810,323 (Bullock).  24. As to claim 66, see the rejection of claim 54 and note that neither Takahashi nor Murphy teach displaying direction to the location of a captured image. However, Bullock teaches providing a map service that displays directions to the location of a captured image (C2 L49-55 and C7 L66 to CS L14). Therefore it would have been obvious to one of ordinary skill in the art at the time the invention was made to hav", {
+    'entities': [
+        (0, 16, 'CLAIMS'),
+        (46, 52, 'GROUND'),
+        (62, 74, 'REASON'),
+        (80, 95, 'PATENT'),
+        (97, 106, 'ORG'),
+        (119, 131, 'PATENT_1'),
+        (133, 139, 'ORG_1'),
+        (160, 172, 'PATENT_2'),
+        (174, 181, 'ORG_2')
     ]}),
 
     # 4 REFERENCES
@@ -187,7 +221,6 @@ TRAIN_DATA = [
         (74, 82, 'ORG'),
         (94, 110, 'ORG_1')
     ]})
-
 ]
 
 @plac.annotations(
@@ -214,7 +247,7 @@ def main(model=None, new_model_name='claims', output_dir=Path('./training_model'
 
     for LABEL in LABELS:
         ner.add_label(LABEL)
-    
+
       # add new entity label to entity recognizer
     if model is None:
         optimizer = nlp.begin_training()
