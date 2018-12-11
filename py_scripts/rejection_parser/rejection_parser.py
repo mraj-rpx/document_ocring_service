@@ -33,7 +33,7 @@ def format_org(ent):
     return {'ref_name': ent.text.strip()}
 
 def format_patent(ent):
-    return {'ref_doc_num': ent.text.strip()}
+    return {'ref_app_num': ent.text.strip()}
 
 
 ent_formatter = {
@@ -44,6 +44,17 @@ ent_formatter = {
     'PATENT': format_patent
 }
 
+def get_sub_sent_ranges(rej_sent):
+    sub_sents = rej_sent.split('view of')
+    sent_ranges = []
+
+    for sub_sent in sub_sents:
+        sub_sent_idx = rej_sent.index(sub_sent)
+        sub_sent_len = len(sub_sent)
+        sub_sent_range = range(sub_sent_idx, sub_sent_idx + sub_sent_len)
+        sent_ranges.append(sub_sent_range)
+    return sent_ranges
+
 def get_rej_details(rej_str):
     rej_sentences = rejection_sentence.get_rej_sentences(rej_str)
     rejs_list = []
@@ -52,7 +63,25 @@ def get_rej_details(rej_str):
         rej_dict = {
             'rejection_sentence': sentence
         }
+        sub_sent_ranges = get_sub_sent_ranges(doc.text)
+        citations = {}
+
         for ent in doc.ents:
-            rej_dict.update(ent_formatter[ent.label_](ent))
+            ent_value = ent_formatter[ent.label_](ent)
+
+            if ent.label_ == 'ORG' or ent.label_ == 'PATENT':
+                ent_idx = sentence.index(ent.text)
+                for sub_sent_range in sub_sent_ranges:
+                    key = "{0}-{1}".format(sub_sent_range.start, sub_sent_range.stop)
+                    if not key in citations:
+                        citations[key] = {}
+                    citation = citations[key]
+
+                    if ent_idx in sub_sent_range:
+                        citation.update(ent_value)
+            else:
+                rej_dict.update(ent_value)
+
+        rej_dict['citations'] = list(filter((lambda x: x != {}), citations.values()))
         rejs_list.append(rej_dict)
     return rejs_list

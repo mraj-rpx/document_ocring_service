@@ -113,6 +113,14 @@ TRAIN_DATA = [
         (69, 80, 'ORG'),
         (82, 102, 'PATENT')
     ]}),
+    ("Claims 14-16 are rejected under 35 U.S.C. 102(e) as being anticipated by Alt (US. Patent Application Publication 2007/0036143). Regarding Claim 14,  Alt discloses a method for communicating comprising:   Establishing a first communication connection between a first internal controller behind a firewall and a first external controller in a first communication community, wherein a first communication request is initiated by a local communication device connected to the first internal controller (Figures 2 and 6; and Paragraphs 48, 57, and 95-97; as described above, there is a discrepancy between", {
+    'entities': [
+        (0, 12, 'CLAIMS'),
+        (42, 48, 'GROUND'),
+        (58, 69, 'REASON'),
+        (73, 76, 'ORG'),
+        (78, 125, 'PATENT')
+    ]}),
 
     # with in view ref name and app num
     ("Claims 1- 27 are rejected under 35 U.S.C. 103(a) as being unpatentable over Purcell (US 2001/0013038 A1) in view of Hughes et al. (hereinafter “Hughes”, US 2003/0195876 A1_). As per claims 1, 19-24, Purcell discloses a system and user interface mechanism for session based retrieval and at a client system of content from a server system, said server system serving a string based content, said string based content including a plurality of strings, comprising:  a communication protocol that provides a session based connection between a client system and a server system, and allows said client sy", {
@@ -220,6 +228,14 @@ TRAIN_DATA = [
         (56, 68, 'REASON'),
         (74, 82, 'ORG'),
         (94, 110, 'ORG')
+    ]}),
+    ("Claims 1-2, 7-10 are rejected under 35 U.S.C. 103(a) as being unpatentable over Lara D. Catledge et al., Characterizing Browsing Strategies in the WorId-Wide Web (hereafter referred to as Cartledge) in view of Jos Kahan, A capability-based authorization model for the World Wide Web (hereafter referred to as Kahan). 3. Regarding claim 1, Catledge taught a method of processing service requests from a client to a server system through a network, said comprising the steps of:  responding to requests for information received from the client through the  network by returning the requested informatio", {
+    'entities': [
+        (0, 16, 'CLAIMS'),
+        (46, 52, 'GROUND'),
+        (62, 74, 'REASON'),
+        (80, 103, 'ORG'),
+        (210, 219, 'ORG')
     ]})
 ]
 
