@@ -32,6 +32,7 @@ DB_PASS = config['DEFAULT']['DB_PASS']
 IMG_WRAPPER_DIR_NOT_EXIST_STATUS = 1
 NO_NEW_FILES_STATUS = 2
 UNKNOWN_ERROR_STATUS = 3
+OCR_HOST = os.uname()[1]
 
 class ImageFileWrapperDirNotExistException(Exception):
     def __init__(self, message):
@@ -197,7 +198,7 @@ if __name__ == '__main__':
         conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
         cur = conn.cursor()
 
-        sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
+        sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, ocred_by = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
         img_sql_update = "UPDATE pair.image_file_wrapper SET is_ocred = %s, updated_at = CURRENT_TIMESTAMP WHERE app_data_id = %s AND file_name IN %s"
         needs_ocr_update_sql = "UPDATE pair.pair_ocr SET needs_ocr = %s, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
 
@@ -219,7 +220,7 @@ if __name__ == '__main__':
                 ocred_files = tuple(ocr_status['ocred_files'])
                 needs_ocr = ocr_status["needs_ocr"]
 
-                cur.execute(sql_update, (ocr_s3_path, needs_ocr, ocr_process.pair_ocr_id))
+                cur.execute(sql_update, (ocr_s3_path, needs_ocr, OCR_HOST, ocr_process.pair_ocr_id))
                 cur.execute(img_sql_update, (True, ocr_process.app_data_id, ocred_files))
                 conn.commit()
                 print("Completed OCR for PAIR_ID: {0}".format(ocr_process.pair_ocr_id))
