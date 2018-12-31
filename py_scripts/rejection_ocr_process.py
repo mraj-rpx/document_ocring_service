@@ -241,6 +241,7 @@ if __name__ == '__main__':
         ORDER BY id ASC LIMIT %s OFFSET %s;
         """
         sql_update_processing = "UPDATE pair.pair_ocr SET needs_ocr = %s WHERE id IN %s"
+        ifw_query = "SELECT app_data_id, COUNT(*) FROM pair.image_file_wrapper WHERE app_data_id IN %s AND is_ocred != 't' AND doc_code IN %s GROUP BY app_data_id"
 
         conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
         cur = conn.cursor()
@@ -256,13 +257,37 @@ if __name__ == '__main__':
         pair_ids = [[tup[0], tup[3]] for tup in tuple_vals]
         p_ids = [tup[0] for tup in tuple_vals]
         cur.execute(sql_update_processing, (None, tuple(p_ids)))
+        conn.commit()
+
+
+        # See if there's any file to OCR in pair.image_file_wrapper table
+        ifw_ocr_status = {}
+        ocrable_apps = []
+        remaining_apps = []
+
+        app_data_ids = [pair_id[1] for pair_id in pair_ids]
+        cur.execute(ifw_query, (tuple(app_data_ids), ('CTNF', 'CTFR')))
+        ifw_records = cur.fetchall()
+
+        for ifw_record in ifw_records:
+            ifw_ocr_status[ifw_record[0]] = ifw_record[1]
+
+        for tuple_val in tuple_vals:
+            ifw_count = ifw_ocr_status[tuple_val[3]]
+            if ifw_count > 0:
+                ocrable_apps.append(tuple_val)
+            else:
+                remaining_apps.append(tuple_val)
+
+        p_ids = [tup[0] for tup in remaining_apps]
+        cur.execute(sql_update_processing, (False, tuple(p_ids)))
 
         conn.commit()
         conn.close()
 
         try:
             with concurrent.futures.ProcessPoolExecutor(max_workers=MAX_PROCESS_POOL) as process_pool:
-                for pair_id, ocr_process in zip(pair_ids, process_pool.map(worker_start_ocr, tuple_vals)):
+                for pair_id, ocr_process in zip(pair_ids, process_pool.map(worker_start_ocr, ocrable_apps)):
                     pass
         except Exception as e:
             print("There's an exception while processing PROCESS POOL EXECUTOR and the exception is: '{0}'".format(e))
