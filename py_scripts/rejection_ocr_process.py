@@ -136,7 +136,7 @@ class OcrProcess:
 
         if self.ocr_zip:
             self.execute_cmd("aws s3 cp --profile default s3://{0} {1}/".format(self.ocr_zip, self.zip_dir))
-            self.execute_cmd("unzip -j {0} -d {1}".format(self.ocr_zip_file, self.zip_dir))
+            self.execute_cmd("unzip {0} -d {1}".format(self.ocr_zip_file, self.zip_dir))
         else:
             os.mkdir(self.ocr_unzip_dir)
 
