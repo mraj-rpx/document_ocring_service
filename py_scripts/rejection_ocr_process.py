@@ -241,7 +241,7 @@ if __name__ == '__main__':
         ORDER BY id ASC LIMIT %s OFFSET %s;
         """
         sql_update_processing = "UPDATE pair.pair_ocr SET needs_ocr = %s WHERE id IN %s"
-        ifw_query = "SELECT app_data_id, COUNT(*) FROM pair.image_file_wrapper WHERE app_data_id IN %s AND is_ocred != 't' AND doc_code IN %s GROUP BY app_data_id"
+        ifw_query = "SELECT app_data_id, COUNT(*) FROM pair.image_file_wrapper WHERE app_data_id IN %s AND (is_ocred IS NULL OR is_ocred = 'f') AND doc_code IN %s GROUP BY app_data_id"
 
         conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
         cur = conn.cursor()
@@ -273,16 +273,21 @@ if __name__ == '__main__':
             ifw_ocr_status[ifw_record[0]] = ifw_record[1]
 
         for tuple_val in tuple_vals:
-            ifw_count = ifw_ocr_status[tuple_val[3]]
+            ifw_count = 0
+            app_data_id = tuple_val[3]
+
+            if app_data_id in ifw_ocr_status:
+                ifw_count = ifw_ocr_status[app_data_id]
+
             if ifw_count > 0:
                 ocrable_apps.append(tuple_val)
             else:
                 remaining_apps.append(tuple_val)
 
         p_ids = [tup[0] for tup in remaining_apps]
-        cur.execute(sql_update_processing, (False, tuple(p_ids)))
-
-        conn.commit()
+        if p_ids:
+            cur.execute(sql_update_processing, (False, tuple(p_ids)))
+            conn.commit()
         conn.close()
 
         try:
