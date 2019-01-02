@@ -134,11 +134,12 @@ class OcrProcess:
         self.execute_cmd("aws s3 cp --profile default s3://{0} {1}/".format(self.pdf_zip, self.zip_dir))
         self.execute_cmd("unzip {0} -d {1}".format(self.pdf_zip_file, self.zip_dir))
 
+        # Create OCR unzip directory and place the OCR zip content
+        os.mkdir(self.ocr_unzip_dir)
+
         if self.ocr_zip:
             self.execute_cmd("aws s3 cp --profile default s3://{0} {1}/".format(self.ocr_zip, self.zip_dir))
-            self.execute_cmd("unzip {0} -d {1}".format(self.ocr_zip_file, self.zip_dir))
-        else:
-            os.mkdir(self.ocr_unzip_dir)
+            self.execute_cmd("unzip -j {0} -d {1}".format(self.ocr_zip_file, self.ocr_unzip_dir))
 
         ocr_files = set(map((lambda x: x.replace(".txt", "")), os.listdir(self.ocr_unzip_dir)))
         if os.path.isdir(self.pdf_unzip_dir) == False:
@@ -167,6 +168,11 @@ class OcrProcess:
 
             pdf_txt_dict = {}
             needs_ocr = False
+            needs_parsing = False
+
+            ctnf_ctfr_files = list(filter((lambda x: x.endswith('CTNF') or x.endswith('CTFR')), new_files))
+            if len(ctnf_ctfr_files) > 0:
+                needs_parsing = True
 
             with concurrent.futures.ThreadPoolExecutor(max_workers=PDF_MAX_POOL) as pdf_pool:
                 for pdf_file, ocr_status in zip(new_files, pdf_pool.map(self.start_ocr_a_pdf, new_files)):
@@ -174,6 +180,7 @@ class OcrProcess:
                         pdf_txt_dict[pdf_file] = ocr_status["txt_file"]
                     else:
                         needs_ocr = True
+                        needs_parsing = False
 
             if os.path.exists(self.ocr_zip_file):
                 os.remove(self.ocr_zip_file)
@@ -182,7 +189,7 @@ class OcrProcess:
             shutil.rmtree(self.zip_dir)
             ocred_files = list(map(lambda x: "{0}.pdf".format(x), pdf_txt_dict.keys()))
             ocr_s3_path = "rpx-public-pair/{0}/{1}".format(self.actual_dir_name, self.ocr_zip_name)
-            return {'ocred_files': ocred_files, 'ocr_s3_path': ocr_s3_path, "needs_ocr": needs_ocr}
+            return {'ocred_files': ocred_files, 'ocr_s3_path': ocr_s3_path, "needs_ocr": needs_ocr, "needs_parsing": needs_parsing}
         except ImageFileWrapperDirNotExistException as img_wrap_dir_not_exist:
             shutil.rmtree(self.zip_dir)
             return IMG_WRAPPER_DIR_NOT_EXIST_STATUS
@@ -198,7 +205,7 @@ if __name__ == '__main__':
         conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASS,host=DB_HOST)
         cur = conn.cursor()
 
-        sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, ocred_by = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
+        sql_update = "UPDATE pair.pair_ocr SET ocr_s3_path = %s, needs_ocr = %s, needs_parsing = %s, ocred_by = %s, ocred_at = CURRENT_TIMESTAMP, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
         img_sql_update = "UPDATE pair.image_file_wrapper SET is_ocred = %s, updated_at = CURRENT_TIMESTAMP WHERE app_data_id = %s AND file_name IN %s"
         needs_ocr_update_sql = "UPDATE pair.pair_ocr SET needs_ocr = %s, updated_at = CURRENT_TIMESTAMP WHERE id = %s"
 
@@ -219,8 +226,9 @@ if __name__ == '__main__':
                 ocr_s3_path = ocr_status['ocr_s3_path']
                 ocred_files = tuple(ocr_status['ocred_files'])
                 needs_ocr = ocr_status["needs_ocr"]
+                needs_parsing = ocr_status["needs_parsing"]
 
-                cur.execute(sql_update, (ocr_s3_path, needs_ocr, OCR_HOST, ocr_process.pair_ocr_id))
+                cur.execute(sql_update, (ocr_s3_path, needs_ocr, needs_parsing, OCR_HOST, ocr_process.pair_ocr_id))
                 cur.execute(img_sql_update, (True, ocr_process.app_data_id, ocred_files))
                 conn.commit()
                 print("Completed OCR for PAIR_ID: {0}".format(ocr_process.pair_ocr_id))

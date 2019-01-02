@@ -134,11 +134,12 @@ class OcrProcess:
         self.execute_cmd("aws s3 cp --profile default s3://{0} {1}/".format(self.pdf_zip, self.zip_dir))
         self.execute_cmd("unzip {0} -d {1}".format(self.pdf_zip_file, self.zip_dir))
 
+        # Create OCR unzip directory and place the OCR zip content
+        os.mkdir(self.ocr_unzip_dir)
+
         if self.ocr_zip:
             self.execute_cmd("aws s3 cp --profile default s3://{0} {1}/".format(self.ocr_zip, self.zip_dir))
-            self.execute_cmd("unzip {0} -d {1}".format(self.ocr_zip_file, self.zip_dir))
-        else:
-            os.mkdir(self.ocr_unzip_dir)
+            self.execute_cmd("unzip -j {0} -d {1}".format(self.ocr_zip_file, self.ocr_unzip_dir))
 
         ocr_files = set(map((lambda x: x.replace(".txt", "")), os.listdir(self.ocr_unzip_dir)))
         if os.path.isdir(self.pdf_unzip_dir) == False:
